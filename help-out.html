@@ -3,16 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CoderDojo Stirling - Helping Out</title>
+	<link href="http://coderdojoscotland.com/wp-content/themes/dojo/assets/img/icons/favicon.ico" rel="shortcut icon">
+    <title>CoderDojo Stirling - Help Out</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <style type="text/css">
         body {
-            padding-top: 70px;
+            padding-top: 30px;
+			background-color: #efefef;
         }
+		
     </style>
+	
+	<script type="text/javascript">
+	
+		$( document ).ready(function() {
+		
+			if (localStorage.getItem("backgroundColour") != null) {
+				$("body").css("background-color",localStorage.getItem("backgroundColour"));
+				$("body").css("color",localStorage.getItem("mainText"));
+			} else {
+				$("body").css("background-color","#efefef");
+				$("body").css("color","black");
+			}
+			
+			if (localStorage.getItem("jumboColour") != null) {
+				$(".jumbotron").css("background-color",localStorage.getItem("jumboColour"));
+				$(".jumbotron").css("color",localStorage.getItem("jumboText"));
+			} else {
+				$(".jumbotron").css("background-color","#0F4D92");
+				$(".jumbotron").css("color","#FFFFFF");
+			}
+			
+			if (localStorage.getItem("navColour") != null) {
+				
+			} else {
+				
+			}
+			
+		});
+
+	</script>
 </head>
 <body>
 <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
@@ -33,29 +66,34 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="come-along.html">Come Along</a></li>
                 <li><a href="earn-badges.html">Earn Badges</a></li>
-                <li><a class="active" href="help-out.html">Help Out</a></li>
+                <li class="active"><a href="help-out.html">Help Out</a></li>
+				<li><a href="customise.html">Customise Colours</a></li>
             </ul>
         </div>
     </div>
 </nav>
+
+<div class="jumbotron">
+	<div class="container">
+		<h1>Helping Out</h1>
+		<p class="lead">Are you a grown-up with coding skills? Then become a CoderDojo mentor!</p>
+	</div>
+</div>
+
 <div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <h1>Helping Out</h1>
+	<div class="row">
+		<div class="col-xs-12">
 
-            <p class="lead">Are you a grown-up with coding skills? Then become a CoderDojo mentor!</p>
+			<p>CoderDojo Stirling is run by volunteers. Every month we put on a coding club for kids, with grown-up mentors helping out. </p>
+			
+			<p>You don't need to have wizard-like programming skills, just enough to help the kids out as they learn. 
+			You can take a look at our "Earn Badges" page to see what kind of things the kids do at CoderDojo. Being a mentor is fun, and you learn a surprising amount!</p>
+			
+			<p>We're always welcome to new members and ideas for what new programming challenges we can set the kids.</p>
 
-            <p>CoderDojo Stirling is run by volunteers.<p>
-
-            <p>Every month we put on a coding club for kids, with grown-up mentors helping out.</p>
-
-            <p>Being a mentor is fun, and you learn a surprising amount!</p>
-
-            <h2>Getting involved</h2>
-
-            <p>If you're interested in helping out as a mentor, then <a href="mailto:stirling@coderdojoscotland.com?Subject=Interested in mentoring">email us</a>.</p>
-        </div>
-    </div>
+			<p>If you're interested in helping out as a mentor, then <a href="mailto:stirling@coderdojoscotland.com?Subject=Interested in mentoring">email us</a>.</p>
+		</div>
+	</div>
 
     <hr>
     <div class="row">
@@ -66,5 +104,6 @@
         </div>
     </div>
 </div>
+
 </body>
-</html>                                		
+</html>                                
