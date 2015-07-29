@@ -31,7 +31,7 @@
 				$("body").css("background-color",localStorage.getItem("backgroundColour"));
 				$("body").css("color",localStorage.getItem("mainText"));
 			} else {
-				$("body").css("background-color","#efefef");
+				$("body").css("background-color","#EFEFEF");
 				$("body").css("color","black");
 			}
 			
@@ -74,27 +74,29 @@
 		function navChange() {
 			var colour = document.getElementById("navColour").value;
 			var text = document.getElementById("navTextColour").value;
-			$(".navbar-inverse").css("background-color",colour);
-			$(".dropdown-menu").css("background-color",colour);
-			$(".divider").css("background-color",colour);
-			$(".navbar-default").css("color",text);
 		
 			localStorage.setItem("navColour", colour);
 			localStorage.setItem("navText", text);
 		}
 		
 		function reset() {
-			$("body").css("background-color","#efefef");
+			$("body").css("background-color","#EFEFEF");
 			$("body").css("color","black");
 			$(".jumbotron").css("background-color","#379DD8");
 			$(".jumbotron").css("color","white");
 			
-			localStorage.setItem("backgroundColour", "#efefef");
+			localStorage.setItem("backgroundColour", "#EFEFEF");
 			localStorage.setItem("mainText","black");
 			localStorage.setItem("jumboColour", "#379DD8");
 			localStorage.setItem("jumboText", "white");
-			localStorage.setItem("navColour", colour);
-			localStorage.setItem("navText", text);
+			
+			localStorage.setItem("navColour", "");
+			localStorage.setItem("navText", "");
+			
+			document.getElementById("backgroundColour").value = "#EFEFEF";			
+			document.getElementById("mainTextColour").value = "#303030";
+			document.getElementById("jumboColour").value = "#379DD8";
+			document.getElementById("jumboTextColour").value = "#EFEFEF";
 		}
 	</script>
 	
@@ -139,16 +141,16 @@
 		<div class="col-sm-6">
 			<h3>Background</h3>
 			<form name="Background" id="Background">
-				Select your favourite background colour: <input type="color" class="form-control" id="backgroundColour" value="#efefef" onchange="bkChange()"><br/>	
-				You may also want to change the text colour: <input type="color" class="form-control" id="mainTextColour" value="#000000" onchange="bkChange()"></br>
+				Select your favourite background colour: <input type="color" class="form-control" id="backgroundColour" value="#EFEFEF" onchange="bkChange()"><br/>	
+				You may also want to change the text colour: <input type="color" class="form-control" id="mainTextColour" value="#303030" onchange="bkChange()"></br>
 			</form>
 		</div>
 		
 		<div class="col-sm-6">
 			<h3>Header</h3>
 			<form name="Jumbo" id="Jumbo">
-				Select your favourite jumbotron colour: <input type="color" class="form-control" id="jumboColour" value="#0F4D92" onchange="jumboChange()"><br/>
-				You may also want to change the text colour: <input type="color" class="form-control" id="jumboTextColour" value="#FFFFFF" onchange="jumboChange()"><br/>
+				Select your favourite jumbotron colour: <input type="color" class="form-control" id="jumboColour" value="#379DD8" onchange="jumboChange()"><br/>
+				You may also want to change the text colour: <input type="color" class="form-control" id="jumboTextColour" value="#EFEFEF" onchange="jumboChange()"><br/>
 			</form>
 		</div>
 	</div>
