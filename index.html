@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://coderdojoscotland.com/wp-content/themes/dojo/assets/img/icons/favicon.ico" rel="shortcut icon">
     <title>CoderDojo Stirling</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
@@ -10,9 +11,50 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <style type="text/css">
         body{
-            padding-top: 70px;
+            padding-top: 30px;
+			font-size: 16px;
         }
+		
+		.jumbotron {
+			color: #FFFFFF;
+			background-color: #0F4D92;
+		}
+		
+		.jumbotron > .container > p > a:link, a:hover, a:active, a:visited {
+			color: #FFFFFF;
+			text-decoration: underline;
+		}
     </style>
+	
+	<script type="text/javascript">
+	
+		$( document ).ready(function() {
+		
+			if (localStorage.getItem("backgroundColour") != null) {
+				$("body").css("background-color",localStorage.getItem("backgroundColour"));
+				$("body").css("color",localStorage.getItem("mainText"));
+			} else {
+				$("body").css("background-color","#efefef");
+				$("body").css("color","black");
+			}
+			
+			if (localStorage.getItem("jumboColour") != null) {
+				$(".jumbotron").css("background-color",localStorage.getItem("jumboColour"));
+				$(".jumbotron").css("color",localStorage.getItem("jumboText"));
+			} else {
+				$(".jumbotron").css("background-color","#379DD8");
+				$(".jumbotron").css("color","#FFFFFF");
+			}
+			
+			if (localStorage.getItem("navColour") != null) {
+				
+			} else {
+				
+			}
+			
+		});
+
+	</script>	
 </head>
 <body>
 
@@ -33,35 +75,46 @@
                 <li><a href="come-along.html">Come Along</a></li>
                 <li><a href="earn-badges.html">Earn Badges</a></li>
                 <li><a href="help-out.html">Help Out</a></li>
+				<li><a href="customise.html">Customise Colours</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 
-<div class="container">
-    <div class="jumbotron">
+<div class="jumbotron">
+	<div class="container">
         <h1>We are CoderDojo Stirling</h1>
-        <p class="lead">CoderDojo Stirling is a free monthly coding club for kids in Stirling.</p>
-        <p>If you're aged between 9 and 16 and want to learn how to code, then come along.</p>
-        <p>If you're a grown-up instead, then come <a href="help-out.html">help out</a>!</p>
-    </div>
+		<p class="lead">CoderDojo Stirling is a free monthly coding club for kids in Stirling.</p>
+		<p>If you're aged between 9 and 16 and want to learn how to code, then come along.</p>
+		<p>If you're a grown-up instead, then come <a href="help-out.html">help out</a>!</p>
+	</div>
+</div>
+
+<div class="container">
+
     <div class="row">
-        <div class="col-xs-4">
-            <h2>Come Along Monthly</h2>
-            <p>We run one Saturday a month at Stirling Old Town Jail. You'll need a ticket.</p>
-            <p><a href="come-along.html" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-xs-4">
-            <h2>Earn Badges</h2>
-            <p>You can earn badges by improving your coding skills. We'll help you.</p>
-            <p><a href="earn-badges.html" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-xs-4">
-            <h2>Learn To Code</h2>
-            <p>The more badges you earn, the better you'll get at coding. Get good enough, and you'll be doing your own projects. We're help you with those too.</p>
-        </div>
+		
+		<div class="col-sm-6 col-md-4">
+				<h2>Come Along Monthly</h2>
+				<p>We run one Saturday a month at Stirling Old Town Jail. You'll need a ticket.</p>
+				<p><a href="come-along.html" class="btn btn-success">Learn More &raquo;</a></p>
+		</div>
+		
+		<div class="col-sm-6 col-md-4">
+				<h2>Earn Badges</h2>
+				<p>You can earn badges by improving your coding skills. We'll help you.</p>
+				<p><a href="earn-badges.html" class="btn btn-success">Learn More &raquo;</a></p>
+		</div>
+		
+		<div class="col-sm-6 col-md-4">
+				<h2>Learn To Code</h2>
+				<p>The more badges you earn, the better you'll get at coding. Get good enough, and you'll be doing your own projects. We're help you with those too.</p>
+		</div>
+		
     </div>
+
+	
     <hr>
     <div class="row">
         <div class="col-xs-12">
@@ -71,5 +124,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>                                		

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://coderdojoscotland.com/wp-content/themes/dojo/assets/img/icons/favicon.ico" rel="shortcut icon">
+    <title>CoderDojo Stirling</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://mjolnic.com/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://mjolnic.com/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
+	
+    <style type="text/css">
+        body{
+            padding-top: 30px;
+			font-size: 16px;
+        }
+		
+		.jumbotron > .container > p > a:link, a:hover, a:active, a:visited {
+			color: #FFFFFF;
+			text-decoration: underline;
+		}
+	</style>
+	
+	<script type="text/javascript">
+	
+		$( document ).ready(function() {
+		
+			if (localStorage.getItem("backgroundColour") != null) {
+				$("body").css("background-color",localStorage.getItem("backgroundColour"));
+				$("body").css("color",localStorage.getItem("mainText"));
+			} else {
+				$("body").css("background-color","#EFEFEF");
+				$("body").css("color","black");
+			}
+			
+			if (localStorage.getItem("jumboColour") != null) {
+				$(".jumbotron").css("background-color",localStorage.getItem("jumboColour"));
+				$(".jumbotron").css("color",localStorage.getItem("jumboText"));
+			} else {
+				$(".jumbotron").css("background-color","#379DD8");
+				$(".jumbotron").css("color","#FFFFFF");
+			}
+			
+			if (localStorage.getItem("navColour") != null) {
+				
+			} else {
+				
+			}
+			
+		});
+	
+		function bkChange() {
+			var colour = document.getElementById("backgroundColour").value;			
+			var text = document.getElementById("mainTextColour").value;
+			$("body").css("background-color",colour);
+			$("body").css("color",text);
+			
+			localStorage.setItem("backgroundColour", colour);
+			localStorage.setItem("mainText", text);
+		}
+		
+		function jumboChange() {
+			var colour = document.getElementById("jumboColour").value;
+			var text = document.getElementById("jumboTextColour").value;
+			$(".jumbotron").css("background-color",colour);
+			$(".jumbotron").css("color",text);
+			
+			localStorage.setItem("jumboColour", colour);
+			localStorage.setItem("jumboText", text);
+		}
+		
+		function navChange() {
+			var colour = document.getElementById("navColour").value;
+			var text = document.getElementById("navTextColour").value;
+		
+			localStorage.setItem("navColour", colour);
+			localStorage.setItem("navText", text);
+		}
+		
+		function reset() {
+			$("body").css("background-color","#EFEFEF");
+			$("body").css("color","black");
+			$(".jumbotron").css("background-color","#379DD8");
+			$(".jumbotron").css("color","white");
+			
+			localStorage.setItem("backgroundColour", "#EFEFEF");
+			localStorage.setItem("mainText","black");
+			localStorage.setItem("jumboColour", "#379DD8");
+			localStorage.setItem("jumboText", "white");
+			
+			localStorage.setItem("navColour", "");
+			localStorage.setItem("navText", "");
+			
+			document.getElementById("backgroundColour").value = "#EFEFEF";			
+			document.getElementById("mainTextColour").value = "#303030";
+			document.getElementById("jumboColour").value = "#379DD8";
+			document.getElementById("jumboTextColour").value = "#EFEFEF";
+		}
+	</script>
+	
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">CoderDojo Stirling</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="come-along.html">Come Along</a></li>
+                <li><a href="earn-badges.html">Earn Badges</a></li>
+                <li><a href="help-out.html">Help Out</a></li>
+				<li class="active"><a href="customise.html">Customise Colours</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron">
+	<div class="container">
+        <h1>We are CoderDojo Stirling</h1>
+	</div>
+</div>
+
+<div class="container">
+		
+	<h2>Customise the homepage!</h2>
+	<p>Come here often? Want to have the colours you want? Just choose them below!<p>
+	
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Background</h3>
+			<form name="Background" id="Background">
+				Select your favourite background colour: <input type="color" class="form-control" id="backgroundColour" value="#EFEFEF" onchange="bkChange()"><br/>	
+				You may also want to change the text colour: <input type="color" class="form-control" id="mainTextColour" value="#303030" onchange="bkChange()"></br>
+			</form>
+		</div>
+		
+		<div class="col-sm-6">
+			<h3>Header</h3>
+			<form name="Jumbo" id="Jumbo">
+				Select your favourite jumbotron colour: <input type="color" class="form-control" id="jumboColour" value="#379DD8" onchange="jumboChange()"><br/>
+				You may also want to change the text colour: <input type="color" class="form-control" id="jumboTextColour" value="#EFEFEF" onchange="jumboChange()"><br/>
+			</form>
+		</div>
+	</div>
+	
+	<button class="btn btn-success" onclick="reset()">Reset colours</button>
+	
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <footer>
+                <p>&copy; Copyright 2015 CoderDojo Stirling</p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>                                		
