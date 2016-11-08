@@ -1,0 +1,9 @@
+body{
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+.jumbotron {
+    background-color: #379DD8;
+    color: #FFFFFF;
+}
