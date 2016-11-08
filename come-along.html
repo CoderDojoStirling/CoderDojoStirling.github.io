@@ -7,44 +7,9 @@
     <title>CoderDojo Stirling - Come Along</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="common.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        body {
-            padding-top: 30px;
-			font-size: 16px;
-        }
-    </style>
-	
-	<script type="text/javascript">
-	
-		$( document ).ready(function() {
-		
-			if (localStorage.getItem("backgroundColour") != null) {
-				$("body").css("background-color",localStorage.getItem("backgroundColour"));
-				$("body").css("color",localStorage.getItem("mainText"));
-			} else {
-				$("body").css("background-color","#efefef");
-				$("body").css("color","black");
-			}
-						
-			if (localStorage.getItem("jumboColour") != null) {
-				$(".jumbotron").css("background-color",localStorage.getItem("jumboColour"));
-				$(".jumbotron").css("color",localStorage.getItem("jumboText"));
-			} else {
-				$(".jumbotron").css("background-color","#379DD8");
-				$(".jumbotron").css("color","#FFFFFF");
-			}
-			
-			if (localStorage.getItem("navColour") != null) {
-				
-			} else {
-				
-			}
-			
-		});
-
-	</script>	
 </head>
 <body>
 

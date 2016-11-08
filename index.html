@@ -7,54 +7,15 @@
     <title>CoderDojo Stirling</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="common.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <style type="text/css">
-        body{
-            padding-top: 30px;
-			font-size: 16px;
+        .jumbotron a:link, a:hover, a:active, a:visited {
+            text-decoration: underline;
+            color: white;
         }
-		
-		.jumbotron {
-			color: #FFFFFF;
-			background-color: #0F4D92;
-		}
-		
-		.jumbotron > .container > p > a:link, a:hover, a:active, a:visited {
-			color: #FFFFFF;
-			text-decoration: underline;
-		}
     </style>
-	
-	<script type="text/javascript">
-	
-		$( document ).ready(function() {
-		
-			if (localStorage.getItem("backgroundColour") != null) {
-				$("body").css("background-color",localStorage.getItem("backgroundColour"));
-				$("body").css("color",localStorage.getItem("mainText"));
-			} else {
-				$("body").css("background-color","#efefef");
-				$("body").css("color","black");
-			}
-			
-			if (localStorage.getItem("jumboColour") != null) {
-				$(".jumbotron").css("background-color",localStorage.getItem("jumboColour"));
-				$(".jumbotron").css("color",localStorage.getItem("jumboText"));
-			} else {
-				$(".jumbotron").css("background-color","#379DD8");
-				$(".jumbotron").css("color","#FFFFFF");
-			}
-			
-			if (localStorage.getItem("navColour") != null) {
-				
-			} else {
-				
-			}
-			
-		});
-
-	</script>	
 </head>
 <body>
 
@@ -110,7 +71,7 @@
 		<div class="col-sm-6 col-md-4">
 				<h2>Learn To Code</h2>
 				<p>The more badges you earn, the better you'll get at coding. Soon you'll be completing
-                    your own projects or doing some of our challenges. We're help you with that too.</p>
+                    your own projects or doing some of our challenges. We'll help you with that too.</p>
                 <p><a href="do-challenges.html" class="btn btn-success">Do a challenge &raquo;</a></p>
         </div>
 		

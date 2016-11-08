@@ -7,79 +7,25 @@
     <title>CoderDojo Stirling - Do Challenges</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="common.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <style type="text/css">
-        body {
-            padding-top: 30px;
-            font-size: 16px;
-        }
-
-        .panel > .new {
-            background-image: none;
-            background: #337AB7;
-            color: #FFFFFF;
-        }
-
-        .panel > .scratch {
-            background-image: none;
+        div#scratch > .panel-heading {
             background: #77DD77;
             color: #FFFFFF;
         }
 
-        .panel > .web {
-            background-image: none;
+        div#web > .panel-heading {
             background: #FCC917;
             color: #FFFFFF;
         }
 
-        .panel > .real {
-            background-image: none;
+        div#code > .panel-heading {
             background: #CB4154;
             color: #FFFFFF;
         }
-
-        .panel > .own {
-            background-image: none;
-            background: #5D89BA;
-            color: #FFFFFF;
-        }
-
-        .panel-heading > h2 > a:link {
-            color: #FFFFFF;
-        }
-
     </style>
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            if (localStorage.getItem("backgroundColour") != null) {
-                $("body").css("background-color", localStorage.getItem("backgroundColour"));
-                $("body").css("color", localStorage.getItem("mainText"));
-            } else {
-                $("body").css("background-color", "#efefef");
-                $("body").css("color", "black");
-            }
-
-            if (localStorage.getItem("jumboColour") != null) {
-                $(".jumbotron").css("background-color", localStorage.getItem("jumboColour"));
-                $(".jumbotron").css("color", localStorage.getItem("jumboText"));
-            } else {
-                $(".jumbotron").css("background-color", "#379DD8");
-                $(".jumbotron").css("color", "#FFFFFF");
-            }
-
-            if (localStorage.getItem("navColour") != null) {
-
-            } else {
-
-            }
-
-        });
-
-    </script>
 </head>
 <body>
 
@@ -131,428 +77,442 @@
     </p>
     <br/>
 
-    <div class="panel-group" id="accordion">
+    <div class="panel-group">
+        <div id="scratch" class="panel panel-default">
+            <a name="scratch"></a>
+            <div class="panel-heading"><h2>Fun with Scratch</h2></div>
+            <div class="panel-body">
 
-        <div class="panel panel-default">
-            <div class="panel-heading scratch">
-                <h2>
-                    <a data-toggle="collapse" name="scratch">Fun with Scratch</a>
-                </h2>
-            </div>
-            <div id="scratch" class="panel-collapse collapse in">
-                <div class="panel-body">
+                <h3>Before you start</h3>
+                <p>Scratch is a nice programming language for learning how to code. If you haven't used Scratch
+                    before, you can
+                    do our <a href="earn-badges.html#scratch">Scratch badges</a> to get started. If you have used
+                    Scratch before, pick a challenge below and do it!
+                </p>
 
-                    <h3>Before you start</h3>
-                    <p>Scratch is a nice programming language for learning how to code. If you haven't used Scratch
-                        before, you can
-                        do our <a href="earn-badges.html#scratch">Scratch badges</a> to get started. If you have used
-                        Scratch before, pick a challenge below and do it!
-                    </p>
-
-                    <h3>Challenge: I Wanna Be a Rockstar</h3>
-                    <p>
-                        Make a theatre stage with a band on it: a drummer, a guitarist, a singer, and anyone else you want. When you click on a person (or their instrument), the instrument sound should play. So when you click on the drums, you hear drums!
-                    </p>
-                    <p>
-                        Getting started:
-                    <ul>
-                        <li>The Sprite Library has a “Music” category with useful sprites in it.</li>
-                        <li>The Sound Library has lots of sounds you can use. Or record your own!</li>
-                    </ul>
-                    </p>
-                    <p>More advanced: Try clicking your band members at the right time, so it sounds like a proper song!</p>
-
-                    <h3>Challenge: Bear wants Dinner</h3>
-                    <p>Make a story about a bear searching for his dinner. The bear should move around, and tell the following
-                        joke to a frog:
-                        <ul>
-                            <li>Bear: "Why don't bears like fast food?"
-                            <li>Frog: "I don't know: Why don't bears like fast food?"
-                            <li>Bear: "Because they can't catch it!"</li>
-                        </ul>
-                    </p>
-                    <p>
-                        Hints:
-                    <ul>
-                        <li>You can find a ‘bear’ sprite in the Scratch sprite library. Or draw your own.</li>
-                        <li>Sprites can speak with the ‘say’ command.</li>
-                        <li>Sprites can have a conversation (one speaks after the other) using the ‘broadcast’ and
-                            ‘message’ commands
-                        </li>
-                    </ul>
-                    </p>
-
-                    <h3>Challenge: Maze of Insults</h3>
-                    <p>Create a maze game. If you collide with a wall, you get teleported to the start, and told “you
-                        clumsy oaf”!</p>
-                    <p>
-                        Getting started:
-                    <ul>
-                        <li>You will need 3 sprites: a player, the maze walls, and a finish point.</li>
-                        <li>Use the ‘touch’ sensor to work out if the player has collided with a wall. You can detect
-                            when two sprites collide, or when one sprite collides with a colour.
-                        </li>
-                    </ul>
-                    </p>
-
-                    <h3>Challenge: Animate Your Name</h3>
-                    <p>
-                        Make an animation of your name, so each letter does something cool like make a sound, or move around or change colour. I’m called GREG, so the G might spin around, the R might change from red to blue, and so on.
-                        The animation should start when the Green Flag is clicked.
-                    </p>
-                    <p>
-                        Getting started:
-                    <ul>
-                        <li>Add letter sprites for your name: look in the Sprite Library under Letters. So I would add G, R, E and G.</li>
-                        <li>For each character sprite, make it do something cool when the Green Flag is clicked.</li>
-                    </ul>
-                    </p>
-                    <p>More advanced: Make the animation cooler. You could make the background change, or make a bird fly around, or make the letters do things when you click on them.</p>
-
-                    <h3>Challenge: Catching Mice</h3>
-                    <p>Create a game where the player gets points when the cat catches a mouse, and loses points when
-                        the cat steps in a dog-poo.</p>
-                    <p>
-                        Getting started:
-                    <ul>
-                        <li>You will need lots of sprites: a cat, lots of mice, a lots of dog poo.</li>
-                        <li>Use the ‘touch’ sensor to work out if the cat has collided with something.</li>
-                        <li>Use a ‘variable’ to track the score.</li>
-                    </ul>
-                    </p>
-                    <p>More advanced: can you make this game two-player?</p>
-
-                    <h3>Challenge: Aquarium</h3>
-                    <p>Build an aquarium with fish swimming around and plants at the bottom. The fish should turn round
-                        when they hit the aquarium edge.</p>
-                    <p>
-                        Getting started:
-                    <ul>
-                        <li>You will need 2 sprites to start: a fish and a plant.</li>
-                        <li>Look in the ‘motion’ section to make the fish move.</li>
-                    </ul>
-                    </p>
-                    <p>More advanced: Add a shark into the aquarium that is controlled with the arrow keys. Make the
-                        fish run away when they bump into the shark.</p>
-
-                    <h3>Challenge: Space Miner</h3>
-                    <p>
-                        Make a game about a space miner:
-                    <ul>
-                        <li>There’s a solar system with planets and asteroids (small lumps of space rock).</li>
-                        <li>There’s a space ship.</li>
-                        <li>The player moves the space ship to collect the asteroids. The player gets one point for running over each asteroid.</li>
-                        <li>The space ship blows up if it crashes into a planet.</li>
-                    </ul>
-                    </p>
-                    <p>
-                        Getting started:
-                    <ul>
-                        <li>You will need different sprites for the spaceship, asteroids and planets.</li>
-                        <li>Use the ‘touch’ sensor to work out if the spaceship has collided with an asteroid or planet. You can detect when
-                            two sprites collide, or when one sprite collides with a colour.</li>
-                    </ul>
-                    </p>
-
-                    <h3>Challenge: Hide and Seek</h3>
-                    <p>
-                        Make a Hide and Seek game with the Scratch Cat: the Cat will appear somewhere on the screen, then vanish after 2 seconds.
-                        6 seconds later, the Cat will appear somewhere else on the screen, then vanish again after 2 seconds. It does this forever.
-                        The player gets one point when they click on the cat, and lose a point if they click on the background.
-                    </p>
-                    <p>
+                <h3>Challenge: I Wanna Be a Rockstar</h3>
+                <p>
+                    Make a theatre stage with a band on it: a drummer, a guitarist, a singer, and anyone else you want.
+                    When you click on a person (or their instrument), the instrument sound should play. So when you
+                    click on the drums, you hear drums!
+                </p>
+                <p>
                     Getting started:
-                    <ul>
-                        <li>Use two starting sprites: the Scratch Cat and the Background. Work out how to add and remove points from a score counter when these sprites are clicked.</li>
-                        <li>Work out how to make the Scratch Cat appear and disappear with the ‘hide’ and ‘show’ commands.</li>
-                        <li>Work out how to change the location of the Scratch Cat to a random x and y position.</li>
-                        <li>If you need more help, the Scratch website has ‘step by step’ instructions for making a hide and seek game. Click on ‘Explore’ at the top of the main webpage, then look for ‘Hide and Seek Game’ on the right hand side.</li>
-                    </ul>
-                    </p>
+                <ul>
+                    <li>The Sprite Library has a “Music” category with useful sprites in it.</li>
+                    <li>The Sound Library has lots of sounds you can use. Or record your own!</li>
+                </ul>
+                </p>
+                <p>More advanced: Try clicking your band members at the right time, so it sounds like a proper song!</p>
 
-                    <h3>Halloween Challenge: Escape the Graveyard</h3>
-                    <p>
-                        Make a game about escaping a graveyard. You start at one side of the graveyard, and have to escape through a gate on the other side. The graveyard has grave-stones in the ground, and ghosts that move around. If you collide with a grave-stone or a ghost, you get teleported to the start.
-                    </p>
-                    <p>
-                        Getting started:
-                    <ul>
-                        <li>You will need some sprites: the player, gravestones, and ghosts</li>
-                        <li>Use the ‘touch’ sensor to work out if the player has collided with a gravestone or ghost. You can detect when two sprites collide, or when one sprite collides with a colour.</li>
-                    </ul>
-                    </p>
-                    <p>More advanced:  Make the graveyard more spooky. What about making an invisible ghost appear when the player hits a gravestone? Maybe it says “boo!” (record the sound effect)</p>
+                <h3>Challenge: Bear wants Dinner</h3>
+                <p>Make a story about a bear searching for his dinner. The bear should move around, and tell the
+                    following
+                    joke to a frog:
+                <ul>
+                    <li>Bear: "Why don't bears like fast food?"
+                    <li>Frog: "I don't know: Why don't bears like fast food?"
+                    <li>Bear: "Because they can't catch it!"</li>
+                </ul>
+                </p>
+                <p>
+                    Hints:
+                <ul>
+                    <li>You can find a ‘bear’ sprite in the Scratch sprite library. Or draw your own.</li>
+                    <li>Sprites can speak with the ‘say’ command.</li>
+                    <li>Sprites can have a conversation (one speaks after the other) using the ‘broadcast’ and
+                        ‘message’ commands
+                    </li>
+                </ul>
+                </p>
 
-                </div>
+                <h3>Challenge: Maze of Insults</h3>
+                <p>Create a maze game. If you collide with a wall, you get teleported to the start, and told “you
+                    clumsy oaf”!</p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>You will need 3 sprites: a player, the maze walls, and a finish point.</li>
+                    <li>Use the ‘touch’ sensor to work out if the player has collided with a wall. You can detect
+                        when two sprites collide, or when one sprite collides with a colour.
+                    </li>
+                </ul>
+                </p>
+
+                <h3>Challenge: Animate Your Name</h3>
+                <p>
+                    Make an animation of your name, so each letter does something cool like make a sound, or move around
+                    or change colour. I’m called GREG, so the G might spin around, the R might change from red to blue,
+                    and so on.
+                    The animation should start when the Green Flag is clicked.
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>Add letter sprites for your name: look in the Sprite Library under Letters. So I would add G, R,
+                        E and G.
+                    </li>
+                    <li>For each character sprite, make it do something cool when the Green Flag is clicked.</li>
+                </ul>
+                </p>
+                <p>More advanced: Make the animation cooler. You could make the background change, or make a bird fly
+                    around, or make the letters do things when you click on them.</p>
+
+                <h3>Challenge: Catching Mice</h3>
+                <p>Create a game where the player gets points when the cat catches a mouse, and loses points when
+                    the cat steps in a dog-poo.</p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>You will need lots of sprites: a cat, lots of mice, a lots of dog poo.</li>
+                    <li>Use the ‘touch’ sensor to work out if the cat has collided with something.</li>
+                    <li>Use a ‘variable’ to track the score.</li>
+                </ul>
+                </p>
+                <p>More advanced: can you make this game two-player?</p>
+
+                <h3>Challenge: Aquarium</h3>
+                <p>Build an aquarium with fish swimming around and plants at the bottom. The fish should turn round
+                    when they hit the aquarium edge.</p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>You will need 2 sprites to start: a fish and a plant.</li>
+                    <li>Look in the ‘motion’ section to make the fish move.</li>
+                </ul>
+                </p>
+                <p>More advanced: Add a shark into the aquarium that is controlled with the arrow keys. Make the
+                    fish run away when they bump into the shark.</p>
+
+                <h3>Challenge: Space Miner</h3>
+                <p>
+                    Make a game about a space miner:
+                <ul>
+                    <li>There’s a solar system with planets and asteroids (small lumps of space rock).</li>
+                    <li>There’s a space ship.</li>
+                    <li>The player moves the space ship to collect the asteroids. The player gets one point for running
+                        over each asteroid.
+                    </li>
+                    <li>The space ship blows up if it crashes into a planet.</li>
+                </ul>
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>You will need different sprites for the spaceship, asteroids and planets.</li>
+                    <li>Use the ‘touch’ sensor to work out if the spaceship has collided with an asteroid or planet. You
+                        can detect when
+                        two sprites collide, or when one sprite collides with a colour.
+                    </li>
+                </ul>
+                </p>
+
+                <h3>Challenge: Hide and Seek</h3>
+                <p>
+                    Make a Hide and Seek game with the Scratch Cat: the Cat will appear somewhere on the screen, then
+                    vanish after 2 seconds.
+                    6 seconds later, the Cat will appear somewhere else on the screen, then vanish again after 2
+                    seconds. It does this forever.
+                    The player gets one point when they click on the cat, and lose a point if they click on the
+                    background.
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>Use two starting sprites: the Scratch Cat and the Background. Work out how to add and remove
+                        points from a score counter when these sprites are clicked.
+                    </li>
+                    <li>Work out how to make the Scratch Cat appear and disappear with the ‘hide’ and ‘show’ commands.
+                    </li>
+                    <li>Work out how to change the location of the Scratch Cat to a random x and y position.</li>
+                    <li>If you need more help, the Scratch website has ‘step by step’ instructions for making a hide and
+                        seek game. Click on ‘Explore’ at the top of the main webpage, then look for ‘Hide and Seek Game’
+                        on the right hand side.
+                    </li>
+                </ul>
+                </p>
+
+                <h3>Halloween Challenge: Escape the Graveyard</h3>
+                <p>
+                    Make a game about escaping a graveyard. You start at one side of the graveyard, and have to escape
+                    through a gate on the other side. The graveyard has grave-stones in the ground, and ghosts that move
+                    around. If you collide with a grave-stone or a ghost, you get teleported to the start.
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>You will need some sprites: the player, gravestones, and ghosts</li>
+                    <li>Use the ‘touch’ sensor to work out if the player has collided with a gravestone or ghost. You
+                        can detect when two sprites collide, or when one sprite collides with a colour.
+                    </li>
+                </ul>
+                </p>
+                <p>More advanced: Make the graveyard more spooky. What about making an invisible ghost appear when the
+                    player hits a gravestone? Maybe it says “boo!” (record the sound effect)</p>
+
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading web">
-                <h2>
-                    <a data-toggle="collapse" name="web">Making Websites</a>
-                </h2>
-            </div>
-            <div id="web" class="panel-collapse collapse in">
-                <div class="panel-body">
+        <div id="web" class="panel panel-default">
+            <a name="web"></a>
+            <div class="panel-heading"><h2>Making Websites</h2></div>
+            <div class="panel-body">
 
-                    <h3>Before you start</h3>
-                    <p>If you’ve never built a website before, do our badge called <a href="earn-badges.html#web">Get
-                        your own website on the Internet</a>.
-                        If you have built a website before, pick a challenge below and do it!
-                    </p>
+                <h3>Before you start</h3>
+                <p>If you’ve never built a website before, do our badge called <a href="earn-badges.html#web">Get
+                    your own website on the Internet</a>.
+                    If you have built a website before, pick a challenge below and do it!
+                </p>
 
-                    <h3>Challenge: The Solar System</h3>
-                    <p>
-                        Create a website about the solar system. It will need a start page describing the solar system,
-                        and a page about every planet. You
-                        could even do pages about different space missions involving astronauts.
-                    </p>
-                    <p>
-                        Hints:
-                    <ul>
-                        <li>If you find a cool webpage on the internet (about space!), you can link to it from your
-                            website.
-                        </li>
-                        <li>You could draw your own pictures of planets, or space-ships, or aliens.</li>
-                        <li>Can you make the website feel like space by changing colours? You’ll need to change CSS.
-                        </li>
-                    </ul>
-                    </p>
+                <h3>Challenge: The Solar System</h3>
+                <p>
+                    Create a website about the solar system. It will need a start page describing the solar system,
+                    and a page about every planet. You
+                    could even do pages about different space missions involving astronauts.
+                </p>
+                <p>
+                    Hints:
+                <ul>
+                    <li>If you find a cool webpage on the internet (about space!), you can link to it from your
+                        website.
+                    </li>
+                    <li>You could draw your own pictures of planets, or space-ships, or aliens.</li>
+                    <li>Can you make the website feel like space by changing colours? You’ll need to change CSS.
+                    </li>
+                </ul>
+                </p>
 
-                    <h3>Challenge: Where I Live</h3>
-                    <p>
-                        Create a website about the place where you live. Let’s say you live in Stirling. Where is it?
-                        How old is it? What would you show
-                        someone who came to visit? What interesting things can you do there?
-                    </p>
-                    <p>
-                        Getting started:
-                    <ul>
-                        <li>Create one web-page explaining what the site is about.</li>
-                        <li>Now create extra pages about particular topics, and link to them from the main web-page.
-                        </li>
-                        <li>You can link to other Internet web-pages that are interesting: like the Stirling wikipedia
-                            page.
-                        </li>
-                        <li>Lots of drawings and pictures please! You can create your own or find some online (with ok
-                            licence).
-                        </li>
-                    </ul>
-                    </p>
+                <h3>Challenge: Where I Live</h3>
+                <p>
+                    Create a website about the place where you live. Let’s say you live in Stirling. Where is it?
+                    How old is it? What would you show
+                    someone who came to visit? What interesting things can you do there?
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>Create one web-page explaining what the site is about.</li>
+                    <li>Now create extra pages about particular topics, and link to them from the main web-page.
+                    </li>
+                    <li>You can link to other Internet web-pages that are interesting: like the Stirling wikipedia
+                        page.
+                    </li>
+                    <li>Lots of drawings and pictures please! You can create your own or find some online (with ok
+                        licence).
+                    </li>
+                </ul>
+                </p>
 
-                    <h3>Christmas Challenge: I’ve been good!</h3>
-                    <p>
-                        What do you want for Christmas? Let Santa (and mum, dad, gran and anyone else) know with your
-                        own website.
-                    </p>
-                    <p>
-                        Your website should have descriptions and pictures of the items you want and links to where they
-                        can be bought.
-                        You could prioritise the items with a star rating to say how much you want that item, or
-                        organise it by price so
-                        everyone can find the right gift for you!
-                    </p>
-                    <p>
-                        More advanced: Add some Christmas style and Christmas tunes to get everyone in the
-                        present-buying mood!
-                    </p>
+                <h3>Christmas Challenge: I’ve been good!</h3>
+                <p>
+                    What do you want for Christmas? Let Santa (and mum, dad, gran and anyone else) know with your
+                    own website.
+                </p>
+                <p>
+                    Your website should have descriptions and pictures of the items you want and links to where they
+                    can be bought.
+                    You could prioritise the items with a star rating to say how much you want that item, or
+                    organise it by price so
+                    everyone can find the right gift for you!
+                </p>
+                <p>
+                    More advanced: Add some Christmas style and Christmas tunes to get everyone in the
+                    present-buying mood!
+                </p>
 
-                    <h3>Challenge: Science!</h3>
-                    <p>
-                        Chemistry, computing, psychology, microbiology, astronomy…. how many types of science can you
-                        think of?
-                    </p>
-                    <p>
-                        Make a guide to science: your website should have one page for each type of science. Explain
-                        what it is. Include
-                        pictures of famous scientists or discoveries, and links to other websites so that your readers
-                        can find out more.
-                    </p>
+                <h3>Challenge: Science!</h3>
+                <p>
+                    Chemistry, computing, psychology, microbiology, astronomy…. how many types of science can you
+                    think of?
+                </p>
+                <p>
+                    Make a guide to science: your website should have one page for each type of science. Explain
+                    what it is. Include
+                    pictures of famous scientists or discoveries, and links to other websites so that your readers
+                    can find out more.
+                </p>
 
-                    <h3>Halloween Challenge: Haunted House</h3>
-                    <p>
-                        Make a website game about a haunted house. Each webpage is a room in the house, and describes the spookiness happening in the room.
-                        The links on a room’s webpage take the player to other rooms nearby.
-                    </p>
-                    <p>
-                        The player starts outside the haunted house (on the website’s main page). They then choose which links to follow to take them
-                        though the haunted house, and out the back door!
-                    </p>
+                <h3>Halloween Challenge: Haunted House</h3>
+                <p>
+                    Make a website game about a haunted house. Each webpage is a room in the house, and describes
+                    the
+                    spookiness happening in the room.
+                    The links on a room’s webpage take the player to other rooms nearby.
+                </p>
+                <p>
+                    The player starts outside the haunted house (on the website’s main page). They then choose which
+                    links to follow to take them
+                    though the haunted house, and out the back door!
+                </p>
 
-                    <h3>Olympics Challenge</h3>
-                    <p>
-                        So you watched the Olympics? There were loads of cool sports: swimming, triathlon, fencing, …
-                    </p>
-                    <p>
-                        Make a website about the Olympics. You can have pages about different sports and athletes. Maybe a page about Rio de Janeiro in Brazil. Include pictures and videos (try including a youtube video).
-                        Link to other websites where your readers can find out more.
-                    </p>
-                </div>
+                <h3>Olympics Challenge</h3>
+                <p>
+                    So you watched the Olympics? There were loads of cool sports: swimming, triathlon, fencing, …
+                </p>
+                <p>
+                    Make a website about the Olympics. You can have pages about different sports and athletes. Maybe
+                    a
+                    page about Rio de Janeiro in Brazil. Include pictures and videos (try including a youtube
+                    video).
+                    Link to other websites where your readers can find out more.
+                </p>
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading real">
-                <h2>
-                    <a data-toggle="collapse" name="code">Coding (in Python or Javascript)</a>
-                </h2>
-            </div>
-            <div id="real" class="panel-collapse collapse in">
-                <div class="panel-body">
+        <div id="code" class="panel panel-default">
+            <a name="code"></a>
+            <div class="panel-heading"><h2>Coding (in Python or Javascript)</h2></div>
+            <div class="panel-body">
 
-                    <h3>Before you start</h3>
-                    <p>If you’ve never coded in Javascript or Python before, do our <a href="earn-badges.html#code">coding
-                        badges</a> to get started.</p>
-                    <p>If you have coded in Javascript or Python before, pick a challenge below and do it!</p>
-                    <p>Here are two online environments where you can start coding immediately (or use whatever setup
-                        you want):
-                    <ul>
-                        <li><a href="http://jsfiddle.net/yg21919x/18/" target="_blank">Javascript</a></li>
-                        <li><a href="http://bit.do/coderdojo-py-start" target="_blank">Python</a></li>
-                    </ul>
-                    </p>
-                    <p></p>
+                <h3>Before you start</h3>
+                <p>If you’ve never coded in Javascript or Python before, do our <a href="earn-badges.html#code">coding
+                    badges</a> to get started.</p>
+                <p>If you have coded in Javascript or Python before, pick a challenge below and do it!</p>
+                <p>Here are two online environments where you can start coding immediately (or use whatever setup
+                    you want):
+                <ul>
+                    <li><a href="http://jsfiddle.net/yg21919x/18/" target="_blank">Javascript</a></li>
+                    <li><a href="http://bit.do/coderdojo-py-start" target="_blank">Python</a></li>
+                </ul>
+                </p>
+                <p></p>
 
-                    <h3>Challenge: Reversing Names</h3>
-                    <p>Write a program that asks someone their name, then outputs it in reverse. So “GREG” becomes
-                        “GERG”.</p>
+                <h3>Challenge: Reversing Names</h3>
+                <p>Write a program that asks someone their name, then outputs it in reverse. So “GREG” becomes
+                    “GERG”.</p>
 
-                    <h3>Challenge: Capital Cities</h3>
-                    <p>
-                        Write a program that asks for a country name, then outputs the capital city. So “France” returns
-                        “Paris”.
-                    </p>
-                    <p>
-                        Getting started:
-                    <ul>
-                        <li>Start off with just 3 known country/capital combinations: get the information from
-                            wikipedia.
-                        </li>
-                        <li>You’ll need to handle an unknown country being entered: just return “unknown country”.</li>
-                    </ul>
-                    </p>
-                    <p>
-                        More advanced:
-                    <ul>
-                        <li>Expand to lots of countries. Considering using the ‘hash table’ data structure.</li>
-                        <li>Can your program handle “ fRanCE “, and still return “Paris”?</li>
-                        <li>Can your program do the reverse, so “Paris” returns “France”?</li>
-                    </ul>
-                    </p>
+                <h3>Challenge: Capital Cities</h3>
+                <p>
+                    Write a program that asks for a country name, then outputs the capital city. So “France” returns
+                    “Paris”.
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>Start off with just 3 known country/capital combinations: get the information from
+                        wikipedia.
+                    </li>
+                    <li>You’ll need to handle an unknown country being entered: just return “unknown country”.</li>
+                </ul>
+                </p>
+                <p>
+                    More advanced:
+                <ul>
+                    <li>Expand to lots of countries. Considering using the ‘hash table’ data structure.</li>
+                    <li>Can your program handle “ fRanCE “, and still return “Paris”?</li>
+                    <li>Can your program do the reverse, so “Paris” returns “France”?</li>
+                </ul>
+                </p>
 
-                    <h3>Challenge: Rock Paper Scissors</h3>
-                    <p>
-                        Write a program that plays ‘rock paper scissors’:
-                    <ul>
-                        <li>Ask the player to pick ‘rock’, ‘paper’ or ‘scissors’</li>
-                        <li>Have the computer choose its move (get it to make a random choice)</li>
-                        <li>Compare the choices and decide who wins</li>
-                        <li>Print the results</li>
-                    </ul>
-                    </p>
-                    <p>
-                    <p>
-                        More advanced:
-                    <ul>
-                        <li>Let the player play again.</li>
-                        <li>Keep a record of the score e.g. (Player: 3 / Computer: 6)</li>
-                    </ul>
-                    </p>
+                <h3>Challenge: Rock Paper Scissors</h3>
+                <p>
+                    Write a program that plays ‘rock paper scissors’:
+                <ul>
+                    <li>Ask the player to pick ‘rock’, ‘paper’ or ‘scissors’</li>
+                    <li>Have the computer choose its move (get it to make a random choice)</li>
+                    <li>Compare the choices and decide who wins</li>
+                    <li>Print the results</li>
+                </ul>
+                </p>
+                <p>
+                <p>
+                    More advanced:
+                <ul>
+                    <li>Let the player play again.</li>
+                    <li>Keep a record of the score e.g. (Player: 3 / Computer: 6)</li>
+                </ul>
+                </p>
 
-                    <h3>Challenge: Hangman</h3>
-                    <p>
-                        Write a program that plays ‘hangman’. The player guesses letters to complete a secret word.
-                        You decide how many turns they get. On each turn:
-                    <ul>
-                        <li>The player guesses a letter</li>
-                        <li>The computer prints out the word, but shows ‘@‘ for letters not guessed yet. So if the
-                            word was ‘dog’ and the player had only guessed ‘d’, the computer would show: ‘d@@’
-                        </li>
-                        <li>If the player has guessed all letters in the word, it prints the whole word and ‘you
-                            won!’
-                        </li>
-                        <li>If the player hasn’t won, the computer prints ‘number of turns remaining: ___’, and the player has another go.</li>
-                    </ul>
-                    </p>
+                <h3>Challenge: Hangman</h3>
+                <p>
+                    Write a program that plays ‘hangman’. The player guesses letters to complete a secret word.
+                    You decide how many turns they get. On each turn:
+                <ul>
+                    <li>The player guesses a letter</li>
+                    <li>The computer prints out the word, but shows ‘@‘ for letters not guessed yet. So if the
+                        word was ‘dog’ and the player had only guessed ‘d’, the computer would show: ‘d@@’
+                    </li>
+                    <li>If the player has guessed all letters in the word, it prints the whole word and ‘you
+                        won!’
+                    </li>
+                    <li>If the player hasn’t won, the computer prints ‘number of turns remaining: ___’, and the
+                        player
+                        has another go.
+                    </li>
+                </ul>
+                </p>
 
-                    <h3>Challenge: Sentence Analyser</h3>
-                    <p>
-                        Write a program that counts the number of words in a sentence. For example, for “i am an example sentence”, the program would print 5 (words).
-                    </p>
-                    <p>
-                        Then improve your sentence analyser:
-                    <ul>
-                        <li>Print out the total number of vowels in the sentence. So we’d print 9 for the example.</li>
-                        <li>Print out counts for each vowel. For the example sentence, there is 1 ‘i’ and 3 ‘a’s and 5 ‘e’s.</li>
-                        <li>Make sure your program works for lowercase and uppercase letters. So ‘A’ and ‘a’ should be treated the same. The phrase ‘A cat’ has two vowels, which are both the letter ‘a’.</li>
-                    </ul>
-                    </p>
+                <h3>Challenge: Sentence Analyser</h3>
+                <p>
+                    Write a program that counts the number of words in a sentence. For example, for “i am an example
+                    sentence”, the program would print 5 (words).
+                </p>
+                <p>
+                    Then improve your sentence analyser:
+                <ul>
+                    <li>Print out the total number of vowels in the sentence. So we’d print 9 for the example.</li>
+                    <li>Print out counts for each vowel. For the example sentence, there is 1 ‘i’ and 3 ‘a’s and 5
+                        ‘e’s.
+                    </li>
+                    <li>Make sure your program works for lowercase and uppercase letters. So ‘A’ and ‘a’ should be
+                        treated the same. The phrase ‘A cat’ has two vowels, which are both the letter ‘a’.
+                    </li>
+                </ul>
+                </p>
 
-                    <h3>Challenge: Calculator</h3>
-                    <p>
-                        Write a calculator that can add, subtract, multiply or divide two numbers. Make the calculator accept the two numbers
-                        and command one line at a time. Like:
-                    <ul>
-                        <li>2</li>
-                        <li>+</li>
-                        <li>3</li>
-                        <li>And then the calculator outputs 5</li>
-                    </ul>
-                    </p>
-                    <p>More advanced: make the calculator accept everything on one line, like: 2 + 3.</p>
+                <h3>Challenge: Calculator</h3>
+                <p>
+                    Write a calculator that can add, subtract, multiply or divide two numbers. Make the calculator
+                    accept the two numbers
+                    and command one line at a time. Like:
+                <ul>
+                    <li>2</li>
+                    <li>+</li>
+                    <li>3</li>
+                    <li>And then the calculator outputs 5</li>
+                </ul>
+                </p>
+                <p>More advanced: make the calculator accept everything on one line, like: 2 + 3.</p>
 
-                    <h3>Challenge: Fizz Buzz</h3>
-                    <p>Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and
-                        for the multiples of five print "Buzz". For numbers which are multiples of both three and five print “FizzBuzz".</p>
+                <h3>Challenge: Fizz Buzz</h3>
+                <p>Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz"
+                    instead of the number and
+                    for the multiples of five print "Buzz". For numbers which are multiples of both three and five
+                    print
+                    “FizzBuzz".</p>
 
-                    <h3>Challenge: Fibonacci</h3>
-                    <p>Write a program that prints out the first 100 numbers in the Fibonacci sequence. In the Fibonacci sequence the first two numbers are zero and one.
-                        Every number after that is the sum of the previous 2 numbers. So the first seven numbers are: 0 1 1 2 3 5 8.</p>
+                <h3>Challenge: Fibonacci</h3>
+                <p>Write a program that prints out the first 100 numbers in the Fibonacci sequence. In the Fibonacci
+                    sequence the first two numbers are zero and one.
+                    Every number after that is the sum of the previous 2 numbers. So the first seven numbers are: 0
+                    1 1
+                    2 3 5 8.</p>
 
-                    <h3>Challenge: Secret Spy Messages</h3>
-                    <p>
-                        Write a program that turns a sentence into a secret message by replacing each letter with the next letter. So the letter ‘a’ is
-                        replaced by ‘b’, and ‘f’ by ‘g’, etc. Here’s an example:
-                    <ul>
-                        <li>Original sentence: ‘attack at dawn’</li>
-                        <li>Secret message: ‘buubdl bu ebxo’
-                    </ul>
-                    </p>
-                    <p>Hint: letters are represented inside a computer as numbers. This is called ASCII: so an ‘a’ in ASCII is 97. You’ll need to convert the sentence letters
-                        into ASCII, do some addition, then convert them back again. Google to learn about ASCII, and how you convert letters to ASCII (and back again)
-                        in your particular programming language.</p>
-                    <p>More advanced: so you’ve written a program that ‘encrypts’ a sentence into a secret message. Write a ‘decrypt’ program that turns a secret message back into the original sentence.</p>
-                </div>
+                <h3>Challenge: Secret Spy Messages</h3>
+                <p>
+                    Write a program that turns a sentence into a secret message by replacing each letter with the
+                    next
+                    letter. So the letter ‘a’ is
+                    replaced by ‘b’, and ‘f’ by ‘g’, etc. Here’s an example:
+                <ul>
+                    <li>Original sentence: ‘attack at dawn’</li>
+                    <li>Secret message: ‘buubdl bu ebxo’
+                </ul>
+                </p>
+                <p>Hint: letters are represented inside a computer as numbers. This is called ASCII: so an ‘a’ in
+                    ASCII
+                    is 97. You’ll need to convert the sentence letters
+                    into ASCII, do some addition, then convert them back again. Google to learn about ASCII, and how
+                    you
+                    convert letters to ASCII (and back again)
+                    in your particular programming language.</p>
+                <p>More advanced: so you’ve written a program that ‘encrypts’ a sentence into a secret message.
+                    Write a
+                    ‘decrypt’ program that turns a secret message back into the original sentence.</p>
             </div>
         </div>
 
     </div>
-
-    <!-- New badge template. Add name where xxx and colour with css at top
-
-    .panel > .xxx {
-        background-image: none;
-        background: #5D89BA;
-        color: #FFFFFF;
-    }
-
-    <div class="panel panel-default">
-        <div class="panel-heading xxx">
-            <h2>
-            <a data-toggle="collapse" href="#xxx"> </a>
-            </h2>
-        </div>
-        <div id="xxx" class="panel-collapse collapse in">
-        <div class="panel-body">
-            <h3></h3>
-            <p>
-
-            </p>
-        </div>
-        </div>
-    </div>
-    -->
 
     <hr>
     <div class="row">
