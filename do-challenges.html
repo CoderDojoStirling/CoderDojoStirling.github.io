@@ -90,6 +90,36 @@
                     Scratch before, pick a challenge below and do it!
                 </p>
 
+                <h3>Challenge: Parachute jump</h3>
+                <p>
+                    Make game about someone doing a parachute jump, and having to dodge moving clouds. If they hit a cloud, they
+                    lose the game.
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>Draw your parachutist</li>
+                    <li>Draw some clouds - you'll need a few!</li>
+                    <li>To make the game, put the parachutist near the top of the screen (they won't move). Now
+                        make each cloud move from the bottom of the screen to the top, and it will look like the
+                        parachutist is falling! There is a trick to this, as you want each cloud to start
+                        off-screen at the bottom, and move up until it goes off-screen at the top. When the cloud
+                        gets to the top, move it to the bottom again!:
+                        <ul>
+                            <li>To start the cloud off-screen at the bottom, set y to be less than -180 (try -200)</li>
+                            <li>To check when the cloud has gone off-screen at the top, check if y is more than 180
+                                (try 200)</li>
+                            <li>Scratch doesn't like putting sprites off-screen, but you can trick it: every time
+                                you move the sprite's x and y, put "set size to 200%" before, and "set size to 100%" after.
+                                Strange, but this seems to work!</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+                <p>More advanced: make things harder, with more clouds moving randomly at different speeds. You could
+                   also keep score by counting how many clouds the parachutist dodged. Or make things look cooler by
+                   changing the background: what about thunder and lightning, or snow?</p>
+
                 <h3>Challenge: I Wanna Be a Rockstar</h3>
                 <p>
                     Make a theatre stage with a band on it: a drummer, a guitarist, a singer, and anyone else you want.
