@@ -75,6 +75,8 @@
         <li>Do it!</li>
     </ol>
     </p>
+
+    <p>Newest challenges: <a href="#parachute-jump">Parachute Jump</a> (Scratch), <a href="#animal-noises">Animal Noises</a> (Websites), and <a href="#anagram-detector">Anagram Detector</a> (Coding).</p>
     <br/>
 
     <div class="panel-group">
@@ -89,36 +91,6 @@
                     do our <a href="earn-badges.html#scratch">Scratch badges</a> to get started. If you have used
                     Scratch before, pick a challenge below and do it!
                 </p>
-
-                <h3>Challenge: Parachute jump</h3>
-                <p>
-                    Make game about someone doing a parachute jump, and having to dodge moving clouds. If they hit a cloud, they
-                    lose the game.
-                </p>
-                <p>
-                    Getting started:
-                <ul>
-                    <li>Draw your parachutist</li>
-                    <li>Draw some clouds - you'll need a few!</li>
-                    <li>To make the game, put the parachutist near the top of the screen (they won't move). Now
-                        make each cloud move from the bottom of the screen to the top, and it will look like the
-                        parachutist is falling! There is a trick to this, as you want each cloud to start
-                        off-screen at the bottom, and move up until it goes off-screen at the top. When the cloud
-                        gets to the top, move it to the bottom again!:
-                        <ul>
-                            <li>To start the cloud off-screen at the bottom, set y to be less than -180 (try -200)</li>
-                            <li>To check when the cloud has gone off-screen at the top, check if y is more than 180
-                                (try 200)</li>
-                            <li>Scratch doesn't like putting sprites off-screen, but you can trick it: every time
-                                you move the sprite's position (x and y), put "set size to 200%" before, and "set size to 100%" after.
-                                Strange, but this seems to work!</li>
-                        </ul>
-                    </li>
-                </ul>
-                </p>
-                <p>More advanced: make things harder, with more clouds moving randomly at different speeds. You could
-                   also keep score by counting how many clouds the parachutist dodged. Or make things look cooler by
-                   changing the background: what about thunder and lightning, or snow?</p>
 
                 <h3>Challenge: I Wanna Be a Rockstar</h3>
                 <p>
@@ -280,6 +252,36 @@
                 <p>More advanced: Make the graveyard more spooky. What about making an invisible ghost appear when the
                     player hits a gravestone? Maybe it says “boo!” (record the sound effect)</p>
 
+                <a name="parachute-jump"></a>
+                <h3 name="parachute-jump">Challenge: Parachute Jump</h3>
+                <p>
+                    Make game about someone doing a parachute jump, and having to dodge moving clouds. If they hit a cloud, they
+                    lose the game.
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>Draw your parachutist</li>
+                    <li>Draw some clouds - you'll need a few!</li>
+                    <li>To make the game, put the parachutist near the top of the screen (they won't move). Now
+                        make each cloud move from the bottom of the screen to the top, and it will look like the
+                        parachutist is falling! There is a trick to this, as you want each cloud to start
+                        off-screen at the bottom, and move up until it goes off-screen at the top. When the cloud
+                        gets to the top, move it to the bottom again!:
+                        <ul>
+                            <li>To start the cloud off-screen at the bottom, set y to be less than -180 (try -200)</li>
+                            <li>To check when the cloud has gone off-screen at the top, check if y is more than 180
+                                (try 200)</li>
+                            <li>Scratch doesn't like putting sprites off-screen, but you can trick it: every time
+                                you move the sprite's position (x and y), put "set size to 200%" before, and "set size to 100%" after.
+                                Strange, but this seems to work!</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+                <p>More advanced: make things harder, with more clouds moving randomly at different speeds. You could
+                    also keep score by counting how many clouds the parachutist dodged. Or make things look cooler by
+                    changing the background: what about thunder and lightning, or snow?</p>
             </div>
         </div>
 
@@ -386,6 +388,28 @@
                     video).
                     Link to other websites where your readers can find out more.
                 </p>
+
+                <a name="animal-noises"></a>
+                <h3>Animal Noises</h3>
+                <p>
+                    Make a webpage with lots of animal pictures. When you click on a picture ("sheep"), an alert box
+                    should pop up with the animal noise ("baa").
+                </p>
+                <p>
+                    This challenge involves adding some javascript to your webpage. You'll need to get two parts working
+                    (do some searching online!):
+                    <ul>
+                        <li>To make something happen when someone clicks on an image, you will need an <a target="_blank" href="https://www.google.co.uk/search?q=onclick+attribute">onclick attribute</a></li>
+                        <li>To popup the animal noise, you will need an <a target="_blank" href="https://www.google.co.uk/search?q=alert+box">alert box</a>
+                    </ul>
+
+                    More advanced:
+                    <ul>
+                        <li>When the animal image is clicked, play the actual animal sound!
+                            Try searching for <a target="_blank" href="https://www.google.co.uk/search?q=play+a+sound+on+click&oq=play+a+sound+on+click">play a sound on click</a>
+                            for help on how to do this.</li>
+                    </ul>
+                </p>
             </div>
         </div>
 
@@ -406,38 +430,6 @@
                 </ul>
                 </p>
                 <p></p>
-
-                <h3>Challenge: Anagram Detector</h3>
-                <p>
-                    Write a program that outputs whether two phrases are anagrams of one another. For example:
-                    <ul>
-                        <li>"Clint Eastwood" is an anagram of "Old West Action"</li>
-                        <li>"parliament" is NOT an anagram of "partial man"</li>
-                    </ul>
-                </p>
-                <p>
-                    Getting started:
-                <ul>
-                    <li>Start off with a program which asks for two phrases, then outputs the result like above</li>
-                    <li>Here are some examples to test your program with:
-                        <br>
-                        Anagrams:
-                        <ul>
-                            <li>"wisdom" and "mid sow"</li>
-                            <li>"Seth Rogan" and "Gathers No"</li>
-                            <li>"Schoolmaster" and "The classroom"</li>
-                            <li>"Vacation Times" and "I'm Not as Active"</li>
-                        </ul>
-                        Not anagrams:
-                        <ul>
-                            <li>"Reddit" and "Eat Dirt"</li>
-                            <li>"Astronomers" and "Moon starer"</li>
-                            <li>"Dormitory" and "Dirty Rooms"</li>
-                        </ul>
-                    </li>
-                <li>Thanks to <a href="https://www.reddit.com/r/dailyprogrammer/comments/52enht/20160912_challenge_283_easy_anagram_detector/">Reddit dailyprogrammer</a></li>
-                </ul>
-                </p>
 
                 <h3>Challenge: Reversing Names</h3>
                 <p>Write a program that asks someone their name, then outputs it in reverse. So “GREG” becomes
@@ -571,6 +563,39 @@
                 <p>More advanced: so you’ve written a program that ‘encrypts’ a sentence into a secret message.
                     Write a
                     ‘decrypt’ program that turns a secret message back into the original sentence.</p>
+
+                <a name="anagram-detector"></a>
+                <h3>Challenge: Anagram Detector</h3>
+                <p>
+                    Write a program that outputs whether two phrases are anagrams of one another. For example:
+                <ul>
+                    <li>"Clint Eastwood" is an anagram of "Old West Action"</li>
+                    <li>"parliament" is NOT an anagram of "partial man"</li>
+                </ul>
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>Start off with a program which asks for two phrases, then outputs the result like above</li>
+                    <li>Here are some examples to test your program with:
+                        <br>
+                        Anagrams:
+                        <ul>
+                            <li>"wisdom" and "mid sow"</li>
+                            <li>"Seth Rogan" and "Gathers No"</li>
+                            <li>"Schoolmaster" and "The classroom"</li>
+                            <li>"Vacation Times" and "I'm Not as Active"</li>
+                        </ul>
+                        Not anagrams:
+                        <ul>
+                            <li>"Reddit" and "Eat Dirt"</li>
+                            <li>"Astronomers" and "Moon starer"</li>
+                            <li>"Dormitory" and "Dirty Rooms"</li>
+                        </ul>
+                    </li>
+                    <li>Thanks to <a href="https://www.reddit.com/r/dailyprogrammer/comments/52enht/20160912_challenge_283_easy_anagram_detector/">Reddit dailyprogrammer</a></li>
+                </ul>
+                </p>
             </div>
         </div>
 
