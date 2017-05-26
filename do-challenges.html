@@ -76,8 +76,7 @@
     </ol>
     </p>
 
-    <p><b>Newest challenges:</b> <a href="#insult-generator-scratch">Insult Generator</a> (Scratch), <a href="#bob-the-builder">Bob the Builder</a> (Websites),
-        and <a href="#reaction-time-coding">Reaction Time</a> (Coding).</p>
+    <p><b>Newest challenge: Insult Generator, in </b> <a href="#insult-generator-scratch">Scratch</a>, or in <a href="#insult-generator-coding">Code</a>.</p>
     <br/>
 
     <div class="panel-group">
@@ -884,6 +883,50 @@
                     <li>Let the player have multiple goes, and calculate their average reaction time.</li>
                     <li>Make the game more interesting by getting the user to enter a random letter between 'A' and 'Z',
                         rather than the space-bar.</li>
+                </ul>
+                </p>
+
+                <a name="insult-generator-coding"></a>
+                <h3>Challenge: Insult Generator</h3>
+                <p>
+                    Make a program that generates random insults :-) The program first asks for your name, then insults
+                    you. Here goes..
+                <ul>
+                    <li>"What's your name?"</li>
+                    <li>"Greg"</li>
+                    <li>"Hi Greg. You eat like a greasy baboon!". Or maybe "Hi Greg. You run like a purple hippo!"</li>
+                </ul>
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>When the program starts, ask the user for their name, then say hello ("Hi Greg").
+                    <li>Generating the insult is the tricky bit. Each insult is a sentence with the same structure:
+                        "Hi (Greg - name). You (eat - verb) like a (greasy - adjective) (baboon - noun). So we'll generate the insult
+                        by randomly picking a verb, adjective and noun, then making a sentence out of them:
+                        <ul>
+                            <li>Make a list of verbs. How about: eat, run and swim.</li>
+                            <li>Make a list of adjectives. How about: greasy, smelly, grumpy.</li>
+                            <li>Make a list of nouns. How about: baboon, cardboard box, dolphin.</li>
+                            <li>Now we'll generate the insult by randomly picking a word from each of the three lists, and combining them
+                                into a sentence.</li>
+                            <li>Go make some fun insults!</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+                <p>More advanced:
+                <ul>
+                    <li>Make the insults more complicated and longer. Use bigger lists of verbs, adjectives and nouns.</li>
+                    <li>Why stop with random sentence generation - try random story generation! Use the same approach,
+                        but your lists are now of whole sentences rather than single words. So define the story's standard structure,
+                        then randomly fill in story gaps with randomly picked sentences:
+                        <ul>
+                            <li>I was born (in Paris, under an autumn sky | with a tail | 3 days early).</li>
+                            <li>My mother (ate chips all day | loved to dance | howled at the moon).</li>
+                            <li>All I could do was (vacuum the cat | take up break dancing | cook bacon and eggs).</li>
+                        </ul>
+                    </li>
                 </ul>
                 </p>
             </div>
