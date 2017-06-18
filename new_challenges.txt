@@ -1,0 +1,74 @@
+Scratch
+
+To the moon
+
+Write a game about launching a rocket to the moon. The game should have
+three stages: one on Earth, one in space and one on the Moon.
+
+On Earth the player should launch the rocket. To do this the player must
+press the space 10 tens times. Then the rocket should fly into the air. Once
+the rocket reaches the edge of the screen, the game should switch to the
+space stage.
+
+In space the player should travel towards the moon. There should be UFOs and
+asteroids flying around the screen. If the player crashes into any of these
+they lose the game. When the player touches the moon; the game should switch
+to the moon stage.
+
+On the moon the player should start at the top of the screen and have to land
+on the target positioned at the bottom of the screen. If the player hits the
+target they win, otherwise if they miss it they lose the game.
+
+
+Coding Challenge
+
+Triangles
+
+Write a small program that takes in a number and then prints off a triangle
+of that height. Here is an example:
+
+Please enter the height of the triangle:
+5
+
+Output:
+    #
+   ##
+  ###
+ ####
+#####
+
+The program should only accept numbers that are whole and are between 3 and 10.
+
+Advanced version
+
+Once you've finished the basic version. Instead of printing off a right angle triangle
+try and print off an equilateral triangle. Example below:
+
+Please enter the height of the triangle:
+5
+
+Output:
+    ##
+   ####
+  ######
+ ########
+##########
+
+Website
+
+My favourite game. Write a small website about your favourite game(s). The website
+should contains:
+
+A short of description of the game. What's about it? What are the goals of the game?
+How long does it take to complete? Is there a story? Who's it developed by? And
+any other relevant.
+
+A link to the game site
+
+Images and videos of gameplay
+
+Advanced:
+
+Pick a browser game you like and write a new page for it with all the details specified
+above. Though also try and place the game in page.
+Hint: Lookup what an iFrame is
