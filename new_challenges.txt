@@ -10,15 +10,33 @@ press the space 10 tens times. Then the rocket should fly into the air. Once
 the rocket reaches the edge of the screen, the game should switch to the
 space stage.
 
-In space the player should travel towards the moon. There should be UFOs and
-asteroids flying around the screen. If the player crashes into any of these
-they lose the game. When the player touches the moon; the game should switch
-to the moon stage.
+In space the player should travel towards the moon. The player should start
+at the bottom of the screen. There should be UFOs and asteroids flying around the screen.
+If the player crashes into any of these they lose the game.
+When the player touches the moon; the game should switch to the moon stage.
 
 On the moon the player should start at the top of the screen and have to land
 on the target positioned at the bottom of the screen. If the player hits the
 target they win, otherwise if they miss it they lose the game.
 
+Hints:
+  1. For a spaceship sprite look in the sprite library (they'll be found in flying)
+  2. To count the number of times space has been pressed, create a new variable
+     for the rocket sprite (variables are found in the data section).
+     Then every time the player hits space add one to your variable. If you
+     don't know how to use variable ask a mentor
+  3. In the rocket, have a while loop checking whether the space has been
+     pressed ten times (using the variable we wrote).
+     In the loop have an if statement checking what stage (background)
+     we're using. If we are using the one for Earth or Space have the rocket
+     move upwards, else if we're on the moon. We're about to land so we
+     want the rocket to move down the screen.
+  4. To check whether the rocket has reached the edge of the screen, check
+     whether the y coordinate is bigger than 180. If it is switch the background
+     and position the rocket correctly.
+
+NOTE: I'm not 100% sure if this too complicated. I may implement it
+check...
 
 Coding Challenge
 
