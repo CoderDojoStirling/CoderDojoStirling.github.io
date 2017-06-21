@@ -25,6 +25,13 @@
             background: #CB4154;
             color: #FFFFFF;
         }
+
+        pre {
+          border-style: none;
+          background-color: inherit;
+          font-family: inherit;
+
+        }
     </style>
 </head>
 <body>
@@ -76,7 +83,23 @@
     </ol>
     </p>
 
-    <p><b>Newest challenge:</b> Insult Generator, in <a href="#insult-generator-scratch">Scratch</a> or in <a href="#insult-generator-coding">Code</a>.</p>
+    <p>
+      <b>Newest challenges:</b>
+      <br>
+      <p>
+        Scratch:
+        <a href="#to-the-moon">To the moon</a>
+      </p>
+      <p>
+        Coding:
+        <a href="#triangles">Triangles</a>
+      </p>
+      <p>
+        Website:
+        <a href="#my-favourite-game">My favourite game</a>
+      </p>
+
+     </p>
     <br/>
 
     <div class="panel-group">
@@ -417,6 +440,57 @@
                 </ul>
                 </p>
 
+                <a name="to-the-moon"></a>
+                <h3>Challenge: To the Moon</h3>
+                <p>
+                  Write a game about flying to the moon. There should be three stages in your
+                  game: one set on Earth; one in space and one on the moon.
+                </p>
+                <p>
+                  To start the rocket the player should press the space bar five times. Then the
+                  rocket should fly into the air. When the rocket reaches the top of the screen,
+                  the background should be changed to the next background (e.g. from Earth to space). Along with placing the
+                  rocket at the bottom of the screen again. The player should be
+                  able to move the rocket left and right using the arrow keys. There should be
+                  Aliens and other space-ships flying around. If the player touches one of these
+                  they lose the game. When the player reaches the last stage (the moon) a target
+                  should appear. The target should be placed at the top of the screen.
+                  If the player hits the target then they win the game.
+                </p>
+
+                <h4>Hints</h4>
+                <ul>
+                  <li>
+                    <p>
+                      For a spaceship sprite look in the sprite library (they'll be found in flying).
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      To count the number of times the player has pressed space make a variable
+                      (found under data).
+                      Then every time space is pressed add one to this variable. Use the wait until
+                      block to make the sure the rocket doesn't fly off until the variable equals five.
+                      Ask a mentor for help if you haven't used variables before.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      To change the background check whether the y coordinate is bigger than 180,
+                      then use the switch background block.
+                    </p>
+                  </li>
+                </ul>
+
+                <h4>Advance</h4>
+                <p>
+                  If you manage to complete the above try and
+                  place the target at the bottom of the screen. Then have the
+                  rocket start at the top and move down the screen (towards
+                  the target).
+                </p>
             </div>
         </div>
 
@@ -603,6 +677,37 @@
                 I'm looking forward to what you come up with :-) Thanks, Bob"
                 </p>
 
+                <a name="my-favourite-game"></a>
+                <h3>Challenge: my favourite game</h3>
+                <p>
+                  My favourite game. Write a small website about your favourite game(s). The website
+                  should contains:
+                  <ul>
+                    <li>
+                      <p>
+                        A short of description of the game. What's about it? What are the goals of the game?
+                        How long does it take to complete? Is there a story? Who's it developed by? And
+                        any other relevant.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        A link to the game site
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Images and videos of gameplay
+                      </p>
+                    </li>
+                  </ul>
+                </p>
+                <p>
+                  <h4>Advanced</h4>
+                  Pick a browser game you like and write a new page for it with all the details specified
+                  above. Though also try and place the game in page.
+                  Hint: Lookup what an iFrame is
+                </p>
             </div>
         </div>
 
@@ -929,6 +1034,50 @@
                     </li>
                 </ul>
                 </p>
+
+                <a name="triangles"></a>
+                <h3>Triangles</h3>
+                <p>
+                  Write a small program that takes in a number and then prints off a triangle
+                  of that height. Here is an example:
+                </p>
+
+
+                  <pre>
+                  Please enter the height of the triangle:
+                  5
+
+                  Output:
+                           #
+                         ##
+                       ###
+                     ####
+                   #####
+                </pre>
+                <p>
+                  The program should only accept whole numbers between 3 and 10.
+                </p>
+                <br>
+                <h4>Advanced version</h4>
+                <p>
+
+                  Once you've finished the basic version, try and produce the
+                  following output:
+                  <pre>
+                    Please enter the height of the triangle:
+                    5
+
+                    Output:
+                              ##
+                            ####
+                          ######
+                        ########
+                      ##########
+
+
+                  </pre>
+                </p>
+
             </div>
         </div>
 
@@ -974,4 +1123,4 @@
 
 </div>
 </body>
-</html>                                
+</html>
