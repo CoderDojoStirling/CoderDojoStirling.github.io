@@ -88,15 +88,15 @@
       <br>
       <p>
         Scratch:
-        <a href="#to-the-moon">To the moon</a>
+        <a href="#balloons">Balloons</a>
       </p>
       <p>
         Coding:
-        <a href="#triangles">Triangles</a>
+        <a href="#greedy-shopkeeper">Greedy shop keeper</a>
       </p>
       <p>
         Website:
-        <a href="#my-favourite-game">My favourite game</a>
+        <a href="#my-summer-holiday">My summer holiday</a>
       </p>
 
      </p>
@@ -492,6 +492,30 @@
                   the target).
                 </p>
             </div>
+
+            <a name="balloons"></a>
+            <h3>Balloons</h3>
+            <p>
+              Write a small game about popping balloons. In the game the
+              balloons should float from the bottom to the top of the screen. When
+              the player clicks on a balloon then it should disappear from the screen,
+              and a popping sound should be played. Then one should be added to their
+              score.
+              There should be other items floating up the screen; if the player
+              clicks on any of these they should lose a point.
+            </p>
+            <h4>Advanced</h4>
+            <ul>
+              <li>
+                If the player's score falls below zero then a game over screen
+                should appear.
+              </li>
+              <li>
+                Add a lives system to the game. If the player clicks on something
+                that isn't a balloon then they lose a life. When the player
+                runs out lives they lose the game.
+              </li>
+            </ul>
         </div>
 
         <div id="web" class="panel panel-default">
@@ -707,6 +731,16 @@
                   Pick a browser game you like and write a new page for it with all the details specified
                   above. Though also try and place the game in page.
                   Hint: Lookup what an iFrame is
+                </p>
+
+                <a name="my-summer-holiday"></a>
+                <h3>What I did on my summer holiday</h3>
+                <p>
+                  Write a website about your summer holiday. The site should have
+                  a page for each activity you have done. Every page should have
+                  a brief description of what you did, who you were with and where
+                  you were. Along with some pictures of the place. Every page should
+                  link to the others.
                 </p>
             </div>
         </div>
@@ -1078,6 +1112,40 @@
                   </pre>
                 </p>
 
+                <a name="greedy-shopkeeper"></a>
+                <h3>Greedy shopkeeper</h3>
+                <p>
+                  Write a small program that takes an amount of change, and then
+                  works out the minimal coins required to make it. You may only
+                  use the: 50, 20, 10, 5, 2, and 1 pence coins.
+                </p>
+                <h4>Example</h4>
+                <pre>
+                  Input:
+                    0.73
+
+                  Output:
+                    1 x 50
+                    1 x 20
+                    1 x 2
+                    1 x 1
+                </pre>
+                <p>
+                  The program should only accept positive numbers and the input
+                  must never be bigger or equal to one.
+                </p>
+                <h4>Advanced</h4>
+                <ul>
+                  <li>
+                    When formatting the output avoid using string concatenation
+                    (i.e. "str1, " + "str2" becomes "str1, str2"), instead
+                    look up how to use .format() in python or `` (the grave accent) in JS.
+                  </li>
+                  <li>
+                    Let the program accept inputs bigger than one. Now you may
+                    use the one and two pound coins. As well as the previous coins.
+                  </li>
+                </ul>
             </div>
         </div>
 
