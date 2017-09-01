@@ -88,7 +88,7 @@
       <br>
       <p>
         Scratch:
-        <a href="#balloons">Balloons</a>
+        <a href="#back-to-school-supplies">Back to school supplies</a>
       </p>
       <p>
         Website:
@@ -490,31 +490,70 @@
                   rocket start at the top and move down the screen (towards
                   the target).
                 </p>
-            </div>
 
-            <a name="balloons"></a>
-            <h3>Balloons</h3>
-            <p>
-              Write a small game about popping balloons. In the game the
-              balloons should float from the bottom to the top of the screen. When
-              the player clicks on a balloon then it should disappear from the screen,
-              and a popping sound should be played. Then one should be added to their
-              score.
-              There should be other items floating up the screen; if the player
-              clicks on any of these they should lose a point.
-            </p>
-            <h4>Advanced</h4>
-            <ul>
-              <li>
-                If the player's score falls below zero then a game over screen
-                should appear.
-              </li>
-              <li>
-                Add a lives system to the game. If the player clicks on something
-                that isn't a balloon then they lose a life. When the player
-                runs out lives they lose the game.
-              </li>
-            </ul>
+
+                <a name="balloons"></a>
+                <h3>Balloons</h3>
+                <p>
+                    Write a small game about popping balloons. In the game the
+                    balloons should float from the bottom to the top of the screen. When
+                    the player clicks on a balloon then it should disappear from the screen,
+                    and a popping sound should be played. Then one should be added to their
+                    score.
+                    There should be other items floating up the screen; if the player
+                    clicks on any of these they should lose a point.
+                </p>
+                <h4>Advanced</h4>
+                <ul>
+                    <li>
+                        If the player's score falls below zero then a game over screen
+                        should appear.
+                    </li>
+                    <li>
+                        Add a lives system to the game. If the player clicks on something
+                        that isn't a balloon then they lose a life. When the player
+                        runs out lives they lose the game.
+                    </li>
+                </ul>
+
+                <a name="back-to-school-supplies"></a>
+                <h3>Back to School Supplies</h3>
+                <p>
+                    So you're going back to school - you'll need to make sure you've got a pencil, notebook
+                    and calculator.
+                </p>
+                <p>
+                    Fortunately, it's raining school supplies. Your sprite needs to walk back
+                    and forth across the screen catching pencils, notebooks and calculators in their
+                    backpack. Set up a timer so that players have one minute to collect as many as they can. Set up
+                    a counter to count how many items they catch.
+                </p>
+                <p>
+                    Hints:
+                <ul>
+                    <li>Draw a sprite of you in school uniform, with a backpack. You will need two costumes:
+                        one for when you are walking left, and another for walking right.</li>
+                    <li>Draw a pencil, notebook and calculator sprite. To make them fall from the sky, set their
+                        original location to a random position at the top of the screen, then move their location
+                        down the screen. When they get to the bottom, move them back to the top.</li>
+                    <li>An easy way to 'catch' a notebook (or whatever) in your backpack is to make the backpack a special
+                        color, then add an action to the notebook sprite when it touches the special color. So you could
+                        hide the notebook, and add a point to the score.
+                    </li>
+                </ul>
+                </p>
+                <h4>Advanced</h4>
+                <ul>
+                    <li>
+                        Add a second level with extra supplies. If any supplies hit the ground, they explode!
+                    </li>
+                    <li>
+                        Add something that you should not take to school. If the player catches that item accidentally,
+                        a message flashes up "You're in Detention!"
+                    </li>
+                </ul>
+
+            </div>
         </div>
 
         <div id="web" class="panel panel-default">
