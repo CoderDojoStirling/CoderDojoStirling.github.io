@@ -606,6 +606,45 @@
                         record your best ghost noise!</li>
                 </ul>
                 </p>
+
+                <a name="santa-present-drop"></a>
+                <h3>Santa Present Drop</h3>
+                <p>
+                    Santa needs help dropping presents down chimneys. Make a game where Santa flies across the sky
+                    over some houses with chimneys. When the mouse is clicked, Santa drops a present which falls downwards.
+                    If the present hits a chimney, you score 1 point. If the present hits something else (like a roof),
+                    you score nothing. In either case, the present vanishes, and you get to try again. You win once you've
+                    scored 10 points.
+                </p>
+                <p>
+                    Hints:
+                    <ul>
+                        <li>You'll need a Santa sprite. Make him fly across the top of the screen. When Santa hits the edge of the
+                            screen, make him fly in the opposite direction.</li>
+                        <li>You'll need a sprite of some houses with chimneys. Use two different colours for the chimney tops
+                            and the rest of the houses.
+                        </li>
+                        <li>You'll need a present sprite. When the mouse is pressed, make the present appear at Santa's location.
+                            Then move its position gradually down the screen. You can work out if the present lands on a chimney.
+                            top by using "if touching chimney top colour". You can check if the present lands on a house instead
+                            by using "if touching house colour".
+                        </li>
+                        <li>You'll need a variable to keep track of the score. Add 1 to the score when a present drops on a
+                            chimney top.
+                        </li>
+                    </ul>
+                </p>
+                <h4>Advanced</h4>
+                <ul>
+                    <li>
+                        Add fun sounds: Santa saying "ho ho ho", a "yay!" noise when a present hits a chimney, and "boo hoo!"
+                        when it doesn't
+                    </li>
+                    <li>
+                        Add levels: once you score 10 points, move up one level. Santa should fly faster as each level increases.
+                        You will need a second "level" variable for this.
+                    </li>
+                </ul>
             </div>
         </div>
 
