@@ -88,15 +88,15 @@
       <br>
       <p>
         Scratch:
-        <a href="#halloween-night">Halloween Night</a>
+        <a href="#santa-present-drop">Santa Present Drop</a>
       </p>
       <p>
         Website:
-        <a href="#fun-with-fonts">Fun With Fonts</a>
+        <a href="#twine-stories">Make Stories with Twine</a>
       </p>
       <p>
         Coding:
-        <a href="#speaking-clock">Speaking Clock</a>
+        <a href="#12-days-xmas">Twelve Days of Christmas</a>
       </p>
      </p>
     <br/>
@@ -606,6 +606,45 @@
                         record your best ghost noise!</li>
                 </ul>
                 </p>
+
+                <a name="santa-present-drop"></a>
+                <h3>Santa Present Drop</h3>
+                <p>
+                    Santa needs help dropping presents down chimneys. Make a game where Santa flies across the sky
+                    over some houses with chimneys. When the mouse is clicked, Santa drops a present which falls downwards.
+                    If the present hits a chimney, you score 1 point. If the present hits something else (like a roof),
+                    you score nothing. In either case, the present vanishes, and you get to try again. You win once you've
+                    scored 10 points.
+                </p>
+                <p>
+                    Hints:
+                    <ul>
+                        <li>You'll need a Santa sprite. Make him fly across the top of the screen. When Santa hits the edge of the
+                            screen, make him fly in the opposite direction.</li>
+                        <li>You'll need a sprite of some houses with chimneys. Use two different colours for the chimney tops
+                            and the rest of the houses.
+                        </li>
+                        <li>You'll need a present sprite. When the mouse is pressed, make the present appear at Santa's location.
+                            Then move its position gradually down the screen. You can work out if the present lands on a chimney.
+                            top by using "if touching chimney top colour". You can check if the present lands on a house instead
+                            by using "if touching house colour".
+                        </li>
+                        <li>You'll need a variable to keep track of the score. Add 1 to the score when a present drops on a
+                            chimney top.
+                        </li>
+                    </ul>
+                </p>
+                <h4>Advanced</h4>
+                <ul>
+                    <li>
+                        Add fun sounds: Santa saying "ho ho ho", a "yay!" noise when a present hits a chimney, and "boo hoo!"
+                        when it doesn't
+                    </li>
+                    <li>
+                        Add levels: once you score 10 points, move up one level. Santa should fly faster as each level increases.
+                        You will need a second "level" variable for this.
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -872,6 +911,24 @@
                     </li>
                 </ul>
                 </p>
+
+                <a name="twine-stories"></a>
+                <h3>Make Stories With Twine</h3>
+                <p>
+                    <a target="_blank" href="https://twinery.org/2/#!/welcome">Twine</a> is an online tool for telling interactive stories.
+                    Here are two examples:
+                    <ul>
+                        <li><a target="_blank" href="http://philome.la/aronsonmax1/who-wants-ice-cream">Who Wants Ice Cream</a></li>
+                        <li><a target="_blank" href="http://philome.la/roscoecarrier/no-parents">No Parents</a></li>
+                    </ul>
+                    Make your own story using Twine. It's easy to use once you get the hang of it. Here are some useful guides:
+                    <ul>
+                        <li><a target="_blank" href="http://www.adamhammond.com/twineguide/">A Beginner's Guide to Twine 2.0</a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/playlist?list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d">Twine 2.0 tutorial</a></li>
+                        <li><a target="_blank" href="https://twinery.org/wiki/twine2:guide">Official Twine 2 Guide</a></li>
+                    </ul>
+                </p>
+
             </div>
         </div>
 
@@ -1344,35 +1401,73 @@
                     </li>
                 </ul>
 
-                    <a name="speaking-clock"></a>
-                    <h3>Speaking Clock</h3>
-                    <p>
-                        Write a program that takes a time in 24 hour numeric form, and outputs it as words.
-                    </p>
-                    <p>
-                    Challenge input:
-                    <ul>
-                        <li>00:00</li>
-                        <li>01:30</li>
-                        <li>12:05</li>
-                        <li>14:01</li>
-                        <li>20:29</li>
-                        <li>21:00</li>
-                    </ul>
-                    Challenge output:
-                    <ul>
-                        <li>It's twelve am</li>
-                        <li>It's one thirty am</li>
-                        <li>It's twelve oh five pm</li>
-                        <li>It's two oh one pm</li>
-                        <li>It's eight twenty nine pm</li>
-                        <li>It's nine pm</li>
-                    </ul>
-                    <h4>Advanced</h4>
-                    <p>Can you make the computer actually speak the time as words, so you have a real speaking clock?<p>
+                <a name="speaking-clock"></a>
+                <h3>Speaking Clock</h3>
+                <p>
+                    Write a program that takes a time in 24 hour numeric form, and outputs it as words.
+                </p>
+                <p>
+                Challenge input:
+                <ul>
+                    <li>00:00</li>
+                    <li>01:30</li>
+                    <li>12:05</li>
+                    <li>14:01</li>
+                    <li>20:29</li>
+                    <li>21:00</li>
+                </ul>
+                Challenge output:
+                <ul>
+                    <li>It's twelve am</li>
+                    <li>It's one thirty am</li>
+                    <li>It's twelve oh five pm</li>
+                    <li>It's two oh one pm</li>
+                    <li>It's eight twenty nine pm</li>
+                    <li>It's nine pm</li>
+                </ul>
+                <h4>Advanced</h4>
+                <p>Can you make the computer actually speak the time as words, so you have a real speaking clock?<p>
 
-                    Thanks to <a href="https://www.reddit.com/r/dailyprogrammer/comments/6jr76h/20170627_challenge_321_easy_talking_clock/">Reddit dailyprogrammer</a>
-                    </p>
+                Thanks to <a href="https://www.reddit.com/r/dailyprogrammer/comments/6jr76h/20170627_challenge_321_easy_talking_clock/">Reddit dailyprogrammer</a>
+                </p>
+
+                <a name="12-days-xmas"></a>
+                <h3>Twelve Days of Christmas</h3>
+                <p>
+                    Write the smallest possible program to print all the lyrics to the
+                    "<a href="https://en.wikipedia.org/wiki/The_Twelve_Days_of_Christmas_(song)#Lyrics">Twelve Days of Christmas"</a>:
+
+                <pre>
+                On the first day of Christmas my true love sent to me:
+                a Partridge in a Pear Tree
+
+                On the second day of Christmas my true love sent to me:
+                two Turtle Doves
+                and a Partridge in a Pear Tree
+
+                On the third day of Christmas my true love sent to me:
+                three French Hens
+                ...
+                </pre>
+                </p>
+                <h4>Hints</h4>
+                <p>To start with, get things working by using numbers (rather than words) for the gift counts:
+                <pre>
+                On the second day of Christmas my true love sent to me:
+                2 Turtle Doves
+                and 1 Partridge in a Pear Tree
+                </pre>
+                </p>
+                <h4>Advanced</h4>
+                <p>
+                    <ul>
+                        <li>Load all the gifts ("Turtle Doves", "Partridge in a Pear Tree", ..) from an input file, so you can change them easily.</li>
+                        <li>Can you get the computer to play the melody of Twelve Days Of Christmas as well?</li>
+                    </ul>
+                </p>
+
+                Thanks to <a href="https://www.reddit.com/r/dailyprogrammer/comments/5j6ggm/20161219_challenge_296_easy_the_twelve_days_of/">Reddit dailyprogrammer</a>
+            </p>
 
             </div>
 
