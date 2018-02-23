@@ -27,9 +27,9 @@
         }
 
         pre {
-          border-style: none;
-          background-color: inherit;
-          font-family: inherit;
+            border-style: none;
+            background-color: inherit;
+            font-family: inherit;
 
         }
     </style>
@@ -84,21 +84,21 @@
     </p>
 
     <p>
-      <b>Newest challenges:</b>
-      <br>
-      <p>
+        <b>Newest challenges:</b>
+        <br>
+    <p>
         Scratch:
         <a href="#robot-disco">Robot Disco</a>
-      </p>
-      <p>
+    </p>
+    <p>
         Website:
         <a href="#css-selectors-game">CSS Selector Game</a>
-      </p>
-      <p>
+    </p>
+    <p>
         Coding:
         <a href="#leet-speak">L33T SPEAK</a>
-      </p>
-     </p>
+    </p>
+    </p>
     <br/>
 
     <div class="panel-group">
@@ -277,7 +277,8 @@
                 <a name="parachute-jump"></a>
                 <h3 name="parachute-jump">Challenge: Parachute Jump</h3>
                 <p>
-                    Make a game about someone doing a parachute jump, and having to dodge moving clouds. If they hit a cloud, they
+                    Make a game about someone doing a parachute jump, and having to dodge moving clouds. If they hit a
+                    cloud, they
                     lose the game.
                 </p>
                 <p>
@@ -293,10 +294,13 @@
                         <ul>
                             <li>To start the cloud off-screen at the bottom, set y to be less than -180 (try -200)</li>
                             <li>To check when the cloud has gone off-screen at the top, check if y is more than 180
-                                (try 200)</li>
+                                (try 200)
+                            </li>
                             <li>Scratch doesn't like putting sprites off-screen, but you can trick it: every time
-                                you move the sprite's position (x and y), put "set size to 200%" before, and "set size to 100%" after.
-                                Strange, but this seems to work!</li>
+                                you move the sprite's position (x and y), put "set size to 200%" before, and "set size
+                                to 100%" after.
+                                Strange, but this seems to work!
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -316,25 +320,34 @@
                 <ul>
                     <li>You'll need a sprite to ask the quiz question. For now, ask: "what's 2 times 7?"</li>
                     <li>Let the player enter the answer</li>
-                    <li>Compare the player's answer against the real answer (14). If they match, the sprite should say "correct!" or "wrong!" if they don't</li>
+                    <li>Compare the player's answer against the real answer (14). If they match, the sprite should say
+                        "correct!" or "wrong!" if they don't
+                    </li>
                     <li>Now make the quiz question use random numbers (not just 2 and 7). This is a bit tricky:
                         <ul>
                             <li>You will need two 'variables' to store the random numbers</li>
-                            <li>Scratch can pick a random number for you using the 'pick' block (look under 'operators')</li>
+                            <li>Scratch can pick a random number for you using the 'pick' block (look under
+                                'operators')
+                            </li>
                             <li>The quiz question must use your two number variables</li>
-                            <li>To check if the player's answer is correct, you will need to compare it against the two number variables multiplied together</li>
+                            <li>To check if the player's answer is correct, you will need to compare it against the two
+                                number variables multiplied together
+                            </li>
                         </ul>
                     </li>
                 </ul>
                 </p>
-                <p>More advanced: make the quiz ask 10 questions, and keep a score of correct answers. And do more fun stuff when the player gives a
+                <p>More advanced: make the quiz ask 10 questions, and keep a score of correct answers. And do more fun
+                    stuff when the player gives a
                     right answer (yay!) or wrong answer (boo!).</p>
 
                 <a name="wind-whistle"></a>
                 <h3 name="wind-whistle">Challenge: Whistle for the Wind</h3>
                 <p>
-                    Make a scene with a windmill (or wind turbine) and a cloud. Make the windmill turn and the cloud move across the sky.
-                    Now here's the fun bit: make the windmill turn faster the louder you whistle (or yell) into your computer's microphone.
+                    Make a scene with a windmill (or wind turbine) and a cloud. Make the windmill turn and the cloud
+                    move across the sky.
+                    Now here's the fun bit: make the windmill turn faster the louder you whistle (or yell) into your
+                    computer's microphone.
                     The cloud should move faster too. The louder you whistle, the stronger the wind!
                 </p>
                 <p>
@@ -345,27 +358,32 @@
                         <ul>
                             <li>Use 'set x' and 'set y' to set the cloud's starting position</li>
                             <li>Make the cloud move using 'change x'</li>
-                            <li>Once the cloud crosses the whole screen, move it back to its starting position (so we don't lose it off the screen!)</li>
+                            <li>Once the cloud crosses the whole screen, move it back to its starting position (so we
+                                don't lose it off the screen!)
+                            </li>
                         </ul>
                     </li>
                     <li>Now for the whistling bit.
                         <ul>
-                            <li>Scratch has a 'loudness' value (look under 'sensing'). It measures how loud the noise is that
+                            <li>Scratch has a 'loudness' value (look under 'sensing'). It measures how loud the noise is
+                                that
                                 your computer's microphone hears, from 0 to 100.
                             </li>
                             <li>Use the 'loudness' value to change how fast the windmill turns and the cloud moves.</li>
                             <li>For the windmill, try "turn 'loudness' degrees"</li>
-                            <li>For the cloud, try "change x by 'loudness'" (to make the cloud go in the other direction, multiply by -1)</li>
+                            <li>For the cloud, try "change x by 'loudness'" (to make the cloud go in the other
+                                direction, multiply by -1)
+                            </li>
                         </ul>
                     </li>
                 </ul>
                 </p>
                 <p>More advanced:
-                  <ul>
+                <ul>
                     <li>Add more clouds, and make their starting position random (the y value).</li>
                     <li>Change the colour of the clouds as they move</li>
                     <li>Add a meter that shows how much electricity is generated by the windmill</li>
-                    </ul>
+                </ul>
                 </p>
 
                 <a name="reaction-time-scratch"></a>
@@ -379,11 +397,13 @@
                     Getting started:
                 <ul>
                     <li>You will need a Scratch cat sprite, with a orange and a purple costume.</li>
-                    <li>You can measure reaction time using the 'timer' block in the 'sensing' section: use 'reset timer'
+                    <li>You can measure reaction time using the 'timer' block in the 'sensing' section: use 'reset
+                        timer'
                         when you want to start timing, and assign 'timer' to a variable when you want to record the end
                         reaction time.
                     </li>
-                    <li>You can also use the timer to wait a few seconds at the game start before you switch Scratch cat's
+                    <li>You can also use the timer to wait a few seconds at the game start before you switch Scratch
+                        cat's
                         costume.
                     </li>
                     <li>Use different backdrops for different stages of the game: to show instructions at the beginning,
@@ -393,7 +413,9 @@
                 </p>
                 <p>More advanced:
                 <ul>
-                    <li>Make the player pay attention: randomise the time at the game start before you change scratch cat's costume.</li>
+                    <li>Make the player pay attention: randomise the time at the game start before you change scratch
+                        cat's costume.
+                    </li>
                     <li>Tell the player off if they click too early (before scratch cat is purple).</li>
                     <li>Let the player have multiple goes, and calculate their average reaction time.</li>
                 </ul>
@@ -402,13 +424,14 @@
                 <a name="insult-generator-scratch"></a>
                 <h3>Challenge: Insult Generator</h3>
                 <p>
-                    Make a Scratch program that generates random insults :-) Scratch cat first asks for your name, then insults
+                    Make a Scratch program that generates random insults :-) Scratch cat first asks for your name, then
+                    insults
                     you. Here goes..
-                    <ul>
-                        <li>"What's your name?"</li>
-                        <li>"Greg"</li>
-                        <li>"Hi Greg. You eat like a greasy baboon!". Or maybe "Hi Greg. You run like a purple hippo!"</li>
-                    </ul>
+                <ul>
+                    <li>"What's your name?"</li>
+                    <li>"Greg"</li>
+                    <li>"Hi Greg. You eat like a greasy baboon!". Or maybe "Hi Greg. You run like a purple hippo!"</li>
+                </ul>
                 </p>
                 <p>
                     Getting started:
@@ -422,16 +445,22 @@
                         </ul>
                     </li>
                     <li>Generating the insult is the tricky bit. Each insult is a sentence with the same structure:
-                        "Hi (Greg - name). You (eat - doing word) like a (greasy - describing word) (baboon - naming word). So we'll generate the insult
+                        "Hi (Greg - name). You (eat - doing word) like a (greasy - describing word) (baboon - naming
+                        word). So we'll generate the insult
                         by randomly picking a doing word, a describing word and a naming word,
                         then making a sentence out of them:
                         <ul>
-                            <li>Make a list of doing words (verbs). Use 'Make a list' under 'Data'. How about: eat, run and swim.</li>
+                            <li>Make a list of doing words (verbs). Use 'Make a list' under 'Data'. How about: eat, run
+                                and swim.
+                            </li>
                             <li>Make a list of describing words (adjectives). How about: greasy, smelly, grumpy.</li>
                             <li>Make a list of naming words (nouns). How about: baboon, cardboard box, dolphin.</li>
-                            <li>Now we'll generate the insult by randomly picking a word from each of the three lists, and combining them
-                                into a sentence. To randomly pick a word, use 'item random of list-name' under Data. To combine the words
-                                into a sentence, use 'join' under Operators. You'll need to use 'join' multiple times.</li>
+                            <li>Now we'll generate the insult by randomly picking a word from each of the three lists,
+                                and combining them
+                                into a sentence. To randomly pick a word, use 'item random of list-name' under Data. To
+                                combine the words
+                                into a sentence, use 'join' under Operators. You'll need to use 'join' multiple times.
+                            </li>
                             <li>Go make some fun insults!</li>
                         </ul>
 
@@ -442,53 +471,54 @@
                 <a name="to-the-moon"></a>
                 <h3>Challenge: To the Moon</h3>
                 <p>
-                  Write a game about flying to the moon. There should be three stages in your
-                  game: one set on Earth; one in space and one on the moon.
+                    Write a game about flying to the moon. There should be three stages in your
+                    game: one set on Earth; one in space and one on the moon.
                 </p>
                 <p>
-                  To start the rocket the player should press the space bar five times. Then the
-                  rocket should fly into the air. When the rocket reaches the top of the screen,
-                  the background should be changed to the next background (e.g. from Earth to space). Along with placing the
-                  rocket at the bottom of the screen again. The player should be
-                  able to move the rocket left and right using the arrow keys. There should be
-                  Aliens and other space-ships flying around. If the player touches one of these
-                  they lose the game. When the player reaches the last stage (the moon) a target
-                  should appear. The target should be placed at the top of the screen.
-                  If the player hits the target then they win the game.
+                    To start the rocket the player should press the space bar five times. Then the
+                    rocket should fly into the air. When the rocket reaches the top of the screen,
+                    the background should be changed to the next background (e.g. from Earth to space). Along with
+                    placing the
+                    rocket at the bottom of the screen again. The player should be
+                    able to move the rocket left and right using the arrow keys. There should be
+                    Aliens and other space-ships flying around. If the player touches one of these
+                    they lose the game. When the player reaches the last stage (the moon) a target
+                    should appear. The target should be placed at the top of the screen.
+                    If the player hits the target then they win the game.
                 </p>
 
                 <h4>Hints</h4>
                 <ul>
-                  <li>
-                    <p>
-                      For a spaceship sprite look in the sprite library (they'll be found in flying).
-                    </p>
-                  </li>
+                    <li>
+                        <p>
+                            For a spaceship sprite look in the sprite library (they'll be found in flying).
+                        </p>
+                    </li>
 
-                  <li>
-                    <p>
-                      To count the number of times the player has pressed space make a variable
-                      (found under data).
-                      Then every time space is pressed add one to this variable. Use the wait until
-                      block to make the sure the rocket doesn't fly off until the variable equals five.
-                      Ask a mentor for help if you haven't used variables before.
-                    </p>
-                  </li>
+                    <li>
+                        <p>
+                            To count the number of times the player has pressed space make a variable
+                            (found under data).
+                            Then every time space is pressed add one to this variable. Use the wait until
+                            block to make the sure the rocket doesn't fly off until the variable equals five.
+                            Ask a mentor for help if you haven't used variables before.
+                        </p>
+                    </li>
 
-                  <li>
-                    <p>
-                      To change the background check whether the y coordinate is bigger than 180,
-                      then use the switch background block.
-                    </p>
-                  </li>
+                    <li>
+                        <p>
+                            To change the background check whether the y coordinate is bigger than 180,
+                            then use the switch background block.
+                        </p>
+                    </li>
                 </ul>
 
                 <h4>Advance</h4>
                 <p>
-                  If you manage to complete the above try and
-                  place the target at the bottom of the screen. Then have the
-                  rocket start at the top and move down the screen (towards
-                  the target).
+                    If you manage to complete the above try and
+                    place the target at the bottom of the screen. Then have the
+                    rocket start at the top and move down the screen (towards
+                    the target).
                 </p>
 
 
@@ -532,11 +562,14 @@
                     Hints:
                 <ul>
                     <li>Draw a sprite of you in school uniform, with a backpack. You will need two costumes:
-                        one for when you are walking left, and another for walking right.</li>
+                        one for when you are walking left, and another for walking right.
+                    </li>
                     <li>Draw a pencil, notebook and calculator sprite. To make them fall from the sky, set their
                         original location to a random position at the top of the screen, then move their location
-                        down the screen. When they get to the bottom, move them back to the top.</li>
-                    <li>An easy way to 'catch' a notebook (or whatever) in your backpack is to make the backpack a special
+                        down the screen. When they get to the bottom, move them back to the top.
+                    </li>
+                    <li>An easy way to 'catch' a notebook (or whatever) in your backpack is to make the backpack a
+                        special
                         color, then add an action to the notebook sprite when it touches the special color. So you could
                         hide the notebook, and add a point to the score.
                     </li>
@@ -556,11 +589,15 @@
                 <a name="frogger"></a>
                 <h3>Frogger</h3>
                 <p>
-                    Make your own version of a classic 1980s game called "<a href="https://en.wikipedia.org/wiki/Frogger">Frogger</a>".
+                    Make your own version of a classic 1980s game called "<a
+                        href="https://en.wikipedia.org/wiki/Frogger">Frogger</a>".
                     Check out <a href="https://www.youtube.com/watch?v=l9fO-YuWPSk">this video</a>.
-                    The aim of the game is to guide a frog from the bottom of the screen to the top of the screen, whilst crossing lanes
-                    of a busy road. Each lane contains moving cars, buses, cyclists and other vehicles - don't let the frog get run over!
-                    The player moves the frog using the arrow keys (hopping forwards, back, left or right). The player wins by guiding the
+                    The aim of the game is to guide a frog from the bottom of the screen to the top of the screen,
+                    whilst crossing lanes
+                    of a busy road. Each lane contains moving cars, buses, cyclists and other vehicles - don't let the
+                    frog get run over!
+                    The player moves the frog using the arrow keys (hopping forwards, back, left or right). The player
+                    wins by guiding the
                     frog safely to the top of the screen.
                 </p>
                 <p>
@@ -569,9 +606,12 @@
                     <li>You'll need a frog sprite. Make it "hop" up, down, left and right using the arrow keys.</li>
                     <li>You'll need some vehicle sprites. Move them left to right (or right to left) along a road. You
                         can draw roads in the background image. To have constant traffic, start each sprite on the the
-                        left of the screen, then move it right. When the sprite gets to the right of the screen, move its
-                        location back to the left.</li>
-                    <li>You can detect collisions between the frog and a vehice based on colour (when touching "frog" colour) or
+                        left of the screen, then move it right. When the sprite gets to the right of the screen, move
+                        its
+                        location back to the left.
+                    </li>
+                    <li>You can detect collisions between the frog and a vehice based on colour (when touching "frog"
+                        colour) or
                         sprite (when touching "frog" sprite).
                     </li>
                 </ul>
@@ -579,7 +619,8 @@
                 <h4>Advanced</h4>
                 <ul>
                     <li>
-                        Add scoring: 10 points every time the frog moves forward, and 50 points when the frog crosses all
+                        Add scoring: 10 points every time the frog moves forward, and 50 points when the frog crosses
+                        all
                         roads successfully.
                     </li>
                     <li>
@@ -594,7 +635,8 @@
                 <h3>Halloween Night</h3>
                 <p>
                     Create a Halloween scene: for example a spooky forest or a graveyard. When you click on anything
-                    in the scene, something scary should happen. A spider drops from this tree; an owl flies out of that one;
+                    in the scene, something scary should happen. A spider drops from this tree; an owl flies out of that
+                    one;
                     a ghost pops out from behind a gravestone; a witch flies cackling across the moon. How many spooky
                     surprises can you put in?
                 </p>
@@ -603,7 +645,8 @@
                 <ul>
                     <li>You'll need sprites. Look in the sprite library, or draw one, or load one in from an image.</li>
                     <li>For surprises, a sprite could move or appear, say something, or make a sound. You could even
-                        record your best ghost noise!</li>
+                        record your best ghost noise!
+                    </li>
                 </ul>
                 </p>
 
@@ -611,37 +654,47 @@
                 <h3>Santa Present Drop</h3>
                 <p>
                     Santa needs help dropping presents down chimneys. Make a game where Santa flies across the sky
-                    over some houses with chimneys. When the mouse is clicked, Santa drops a present which falls downwards.
+                    over some houses with chimneys. When the mouse is clicked, Santa drops a present which falls
+                    downwards.
                     If the present hits a chimney, you score 1 point. If the present hits something else (like a roof),
-                    you score nothing. In either case, the present vanishes, and you get to try again. You win once you've
+                    you score nothing. In either case, the present vanishes, and you get to try again. You win once
+                    you've
                     scored 10 points.
                 </p>
                 <p>
                     Hints:
-                    <ul>
-                        <li>You'll need a Santa sprite. Make him fly across the top of the screen. When Santa hits the edge of the
-                            screen, make him fly in the opposite direction.</li>
-                        <li>You'll need a sprite of some houses with chimneys. Use two different colours for the chimney tops
-                            and the rest of the houses.
-                        </li>
-                        <li>You'll need a present sprite. When the mouse is pressed, make the present appear at Santa's location.
-                            Then move its position gradually down the screen. You can work out if the present lands on a chimney.
-                            top by using "if touching chimney top colour". You can check if the present lands on a house instead
-                            by using "if touching house colour".
-                        </li>
-                        <li>You'll need a variable to keep track of the score. Add 1 to the score when a present drops on a
-                            chimney top.
-                        </li>
-                    </ul>
+                <ul>
+                    <li>You'll need a Santa sprite. Make him fly across the top of the screen. When Santa hits the edge
+                        of the
+                        screen, make him fly in the opposite direction.
+                    </li>
+                    <li>You'll need a sprite of some houses with chimneys. Use two different colours for the chimney
+                        tops
+                        and the rest of the houses.
+                    </li>
+                    <li>You'll need a present sprite. When the mouse is pressed, make the present appear at Santa's
+                        location.
+                        Then move its position gradually down the screen. You can work out if the present lands on a
+                        chimney.
+                        top by using "if touching chimney top colour". You can check if the present lands on a house
+                        instead
+                        by using "if touching house colour".
+                    </li>
+                    <li>You'll need a variable to keep track of the score. Add 1 to the score when a present drops on a
+                        chimney top.
+                    </li>
+                </ul>
                 </p>
                 <h4>Advanced</h4>
                 <ul>
                     <li>
-                        Add fun sounds: Santa saying "ho ho ho", a "yay!" noise when a present hits a chimney, and "boo hoo!"
+                        Add fun sounds: Santa saying "ho ho ho", a "yay!" noise when a present hits a chimney, and "boo
+                        hoo!"
                         when it doesn't
                     </li>
                     <li>
-                        Add levels: once you score 10 points, move up one level. Santa should fly faster as each level increases.
+                        Add levels: once you score 10 points, move up one level. Santa should fly faster as each level
+                        increases.
                         You will need a second "level" variable for this.
                     </li>
                 </ul>
@@ -658,19 +711,26 @@
                 <p>
                     Hints:
                 <ul>
-                    <li>Make Scratch Cat move left, right, up or down when the player presses the matching arrow key.</li>
-                    <li>You will need some cake sprites. To make them bounce around the screen, you can use the "if on edge,
+                    <li>Make Scratch Cat move left, right, up or down when the player presses the matching arrow key.
+                    </li>
+                    <li>You will need some cake sprites. To make them bounce around the screen, you can use the "if on
+                        edge,
                         bounce" block, in the "Motion" section.
                     </li>
-                    <li>You will need a "variable" to count the number of lives remaining. Look in the "Data" section.</li>
+                    <li>You will need a "variable" to count the number of lives remaining. Look in the "Data" section.
+                    </li>
                     <li>You will need a "timer" to count how long Scratch Cat survived. Look for the "timer" block
-                        in the "Sensing" section.</li>
+                        in the "Sensing" section.
+                    </li>
                 </ul>
                 </p>
                 <h4>Advanced</h4>
                 <ul>
-                    <li>Make the game harder: make the cake move towards Scratch Cat, add more cake, and make the cake move faster.</li>
-                    <li>Add difficulty levels: let the player choose at game start how hard they want the game to be. Then
+                    <li>Make the game harder: make the cake move towards Scratch Cat, add more cake, and make the cake
+                        move faster.
+                    </li>
+                    <li>Add difficulty levels: let the player choose at game start how hard they want the game to be.
+                        Then
                         set cake speed based on difficulty.
                     </li>
                 </ul>
@@ -679,27 +739,37 @@
                 <h3>Robot Disco</h3>
                 <p>
                     Make a scene of a robot disco! There are two robots dancing, waving their arms and their legs.
-                    There should be crazy electronic music playing, and some flashing lights. Make it a cool robot disco.
+                    There should be crazy electronic music playing, and some flashing lights. Make it a cool robot
+                    disco.
                 </p>
                 <p>
                     Hints:
                 <ul>
-                    <li>Make a robot by creating a new sprite, and drawing its costume out of shapes like squares and circles.
-                        Make sure the robot has arms and legs!</li>
-                    <li>To make the robot dance, you will need to make a second costume that looks the same as the first, but has
-                        arms and legs in slightly different positions (you will then flip between the costumes very quickly,
-                        so it looks like the robot is dancing). To make a second costume, right click on the first costume
+                    <li>Make a robot by creating a new sprite, and drawing its costume out of shapes like squares and
+                        circles.
+                        Make sure the robot has arms and legs!
+                    </li>
+                    <li>To make the robot dance, you will need to make a second costume that looks the same as the
+                        first, but has
+                        arms and legs in slightly different positions (you will then flip between the costumes very
+                        quickly,
+                        so it looks like the robot is dancing). To make a second costume, right click on the first
+                        costume
                         and select 'duplicate'. Now you can move the arms and legs in the second costume.
                     </li>
                     <li>Flip between the costumes using the 'next costume' block inside a 'forever' block. You will
-                        also need a 'wait n seconds' block to change how fast the costumes change.</li>
+                        also need a 'wait n seconds' block to change how fast the costumes change.
+                    </li>
                 </ul>
                 </p>
                 <h4>Advanced</h4>
                 <ul>
-                    <li>Make the robot dance more smoothly by adding more costumes. So only move the robot's arms and legs a little
-                        bit in each costume.</li>
-                    <li>Make the robot disco as cool as possible. Can the robots move? Can you add more robots? Can you record
+                    <li>Make the robot dance more smoothly by adding more costumes. So only move the robot's arms and
+                        legs a little
+                        bit in each costume.
+                    </li>
+                    <li>Make the robot disco as cool as possible. Can the robots move? Can you add more robots? Can you
+                        record
                         your own (<a href="https://www.youtube.com/watch?v=g0_2vmkTmf0">beat boxed</a>) soundtrack?
                     </li>
                 </ul>
@@ -820,17 +890,24 @@
                 <p>
                     This challenge involves adding some javascript to your webpage. You'll need to get two parts working
                     (do some searching online!):
-                    <ul>
-                        <li>To make something happen when someone clicks on an image, you will need an <a target="_blank" href="https://www.google.co.uk/search?q=onclick+attribute">onclick attribute</a></li>
-                        <li>To popup the animal noise, you will need an <a target="_blank" href="https://www.google.co.uk/search?q=alert+box">alert box</a>
-                    </ul>
+                <ul>
+                    <li>To make something happen when someone clicks on an image, you will need an <a target="_blank"
+                                                                                                      href="https://www.google.co.uk/search?q=onclick+attribute">onclick
+                        attribute</a></li>
+                    <li>To popup the animal noise, you will need an <a target="_blank"
+                                                                       href="https://www.google.co.uk/search?q=alert+box">alert
+                        box</a>
+                </ul>
 
-                    More advanced:
-                    <ul>
-                        <li>When the animal image is clicked, play the actual animal sound!
-                            Try searching for <a target="_blank" href="https://www.google.co.uk/search?q=play+a+sound+on+click&oq=play+a+sound+on+click">play a sound on click</a>
-                            for help on how to do this.</li>
-                    </ul>
+                More advanced:
+                <ul>
+                    <li>When the animal image is clicked, play the actual animal sound!
+                        Try searching for <a target="_blank"
+                                             href="https://www.google.co.uk/search?q=play+a+sound+on+click&oq=play+a+sound+on+click">play
+                            a sound on click</a>
+                        for help on how to do this.
+                    </li>
+                </ul>
                 </p>
 
                 <a name="bakers-shop"></a>
@@ -839,35 +916,47 @@
                     Make a website for Bob's Bakery.
                 </p>
                 <p>
-                    "My name's Bob, and I run Bob's Bakery. We make lots of cakes and tasty things: chocolate cake, gingerbread men,
-                    jam doughnuts, ring doughnuts, strawberry tarts, and lots more. I'd like to start selling my cakes on the internet,
+                    "My name's Bob, and I run Bob's Bakery. We make lots of cakes and tasty things: chocolate cake,
+                    gingerbread men,
+                    jam doughnuts, ring doughnuts, strawberry tarts, and lots more. I'd like to start selling my cakes
+                    on the internet,
                     so will need a website. I reckon it needs:
-                    <ul>
-                        <li>A home page, all about Bob's Bakery and our cakes. We've been baking since 1917!</li>
-                        <li>A page for each of the cakes we sell, with details of each cake: its name, picture, price, ingredients, and
-                            a big "buy" button</li>
-                        <li>A "contact us" page, with the address and map of our shop. Our shop is actually inside the
-                            <a href="https://goo.gl/maps/joSJuVmE5Ny" target="_blank">Wallace Monument</a>! The address is:
-                            Abbey Craig, Hillfoots Rd, Stirling FK9 5LF</a>
-                    </ul>
-                    I'm looking forward to what you come up with :-) Thanks, Bob"
+                <ul>
+                    <li>A home page, all about Bob's Bakery and our cakes. We've been baking since 1917!</li>
+                    <li>A page for each of the cakes we sell, with details of each cake: its name, picture, price,
+                        ingredients, and
+                        a big "buy" button
+                    </li>
+                    <li>A "contact us" page, with the address and map of our shop. Our shop is actually inside the
+                        <a href="https://goo.gl/maps/joSJuVmE5Ny" target="_blank">Wallace Monument</a>! The address is:
+                        Abbey Craig, Hillfoots Rd, Stirling FK9 5LF</a>
+                </ul>
+                I'm looking forward to what you come up with :-) Thanks, Bob"
                 </p>
 
                 <a name="favourite-films"></a>
                 <h3 name="favourite-films">Challenge: My Favourite Films</h3>
                 <p>
                     I bet you've got a few favourite films. So make a website about them! You will need:
-                    <ul>
-                        <li>A front-place explaining that this is your film website, with links to web-pages about each film.</li>
-                        <li>A web-page for each film. The page should contain (at least) the film's title, image and a short summary of what it's about.
-                            You could also review and rate the film. It is a 4-star or 5-star film?</li>
-                        <li>You could also have web-pages about actors and actresses in these films.</li>
-                        <li>Be careful with the pictures you use on your website: you may need permission to use some pictures you link to.
-                            Wikipedia has film images with 'fair use' permissions. For example, the <a href="https://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen wikipedia page</a> has
-                            a image in the top right. Clicking on it shows <a href="https://en.wikipedia.org/wiki/Frozen_(2013_film)#/media/File:Frozen_(2013_film)_poster.jpg">a bigger image</a>, with a "Share or embed this file"
-                            option in the bottom right. The 'embed' option has HTML that will show the image in a webpage.
-                        </li>
-                    </ul>
+                <ul>
+                    <li>A front-place explaining that this is your film website, with links to web-pages about each
+                        film.
+                    </li>
+                    <li>A web-page for each film. The page should contain (at least) the film's title, image and a short
+                        summary of what it's about.
+                        You could also review and rate the film. It is a 4-star or 5-star film?
+                    </li>
+                    <li>You could also have web-pages about actors and actresses in these films.</li>
+                    <li>Be careful with the pictures you use on your website: you may need permission to use some
+                        pictures you link to.
+                        Wikipedia has film images with 'fair use' permissions. For example, the <a
+                                href="https://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen wikipedia page</a> has
+                        a image in the top right. Clicking on it shows <a
+                                href="https://en.wikipedia.org/wiki/Frozen_(2013_film)#/media/File:Frozen_(2013_film)_poster.jpg">a
+                            bigger image</a>, with a "Share or embed this file"
+                        option in the bottom right. The 'embed' option has HTML that will show the image in a webpage.
+                    </li>
+                </ul>
                 </p>
 
                 <a name="bob-the-builder"></a>
@@ -878,11 +967,14 @@
                 <p>
                     "I'm Bob the Builder. I build houses: houses for people, dog-houses, dolls-houses, tree-houses.. If
                     it's a house, I can build it. I want a website so people can find me on the Internet, see what I do,
-                    and contact me if they're interested. Hopefully I'll get some new customers! I reckon the website needs:
+                    and contact me if they're interested. Hopefully I'll get some new customers! I reckon the website
+                    needs:
                 <ul>
                     <li>A home page, all about me (Boy the Builder), and what I do (building houses).</li>
-                    <li>A page showing previous houses I've built. For each house, it should explain what was done, and have
-                        a nice quote from the customer about what a good job I did!</li>
+                    <li>A page showing previous houses I've built. For each house, it should explain what was done, and
+                        have
+                        a nice quote from the customer about what a good job I did!
+                    </li>
                     <li>A "contact us" page, with the address and map of my builder's yard. The yard is actually at the
                         <a href="https://goo.gl/maps/joSJuVmE5Ny" target="_blank">Wallace Monument</a>! The address is:
                         Abbey Craig, Hillfoots Rd, Stirling FK9 5LF</a>
@@ -893,43 +985,43 @@
                 <a name="my-favourite-game"></a>
                 <h3>Challenge: my favourite game</h3>
                 <p>
-                  My favourite game. Write a small website about your favourite game(s). The website
-                  should contains:
-                  <ul>
-                    <li>
-                      <p>
-                        A short of description of the game. What's about it? What are the goals of the game?
-                        How long does it take to complete? Is there a story? Who's it developed by? And
-                        any other relevant.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
+                    My favourite game. Write a small website about your favourite game(s). The website
+                    should contains:
+                    <ul>
+                        <li>
+                <p>
+                    A short of description of the game. What's about it? What are the goals of the game?
+                    How long does it take to complete? Is there a story? Who's it developed by? And
+                    any other relevant.
+                </p>
+                </li>
+                <li>
+                    <p>
                         A link to the game site
-                      </p>
-                    </li>
-                    <li>
-                      <p>
+                    </p>
+                </li>
+                <li>
+                    <p>
                         Images and videos of gameplay
-                      </p>
-                    </li>
-                  </ul>
+                    </p>
+                </li>
+                </ul>
                 </p>
                 <p>
-                  <h4>Advanced</h4>
-                  Pick a browser game you like and write a new page for it with all the details specified
-                  above. Though also try and place the game in page.
-                  Hint: Lookup what an iFrame is
+                <h4>Advanced</h4>
+                Pick a browser game you like and write a new page for it with all the details specified
+                above. Though also try and place the game in page.
+                Hint: Lookup what an iFrame is
                 </p>
 
                 <a name="my-summer-holiday"></a>
                 <h3>What I did on my summer holiday</h3>
                 <p>
-                  Write a website about your summer holiday. The site should have
-                  a page for each activity you have done. Every page should have
-                  a brief description of what you did, who you were with and where
-                  you were. Along with some pictures of the place. Every page should
-                  link to the others.
+                    Write a website about your summer holiday. The site should have
+                    a page for each activity you have done. Every page should have
+                    a brief description of what you did, who you were with and where
+                    you were. Along with some pictures of the place. Every page should
+                    link to the others.
                 </p>
 
                 <a name="rate-my-teacher"></a>
@@ -945,28 +1037,35 @@
                 <a name="best-memes-ever"></a>
                 <h3>Best Memes Ever</h3>
                 <p>
-                    Make a website with the <a href="https://www.google.co.uk/search?q=cat+memes&tbm=isch">best memes ever</a>.
-                    It should be possible to view memes by animal type, subject and year, so you'll need different web pages for this.
+                    Make a website with the <a href="https://www.google.co.uk/search?q=cat+memes&tbm=isch">best memes
+                    ever</a>.
+                    It should be possible to view memes by animal type, subject and year, so you'll need different web
+                    pages for this.
                 </p>
 
                 <a name="fun-with-fonts"></a>
                 <h3>Fun with Fonts</h3>
                 <p>
-                    How text appears on a webpage depends on which <a href="https://en.wikipedia.org/wiki/Font">font</a> is used.
-                    For example, we could use the <span style="font-family: courier; font-weight: bold">Courier font</span>, or
+                    How text appears on a webpage depends on which <a href="https://en.wikipedia.org/wiki/Font">font</a>
+                    is used.
+                    For example, we could use the <span
+                        style="font-family: courier; font-weight: bold">Courier font</span>, or
                     <span style="font-family: Verdana; font-weight: bold">Verdana font</span>.
 
                     Write a webpage that shows the same piece of text with different fonts: use the sentence
-                    "the quick brown fox jumped over the lazy dog". The text will feel different, depending on the font used.
+                    "the quick brown fox jumped over the lazy dog". The text will feel different, depending on the font
+                    used.
                     Try finding fonts that look official, funny, old or futuristic. What's your favourite?
                 </p>
                 <p>
                     Getting started:
                 <ul>
                     <li>Work out how to use CSS to use a particular font for a piece of text. Try using
-                        the fonts that are built into your web browser.</li>
+                        the fonts that are built into your web browser.
+                    </li>
                     <li>You can find lots more fonts at <a href="https://fonts.google.com/">Google Fonts</a>. They
-                        also have a nice <a href="https://developers.google.com/fonts/docs/getting_started">Getting Started</a> guide.
+                        also have a nice <a href="https://developers.google.com/fonts/docs/getting_started">Getting
+                            Started</a> guide.
                     </li>
                 </ul>
                 </p>
@@ -974,27 +1073,36 @@
                 <a name="twine-stories"></a>
                 <h3>Make Stories With Twine</h3>
                 <p>
-                    <a target="_blank" href="https://twinery.org/2/#!/welcome">Twine</a> is an online tool for telling interactive stories.
+                    <a target="_blank" href="https://twinery.org/2/#!/welcome">Twine</a> is an online tool for telling
+                    interactive stories.
                     Here are two examples:
-                    <ul>
-                        <li><a target="_blank" href="http://philome.la/aronsonmax1/who-wants-ice-cream">Who Wants Ice Cream</a></li>
-                        <li><a target="_blank" href="http://philome.la/roscoecarrier/no-parents">No Parents</a></li>
-                    </ul>
-                    Make your own story using Twine. It's easy to use once you get the hang of it. Here are some useful guides:
-                    <ul>
-                        <li><a target="_blank" href="http://www.adamhammond.com/twineguide/">A Beginner's Guide to Twine 2.0</a></li>
-                        <li><a target="_blank" href="https://www.youtube.com/playlist?list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d">Twine 2.0 tutorial</a></li>
-                        <li><a target="_blank" href="https://twinery.org/wiki/twine2:guide">Official Twine 2 Guide</a></li>
-                    </ul>
+                <ul>
+                    <li><a target="_blank" href="http://philome.la/aronsonmax1/who-wants-ice-cream">Who Wants Ice
+                        Cream</a></li>
+                    <li><a target="_blank" href="http://philome.la/roscoecarrier/no-parents">No Parents</a></li>
+                </ul>
+                Make your own story using Twine. It's easy to use once you get the hang of it. Here are some useful
+                guides:
+                <ul>
+                    <li><a target="_blank" href="http://www.adamhammond.com/twineguide/">A Beginner's Guide to Twine
+                        2.0</a></li>
+                    <li><a target="_blank"
+                           href="https://www.youtube.com/playlist?list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d">Twine 2.0
+                        tutorial</a></li>
+                    <li><a target="_blank" href="https://twinery.org/wiki/twine2:guide">Official Twine 2 Guide</a></li>
+                </ul>
                 </p>
 
                 <a name="day-in-the-life-of-timmy"></a>
                 <h3>Twine Story: A Day in the Life of Timmy the Dog</h3>
-                <p>Make a "Choose Your Own Adventure" story with <a target="_blank" href="https://twinery.org/2/#!/welcome">Twine</a> called
-                   "A Day in the Life of Timmy the Dog".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a href="#twine-stories">"Make Stories with Twine"</a> challenge first.</p>
+                <p>Make a "Choose Your Own Adventure" story with <a target="_blank"
+                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
+                    called
+                    "A Day in the Life of Timmy the Dog".</p>
+                <p>If you don't know how to use Twine to make stories, then do the <a href="#twine-stories">"Make
+                    Stories with Twine"</a> challenge first.</p>
                 <p>To start you off, your first page might look like:
-                    <pre>
+                <pre>
                         Timmy the Dog is sniffing the rubbish bin outside his house. Suddenly he hears a rustle behind him, and
                         sees Sooty the Cat staring. Timmy:
 
@@ -1002,21 +1110,24 @@
                         * Bounces up to Sooty, and starts a fight. That cat needs a lesson.
                         * Runs awwaaaaay! Sooty is scary.
                     </pre>
-                    Each choice is a link to another page, where the story continues. So what happens when Timmy runs away, or starts a fight?
+                Each choice is a link to another page, where the story continues. So what happens when Timmy runs away,
+                or starts a fight?
                 </p>
 
                 <a name="css-selectors-game"></a>
                 <h3>CSS Selectors Game</h3>
                 <p>
-                    Complete the <a href="https://flukeout.github.io/">CSS Selector Game</a>, to learn about CSS selectors. It's got
+                    Complete the <a href="https://flukeout.github.io/">CSS Selector Game</a>, to learn about CSS
+                    selectors. It's got
                     32 levels, so should take some time!
                 </p>
                 <p>
                     If you're not clear on what a CSS selector is, you might want to do one of these courses first:
-                    <ul>
-                        <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css">Intro to HTML/CSS: Making webpages</a></li>
-                        <li><a href="https://www.codecademy.com/en/tracks/web">HTML & CSS</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css">Intro to HTML/CSS:
+                        Making webpages</a></li>
+                    <li><a href="https://www.codecademy.com/en/tracks/web">HTML & CSS</a></li>
+                </ul>
                 </p>
 
             </div>
@@ -1202,7 +1313,9 @@
                             <li>"Dormitory" and "Dirty Rooms"</li>
                         </ul>
                     </li>
-                    <li>Thanks to <a href="https://www.reddit.com/r/dailyprogrammer/comments/52enht/20160912_challenge_283_easy_anagram_detector/">Reddit dailyprogrammer</a></li>
+                    <li>Thanks to <a
+                            href="https://www.reddit.com/r/dailyprogrammer/comments/52enht/20160912_challenge_283_easy_anagram_detector/">Reddit
+                        dailyprogrammer</a></li>
                 </ul>
                 </p>
 
@@ -1219,16 +1332,17 @@
                     Calculating 5! is easy. But we want to reverse this. Write a program that tells us
                     that "120" is "5!". The program should work for any number, either reporting that
                     that the number is a factorial, or "NONE" if it isn't. For example:
-                    <ul>
-                        <li>120 = 5!</li>
-                        <li>150   NONE</li>
-                    </ul>
+                <ul>
+                    <li>120 = 5!</li>
+                    <li>150 NONE</li>
+                </ul>
                 </p>
                 <p>
                     Getting started:
                 <ul>
                     <li>Hint: divide the input number by successively larger numbers until you get to "1" as the result:
-                        120 -> 120/2 -> 60/3 -> 20/4 -> 5/5 -> 1 => 5!</li>
+                        120 -> 120/2 -> 60/3 -> 20/4 -> 5/5 -> 1 => 5!
+                    </li>
                     <li>Here are some examples to test your program with:
                         <br>
                         Challenge input:
@@ -1243,34 +1357,44 @@
                             <li>3628800 = 10!</li>
                             <li>479001600 = 12!</li>
                             <li>6 = 3!</li>
-                            <li>18  NONE</li>
+                            <li>18 NONE</li>
                         </ul>
                     </li>
-                    <li>Thanks to <a href="https://www.reddit.com/r/dailyprogrammer/comments/55nior/20161003_challenge_286_easy_reverse_factorial/">Reddit dailyprogrammer</a></li>
+                    <li>Thanks to <a
+                            href="https://www.reddit.com/r/dailyprogrammer/comments/55nior/20161003_challenge_286_easy_reverse_factorial/">Reddit
+                        dailyprogrammer</a></li>
                 </ul>
                 </p>
 
                 <a name="todo-list"></a>
                 <h3 name="todolist">Challenge: To-do list</h3>
                 <p>
-                    Write a program that lets you create and manage a 'to-do list'. You should be able to: add an item, delete an item,
+                    Write a program that lets you create and manage a 'to-do list'. You should be able to: add an item,
+                    delete an item,
                     and view the whole list (of items).
 
                     Here's my example to-do list:
-                    <ol>
-                        <li>Assemble an army of dolphins that will do as I command</li>
-                        <li>Use dolphin army to achieve world domination</li>
-                        <li>Eat chocolate chip ice cream with sprinkles on top</li>
-                    </ol>
+                <ol>
+                    <li>Assemble an army of dolphins that will do as I command</li>
+                    <li>Use dolphin army to achieve world domination</li>
+                    <li>Eat chocolate chip ice cream with sprinkles on top</li>
+                </ol>
                 </p>
                 <p>
                     Getting started:
                 <ul>
-                    <li>When the program starts, it should ask the user what to do: the user enters an alphabet letter to
-                        select an option. So it could be 'a' for add, 'd' for delete, and 'l' for list, and 'e' for exit program.</li>
-                    <li>Code 'add an item': the user should enter the item to add (e.g. 'Eat chocolate chip ice cream with sprinkles on top').</li>
+                    <li>When the program starts, it should ask the user what to do: the user enters an alphabet letter
+                        to
+                        select an option. So it could be 'a' for add, 'd' for delete, and 'l' for list, and 'e' for exit
+                        program.
+                    </li>
+                    <li>Code 'add an item': the user should enter the item to add (e.g. 'Eat chocolate chip ice cream
+                        with sprinkles on top').
+                    </li>
                     <li>Code 'view list': show all the items the user has entered.</li>
-                <li>Code 'delete an item': the user should enter the list item to delete (numbering list items will make it easier to select one)</li>
+                    <li>Code 'delete an item': the user should enter the list item to delete (numbering list items will
+                        make it easier to select one)
+                    </li>
                     </li>
                 </ul>
                 </p>
@@ -1278,13 +1402,16 @@
                 <a name="reaction-time-coding"></a>
                 <h3>Challenge: Reaction Time</h3>
                 <p>
-                    Write a game that measures your reaction time: how fast you hit the space-bar when told 'hit it!'. At the end of the game, show
-                    your reaction time in milliseconds (a second divided into 1000 parts). What's your fastest reaction time?
+                    Write a game that measures your reaction time: how fast you hit the space-bar when told 'hit it!'.
+                    At the end of the game, show
+                    your reaction time in milliseconds (a second divided into 1000 parts). What's your fastest reaction
+                    time?
                 </p>
                 <p>
                     Getting started:
                 <ul>
-                    <li>When the program starts, show instructions explaining the game, and get the user to hit space-bar
+                    <li>When the program starts, show instructions explaining the game, and get the user to hit
+                        space-bar
                         when they're ready to begin.
                     <li>Wait say 5 seconds, then output "Hit it!" and start a timer.</li>
                     <li>When the user hits the spacebar, stop the timer.</li>
@@ -1294,11 +1421,14 @@
                 </p>
                 <p>More advanced:
                 <ul>
-                    <li>Make the player pay attention: randomise the time at the game start before outputting "Hit it!"</li>
+                    <li>Make the player pay attention: randomise the time at the game start before outputting "Hit
+                        it!"
+                    </li>
                     <li>Tell the player off if they hit the space-bar too early (before "Hit it!").</li>
                     <li>Let the player have multiple goes, and calculate their average reaction time.</li>
                     <li>Make the game more interesting by getting the user to enter a random letter between 'A' and 'Z',
-                        rather than the space-bar.</li>
+                        rather than the space-bar.
+                    </li>
                 </ul>
                 </p>
 
@@ -1318,14 +1448,17 @@
                 <ul>
                     <li>When the program starts, ask the user for their name, then say hello ("Hi Greg").
                     <li>Generating the insult is the tricky bit. Each insult is a sentence with the same structure:
-                        "Hi (Greg - name). You (eat - verb) like a (greasy - adjective) (baboon - noun). So we'll generate the insult
+                        "Hi (Greg - name). You (eat - verb) like a (greasy - adjective) (baboon - noun). So we'll
+                        generate the insult
                         by randomly picking a verb, adjective and noun, then making a sentence out of them:
                         <ul>
                             <li>Make a list of verbs. How about: eat, run and swim.</li>
                             <li>Make a list of adjectives. How about: greasy, smelly, grumpy.</li>
                             <li>Make a list of nouns. How about: baboon, cardboard box, dolphin.</li>
-                            <li>Now we'll generate the insult by randomly picking a word from each of the three lists, and combining them
-                                into a sentence.</li>
+                            <li>Now we'll generate the insult by randomly picking a word from each of the three lists,
+                                and combining them
+                                into a sentence.
+                            </li>
                             <li>Go make some fun insults!</li>
                         </ul>
                     </li>
@@ -1333,9 +1466,11 @@
                 </p>
                 <p>More advanced:
                 <ul>
-                    <li>Make the insults more complicated and longer. Use bigger lists of verbs, adjectives and nouns.</li>
+                    <li>Make the insults more complicated and longer. Use bigger lists of verbs, adjectives and nouns.
+                    </li>
                     <li>Why stop with random sentence generation - try random story generation! Use the same approach,
-                        but your lists are now of whole sentences rather than single words. So define the story's standard structure,
+                        but your lists are now of whole sentences rather than single words. So define the story's
+                        standard structure,
                         then randomly fill in story gaps with randomly picked sentences:
                         <ul>
                             <li>I was born (in Paris, under an autumn sky | with a tail | 3 days early).</li>
@@ -1349,12 +1484,12 @@
                 <a name="triangles"></a>
                 <h3>Triangles</h3>
                 <p>
-                  Write a small program that takes in a number and then prints off a triangle
-                  of that height. Here is an example:
+                    Write a small program that takes in a number and then prints off a triangle
+                    of that height. Here is an example:
                 </p>
 
 
-                  <pre>
+                <pre>
                   Please enter the height of the triangle:
                   5
 
@@ -1366,15 +1501,15 @@
                    #####
                 </pre>
                 <p>
-                  The program should only accept whole numbers between 3 and 10.
+                    The program should only accept whole numbers between 3 and 10.
                 </p>
                 <br>
                 <h4>Advanced version</h4>
                 <p>
 
-                  Once you've finished the basic version, try and produce the
-                  following output:
-                  <pre>
+                    Once you've finished the basic version, try and produce the
+                    following output:
+                <pre>
                     Please enter the height of the triangle:
                     5
 
@@ -1392,9 +1527,9 @@
                 <a name="greedy-shopkeeper"></a>
                 <h3>Greedy shopkeeper</h3>
                 <p>
-                  Write a small program that takes an amount of change, and then
-                  works out the minimal coins required to make it. You may only
-                  use the: 50, 20, 10, 5, 2, and 1 pence coins.
+                    Write a small program that takes an amount of change, and then
+                    works out the minimal coins required to make it. You may only
+                    use the: 50, 20, 10, 5, 2, and 1 pence coins.
                 </p>
                 <h4>Example</h4>
                 <pre>
@@ -1408,20 +1543,20 @@
                     1 x 1
                 </pre>
                 <p>
-                  The program should only accept positive numbers and the input
-                  must never be bigger or equal to one.
+                    The program should only accept positive numbers and the input
+                    must never be bigger or equal to one.
                 </p>
                 <h4>Advanced</h4>
                 <ul>
-                  <li>
-                    When formatting the output avoid using string concatenation
-                    (i.e. "str1, " + "str2" becomes "str1, str2"), instead
-                    look up how to use .format() in python or `` (the grave accent) in JS.
-                  </li>
-                  <li>
-                    Let the program accept inputs bigger than one. Now you may
-                    use the one and two pound coins. As well as the previous coins.
-                  </li>
+                    <li>
+                        When formatting the output avoid using string concatenation
+                        (i.e. "str1, " + "str2" becomes "str1, str2"), instead
+                        look up how to use .format() in python or `` (the grave accent) in JS.
+                    </li>
+                    <li>
+                        Let the program accept inputs bigger than one. Now you may
+                        use the one and two pound coins. As well as the previous coins.
+                    </li>
                 </ul>
 
                 <a name="timetable-manager"></a>
@@ -1429,15 +1564,15 @@
                 <p>
                     So you're going back to school. Write a program that manages your school timetable.
                     It should record which subjects you take during your school day. E.g.:
-                    <ul>
-                        <li>MON-PERIOD1: CHEMISTRY</li>
-                        <li>MON-PERIOD2: ENGLISH</li>
-                        <li>MON-PERIOD3: MATHS</li>
-                        <li>MON-PERIOD4: ART</li>
-                        <li>MON-PERIOD5: GEOGRAPHY</li>
-                        <li>MON-PERIOD6: PE</li>
-                    </ul>
-                    You can then ask the program what subject you have for a particular day+hour.
+                <ul>
+                    <li>MON-PERIOD1: CHEMISTRY</li>
+                    <li>MON-PERIOD2: ENGLISH</li>
+                    <li>MON-PERIOD3: MATHS</li>
+                    <li>MON-PERIOD4: ART</li>
+                    <li>MON-PERIOD5: GEOGRAPHY</li>
+                    <li>MON-PERIOD6: PE</li>
+                </ul>
+                You can then ask the program what subject you have for a particular day+hour.
                 </p>
                 <h4>Example</h4>
                 <pre>
@@ -1453,7 +1588,8 @@
                         Make the program print the entire week timetable, nicely formatted.
                     </li>
                     <li>
-                        For a given subject, make the program print out every period in the week when you take that subject.
+                        For a given subject, make the program print out every period in the week when you take that
+                        subject.
                     </li>
                 </ul>
 
@@ -1461,24 +1597,28 @@
                 <h3>Driving Theory Test</h3>
                 <p>
                     Getting your driving licence requires you to pass a "theory test". Write a program that lets you
-                    practice the theory test: the program asks you a set of multiple-choice questions, tells you whether you
-                    correctly answered each question, and tells you your final score at the end. Here's an example question:
+                    practice the theory test: the program asks you a set of multiple-choice questions, tells you whether
+                    you
+                    correctly answered each question, and tells you your final score at the end. Here's an example
+                    question:
                 </p>
                 <p>
                     You will find that driving smoothly can:
-                    <ol>
+                <ol>
                     <li>reduce journey times by about 15%</li>
                     <li>increase fuel consumption by about 15%</li>
                     <li>reduce fuel consumption by about 15% (correct answer)</li>
                     <li>increase journey times by about 15%</li>
-                    </ol>
-                    When presented with this question, the user types in the number of the answer they think is correct
-                    (e.g. 1 - incorrect). The program then states whether the user is correct or not, and moves onto the
-                    next question.
+                </ol>
+                When presented with this question, the user types in the number of the answer they think is correct
+                (e.g. 1 - incorrect). The program then states whether the user is correct or not, and moves onto the
+                next question.
                 </p>
                 <h4>Hints</h4>
                 <ul>
-                    <li>You'll need to find some practice questions. The UK government website <a href="https://www.gov.uk/take-practice-theory-test">has some</a>.</li>
+                    <li>You'll need to find some practice questions. The UK government website <a
+                            href="https://www.gov.uk/take-practice-theory-test">has some</a>.
+                    </li>
                 </ul>
                 <h4>Advanced</h4>
                 <ul>
@@ -1486,7 +1626,8 @@
                         Time how long someone took to complete the test, and tell them on test completion.
                     </li>
                     <li>
-                        Write another program that asks multiple-choice questions for a different topic. Try and share as
+                        Write another program that asks multiple-choice questions for a different topic. Try and share
+                        as
                         much code as possible between the two programs.
                     </li>
                 </ul>
@@ -1497,7 +1638,7 @@
                     Write a program that takes a time in 24 hour numeric form, and outputs it as words.
                 </p>
                 <p>
-                Challenge input:
+                    Challenge input:
                 <ul>
                     <li>00:00</li>
                     <li>01:30</li>
@@ -1516,16 +1657,20 @@
                     <li>It's nine pm</li>
                 </ul>
                 <h4>Advanced</h4>
-                <p>Can you make the computer actually speak the time as words, so you have a real speaking clock?<p>
+                <p>Can you make the computer actually speak the time as words, so you have a real speaking clock?
+                <p>
 
-                Thanks to <a href="https://www.reddit.com/r/dailyprogrammer/comments/6jr76h/20170627_challenge_321_easy_talking_clock/">Reddit dailyprogrammer</a>
+                    Thanks to <a
+                        href="https://www.reddit.com/r/dailyprogrammer/comments/6jr76h/20170627_challenge_321_easy_talking_clock/">Reddit
+                    dailyprogrammer</a>
                 </p>
 
                 <a name="12-days-xmas"></a>
                 <h3>Twelve Days of Christmas</h3>
                 <p>
                     Write the smallest possible program to print all the lyrics to the
-                    "<a href="https://en.wikipedia.org/wiki/The_Twelve_Days_of_Christmas_(song)#Lyrics">Twelve Days of Christmas"</a>:
+                    "<a href="https://en.wikipedia.org/wiki/The_Twelve_Days_of_Christmas_(song)#Lyrics">Twelve Days of
+                    Christmas"</a>:
 
                 <pre>
                 On the first day of Christmas my true love sent to me:
@@ -1550,36 +1695,40 @@
                 </p>
                 <h4>Advanced</h4>
                 <p>
-                    <ul>
-                        <li>Load all the gifts ("Turtle Doves", "Partridge in a Pear Tree", ..) from an input file, so you can change them easily.</li>
-                        <li>Can you get the computer to play the melody of Twelve Days Of Christmas as well?</li>
-                    </ul>
+                <ul>
+                    <li>Load all the gifts ("Turtle Doves", "Partridge in a Pear Tree", ..) from an input file, so you
+                        can change them easily.
+                    </li>
+                    <li>Can you get the computer to play the melody of Twelve Days Of Christmas as well?</li>
+                </ul>
                 </p>
 
-                Thanks to <a href="https://www.reddit.com/r/dailyprogrammer/comments/5j6ggm/20161219_challenge_296_easy_the_twelve_days_of/">Reddit dailyprogrammer</a>
-            </p>
+                Thanks to <a
+                    href="https://www.reddit.com/r/dailyprogrammer/comments/5j6ggm/20161219_challenge_296_easy_the_twelve_days_of/">Reddit
+                dailyprogrammer</a>
+                </p>
 
-            <a name="how-long-was-the-light-on"></a>
-            <h3>How Long Was The Light On?</h3>
-            <p>
-                There is a light that switches on when someone enters the room, and switches off when they leave.
-                If multiple people are in the room, the light stays on until the last person leaves.
-                Write a program that outputs how long the light stays on, given a list of when people entered
-                and left the room.
-            </p>
-            <p>
-                Challenge input:
-            <ul>
-                <li>1 3 (so person arrived at 1 o'clock, and left at 3 o'clock)</li>
-                <li>2 3</li>
-                <li>4 5</li>
-            </ul>
-            Challenge output:
-            <ul>
-                <li>3</li>
-            </ul>
-            <p>
-                More input and output:
+                <a name="how-long-was-the-light-on"></a>
+                <h3>How Long Was The Light On?</h3>
+                <p>
+                    There is a light that switches on when someone enters the room, and switches off when they leave.
+                    If multiple people are in the room, the light stays on until the last person leaves.
+                    Write a program that outputs how long the light stays on, given a list of when people entered
+                    and left the room.
+                </p>
+                <p>
+                    Challenge input:
+                <ul>
+                    <li>1 3 (so person arrived at 1 o'clock, and left at 3 o'clock)</li>
+                    <li>2 3</li>
+                    <li>4 5</li>
+                </ul>
+                Challenge output:
+                <ul>
+                    <li>3</li>
+                </ul>
+                <p>
+                    More input and output:
                 <pre>
                 Input:
                 2 4
@@ -1600,12 +1749,71 @@
                 Output: 5
                 </pre>
 
-            </p>
-            <h4>Advanced</h4>
-            <p>Can you change the program to work with more precise times? E.g 09:00 09:25.<p>
+                </p>
+                <h4>Advanced</h4>
+                <p>Can you change the program to work with more precise times? E.g 09:00 09:25.
+                <p>
 
-            Thanks to <a href="https://www.reddit.com/r/dailyprogrammer/comments/7qn07r/20180115_challenge_347_easy_how_long_has_the/">Reddit dailyprogrammer</a>
-        </p>
+                    Thanks to <a
+                        href="https://www.reddit.com/r/dailyprogrammer/comments/7qn07r/20180115_challenge_347_easy_how_long_has_the/">Reddit
+                    dailyprogrammer</a>
+                </p>
+
+                <a name="leet-speak"></a>
+                <h3>L33T SPEAK</h3>
+                <p>
+                    Write a program that translates English into <a href="https://simple.wikipedia.org/wiki/Leet">Leet Speak</a> (or vice versa).
+                    Examples:
+                    <ul>
+                        <li>BASIC => 6451C</li>
+                        <li>ELEET => 31337 (pronounced elite)</li>
+                        <li>WOW => `//0`//</li>
+                        <li>MOM => (V)0(V)</li>
+                    </ul>
+                    Use the following l33t:
+                    <pre>
+                        A -> 4
+                        B -> 6
+                        E -> 3
+                        I -> 1
+                        L -> 1
+                        M -> (V)
+                        N -> (\)
+                        O -> 0
+                        S -> 5
+                        T -> 7
+                        V -> \/
+                        W -> `//
+                    </pre>
+                    The program takes in one word or phrase per line, and converts it to (or from) l33t:
+                    <ul>
+                        <li>31337 -> eleet</li>
+                        <li>storm -> 570R(V)</li>
+                    </ul>
+                </p>
+                <p>
+                    Challenge input:
+                <pre>
+                I am elite.
+                Da pain!
+                Eye need help!
+                3Y3 (\)33d j00 t0 g37 d4 d0c70r.
+                1 n33d m4 p1llz!
+                </pre>
+                Challenge output:
+                <pre>
+                I am elite. -> 1 4m 37173
+                Da pain! -> D4 P41(\)!
+                Eye need help! -> 3Y3 (\)33D H31P!
+                3Y3 (\)33d j00 t0 g37 d4 d0c70r. -> Eye need j00 to get da doctor.
+                1 n33d m4 p1llz! -> I need ma pillz!
+                </pre>
+                <p>
+                    Thanks to <a
+                        href="https://www.reddit.com/r/dailyprogrammer/comments/67dxts/20170424_challenge_312_easy_l33tspeak_translator/">Reddit
+                    dailyprogrammer</a>
+                </p>
+
 
 
             </div>
@@ -1616,30 +1824,36 @@
             <div class="panel-heading"><h2>Coding - Microbits</h2></div>
             <div class="panel-body">
                 <p>
-                    At Stirling CoderDojo, we have micro:bits to play with. Ask a mentor if you would like to use one. A micro:bit is a cool
+                    At Stirling CoderDojo, we have micro:bits to play with. Ask a mentor if you would like to use one. A
+                    micro:bit is a cool
                     little computer with LEDs, a compass, motion detection and temperature detection. So you can make it
                     to do cool stuff like show the temperature when you shake it! There’s a web-based Block Editor (like
                     Scratch) for writing and testing code. When you’re happy with the code, you need to transfer the
                     code to the micro:bit. To do this:
-                    <ul>
-                        <li>Plug the micro:bit into your computer using the usb cable. The micro:bit should show up in your
-                            computer as a new hard drive</li>
-                        <li>Click ‘compile’ in the Block Editor, and your code will download to your computer in a file called
-                            ‘something.hex’</li>
-                        <li>Drag and drop the ‘something.hex’ file onto the micro:bit hard drive. The code should now be
-                            running on the micro:bit!</li>
-                    </ul>
-                    Useful links:
-                    <ul>
-                        <li>Check out the Block Editor here: <a href="http://tiny.cc/microbit-editor">http://tiny.cc/microbit-editor</a></li>
-                        <li>Check out some cool challenges here: <a href="http://tiny.cc/microbit-lessons">http://tiny.cc/microbit-lessons</a></li>
-                    </ul>
+                <ul>
+                    <li>Plug the micro:bit into your computer using the usb cable. The micro:bit should show up in your
+                        computer as a new hard drive
+                    </li>
+                    <li>Click ‘compile’ in the Block Editor, and your code will download to your computer in a file
+                        called
+                        ‘something.hex’
+                    </li>
+                    <li>Drag and drop the ‘something.hex’ file onto the micro:bit hard drive. The code should now be
+                        running on the micro:bit!
+                    </li>
+                </ul>
+                Useful links:
+                <ul>
+                    <li>Check out the Block Editor here: <a href="http://tiny.cc/microbit-editor">http://tiny.cc/microbit-editor</a>
+                    </li>
+                    <li>Check out some cool challenges here: <a href="http://tiny.cc/microbit-lessons">http://tiny.cc/microbit-lessons</a>
+                    </li>
+                </ul>
                 </p>
             </div>
         </div>
 
     </div>
-
 
 
     <hr>
