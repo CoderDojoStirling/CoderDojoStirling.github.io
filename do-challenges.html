@@ -88,15 +88,15 @@
         <br>
     <p>
         Scratch:
-        <a href="#robot-disco">Robot Disco</a>
+        <a href="#easter-egg-hunt">Easter Egg Hunt</a>
     </p>
     <p>
         Website:
-        <a href="#css-selectors-game">CSS Selector Game</a>
+        <a href="#easter-traditions">Easter Traditions</a>
     </p>
     <p>
         Coding:
-        <a href="#leet-speak">L33T SPEAK</a>
+        <a href="#noughts-and-crosses">Noughts and Crosses</a>
     </p>
     </p>
     <br/>
@@ -774,6 +774,36 @@
                     </li>
                 </ul>
 
+                <a name="easter-egg-hunt"></a>
+                <h3>Easter Egg Hunt</h3>
+                <p>
+                    Make an easter egg hunt game - you win by finding 10 easter eggs hidden behind things in a country scene. When you click
+                    on a hidden egg, it becomes totally visible for 2 seconds, then vanishes.
+                <p>
+                    Hints:
+                <ul>
+                    <li>You will need 10 easter egg sprites and some things for them to hide behind like a tree, a rock, a house,
+                        and maybe an easter bunny! You can draw the sprites, or use ones from the Scratch sprites library.
+                    </li>
+                    <li>To hide an egg, first place the egg so it would just peek out from behind an object (like a rock),
+                        if the rock was in front. Take a note of the egg's location (as x and y coordinates).
+                    </li>
+                    <li>To hide the egg behind the rock, give the egg the following commands when the game starts (the green flag is clicked):
+                      "Go to x, y" (under Motion) and "go back 1 layers" (under Looks). So you're placing the egg by the rock,
+                      then hiding it behind the rock (the rock is in the top layer, the egg is one layer behind).
+                    </li>
+                    <li>When someone clicks on the egg, you can make it appear fully with the "go to front" command (under Looks). You will
+                      also need to hide the egg after 2 seconds, and increase the game score by 1 (use a "variable").
+                    </li>
+                </ul>
+                </p>
+                <h4>Advanced</h4>
+                <ul>
+                    <li>Keep track of how long it takes for someone to finish the game. When the game ends, tell them how long they took.
+                    </li>
+                    <li>Add some hidden eggs at random locations. So the player will need to randomly click round the screen to find them!</li>
+                </ul>
+
             </div>
         </div>
 
@@ -1128,6 +1158,14 @@
                         Making webpages</a></li>
                     <li><a href="https://www.codecademy.com/en/tracks/web">HTML & CSS</a></li>
                 </ul>
+                </p>
+
+                <a name="easter-traditions"></a>
+                <h3>Easter Traditions</h3>
+                <p>
+                    Make a website about different Easter traditions around the world - a page for each one. For example,
+                    eggs are rolled down hills in the United Kingdom, whilst Spain holds processions to celebrate Semana Santa (Holy Week). Use pins on
+                    Google Maps to show where each tradition happens.
                 </p>
 
             </div>
@@ -1814,8 +1852,40 @@
                     dailyprogrammer</a>
                 </p>
 
+                <a name="noughts-and-crosses"></a>
+                <h3>Noughts and Crosses</h3>
+                <p>
+                    Code the game of 'Noughts and Crosses':
+                    <ul>
+                      <li>Write a 2 player version first, with each player entering their move one after the other. Use ASCII art to show
+                          the state of the board, with board locations specified as in chess (like b3).</li>
+                      <li>Write a one player version next, so you will need to write a basic arificial intelligence :-)</li>
+                    </ul>
+                </p>
+                <h4>Example</h4>
+                <pre style="font-family: monospace;">
+                    a   b   c
+                  |---|---|---|
+                1 |   |   |   |
+                  |---|---|---|
+                2 |   |   |   |
+                  |---|---|---|
+                3 |   | X |   |
+                  |---|---|---|
 
+                  Player one, you are noughts. Enter your move: b2
 
+                    a   b   c
+                  |---|---|---|
+                1 |   |   |   |
+                  |---|---|---|
+                2 |   | O |   |
+                  |---|---|---|
+                3 |   | X |   |
+                  |---|---|---|
+
+                  Player two, you are crosses. Enter your move:
+                </pre>
             </div>
         </div>
 
