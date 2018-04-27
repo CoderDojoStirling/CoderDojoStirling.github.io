@@ -88,7 +88,7 @@
         <br>
     <p>
         Scratch:
-        <a href="#easter-egg-hunt">Easter Egg Hunt</a>
+        <a href="#april-showers">April Showers</a>
     </p>
     <p>
         Website:
@@ -804,6 +804,33 @@
                     <li>Add some hidden eggs at random locations. So the player will need to randomly click round the screen to find them!</li>
                 </ul>
 
+                <a name="april-showers"></a>
+                <h3>April Showers</h3>
+                <p>
+                    It rains a lot in April. Make a game where you dodge raindrops. Get hit by 3 raindrops, and the game finishes.
+                    The player should be told how many seconds they survived.
+                <p>
+                    Hints:
+                <ul>
+                    <li>You will need a player sprite to move left and right at the bottom of the screen, to dodge the raindrops.
+                      Draw a sprite yourself, or pick one from the scratch library. Then make it move left and right when the
+                      arrow keys are pressed
+                    </li>
+                    <li>You will need raindrops to fall from the sky. Draw one raindrop. When the game starts, hide this raindrop, then "clone"
+                      it every half a second (look in the "control" section). Use the "when i start as a clone" block to tell
+                      each cloned raindrop what to do (also in the "control" section). Each clone should:
+                      <ul>
+                        <li>Appear using "show"</li>
+                        <li>Start at a random location at the top of the screen. Use a y position of 180, and a random x position between 240 and -240</li>
+                        <li>Move down the screen</li>
+                        <li>Delete itself at the bottom using the "delete this clone" block</li>
+                      </ul>
+                    </li>
+                    <li>You can check if the player has hit a raindrop using the "touching sprite" block in the "sensing" section</li>
+                    <li>You will need a variable to keep track of how many hits the player has taken. When the player touches a raindrop,
+                      subtract 1 from the variable. When the variable gets to zero, the game finishes</li>
+                    <li>You can measure how long the player survived using the 'timer' block in the 'sensing' section. Use 'reset
+                        timer' to start timing, and assign 'timer' to a variable to stop timing (when the game finishes)</li>
             </div>
         </div>
 
