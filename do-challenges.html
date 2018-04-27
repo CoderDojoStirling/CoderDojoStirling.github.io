@@ -88,15 +88,15 @@
         <br>
     <p>
         Scratch:
-        <a href="#easter-egg-hunt">Easter Egg Hunt</a>
+        <a href="#april-showers">April Showers</a>
     </p>
     <p>
         Website:
-        <a href="#easter-traditions">Easter Traditions</a>
+        <a href="#colour-codes">Colour Codes</a>
     </p>
     <p>
         Coding:
-        <a href="#noughts-and-crosses">Noughts and Crosses</a>
+        <a href="#seconds-convertor">Seconds Convertor</a>
     </p>
     </p>
     <br/>
@@ -804,6 +804,33 @@
                     <li>Add some hidden eggs at random locations. So the player will need to randomly click round the screen to find them!</li>
                 </ul>
 
+                <a name="april-showers"></a>
+                <h3>April Showers</h3>
+                <p>
+                    It rains a lot in April. Make a game where you dodge raindrops. Get hit by 3 raindrops, and the game finishes.
+                    The player should be told how many seconds they survived.
+                <p>
+                    Hints:
+                <ul>
+                    <li>You will need a player sprite to move left and right at the bottom of the screen, to dodge the raindrops.
+                      Draw a sprite yourself, or pick one from the scratch library. Then make it move left and right when the
+                      arrow keys are pressed
+                    </li>
+                    <li>You will need raindrops to fall from the sky. Draw one raindrop. When the game starts, hide this raindrop, then "clone"
+                      it every half a second (look in the "control" section). Use the "when i start as a clone" block to tell
+                      each cloned raindrop what to do (also in the "control" section). Each clone should:
+                      <ul>
+                        <li>Appear using "show"</li>
+                        <li>Start at a random location at the top of the screen. Use a y position of 180, and a random x position between 240 and -240</li>
+                        <li>Move down the screen</li>
+                        <li>Delete itself at the bottom using the "delete this clone" block</li>
+                      </ul>
+                    </li>
+                    <li>You can check if the player has hit a raindrop using the "touching sprite" block in the "sensing" section</li>
+                    <li>You will need a variable to keep track of how many hits the player has taken. When the player touches a raindrop,
+                      subtract 1 from the variable. When the variable gets to zero, the game finishes</li>
+                    <li>You can measure how long the player survived using the 'timer' block in the 'sensing' section. Use 'reset
+                        timer' to start timing, and assign 'timer' to a variable to stop timing (when the game finishes)</li>
             </div>
         </div>
 
@@ -1168,6 +1195,14 @@
                     Google Maps to show where each tradition happens.
                 </p>
 
+                <a name="colour-codes"></a>
+                <h3>Colour Codes</h3>
+                <p>
+                    CSS lets you write text and backgrounds in <span style="background-color: #42A5F5; color: #FFEE58">different</span> <span style="background-color: #EF9A9A; color: #FFE0B2">colours</span>.
+                    Write a webpage that shows the same piece of text with different background and text colours: use the sentence
+                    "the quick brown fox jumped over the lazy dog". Use a large font size so you can get a good look at the colours. Choose colour combinations that are readable. Which combinations don't
+                    work together, and why? What's your favourite?
+                </p>
             </div>
         </div>
 
@@ -1886,6 +1921,19 @@
 
                   Player two, you are crosses. Enter your move:
                 </pre>
+
+                <a name="seconds-convertor"></a>
+                <h3>Seconds Convertor</h3>
+                <p>
+                    Write a program that converts a number of seconds into years/months/weeks/days/hours/minutes/seconds. Assume that
+                    there are 365 days in a year, and 28 days in month.
+                    <br/><br/>
+                    Examples:
+                    <ul>
+                        <li>1234567 => 14 days, 6 hours, 56 minutes, 7 seconds</li>
+                        <li>145252000 => 5 years, 1 day, 3 hours, 46 minutes, 40 seconds</li>
+                    </ul>
+                </p>
             </div>
         </div>
 
