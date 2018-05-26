@@ -96,7 +96,7 @@
     </p>
     <p>
         Coding:
-        <a href="#seconds-convertor">Seconds Convertor</a>
+        <a href="#battleship">Battleship</a>
     </p>
     </p>
     <br/>
@@ -1959,6 +1959,117 @@
                     <ul>
                         <li>1234567 => 14 days, 6 hours, 56 minutes, 7 seconds</li>
                         <li>145252000 => 5 years, 1 day, 3 hours, 46 minutes, 40 seconds</li>
+                    </ul>
+                </p>
+
+
+                <a name="battleship"></a>
+                <h3>Battleship</h3>
+                <p>
+                    Write a 1-player version of the game <a href="https://en.wikipedia.org/wiki/Battleship_(game)" target="_blank">'Battleship'</a>.
+                    Start with the simple version:
+                <ul>
+                    <li>The game board is a 10 by 10 grid of squares, representing the sea.</li>
+                    <li>When the game starts, 4 submarines are randomly placed on the board, on 4 different squares. None are visible to the player.</li>
+                    <li>On the player's turn, they specify a board square they wish to "shoot". The board square is updated with their shot, and the player
+                        is told if they "HIT" or "MISSED" a submarine. For a "HIT", the square character is set to "x". For a "MISS", it is set to a "~"
+                    </li>
+                    <li>The game finishes after 40 turns, or earlier if the player destroys all submarines.</li>
+                </ul>
+                </p>
+                <h4>Example</h4>
+                <pre style="font-family: monospace;">
+                    a   b   c   d   e   f   g   h   i   j
+                  |---|---|---|---|---|---|---|---|---|---|
+                1 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                2 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                3 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                4 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                5 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                6 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                7 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                8 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                9 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                10|   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+
+                  Player, enter your move: d2
+
+                    a   b   c   d   e   f   g   h   i   j
+                  |---|---|---|---|---|---|---|---|---|---|
+                1 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                2 |   |   |   | x |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                3 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                4 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                5 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                6 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                7 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                8 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                9 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                10|   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+
+                  HIT!
+
+                  Player, enter your move: a4
+
+                    a   b   c   d   e   f   g   h   i   j
+                  |---|---|---|---|---|---|---|---|---|---|
+                1 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                2 |   |   |   | x |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                3 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                4 | ~ |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                5 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                6 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                7 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                8 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                9 |   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+                10|   |   |   |   |   |   |   |   |   |   |
+                  |---|---|---|---|---|---|---|---|---|---|
+
+                  MISS :(
+
+                  Player, enter your move: ..
+                </pre>
+                <p>
+                    The more advanced version of battleship has ships that are a line of squares, and are placed horizontally
+                    or vertically:
+                    <ul>
+                        <li>When the game starts, All ships are randomly placed on the board, either horizontally or vertically.
+                            Two ships cannot occupy the same square. The are 4 submarines of size 1 (already done), 3 destroyers
+                            of size 2, 2 cruisers of size 3, and one battleship of size 4.</li>
+                        <li>On the player's turn, they again specify a board square they wish to "shoot". A ship can be hit as before (represented by "x"),
+                            but is only completely sunk when all the ship's squares are hit (represented by "*"). So the player is told
+                            if they "HIT", "MISSED", or "SUNK" a ship, and the board is updated.
+                        </li>
+                        <li>The game finishes after 40 turns, or earlier if the player sinks all ships.</li>
                     </ul>
                 </p>
             </div>
