@@ -88,11 +88,15 @@
         <br>
     <p>
         Scratch:
-        <a href="#youtube-tutorial">YouTube tutorial: make a zombie survival game</a>
+        <a href="#virtual-pet">Virtual pet: beach holiday</a>
+    </p>
+    <p>
+        Websites:
+        <a href="#paris">Welcome to Paris</a>
     </p>
     <p>
         Coding:
-        <a href="#battleship">Battleship</a>
+        <a href="#calendar-app">Calendar App</a>
     </p>
     </p>
     <br/>
@@ -854,6 +858,41 @@
                     a 'cat chasing mouse' game, a 'whack a mole' game, and more.
                 </p>
 
+                <a name="virtual-pet"></a>
+                <h3>Virtual pet: beach holiday</h3>
+                <p>
+                    Scratch Cat has gone on holiday to the beach. He will need regular food, drink and sunscreen to enjoy himself. If he doesn't get
+                    enough of each then he'll be hungry, thirsty and sunburnt. Scratch Cat will then come home from holiday early as he feels unwell.
+                    Sadness.
+                </p>
+                <p>
+                    Make a "virtual pet" game where you keep Scratch Cat on his beach holiday for as long as possible. You will need to give him food,
+                    drink or sunscreen, depending on what he needs. The basic idea is that you have "variables" that show how Scratch Cat is
+                    feeling, like: "Hungry: 4". Scratch Cat gets hungrier over time, so the variable starts at zero and increases 2 points every
+                    5 seconds. The player can reduce points by feeding Scratch Cat: they do this by clicking on some cat food. If the "Hungry" variable
+                    gets to 20 points, then Scratch Cat feels unwell and goes home early: the game finishes. You will need three different variables:
+                    "Hungry" (fixed by cat food), "Thirsty" (fixed by a water bowl), and "Sunburnt" (fixed by sunscreen).
+                </p>
+                <p>
+                    To get started, let's deal with Scratch Cat being hungry:
+                    <ul>
+                        <li>Add the Scratch Cat sprite and a beach background</li>
+                        <li>Add a variable called "Hungry", and set it to zero when the game starts. Then make the variable increase 2 points every 5 seconds.</li>
+                        <li>Add a "cat food" sprite. Reduce the "Hungry" variable by two points when the player clicks on the cat food.</li>
+                        <li>Check to see if the "Hungry" variable is 20 points or more. If it is, then stop the game: make Scratch Cat say that he's going home.</li>
+                    </ul>
+                </p>
+
+                <p>
+                    Next steps:
+                    <ul>
+                        <li>Add "Thirsty" and "Sunburnt" variables, fixed by a water bowl and sunscreen</li>
+                        <li>Increase the variables randomly, so "Hungry" increases between 2 to 4 points, every 5 to 10 seconds</li>
+                        <li>When the game finishes, tell the player how long Scratch Cat was on his beach holiday.</li>
+
+                    </ul>
+                </p>
+
             </div>
         </div>
 
@@ -1225,6 +1264,20 @@
                     Write a webpage that shows the same piece of text with different background and text colours: use the sentence
                     "the quick brown fox jumped over the lazy dog". Use a large font size so you can get a good look at the colours. Choose colour combinations that are readable. Which combinations don't
                     work together, and why? What's your favourite?
+                </p>
+
+                <a name="paris"></a>
+                <h3>Welcome to Paris</h3>
+                <p>It's the summer holidays. Are you going somewhere nice? Paris? Ooh la la!</p>
+                <p>
+                    Imagine you're the Paris Tourist Board (or any other holiday destination). Make a website for tourists visiting Paris. You will need:
+                    <ul>
+                        <li>A front page saying "Welcome to Paris", with nice pictures, and links to other pages covering...</li>
+                        <li>Things to do in Paris, listing tourist attractions</li>
+                        <li>Where to stay in Paris, listing hotels</li>
+                        <li>How get to Paris, explaining flights and trains</li>
+                        <li>And any other webpages that might be useful to a tourist</li>
+                    </ul>
                 </p>
             </div>
         </div>
@@ -2067,6 +2120,62 @@
                         </li>
                         <li>The game finishes after 40 turns, or earlier if the player sinks all ships.</li>
                     </ul>
+                </p>
+
+
+                <a name="calendar-app"></a>
+                <h3>Calendar app</h3>
+                <p>
+                    Make a calendar program. The user can:
+                    <ul>
+                        <li>Add events for a particular day</li>
+                        <li>List all events for a particular year, month or day</li>
+                        <li>Remove a particular event</li>
+                    </ul>
+
+                <h4>Example</h4>
+                <pre style="font-family: monospace;">
+                What do you want to do?
+                1. Add an event
+                2. List events
+                3. Delete an event
+
+                => 1
+
+                Please enter the day of the event:
+                => 2018-06-29
+                Please enter the event information:
+                => Attend CoderDojo
+                Event "Attend CoderDojo" added for 2018-06-29
+
+                What do you want to do?
+                1. Add an event
+                2. List events
+                3. Delete an event
+
+                => 2
+
+                Please enter the date range to list events from (e.g. year: "2018", or month "2018-06", or day "2018-06-29"
+                => 2018-06
+                Events in 2018-06:
+                2018-06-29: "Attend CoderDojo"
+
+                What do you want to do?
+                1. Add an event
+                2. List events
+                3. Delete an event
+
+                => 3
+
+                Please enter the date range to list (deletable) events from (e.g. year: "2018", or month "2018-06", or day "2018-06-29"
+                => 2018-06
+                Deletable events in 2018-06:
+                1. 2018-06-29: "Attend CoderDojo"
+                Which event do you wish to delete? (enter its number)
+                => 1
+                Event deleted:
+                2018-06-29: "Attend CoderDojo"
+                </pre>
                 </p>
             </div>
         </div>
