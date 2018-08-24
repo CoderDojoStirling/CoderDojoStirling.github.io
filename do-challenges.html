@@ -88,11 +88,11 @@
         <br>
     <p>
         Scratch:
-        <a href="#youtube-rpg-tutorial">YouTube tutorial: make a RPG/Adventure Game</a>
+        <a href="#spy-name-generator">Spy Name Generator</a>
     </p>
     <p>
         Coding:
-        <a href="#regex">Regular Expressions</a>
+        <a href="#word-funnel">Word Funnel</a>
     </p>
     </p>
     <br/>
@@ -902,6 +902,57 @@
                     <a href="https://www.youtube.com/watch?v=K5Qd4G_a_EM" target="_blank">part 4</a>,
                     <a href="https://www.youtube.com/watch?v=Ta_jLlplsTU" target="_blank">part 5</a> and
                     <a href="https://www.youtube.com/watch?v=__h8yTmNiWg" target="_blank">part 6</a>.
+                </p>
+
+                <a name="spy-name-generator"></a>
+                <h3>Spy Name Generator</h3>
+                <p>
+                    Make a Scratch program that generates random spy names :-) Scratch cat first asks for your name, then
+                    tells you your spy name. Here goes..
+                <ul>
+                    <li>"What's your name?"</li>
+                    <li>"Greg"</li>
+                    <li>"Hi Greg. Your spy name is Smelly Weasel". Or maybe "Hi Greg. Your spy name is Pink Milkshake"</li>
+                </ul>
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>You will need a Scratch cat sprite.</li>
+                    <li>Now get Scratch cat to ask your name, and say hello ("Hi Greg"). Useful Scratch blocks:
+                        <ul>
+                            <li>'ask and wait' under Sensing</li>
+                            <li>'say' under Looks</li>
+                            <li>'join' under Operators (used to join words together into a sentence)</li>
+                        </ul>
+                    </li>
+                    <li>Generating the spy name is the tricky bit. Each spy name is a sentence with the same structure:
+                        "Hi (Greg - name). Your spy name is (Smelly - describing word) (Weasel - naming
+                        word)". So we'll generate the spy name
+                        by randomly picking a describing word and a naming word,
+                        then making a sentence out of them:
+                        <ul>
+                            <li>Make a list of describing words (adjectives). Use 'Make a list' under 'Data'. How about: Smelly, Pink
+                                and Furry.
+                            </li>
+                            <li>Make a list of naming words (nouns). How about: Weasel, Milkshake, Goblin.</li>
+                            <li>Now we'll generate the spy name by randomly picking a word from each list,
+                                and combining them
+                                into a sentence. To randomly pick a word, use 'item random of list-name' under Data. To
+                                combine the words
+                                into a sentence, use 'join' under Operators. You'll need to use 'join' multiple times.
+                            </li>
+                            <li>Go make some fun spy names!</li>
+                        </ul>
+
+                    </li>
+                </ul>
+                </p>
+                <p>To finish things off, let's replace Scratch cat with M: head of the Secret Service in James Bond films.
+                    Make a new sprite for M: they should be dressed in normal clothes. Now add an extra "spy" costume
+                    for M: they should be dressed like a spy, with dark glasses, a fake moustache, and maybe all in black.
+                    When M asks your name, show them in their normal costume. But when M tells you your spy name, show
+                    them in their spy costume. Cooool.
                 </p>
 
             </div>
@@ -2205,6 +2256,32 @@
                     When you've finished this, you can play around with regular expressions at <a href="https://regex101.com/" target="_blank">regex101</a>.
                 </p>
 
+                <a name="word-funnel"></a>
+                <h3>Word Funnel</h3>
+                <p>
+                    Write a program that takes two words, and says whether the second word can be made from the first by removing one letter.
+                    All other letters must remain in the same order. For example:
+                <ul>
+                    <li>funnel("leave", "eave") => true</li>
+                    <li>funnel("reset", "rest") => true</li>
+                    <li>funnel("dragoon", "dragon") => true</li>
+                    <li>funnel("eave", "leave") => false</li>
+                    <li>funnel("sleet", "lets") => false</li>
+                    <li>funnel("skiff", "ski") => false</li>
+                </ul>
+                </p>
+                <h4>Advanced</h4>
+                <p>For every word in the dictionary, output all other words that can be made by removing one letter from the
+                    first (using what you just coded :-). For example:
+                    <ul>
+                        <li>bonus("coasts") => {'coast', 'costs', 'oasts', 'coats', 'casts'}</li>
+                    </ul>
+                    To get started, here's a <a href="https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt">link to a dictionary of words</a>
+                </p>
+                <p>Thanks to <a
+                        href="https://old.reddit.com/r/dailyprogrammer/comments/98ufvz/20180820_challenge_366_easy_word_funnel_1/">Reddit
+                    dailyprogrammer</a>
+                </p>
             </div>
         </div>
 
