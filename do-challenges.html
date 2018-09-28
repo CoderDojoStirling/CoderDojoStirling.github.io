@@ -92,7 +92,7 @@
     </p>
     <p>
         Coding:
-        <a href="#word-funnel">Word Funnel</a>
+        <a href="#scoring-a-game">Scoring a Game</a>
     </p>
     </p>
     <br/>
@@ -2299,6 +2299,32 @@
                 </p>
                 <p>Thanks to <a
                         href="https://old.reddit.com/r/dailyprogrammer/comments/98ufvz/20180820_challenge_366_easy_word_funnel_1/">Reddit
+                    dailyprogrammer</a>
+                </p>
+
+                <a name="scoring-a-game"></a>
+                <h3>Scoring a Game</h3>
+                <p>
+                    5 friends (called Alex, Ben, Caitlin, Dean and Erin) are playing a game, and keeping track of scores. When someone scores a point,
+                    their initial (letter) is typed in lowercase. When they lose a point, their initial is typed in uppercase. So "aaAb" means in that
+                    round Alex (player "a") gained two points then lost a point, then Ben (player "b") gained a point. Write a program which takes in the
+                    recorded scores, and gives the total scores for each player, ranked high to low. So "aaaAb" would be: a:2, b:1.
+                </p>
+                <p>
+                    Challenge input:
+                <pre>
+                abcde
+                dbbaCEDbdAacCEAadcB
+                EbAAdbBEaBaaBBdAccbeebaec
+                </pre>
+                Challenge output:
+                <pre>
+                abcde -> a:1, b:1, c:1, d:1, e:1
+                dbbaCEDbdAacCEAadcB -> b:2, d:2, a:1, c:0, e:-2
+                </pre>
+                </p>
+                <p>Thanks to <a
+                        href="https://www.reddit.com/r/dailyprogrammer/comments/8jcffg/20180514_challenge_361_easy_tally_program/">Reddit
                     dailyprogrammer</a>
                 </p>
             </div>
