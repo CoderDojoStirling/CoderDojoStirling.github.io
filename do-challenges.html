@@ -94,7 +94,11 @@
         Websites:
         <a href="#learn-javascript">Codecademy course: Learn Javascript</a>
     </p>
-    
+    <p>
+        Coding:
+        <a href="#currency-conversion">Convert currency with API data</a>
+    </p>
+
     <br/>
 
     <div class="panel-group">
@@ -2354,6 +2358,31 @@
                 <p>Thanks to <a
                         href="https://www.reddit.com/r/dailyprogrammer/comments/8jcffg/20180514_challenge_361_easy_tally_program/">Reddit
                     dailyprogrammer</a>
+                </p>
+
+                <a name="currency-conversion"></a>
+                <h3>Convert currency with API data</h3>
+                <p>
+                    Write a program that converts one currency amount to another. Here is an example of UK pounds (GBP) to US dollars (USD):
+                <ul>
+                    <li>Input: 1.22 GBP to USD</li>
+                    <li>Output: 1.57 USD</li>
+                </ul>
+                You will need currency conversion information: for each currency what is the rate to convert into other currencies?
+                To start with, just allow conversions from UK pounds (GBP) to 3 other currencies, using these conversion rates:
+                <ul>
+                    <li>GBP -> USD: 1.2793188994</li>
+                    <li>GBP -> EUR: 1.1276499774</li>
+                    <li>GBP -> JPY: 143.3581416328</li>
+                </ul>
+                Now to make it more fun, use an Internet API to get live currency conversion information. Use <a href="https://exchangeratesapi.io" target="_blank">https://exchangeratesapi.io</a>:
+                <ul>
+                    <li>To see all GBP conversion rates: <a href="https://api.exchangeratesapi.io/latest?base=GBP" target="_blank">https://api.exchangeratesapi.io/latest?base=GBP</a></li>
+                    <li>To see just the GBP->USD conversion rate: <a href="https://api.exchangeratesapi.io/latest?symbols=USD,GBP" target="_blank">https://api.exchangeratesapi.io/latest?symbols=USD,GBP</a></li>
+                    <li>And check out all the documentation at: <a href="https://exchangeratesapi.io" target="_blank">https://exchangeratesapi.io</a></li>
+                </ul>
+                You will need to call the API for currency information, load the response (which is in JSON format), read out the currency conversion
+                rate you want, and use it.
                 </p>
             </div>
         </div>
