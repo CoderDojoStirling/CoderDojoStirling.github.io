@@ -88,17 +88,27 @@
         <br>
     <p>
         Scratch:
-        <a href="#youtube-shootemup">YouTube tutorial: make a shoot ’em up game with planes</a>
+        <a href="#rudolph-maze">Rudolf hunts for his red nose</a>
     </p>
     <p>
         Websites:
-        <a href="#learn-javascript">Codecademy course: Learn Javascript</a>
+        <a href="#xmas-wishlist">Your Christmas present wish list</a>
     </p>
     <p>
         Coding:
-        <a href="#currency-conversion">Convert currency with API data</a>
+        <a href="#santas-list">Santa's Christmas list</a>
     </p>
-
+    <p>
+        Microbits:
+        <a href="#talk-microbits">Talk between Microbits</a>
+    </p>
+    <p>
+        And...
+        <ul>
+            <li>There's a new Minecraft adventure on Code.org called <a href="https://code.org/minecraft" target="_blank">Minecraft Voyage Aquatic</a></li>
+            <li>Code.org have 150 new tutorials for you to <a href="https://hourofcode.com/uk/learn" target="_blank">play with!</a></li>
+        </ul>
+    </p>
     <br/>
 
     <div class="panel-group">
@@ -777,71 +787,97 @@
                 <a name="easter-egg-hunt"></a>
                 <h3>Easter Egg Hunt</h3>
                 <p>
-                    Make an easter egg hunt game - you win by finding 10 easter eggs hidden behind things in a country scene. When you click
+                    Make an easter egg hunt game - you win by finding 10 easter eggs hidden behind things in a country
+                    scene. When you click
                     on a hidden egg, it becomes totally visible for 2 seconds, then vanishes.
                 <p>
                     Hints:
                 <ul>
-                    <li>You will need 10 easter egg sprites and some things for them to hide behind like a tree, a rock, a house,
-                        and maybe an easter bunny! You can draw the sprites, or use ones from the Scratch sprites library.
+                    <li>You will need 10 easter egg sprites and some things for them to hide behind like a tree, a rock,
+                        a house,
+                        and maybe an easter bunny! You can draw the sprites, or use ones from the Scratch sprites
+                        library.
                     </li>
-                    <li>To hide an egg, first place the egg so it would just peek out from behind an object (like a rock),
+                    <li>To hide an egg, first place the egg so it would just peek out from behind an object (like a
+                        rock),
                         if the rock was in front. Take a note of the egg's location (as x and y coordinates).
                     </li>
-                    <li>To hide the egg behind the rock, give the egg the following commands when the game starts (the green flag is clicked):
-                      "Go to x, y" (under Motion) and "go back 1 layers" (under Looks). So you're placing the egg by the rock,
-                      then hiding it behind the rock (the rock is in the top layer, the egg is one layer behind).
+                    <li>To hide the egg behind the rock, give the egg the following commands when the game starts (the
+                        green flag is clicked):
+                        "Go to x, y" (under Motion) and "go back 1 layers" (under Looks). So you're placing the egg by
+                        the rock,
+                        then hiding it behind the rock (the rock is in the top layer, the egg is one layer behind).
                     </li>
-                    <li>When someone clicks on the egg, you can make it appear fully with the "go to front" command (under Looks). You will
-                      also need to hide the egg after 2 seconds, and increase the game score by 1 (use a "variable").
+                    <li>When someone clicks on the egg, you can make it appear fully with the "go to front" command
+                        (under Looks). You will
+                        also need to hide the egg after 2 seconds, and increase the game score by 1 (use a "variable").
                     </li>
                 </ul>
                 </p>
                 <h4>Advanced</h4>
                 <ul>
-                    <li>Keep track of how long it takes for someone to finish the game. When the game ends, tell them how long they took.
+                    <li>Keep track of how long it takes for someone to finish the game. When the game ends, tell them
+                        how long they took.
                     </li>
-                    <li>Add some hidden eggs at random locations. So the player will need to randomly click round the screen to find them!</li>
+                    <li>Add some hidden eggs at random locations. So the player will need to randomly click round the
+                        screen to find them!
+                    </li>
                 </ul>
 
                 <a name="april-showers"></a>
                 <h3>April Showers</h3>
                 <p>
-                    It rains a lot in April. Make a game where you dodge raindrops. Get hit by 3 raindrops, and the game finishes.
+                    It rains a lot in April. Make a game where you dodge raindrops. Get hit by 3 raindrops, and the game
+                    finishes.
                     The player should be told how many seconds they survived.
                 <p>
                     Hints:
                 <ul>
-                    <li>You will need a player sprite to move left and right at the bottom of the screen, to dodge the raindrops.
-                      Draw a sprite yourself, or pick one from the scratch library. Then make it move left and right when the
-                      arrow keys are pressed
+                    <li>You will need a player sprite to move left and right at the bottom of the screen, to dodge the
+                        raindrops.
+                        Draw a sprite yourself, or pick one from the scratch library. Then make it move left and right
+                        when the
+                        arrow keys are pressed
                     </li>
-                    <li>You will need raindrops to fall from the sky. Draw one raindrop. When the game starts, hide this raindrop, then "clone"
-                      it every half a second (look in the "control" section). Use the "when i start as a clone" block to tell
-                      each cloned raindrop what to do (also in the "control" section). Each clone should:
-                      <ul>
-                        <li>Appear using "show"</li>
-                        <li>Start at a random location at the top of the screen. Use a y position of 180, and a random x position between 240 and -240</li>
-                        <li>Move down the screen</li>
-                        <li>Delete itself at the bottom using the "delete this clone" block</li>
-                      </ul>
+                    <li>You will need raindrops to fall from the sky. Draw one raindrop. When the game starts, hide this
+                        raindrop, then "clone"
+                        it every half a second (look in the "control" section). Use the "when i start as a clone" block
+                        to tell
+                        each cloned raindrop what to do (also in the "control" section). Each clone should:
+                        <ul>
+                            <li>Appear using "show"</li>
+                            <li>Start at a random location at the top of the screen. Use a y position of 180, and a
+                                random x position between 240 and -240
+                            </li>
+                            <li>Move down the screen</li>
+                            <li>Delete itself at the bottom using the "delete this clone" block</li>
+                        </ul>
                     </li>
-                    <li>You can check if the player has hit a raindrop using the "touching sprite" block in the "sensing" section</li>
-                    <li>You will need a variable to keep track of how many hits the player has taken. When the player touches a raindrop,
-                      subtract 1 from the variable. When the variable gets to zero, the game finishes</li>
-                    <li>You can measure how long the player survived using the 'timer' block in the 'sensing' section. Use 'reset
-                        timer' to start timing, and assign 'timer' to a variable to stop timing (when the game finishes)</li>
+                    <li>You can check if the player has hit a raindrop using the "touching sprite" block in the
+                        "sensing" section
+                    </li>
+                    <li>You will need a variable to keep track of how many hits the player has taken. When the player
+                        touches a raindrop,
+                        subtract 1 from the variable. When the variable gets to zero, the game finishes
+                    </li>
+                    <li>You can measure how long the player survived using the 'timer' block in the 'sensing' section.
+                        Use 'reset
+                        timer' to start timing, and assign 'timer' to a variable to stop timing (when the game finishes)
+                    </li>
                 </ul>
 
                 <a name="youtube-tutorial"></a>
                 <h3>YouTube tutorial: make a zombie survival game</h3>
                 <p>
                     There are some good video tutorials on YouTube that show you how to make cool things with Scratch.
-                    Follow along with this 10 minute <a href="https://www.youtube.com/watch?v=QXru0rSV2ZQ" target="_blank">video tutorial</a>, where
-                    you learn how to make a zombie survival game: the player is attacked by zombies, and can run around and shoot the zombies.
+                    Follow along with this 10 minute <a href="https://www.youtube.com/watch?v=QXru0rSV2ZQ"
+                                                        target="_blank">video tutorial</a>, where
+                    you learn how to make a zombie survival game: the player is attacked by zombies, and can run around
+                    and shoot the zombies.
                 </p>
-                <p>Once you have your own zombie game working, then you can improve it how you want, or keep watching more video
-                   tutorials in the series. There are 9 more videos:
+                <p>Once you have your own zombie game working, then you can improve it how you want, or keep watching
+                    more video
+                    tutorials in the series. There are 9 more videos:
                     <a href="https://www.youtube.com/watch?v=YgIjnuLqAsA" target="_blank">part 2</a>,
                     <a href="https://www.youtube.com/watch?v=-W-dADorGOk" target="_blank">part 3</a>,
                     <a href="https://www.youtube.com/watch?v=YAyyKPNt-XU" target="_blank">part 4</a>,
@@ -853,44 +889,63 @@
                     <a href="https://www.youtube.com/watch?v=amovHUOMLJk" target="_blank">part 10</a>.
                 </p>
                 <p>There are plenty more video tutorials on YouTube about making games in scratch: try searching for
-                    <a href="https://www.youtube.com/results?search_query=make+a+scratch+game" target="_blank">"Make a scratch game"</a>. For example,
-                    here is a <a href="https://www.youtube.com/watch?v=GQo7s7XUfFg&list=PLfd-8l91Lb4VAp-QgP8H4JggTDLb_Rywa" target="_blank">video playlist</a> that shows how to make
+                    <a href="https://www.youtube.com/results?search_query=make+a+scratch+game" target="_blank">"Make a
+                        scratch game"</a>. For example,
+                    here is a <a
+                            href="https://www.youtube.com/watch?v=GQo7s7XUfFg&list=PLfd-8l91Lb4VAp-QgP8H4JggTDLb_Rywa"
+                            target="_blank">video playlist</a> that shows how to make
                     a 'cat chasing mouse' game, a 'whack a mole' game, and more.
                 </p>
 
                 <a name="virtual-pet"></a>
                 <h3>Virtual pet: beach holiday</h3>
                 <p>
-                    Scratch Cat has gone on holiday to the beach. He will need regular food, drink and sunscreen to enjoy himself. If he doesn't get
-                    enough of each then he'll be hungry, thirsty and sunburnt. Scratch Cat will then come home from holiday early as he feels unwell.
+                    Scratch Cat has gone on holiday to the beach. He will need regular food, drink and sunscreen to
+                    enjoy himself. If he doesn't get
+                    enough of each then he'll be hungry, thirsty and sunburnt. Scratch Cat will then come home from
+                    holiday early as he feels unwell.
                     Sadness.
                 </p>
                 <p>
-                    Make a "virtual pet" game where you keep Scratch Cat on his beach holiday for as long as possible. You will need to give him food,
-                    drink or sunscreen, depending on what he needs. The basic idea is that you have "variables" that show how Scratch Cat is
-                    feeling, like: "Hungry: 4". Scratch Cat gets hungrier over time, so the variable starts at zero and increases 2 points every
-                    5 seconds. The player can reduce points by feeding Scratch Cat: they do this by clicking on some cat food. If the "Hungry" variable
-                    gets to 20 points, then Scratch Cat feels unwell and goes home early: the game finishes. You will need three different variables:
-                    "Hungry" (fixed by cat food), "Thirsty" (fixed by a water bowl), and "Sunburnt" (fixed by sunscreen).
+                    Make a "virtual pet" game where you keep Scratch Cat on his beach holiday for as long as possible.
+                    You will need to give him food,
+                    drink or sunscreen, depending on what he needs. The basic idea is that you have "variables" that
+                    show how Scratch Cat is
+                    feeling, like: "Hungry: 4". Scratch Cat gets hungrier over time, so the variable starts at zero and
+                    increases 2 points every
+                    5 seconds. The player can reduce points by feeding Scratch Cat: they do this by clicking on some cat
+                    food. If the "Hungry" variable
+                    gets to 20 points, then Scratch Cat feels unwell and goes home early: the game finishes. You will
+                    need three different variables:
+                    "Hungry" (fixed by cat food), "Thirsty" (fixed by a water bowl), and "Sunburnt" (fixed by
+                    sunscreen).
                 </p>
                 <p>
                     To get started, let's deal with Scratch Cat being hungry:
-                    <ul>
-                        <li>Add the Scratch Cat sprite and a beach background</li>
-                        <li>Add a variable called "Hungry", and set it to zero when the game starts. Then make the variable increase 2 points every 5 seconds.</li>
-                        <li>Add a "cat food" sprite. Reduce the "Hungry" variable by two points when the player clicks on the cat food.</li>
-                        <li>Check to see if the "Hungry" variable is 20 points or more. If it is, then stop the game: make Scratch Cat say that he's going home.</li>
-                    </ul>
+                <ul>
+                    <li>Add the Scratch Cat sprite and a beach background</li>
+                    <li>Add a variable called "Hungry", and set it to zero when the game starts. Then make the variable
+                        increase 2 points every 5 seconds.
+                    </li>
+                    <li>Add a "cat food" sprite. Reduce the "Hungry" variable by two points when the player clicks on
+                        the cat food.
+                    </li>
+                    <li>Check to see if the "Hungry" variable is 20 points or more. If it is, then stop the game: make
+                        Scratch Cat say that he's going home.
+                    </li>
+                </ul>
                 </p>
 
                 <p>
                     Next steps:
-                    <ul>
-                        <li>Add "Thirsty" and "Sunburnt" variables, fixed by a water bowl and sunscreen</li>
-                        <li>Increase the variables randomly, so "Hungry" increases between 2 to 4 points, every 5 to 10 seconds</li>
-                        <li>When the game finishes, tell the player how long Scratch Cat was on his beach holiday.</li>
+                <ul>
+                    <li>Add "Thirsty" and "Sunburnt" variables, fixed by a water bowl and sunscreen</li>
+                    <li>Increase the variables randomly, so "Hungry" increases between 2 to 4 points, every 5 to 10
+                        seconds
+                    </li>
+                    <li>When the game finishes, tell the player how long Scratch Cat was on his beach holiday.</li>
 
-                    </ul>
+                </ul>
                 </p>
 
                 <a name="youtube-rpg-tutorial"></a>
@@ -911,12 +966,14 @@
                 <a name="spy-name-generator"></a>
                 <h3>Spy Name Generator</h3>
                 <p>
-                    Make a Scratch program that generates random spy names :-) Scratch cat first asks for your name, then
+                    Make a Scratch program that generates random spy names :-) Scratch cat first asks for your name,
+                    then
                     tells you your spy name. Here goes..
                 <ul>
                     <li>"What's your name?"</li>
                     <li>"Greg"</li>
-                    <li>"Hi Greg. Your spy name is Smelly Weasel". Or maybe "Hi Greg. Your spy name is Pink Milkshake"</li>
+                    <li>"Hi Greg. Your spy name is Smelly Weasel". Or maybe "Hi Greg. Your spy name is Pink Milkshake"
+                    </li>
                 </ul>
                 </p>
                 <p>
@@ -931,11 +988,13 @@
                         </ul>
                     </li>
                     <li>Generating the spy name is the tricky bit. Each spy name is a sentence with the same structure:
-                        "Hi (Greg - name). Your spy name is (Smelly - describing word) (Weasel - noun)". So we'll generate the spy name
+                        "Hi (Greg - name). Your spy name is (Smelly - describing word) (Weasel - noun)". So we'll
+                        generate the spy name
                         by randomly picking a describing word and a naming word,
                         then making a sentence out of them:
                         <ul>
-                            <li>Make a list of describing words (adjectives). Use 'Make a list' under 'Data'. How about: Smelly, Pink
+                            <li>Make a list of describing words (adjectives). Use 'Make a list' under 'Data'. How about:
+                                Smelly, Pink
                                 and Furry.
                             </li>
                             <li>Make a list of naming words (nouns). How about: Weasel, Milkshake, Goblin.</li>
@@ -951,9 +1010,11 @@
                     </li>
                 </ul>
                 </p>
-                <p>To finish things off, let's replace Scratch cat with M: head of the Secret Service in James Bond films.
+                <p>To finish things off, let's replace Scratch cat with M: head of the Secret Service in James Bond
+                    films.
                     Make a new sprite for M: they should be dressed in normal clothes. Now add an extra "spy" costume
-                    for M: they should be dressed like a spy, with dark glasses, a fake moustache, and maybe all in black.
+                    for M: they should be dressed like a spy, with dark glasses, a fake moustache, and maybe all in
+                    black.
                     When M asks your name, show them in their normal costume. But when M tells you your spy name, show
                     them in their spy costume. Cooool.
                 </p>
@@ -963,25 +1024,33 @@
                 <h3>Going to School</h3>
                 <p>
                     Make a story about you going to school. There will be 3 screens (each using a different backdrop):
-                    <ul>
-                        <li>First, your bedroom. Your Mum comes in and says "wake up!"</li>
-                        <li>Second, on the way to school. You meet a friend and say hi to one another</li>
-                        <li>Third, at school. Make something interesting happen, like being attacked by a giant octopus, or have a witch flying overhead</li>
-                    </ul>
-                 Getting started:
                 <ul>
-                    <li>Scratch has different sprites and backdrops you can choose from, or you can create your own. For backdrops look bottom left for "Choose backdrop from library"</li>
+                    <li>First, your bedroom. Your Mum comes in and says "wake up!"</li>
+                    <li>Second, on the way to school. You meet a friend and say hi to one another</li>
+                    <li>Third, at school. Make something interesting happen, like being attacked by a giant octopus, or
+                        have a witch flying overhead
+                    </li>
+                </ul>
+                Getting started:
+                <ul>
+                    <li>Scratch has different sprites and backdrops you can choose from, or you can create your own. For
+                        backdrops look bottom left for "Choose backdrop from library"
+                    </li>
                     <li>You can switch between backdrops using "switch backdrop" in the "looks" section.</li>
                     <li>So you and your Mum have a conversation in the bedroom: Mum says "wake up!", then you say "ok!".
-                        Your two sprites have to take turns saying something. Use the "broadcast" and "when I receive" blocks in the "events" section
-                        to make this happen. Watch this <a href="https://www.youtube.com/watch?v=TJO-oI8dBTs&feature=youtu.be&t=1m20s" target="_blank">4 minute video showing how it's done</a></li>
+                        Your two sprites have to take turns saying something. Use the "broadcast" and "when I receive"
+                        blocks in the "events" section
+                        to make this happen. Watch this <a
+                                href="https://www.youtube.com/watch?v=TJO-oI8dBTs&feature=youtu.be&t=1m20s"
+                                target="_blank">4 minute video showing how it's done</a></li>
                 </ul>
                 </p>
 
                 <a name="youtube-shootemup"></a>
                 <h3>YouTube tutorial: make a shoot ’em up game with planes</h3>
                 <p>
-                    Learn how to make a shoot’em up game by following along with this <a href="https://www.youtube.com/watch?v=0Ebu48zjXsw" target="_blank">10 minute video tutorial</a>.
+                    Learn how to make a shoot’em up game by following along with this <a
+                        href="https://www.youtube.com/watch?v=0Ebu48zjXsw" target="_blank">10 minute video tutorial</a>.
                     Your aeroplane is being attacked by a swarm of enemy planes!
                 </p>
                 <p>Once you have your own game working then you can improve it how you want, or keep watching more video
@@ -990,6 +1059,27 @@
                     <a href="https://www.youtube.com/watch?v=-oAEGAE7Lv0" target="_blank">part 3</a>, and
                     <a href="https://www.youtube.com/watch?v=EmNA1e4pAE4" target="_blank">part 4</a>.
                 </p>
+
+                <a name="rudolph-maze"></a>
+                <h3>Rudolf hunts for his red nose</h3>
+                <p>
+                    Rudolf woke up on Christmas morning and couldn't find his red nose. Make a reindeer sprite either
+                    from a picture or by drawing in Scratch. Draw a complicated maze sprite and hide a sprite of
+                    Rudolf's nose somewhere in it. Make Rudolf move with keys on the keyboard. He should bounce off the
+                    walls of the maze. When he finds his nose, change sprite costumes so that his nose disappears from
+                    the maze and appears on Rudolf.
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>You will need three sprites; one for Rudolf, one for his nose and one for the maze</li>
+                    <li>Some sprites will need multiple costumes</li>
+                    <li>To make something disappear you can change costume or you can use the <b>show</b> and
+                        <b>hide</b> blocks
+                    </li>
+                </ul>
+                </p>
+                <p>More advanced: Animate a celebration after Rudolf finds his nose with fireworks and dancing.</p>
 
             </div>
         </div>
@@ -1350,17 +1440,22 @@
                 <a name="easter-traditions"></a>
                 <h3>Easter Traditions</h3>
                 <p>
-                    Make a website about different Easter traditions around the world - a page for each one. For example,
-                    eggs are rolled down hills in the United Kingdom, whilst Spain holds processions to celebrate Semana Santa (Holy Week). Use pins on
+                    Make a website about different Easter traditions around the world - a page for each one. For
+                    example,
+                    eggs are rolled down hills in the United Kingdom, whilst Spain holds processions to celebrate Semana
+                    Santa (Holy Week). Use pins on
                     Google Maps to show where each tradition happens.
                 </p>
 
                 <a name="colour-codes"></a>
                 <h3>Colour Codes</h3>
                 <p>
-                    CSS lets you write text and backgrounds in <span style="background-color: #42A5F5; color: #FFEE58">different</span> <span style="background-color: #EF9A9A; color: #FFE0B2">colours</span>.
-                    Write a webpage that shows the same piece of text with different background and text colours: use the sentence
-                    "the quick brown fox jumped over the lazy dog". Use a large font size so you can get a good look at the colours. Choose colour combinations that are readable. Which combinations don't
+                    CSS lets you write text and backgrounds in <span style="background-color: #42A5F5; color: #FFEE58">different</span>
+                    <span style="background-color: #EF9A9A; color: #FFE0B2">colours</span>.
+                    Write a webpage that shows the same piece of text with different background and text colours: use
+                    the sentence
+                    "the quick brown fox jumped over the lazy dog". Use a large font size so you can get a good look at
+                    the colours. Choose colour combinations that are readable. Which combinations don't
                     work together, and why? What's your favourite?
                 </p>
 
@@ -1368,20 +1463,25 @@
                 <h3>Welcome to Paris</h3>
                 <p>It's the summer holidays. Are you going somewhere nice? Paris? Ooh la la!</p>
                 <p>
-                    Imagine you're the Paris Tourist Board (or any other holiday destination). Make a website for tourists visiting Paris. You will need:
-                    <ul>
-                        <li>A front page saying "Welcome to Paris", with nice pictures, and links to other pages covering...</li>
-                        <li>Things to do in Paris, listing tourist attractions</li>
-                        <li>Where to stay in Paris, listing hotels</li>
-                        <li>How get to Paris, explaining flights and trains</li>
-                        <li>And any other webpages that might be useful to a tourist</li>
-                    </ul>
+                    Imagine you're the Paris Tourist Board (or any other holiday destination). Make a website for
+                    tourists visiting Paris. You will need:
+                <ul>
+                    <li>A front page saying "Welcome to Paris", with nice pictures, and links to other pages
+                        covering...
+                    </li>
+                    <li>Things to do in Paris, listing tourist attractions</li>
+                    <li>Where to stay in Paris, listing hotels</li>
+                    <li>How get to Paris, explaining flights and trains</li>
+                    <li>And any other webpages that might be useful to a tourist</li>
+                </ul>
                 </p>
 
                 <a name="scratch-website"></a>
                 <h3>Introduction to Scratch</h3>
-                <p>Make a website telling people about <a href="https://scratch.mit.edu/" target="_blank">Scratch</a>: what it is, and what you can do with it.</p>
-                <p>You can link to Scratch games and stories you like. If you've made some Scratch games and stories yourself, then link to
+                <p>Make a website telling people about <a href="https://scratch.mit.edu/" target="_blank">Scratch</a>:
+                    what it is, and what you can do with it.</p>
+                <p>You can link to Scratch games and stories you like. If you've made some Scratch games and stories
+                    yourself, then link to
                     them as well, and write down what was interesting or challenging about making them.
                 </p>
                 <p>Show off your Scratch knowledge!</p>
@@ -1389,9 +1489,19 @@
                 <a name="learn-javascript"></a>
                 <h3>Codecademy course: Learn Javascript</h3>
                 <p>Javascript is the coding language used to make websites interactive and whizzy.
-                    Take a look at the free Codecademy <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">"Introduction to
+                    Take a look at the free Codecademy <a
+                            href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">"Introduction
+                        to
                         Javascript" course</a>.
                 </p>
+
+                <a name="xmas-wishlist"></a>
+                <h3>Your Christmas present wish list</h3>
+                <p>Create a website for your Christmas present wish list. Lay all the details out neatly in a table. You
+                    could have a column for the presents, another column
+                    for where to buy them from and another for options like colour . Give your website a nice big title.
+                    Add a bit of sparkle with an animated background made from images you find about Christmas.</p>
+
             </div>
         </div>
 
@@ -2024,16 +2134,17 @@
                 <a name="leet-speak"></a>
                 <h3>L33T SPEAK</h3>
                 <p>
-                    Write a program that translates English into <a href="https://simple.wikipedia.org/wiki/Leet">Leet Speak</a> (or vice versa).
+                    Write a program that translates English into <a href="https://simple.wikipedia.org/wiki/Leet">Leet
+                    Speak</a> (or vice versa).
                     Examples:
-                    <ul>
-                        <li>BASIC => 6451C</li>
-                        <li>ELEET => 31337 (pronounced elite)</li>
-                        <li>WOW => `//0`//</li>
-                        <li>MOM => (V)0(V)</li>
-                    </ul>
-                    Use the following l33t:
-                    <pre>
+                <ul>
+                    <li>BASIC => 6451C</li>
+                    <li>ELEET => 31337 (pronounced elite)</li>
+                    <li>WOW => `//0`//</li>
+                    <li>MOM => (V)0(V)</li>
+                </ul>
+                Use the following l33t:
+                <pre>
                         A -> 4
                         B -> 6
                         E -> 3
@@ -2047,11 +2158,11 @@
                         V -> \/
                         W -> `//
                     </pre>
-                    The program takes in one word or phrase per line, and converts it to (or from) l33t:
-                    <ul>
-                        <li>31337 -> eleet</li>
-                        <li>storm -> 570R(V)</li>
-                    </ul>
+                The program takes in one word or phrase per line, and converts it to (or from) l33t:
+                <ul>
+                    <li>31337 -> eleet</li>
+                    <li>storm -> 570R(V)</li>
+                </ul>
                 </p>
                 <p>
                     Challenge input:
@@ -2080,11 +2191,14 @@
                 <h3>Noughts and Crosses</h3>
                 <p>
                     Code the game of 'Noughts and Crosses':
-                    <ul>
-                      <li>Write a 2 player version first, with each player entering their move one after the other. Use ASCII art to show
-                          the state of the board, with board locations specified as in chess (like b3).</li>
-                      <li>Write a one player version next, so you will need to write a basic arificial intelligence :-)</li>
-                    </ul>
+                <ul>
+                    <li>Write a 2 player version first, with each player entering their move one after the other. Use
+                        ASCII art to show
+                        the state of the board, with board locations specified as in chess (like b3).
+                    </li>
+                    <li>Write a one player version next, so you will need to write a basic arificial intelligence :-)
+                    </li>
+                </ul>
                 </p>
                 <h4>Example</h4>
                 <pre style="font-family: monospace;">
@@ -2114,27 +2228,33 @@
                 <a name="seconds-convertor"></a>
                 <h3>Seconds Convertor</h3>
                 <p>
-                    Write a program that converts a number of seconds into years/months/weeks/days/hours/minutes/seconds. Assume that
+                    Write a program that converts a number of seconds into
+                    years/months/weeks/days/hours/minutes/seconds. Assume that
                     there are 365 days in a year, and 28 days in month.
                     <br/><br/>
                     Examples:
-                    <ul>
-                        <li>1234567 => 14 days, 6 hours, 56 minutes, 7 seconds</li>
-                        <li>145252000 => 5 years, 1 day, 3 hours, 46 minutes, 40 seconds</li>
-                    </ul>
+                <ul>
+                    <li>1234567 => 14 days, 6 hours, 56 minutes, 7 seconds</li>
+                    <li>145252000 => 5 years, 1 day, 3 hours, 46 minutes, 40 seconds</li>
+                </ul>
                 </p>
 
 
                 <a name="battleship"></a>
                 <h3>Battleship</h3>
                 <p>
-                    Write a 1-player version of the game <a href="https://en.wikipedia.org/wiki/Battleship_(game)" target="_blank">'Battleship'</a>.
+                    Write a 1-player version of the game <a href="https://en.wikipedia.org/wiki/Battleship_(game)"
+                                                            target="_blank">'Battleship'</a>.
                     Start with the simple version:
                 <ul>
                     <li>The game board is a 10 by 10 grid of squares, representing the sea.</li>
-                    <li>When the game starts, 4 submarines are randomly placed on the board, on 4 different squares. None are visible to the player.</li>
-                    <li>On the player's turn, they specify a board square they wish to "shoot". The board square is updated with their shot, and the player
-                        is told if they "HIT" or "MISSED" a submarine. For a "HIT", the square character is set to "x". For a "MISS", it is set to a "~"
+                    <li>When the game starts, 4 submarines are randomly placed on the board, on 4 different squares.
+                        None are visible to the player.
+                    </li>
+                    <li>On the player's turn, they specify a board square they wish to "shoot". The board square is
+                        updated with their shot, and the player
+                        is told if they "HIT" or "MISSED" a submarine. For a "HIT", the square character is set to "x".
+                        For a "MISS", it is set to a "~"
                     </li>
                     <li>The game finishes after 40 turns, or earlier if the player destroys all submarines.</li>
                 </ul>
@@ -2221,29 +2341,35 @@
                   Player, enter your move: ..
                 </pre>
                 <p>
-                    The more advanced version of battleship has ships that are a line of squares, and are placed horizontally
+                    The more advanced version of battleship has ships that are a line of squares, and are placed
+                    horizontally
                     or vertically:
-                    <ul>
-                        <li>When the game starts, All ships are randomly placed on the board, either horizontally or vertically.
-                            Two ships cannot occupy the same square. The are 4 submarines of size 1 (already done), 3 destroyers
-                            of size 2, 2 cruisers of size 3, and one battleship of size 4.</li>
-                        <li>On the player's turn, they again specify a board square they wish to "shoot". A ship can be hit as before (represented by "x"),
-                            but is only completely sunk when all the ship's squares are hit (represented by "*"). So the player is told
-                            if they "HIT", "MISSED", or "SUNK" a ship, and the board is updated.
-                        </li>
-                        <li>The game finishes after 40 turns, or earlier if the player sinks all ships.</li>
-                    </ul>
+                <ul>
+                    <li>When the game starts, All ships are randomly placed on the board, either horizontally or
+                        vertically.
+                        Two ships cannot occupy the same square. The are 4 submarines of size 1 (already done), 3
+                        destroyers
+                        of size 2, 2 cruisers of size 3, and one battleship of size 4.
+                    </li>
+                    <li>On the player's turn, they again specify a board square they wish to "shoot". A ship can be hit
+                        as before (represented by "x"),
+                        but is only completely sunk when all the ship's squares are hit (represented by "*"). So the
+                        player is told
+                        if they "HIT", "MISSED", or "SUNK" a ship, and the board is updated.
+                    </li>
+                    <li>The game finishes after 40 turns, or earlier if the player sinks all ships.</li>
+                </ul>
                 </p>
 
                 <a name="calendar-app"></a>
                 <h3>Calendar app</h3>
                 <p>
                     Make a calendar program. The user can:
-                    <ul>
-                        <li>Add events for a particular day</li>
-                        <li>List all events for a particular year, month or day</li>
-                        <li>Remove a particular event</li>
-                    </ul>
+                <ul>
+                    <li>Add events for a particular day</li>
+                    <li>List all events for a particular year, month or day</li>
+                    <li>Remove a particular event</li>
+                </ul>
 
                 <h4>Example</h4>
                 <pre style="font-family: monospace;">
@@ -2295,22 +2421,27 @@
                 <p>
                     What if you need to find particular letter sequences in a large piece of text, like all
                     email addresses, or all phone numbers? You'll need something
-                    called a "regular expression" for that. A regular expression lets you define the pattern of letters that you're
+                    called a "regular expression" for that. A regular expression lets you define the pattern of letters
+                    that you're
                     looking for, and then find all letter sequences matching that pattern. For example, the regular
-                    expression "ab+a" says "match sequences of letters that start with 'a', are followed by any number of 'b's,
+                    expression "ab+a" says "match sequences of letters that start with 'a', are followed by any number
+                    of 'b's,
                     and end with another 'a'. So this regular expression matches "aba", "abba", "abbba" and so on.
                 </p>
                 <p>
-                    Learn about regular expressions by playing the <a href="https://regexone.com/" target="_blank">RegexOne game</a>. The
+                    Learn about regular expressions by playing the <a href="https://regexone.com/" target="_blank">RegexOne
+                    game</a>. The
                     game gradually teaches you more complicated regular expressions through a sequence of exercises.
 
-                    When you've finished this, you can play around with regular expressions at <a href="https://regex101.com/" target="_blank">regex101</a>.
+                    When you've finished this, you can play around with regular expressions at <a
+                        href="https://regex101.com/" target="_blank">regex101</a>.
                 </p>
 
                 <a name="word-funnel"></a>
                 <h3>Word Funnel</h3>
                 <p>
-                    Write a program that takes two words, and says whether the second word can be made from the first by removing one letter.
+                    Write a program that takes two words, and says whether the second word can be made from the first by
+                    removing one letter.
                     All other letters must remain in the same order. For example:
                 <ul>
                     <li>funnel("leave", "eave") => true</li>
@@ -2322,12 +2453,15 @@
                 </ul>
                 </p>
                 <h4>Advanced</h4>
-                <p>For every word in the dictionary, output all other words that can be made by removing one letter from the
+                <p>For every word in the dictionary, output all other words that can be made by removing one letter from
+                    the
                     first (using what you just coded :-). For example:
-                    <ul>
-                        <li>bonus("coasts") => {'coast', 'costs', 'oasts', 'coats', 'casts'}</li>
-                    </ul>
-                    To get started, here's a <a href="https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt">link to a dictionary of words</a>
+                <ul>
+                    <li>bonus("coasts") => {'coast', 'costs', 'oasts', 'coats', 'casts'}</li>
+                </ul>
+                To get started, here's a <a
+                    href="https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt">link to a dictionary of
+                words</a>
                 </p>
                 <p>Thanks to <a
                         href="https://old.reddit.com/r/dailyprogrammer/comments/98ufvz/20180820_challenge_366_easy_word_funnel_1/">Reddit
@@ -2337,10 +2471,14 @@
                 <a name="scoring-a-game"></a>
                 <h3>Scoring a Game</h3>
                 <p>
-                    5 friends (called Alex, Ben, Caitlin, Dean and Erin) are playing a game, and keeping track of scores. When someone scores a point,
-                    their initial (letter) is typed in lowercase. When they lose a point, their initial is typed in uppercase. So "aaAb" means in that
-                    round Alex (player "a") gained two points then lost a point, then Ben (player "b") gained a point. Write a program which takes in the
-                    recorded scores, and gives the total scores for each player, ranked high to low. So "aaaAb" would be: a:2, b:1.
+                    5 friends (called Alex, Ben, Caitlin, Dean and Erin) are playing a game, and keeping track of
+                    scores. When someone scores a point,
+                    their initial (letter) is typed in lowercase. When they lose a point, their initial is typed in
+                    uppercase. So "aaAb" means in that
+                    round Alex (player "a") gained two points then lost a point, then Ben (player "b") gained a point.
+                    Write a program which takes in the
+                    recorded scores, and gives the total scores for each player, ranked high to low. So "aaaAb" would
+                    be: a:2, b:1.
                 </p>
                 <p>
                     Challenge input:
@@ -2363,27 +2501,69 @@
                 <a name="currency-conversion"></a>
                 <h3>Convert currency with API data</h3>
                 <p>
-                    Write a program that converts one currency amount to another. Here is an example of UK pounds (GBP) to US dollars (USD):
+                    Write a program that converts one currency amount to another. Here is an example of UK pounds (GBP)
+                    to US dollars (USD):
                 <ul>
                     <li>Input: 1.22 GBP to USD</li>
                     <li>Output: 1.57 USD</li>
                 </ul>
-                You will need currency conversion information: for each currency what is the rate to convert into other currencies?
-                To start with, just allow conversions from UK pounds (GBP) to 3 other currencies, using these conversion rates:
+                You will need currency conversion information: for each currency what is the rate to convert into other
+                currencies?
+                To start with, just allow conversions from UK pounds (GBP) to 3 other currencies, using these conversion
+                rates:
                 <ul>
                     <li>GBP -> USD: 1.2793188994</li>
                     <li>GBP -> EUR: 1.1276499774</li>
                     <li>GBP -> JPY: 143.3581416328</li>
                 </ul>
-                Now to make it more fun, use an Internet API to get live currency conversion information. Use <a href="https://exchangeratesapi.io" target="_blank">https://exchangeratesapi.io</a>:
+                Now to make it more fun, use an Internet API to get live currency conversion information. Use <a
+                    href="https://exchangeratesapi.io" target="_blank">https://exchangeratesapi.io</a>:
                 <ul>
-                    <li>To see all GBP conversion rates: <a href="https://api.exchangeratesapi.io/latest?base=GBP" target="_blank">https://api.exchangeratesapi.io/latest?base=GBP</a></li>
-                    <li>To see just the GBP->USD conversion rate: <a href="https://api.exchangeratesapi.io/latest?symbols=USD,GBP" target="_blank">https://api.exchangeratesapi.io/latest?symbols=USD,GBP</a></li>
-                    <li>And check out all the documentation at: <a href="https://exchangeratesapi.io" target="_blank">https://exchangeratesapi.io</a></li>
+                    <li>To see all GBP conversion rates: <a href="https://api.exchangeratesapi.io/latest?base=GBP"
+                                                            target="_blank">https://api.exchangeratesapi.io/latest?base=GBP</a>
+                    </li>
+                    <li>To see just the GBP->USD conversion rate: <a
+                            href="https://api.exchangeratesapi.io/latest?symbols=USD,GBP" target="_blank">https://api.exchangeratesapi.io/latest?symbols=USD,GBP</a>
+                    </li>
+                    <li>And check out all the documentation at: <a href="https://exchangeratesapi.io" target="_blank">https://exchangeratesapi.io</a>
+                    </li>
                 </ul>
-                You will need to call the API for currency information, load the response (which is in JSON format), read out the currency conversion
+                You will need to call the API for currency information, load the response (which is in JSON format),
+                read out the currency conversion
                 rate you want, and use it.
                 </p>
+
+                <a name="santas-list"></a>
+                <h3>Santa's Christmas list</h3>
+                <p>
+                    Santa needs to write a list of all the good children and what they want for Christmas. Write a
+                    program in any language to ask for a name. Then ask if they have been good this year. If they have
+                    been good, store the name in a list called names and ask what present they would like. Store the
+                    present in another list called presents. The elves need to read the list to pack the presents. Show
+                    each name next to the present they want on the screen.
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>To ask a question in Python use an <b><a href="https://www.python-course.eu/python3_input.php"
+                                                                 target="_blank">
+                        input()</a></b> statement; in Javascript you can use <b><a
+                            href="https://www.w3schools.com/jsref/met_win_prompt.asp" target="_blank">prompt</a></b>
+                    </li>
+                    <li>Your lists can be a Python <b><a
+                            href="https://www.w3schools.com/python/python_lists.asp" target="_blank">list</a></b>, a
+                        Python <b><a
+                                href="https://www.w3schools.com/python/python_dictionaries.asp" target="_blank">dictionary</a></b>,
+                        a
+                        Javascript <b><a href="https://www.w3schools.com/js/js_arrays.asp" target="_blank">array</a></b>
+                        or many more
+                    </li>
+                </ul>
+                </p>
+                <p>More advanced: The elves sometimes get confused and need to look up what present they packed for who.
+                    Ask for a name, find it in the names list and look up what present they had from the presents list.
+                    Print the name and present to the screen.</p>
+
             </div>
         </div>
 
@@ -2412,13 +2592,36 @@
                 </ul>
                 Useful links:
                 <ul>
-                    <li>Check out the Microbit quick start here: <a href="https://microbit.org/guide/quick/" target="_blank">https://microbit.org/guide/quick/</a></li>
+                    <li>Check out the Microbit quick start here: <a href="https://microbit.org/guide/quick/"
+                                                                    target="_blank">https://microbit.org/guide/quick/</a>
+                    </li>
                     <li>Check out the Block Editor here: <a href="https://microbit.org/code/" target="_blank">https://microbit.org/code/</a>
                     </li>
-                    <li>Check out some cool projects here: <a href="https://makecode.microbit.org/projects" target="_blank">https://makecode.microbit.org/projects</a></li>
-                    <li>Check out some examples here: <a href="https://makecode.microbit.org/examples" target="_blank">https://makecode.microbit.org/examples</a></li>
+                    <li>Check out some cool projects here: <a href="https://makecode.microbit.org/projects"
+                                                              target="_blank">https://makecode.microbit.org/projects</a>
+                    </li>
+                    <li>Check out some examples here: <a href="https://makecode.microbit.org/examples" target="_blank">https://makecode.microbit.org/examples</a>
+                    </li>
                 </ul>
                 </p>
+
+
+                <a name="talk-microbits"></a>
+                <h3>Talk between Microbits</h3>
+                <p>Find a friend and talk between Microbits. Use the radio functions on the microbits to get them to talk to each other.</p>
+                <p>Simple:
+                    <ul>
+                        <li><b><a href="https://www.youtube.com/watch?v=I1oMIMqc83o" target="_blank">Göteborg Studio</a></b></li>
+                    </ul>
+                </p>
+                <p>
+                    More complicated:
+                    <ul>
+                        <li><b><a href="https://www.youtube.com/watch?v=Ekg9AOsUH4k" target="_blank">Martin Davies</a></b></li>
+                        <li><b><a href="https://www.youtube.com/watch?v=CGUcvAUe2kg" target="_blank">Codergarten</a></b></li>
+                    </ul>
+                </p>
+
             </div>
         </div>
 
