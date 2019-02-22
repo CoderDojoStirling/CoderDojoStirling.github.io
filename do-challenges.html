@@ -88,19 +88,19 @@
         <br>
     <p>
         Scratch:
-        <a href="#flappy-parrot">Flappy Parrot</a>
+        <a href="#melting-snowman">Melting Snowman VS Supermoon</a>
     </p>
     <p>
         Websites:
-        <a href="#cat-meme-generator">Cat Meme Generator</a>
+        <a href="#warm-weather">Warm Weather website</a>
     </p>
     <p>
         Coding:
-        <a href="#about-me">About Me</a>
+        <a href="#python-spinner">Create a spinner in Python</a>
     </p>
     <p>
         Microbits:
-        <a href="#microbit-to-scratch">Using Microbits with Scratch</a>
+        <a href="#hold-it-there">Hold-it-there game</a>
     </p>
     <br/>
 
@@ -1084,6 +1084,23 @@
                 <p>After that: the Flappy Bird tutorial comes from the Raspberry PI website, which has a bunch of other Scratch projects.
                     <a href="https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch" target="_blank">Try them out</a>.</p>
 
+                <a name="melting-snowman"></a>
+                <h3>Challenge: Melting Snowman VS Supermoon</h3>
+                <p>Ron the snowman is struggling with the warm weather - he's in constant danger of melting.  Can you keep him safe from
+                    Supermoon who wants to make the night as hot as your summer holidays.</p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>You will need two sprites; one for Ron, and one for Supermoon
+                    <li>Ron the snowman needs several costumes to show how melted he is
+                    <li>Make Supermoon fly across the screen to chase Ron
+                    <li>Animate Ron so he moves when you press keys on the keyboard
+                    <li>If Supermoon gets close to Ron change his costume to make him look more melted
+                    <li>Draw a wintry night time background
+                </ul>
+                </p>
+                <p> You can find out more about the recent super moon <b><a target="_blank" href="https://www.bbc.co.uk/newsround/46709559">here</a></b>.
+                <p>More advanced: Add a score to the game with some text beneath that says how melty Ron the snowman feels.</p>
             </div>
         </div>
 
@@ -1514,6 +1531,11 @@
                 <p>After that: the Cat Meme Generator tutorial comes from the Raspberry PI website, which has a bunch of other html+css projects.
                     <a href="https://projects.raspberrypi.org/en/projects?software%5B%5D=html-css-javascript" target="_blank">Try them out</a>.</p>
 
+                <a name="warm-weather"></a>
+                <h3>Warm weather website</h3>
+                <p>Create a website about the warm weather we are having. Why is the weather so warm when we had deep snow in February last year? Is it global warming or is it just chance.</p> <p>Add a bright title.</p>
+                <p>Search the internet for information about weather variation to include on your website.  Add some pictures of February weather in Scotland</p>
+                <p> Add some visual effects to enhance the weather theme.</p>
             </div>
         </div>
 
@@ -2585,6 +2607,27 @@
                 <p>After that: the About Me tutorial comes from the Raspberry PI website, which has a bunch of other coding projects.
                     <a href="https://projects.raspberrypi.org/en/projects?software%5B%5D=python" target="_blank">Try them out</a>.</p>
 
+                <a name="python-spinner"></a>
+                <h3>Create a spinner in Python</h3>
+                <p>
+                    Did you know that you can do lots of exciting things with text in Python? In this challenge you will learn how to make a
+                    line look like it is spinning on the screen.  There are plenty of hints and alternative methods
+                    <b><a target="_name" href="https://stackoverflow.com/questions/4995733/how-to-create-a-spinning-command-line-cursor">here</a></b>.
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>To make the spinning line you will need to use a series of characters [|/-\]. Can you find them all on the keyboard?
+                    <li>Add the characters to a Python <b><a target="_blank" href="https://www.w3schools.com/python/python_lists.asp">list</a></b>
+                    <li>Import the <b>time</b> and <b>sys</b> libraries at the top of your code
+                    <li>Display the characters one after another using a <b><a target="_blank" href="https://www.w3schools.com/python/python_for_loops.asp">for loop</a></b> and <b>sys.stdout.write()</b> which is a simpler way of printing to the screen
+                    <li>Insert a delay in your for loop using <b><a target="_blank" href="https://www.pythoncentral.io/pythons-time-sleep-pause-wait-sleep-stop-your-code/">time.sleep()</a></b> to control how fast the characters are displayed
+                    <li>Use <b> \b </b> to move the cursor one letter back and make the symbols appear on top of each other</li>
+                    <li>Use <b><a target="_blank" href="https://stackoverflow.com/questions/10019456/usage-of-sys-stdout-flush-method/10019605">sys.stdout.flush</a></b> to make the symbols appear as the program runs rather than just at the end  </li>
+                </ul>
+                </p>
+                <p>More advanced: Add a second for loop to draw a line of dashes on the screen behind the spinner that gets longer with time.</p>
+
             </div>
         </div>
 
@@ -2650,6 +2693,26 @@
                     scratch game. Have a go by <a href="https://scratch.mit.edu/microbit" target="_blank">following along with this tutorial</a>.
                     You will need your own computer to do this.
                 </p>
+
+                <a name="hold-it-there"></a>
+                <h3>Hold-it-there game</h3>
+                <p>Make a hold-it-there game. The object of this game is to light up all the LEDs on the Microbit and keep them on - but it's
+                    not so easy!  When your program detects the Microbit is tilted forward, light up the LEDs one after the other.  Stop lighting
+                    the LEDs when the Microbit is held flat.  Every time you light a new LED make the time before you light the next LED shorter.
+                    Use a variable with a name like LEDtime to hold the current time interval. Each time a LED is lit, LEDtime decreases.  When all
+                    the LEDs are lit wait for LEDtime then turn them all off again. Now its tricky to light all the LEDs without having to
+                    start over again. Program one of the buttons on the Microbit to reset the game.</p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>You need to light all the LEDs one after another.  You can do this with a long sequence of
+                        <b><a target="_blank" href="https://makecode.microbit.org/reference/basic/show-leds"> patterns </a></b> or you could
+                        be more clever and use a <b><a target="_blank" href="https://www.youtube.com/watch?v=HYYksyd12sQ">for loop</a></b>
+                        <li>You need to use the accelerometer to see which way the Microbit is tipped
+                </ul>
+                </p>
+                <p>More advanced: Light the LEDs randomly using <b><a target="_blank" href="https://www.youtube.com/watch?v=XOzX9fhGcwo">Random</a></b>.</p>
+
             </div>
         </div>
 
