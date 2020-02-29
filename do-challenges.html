@@ -88,15 +88,15 @@
         <br>
     <p>
         Scratch:
-        <a href="#no-more-doughnuts">No More Doughnuts</a>
+        <a href="#pancake-flipping">Pancake flipping game!</a>
     </p>
     <p>
         Coding:
-        <a href="#birthday-day">What Day is My Birthday?</a>
+        <a href="#learn-about-databases">Mess about with Databases</a>
     </p>
     <p>
         Microbits:
-        <a href="#step-counter">Step Counter</a>
+        <a href="#consonent-or-vowel">Consonant or Vowel?</a>
     </p>
     <br/>
 
@@ -1205,6 +1205,28 @@
                             so you can create different costumes for this.</li>
                     </ul>
                 </p>
+
+                <a name="pancake-flipping"></a>
+                <h3>Pancake flipping game!</h3>
+                <p>Pancakes are popular this time of year.  They can be sweet or savoury but they all need flipping over!
+                    Make a game where you flip a pancake, and have to catch it in a frying pan.</p>
+                Getting started:
+                <ul>
+                    <li>You will need two sprites, a pancake and a frying pan.
+                    <li>When the game starts the pancake will be on the frying pan.  They will be in the same position.
+                    <li>When the player presses T for toss, the pancake should move up from the pan and spin.
+                    <li>When the pancake hits the side of the screen it should bounce off.
+                    <li>If the pancake touches the pan it is "caught" and could be placed on the pan.
+                    <li>If the pancake hits the floor it could change costumes to a splattered mess.
+                    <li>The pan needs to move side to side so it can catch the pancake.  You might want to flip the pan so it points in the direction of motion.
+                </ul>
+                </p>
+                <p>More advanced: Add a variable to keep score - gain a point if you catch a pancake, and lose a point if it hits the floor.</p>
+
+
+
+
+
             </div>
         </div>
 
@@ -2981,6 +3003,27 @@
                         <li>January 25, 2029: Thursday</li>
                     </ul>
                 </p>
+
+                <a name="learn-about-databases"></a>
+                <h3>Mess about with Databases</h3>
+                <p>
+                    There are a few online tools that can help you learn about databases.  W3schools have a tool that lets you play with a SQL (Simple Query Language) database - have a go!
+                </p>
+                <p>
+                    Getting started:
+                <ul>
+                    <li>Visit <a target="_blank" href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all">https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all</a> in your web browser.  There is an example customer database for a shop ready for you to use.</li>
+                    <li>Before you begin, click the "Restore Database" button on the right to reset the database.</li>
+                    <li>Try running this SQL statement: "SELECT * FROM Customers ORDER BY CustomerName;".<br/>
+                        The SQL statement queries the database, asking for all fields in the Customers table ordered by customer name. Look at the result - is it correct?</li>
+                    <li>Change the ORDER BY part of the SQL statement so that the result is ordered by city.  Look at the result - did it work?</li>
+                    <li>Change the SQL Statement to extract all the customers with names starting with A.  You will need to use WHERE, LIKE and wildcards to do this.  WHERE restricts the query to a field within a table.  LIKE compares the contents of a field with the thing you want.
+                        The thing you want is defined with a string and a Wildcard - don't forget to put the string in quote marks 'like this'.  In this case you can use the wildcard % which means zero or more letters, so 'A%' means any entry beginning with A.
+                        To learn more, try the SQL tutorial at <a target="_blank" href="https://www.w3schools.com/sql/">https://www.w3schools.com/sql</a>.</li>
+                    <li>Change the SQL Statement to find the price of the most expensive product.  You will need the MAX function to get the maximum value and the AS function to give the database somewhere to put the result.</li>
+                </ul>
+                </p>
+
             </div>
         </div>
 
@@ -3121,6 +3164,23 @@
                         <li>Maybe have a reset button, so you can set the counter back to zero.</li>
                     </ul>
                 </p>
+
+                <a name="consonent-or-vowel"></a>
+                <h3>Consonant or Vowel?</h3>
+                <p>In this game the player has one second to press button A when a consonant is displayed on the microbit screen, and button B when a vowel is displayed.</p>
+                <ul>
+                    <li>Start this challenge by displaying the letters A or B.  You will need to use the Random function to choose which.
+                    <li>You will need two variables to remember if either button has been pressed.  Use the "on button pressed" event to set each varable to 1.
+                    <li>Set a delay of 1 second after A or B is shown and then check your variables to see if the button was pressed.
+                    <li>Display a tick or a cross to show if the correct button was pressed in time.
+                    <li>Reset your variables to 0.
+                </ul>
+                <p>The next part deals with the consonants and vowels.</p>
+                <ul>
+                    <li>You will need to create two lists, one for all the consonants and one for all the vowels.
+                    <li>Where you displayed A or B in your code above, you should display either a random vowel from the vowel list, or a random consonant from the consonant list.
+                </ul>
+
             </div>
         </div>
 
