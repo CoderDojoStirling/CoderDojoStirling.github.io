@@ -89,27 +89,23 @@
 
     <p>
         Scratch:
-        <a href="#scratch-fireworks-display">Fireworks display</a>
-    </p>
-    <p>
-        Scratch:
-        <a href="#scratch-brick-breaker-game">YouTube tutorial: make a brick breaker game</a>
+        <a href="#scratch-safari">Safari Park Visit</a>
     </p>
     <p>
         Twine:
-        <a href="#twine-power-out">"The Power Went Out" story</a>
+        <a href="#twine-christmas-day">'Christmas Day' Story</a>
     </p>
     <p>
         Coding:
-        <a href="#coding-summing-letters">Summing letters</a>
+        <a href="#coding-morse-code">Morse Code</a>
     </p>
     <p>
         Websites:
-        <a href="#websites-shopping-street">Shopping Street</a>
+        <a href="#websites-santa-and-reindeer">Santa and his Reindeer</a>
     </p>
     <p>
         Microbits:
-        <a href="#microbits-stopwatch">Stopwatch</a>
+        <a href="#microbit-daytime-detector">Daytime Detector</a>
     </p>
     <br/>
 
@@ -1279,6 +1275,26 @@
                     following along with this <a href="https://www.youtube.com/watch?v=5sUpqyDgFMo" target="_blank">32 minute tutorial</a>.
                 </p>
                 <p>Then change the game to make it cooler: make the bricks different colours, change the background, add sounds, or whatever you want.</p>
+
+                <a name="scratch-safari"></a>
+                <h3>Safari Park Visit</h3>
+                <p>
+                    Make a story about going to the safari park. There should be a car which drives through an animal
+                    enclosure full of lions (or elephants, or whatever!). The car can stop, the animals can more around,
+                    and the car can move on.
+                </p>
+
+                <p>
+                    <ul>
+                        <li>When the car stops for everyone to look at the animals, people in the car could talk about
+                            the animals. You can use the 'say' command.</li>
+                        <li>The car could drive through two or more enclosures, each with different animals in it. To show
+                            a new enclosure, wait for the car to drive across the screen, then change the background and
+                            the animals, and move the car back to the edge of the screen.</li>
+                        <li>The animals could mess with the car. So the monkeys could throw bananas at it!</li>
+                    </ul>
+                </p>
+
             </div>
         </div>
 
@@ -1844,7 +1860,39 @@
                 <h3>Shopping Street</h3>
                 <p>Make a website about a street in your town with lots of shops and cafes. For each shop/cafe, add a description, a
                     photo (if you have one), and links to their website, facebook page, etc. To make it interesting,
-                    you could lay the webpage out like a map of the street, and lay the shops' details out on the map.
+                    you could lay the webpage out like a map of the street, and lay the shops' details out on the map.</p>
+
+                <a name="twine-christmas-day"></a>
+                <h3>Twine Story: Christmas Day</h3>
+                <p>Make a "Choose Your Own Adventure" story with <a target="_blank"
+                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
+                    called "Christmas Day".</p>
+                <p>If you don't know how to use Twine to make stories, then do the <a href="#twine-stories">"Make
+                    Stories with Twine"</a> challenge first.</p>
+                <p>To start you off, your first page might look like:
+                <pre>
+                    You wake up cozy, under the covers in bed. There's a filled stocking at the end of your bed - Santa's
+                    been! You also hear Mum downstairs, making a cup of tea. You:
+
+                   * Grab the stocking and talk a look. What did Santa bring?
+                   * Put your slippers on and head downstairs to say "Merry Christmas" to Mum.
+                   * Go back to sleep. Sleeping is nice.
+                </pre>
+                Each choice is a link to another page, where the story continues. So what happens when you go downstairs?
+                Or if you grabbed the stocking, what's in it?
+                </p>
+
+
+                <a name="websites-santa-and-reindeer"></a>
+                <h3>Santa and his Reindeer</h3>
+                <p>Make a "did you know" website about Santa and his reindeer. Have a main page about Santa and his sleigh,
+                    delivering presents on Christmas Eve. How many presents do they deliver? Who do they deliver them to?
+                    How fast does the sleigh go? Then link to different sub-pages about just Santa, and each of his reindeer (Rudolph, etc).
+                    You can add silly biographies about each of the reindeer, and pictures, and anything else you want! Can you
+                    embed a YouTube video with the <a target="_blank" href="https://www.youtube.com/watch?v=lM6mDRhKAcA">'Rudolph the Red Noise'</a> reindeer song?
+                </p>
+
+                </p>
             </div>
         </div>
 
@@ -3131,6 +3179,46 @@
                     dailyprogrammer</a>
                 </p>
 
+                <a name="coding-morse-code"></a>
+                <h3>Morse Code</h3>
+                <p>
+                    Write a program that converts a word into morse code, where each letter is shown as dots and dashes
+                    The codes for 'a' to 'z' are:
+                    <pre><code>.- -... -.-. -.. . ..-. --. .... .. .--- -.- .-.. -- -. --- .--. --.- .-. ... - ..- ...- .-- -..- -.-- --..</code></pre>
+                </p>
+                <p>
+                    Examples:
+                    <ul>
+                        <li>"sos" => "...---..."</li>
+                        <li>"daily" => "-...-...-..-.--"</li>
+                        <li>"programmer" => ".--..-.-----..-..-----..-."</li>
+                        <li>"bits" => "-.....-..."</li>
+                        <li>"three" => "-.....-..."</li>
+                    </ul>
+                    If you want to mess around with encoding lots of English words, here's
+                a <a target="_blank" href="https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt">giant word list</a>.
+                </p>
+
+                <p>
+                    More advanced: write a program that takes a word in morse code, and converts it back to the original word.
+                    So "...---..." is "sos". This reverser program is trickier than it looks, as multiple words can have the
+                    same morse code (when all the dots and dashes are squashed together). In the examples above, "bits" and "three"
+                    are both "-.....-...". To make the reverser program easier to code:
+                    <ul>
+                        <li>First change your convertor program to put a space between each letter code. "bits" is now
+                            "-... .. - ..." and "three" is now "- .... .-. . .", so the two words look different. Decoding
+                            should now be easier, as you can see the individual letter codes - which are now separated by spaces.</li>
+                        <li>Then change your convertor program back, so there's not space between letter codes. Decoding
+                            is trickier, as you'll need to write out all the words that the morse code could decode to. So
+                            "-.....-..." can be "bits" or "three".</li>
+                    </ul>
+                </p>
+
+
+                <p>Thanks to <a target="_blank" href="https://old.reddit.com/r/dailyprogrammer/comments/cmd1hb/20190805_challenge_380_easy_smooshed_morse_code_1/" target="_blank">Reddit
+                    dailyprogrammer</a>
+                </p>
+
             </div>
         </div>
 
@@ -3299,6 +3387,25 @@
                 </ul>
                 Watch <a href="https://projects.raspberrypi.org/en/projects/against-the-clock" target="_blank">this tutorial</a> if you need some help.
                 </p>
+
+                <a name="microbit-daytime-detector"></a>
+                <h3>Daytime Detector</h3>
+
+                <p>Make your microbit into a "daytime detector", and show a sun when it's light, and nothing when it's dark.</p>
+
+                <p>Hints:
+                    <ul>
+                        <li>Use the "light level" variable (in the "Input" section of the editor) to detect light level</li>
+                        <li>You'll need to show the sun when the "light level" is bigger than say 100</li>
+                        <li>You'll need a "forever" block to keep checking the light level</li>
+                        <li>You should be able to test your "daytime detector" by shining a light at it (and the sun should appear) or covering it with your hand (the sun should disappear).</li>
+                    </ul>
+                </p>
+
+                <p>More advanced: change the size of the sun shown, depending on the light level. So show a small sun when it's a bit bright, and a big sun when it's really bright.</p>
+
+                <p>Thanks to <a target="_blank" href="https://www.microbit.org/news/2020-05-03/microbit-at-home-get-up/">micro:bit at home</a>.</p>
+
             </div>
         </div>
 
