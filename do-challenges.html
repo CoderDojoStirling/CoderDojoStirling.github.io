@@ -92,16 +92,12 @@
         <a href="#scratch-safari">Safari Park Visit</a>
     </p>
     <p>
-        Scratch:
-        <a href="#todo">TODO</a>
-    </p>
-    <p>
         Twine:
         <a href="#todo">TODO</a>
     </p>
     <p>
         Coding:
-        <a href="#todo">TODO</a>
+        <a href="#coding-morse-code">Morse Code</a>
     </p>
     <p>
         Websites:
@@ -109,7 +105,7 @@
     </p>
     <p>
         Microbits:
-        <a href="#todo">TODO</a>
+        <a href="#microbit-daytime-detector">Daytime Detector</a>
     </p>
     <br/>
 
@@ -1287,7 +1283,7 @@
                     enclosure full of lions (or elephants, or whatever!). The car can stop, the animals can more around,
                     and the car can move on.
                 </p>
-                
+
                 <p>
                     <ul>
                         <li>When the car stops for everyone to look at the animals, people in the car could talk about
@@ -3151,6 +3147,46 @@
                     dailyprogrammer</a>
                 </p>
 
+                <a name="coding-morse-code"></a>
+                <h3>Morse Code</h3>
+                <p>
+                    Write a program that converts a word into morse code, where each letter is shown as dots and dashes
+                    The codes for 'a' to 'z' are:
+                    <pre><code>.- -... -.-. -.. . ..-. --. .... .. .--- -.- .-.. -- -. --- .--. --.- .-. ... - ..- ...- .-- -..- -.-- --..</code></pre>
+                </p>
+                <p>
+                    Examples:
+                    <ul>
+                        <li>"sos" => "...---..."</li>
+                        <li>"daily" => "-...-...-..-.--"</li>
+                        <li>"programmer" => ".--..-.-----..-..-----..-."</li>
+                        <li>"bits" => "-.....-..."</li>
+                        <li>"three" => "-.....-..."</li>
+                    </ul>
+                    If you want to mess around with encoding lots of English words, here's
+                a <a target="_blank" href="https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt">giant word list</a>.
+                </p>
+
+                <p>
+                    More advanced: write a program that takes a word in morse code, and converts it back to the original word.
+                    So "...---..." is "sos". This reverser program is trickier than it looks, as multiple words can have the
+                    same morse code (when all the dots and dashes are squashed together). In the examples above, "bits" and "three"
+                    are both "-.....-...". To make the reverser program easier to code:
+                    <ul>
+                        <li>First change your convertor program to put a space between each letter code. "bits" is now
+                            "-... .. - ..." and "three" is now "- .... .-. . .", so the two words look different. Decoding
+                            should now be easier, as you can see the individual letter codes - which are now separated by spaces.</li>
+                        <li>Then change your convertor program back, so there's not space between letter codes. Decoding
+                            is trickier, as you'll need to write out all the words that the morse code could decode to. So
+                            "-.....-..." can be "bits" or "three".</li>
+                    </ul>
+                </p>
+
+
+                <p>Thanks to <a target="_blank" href="https://old.reddit.com/r/dailyprogrammer/comments/cmd1hb/20190805_challenge_380_easy_smooshed_morse_code_1/" target="_blank">Reddit
+                    dailyprogrammer</a>
+                </p>
+
             </div>
         </div>
 
@@ -3319,6 +3355,25 @@
                 </ul>
                 Watch <a href="https://projects.raspberrypi.org/en/projects/against-the-clock" target="_blank">this tutorial</a> if you need some help.
                 </p>
+
+                <a name="microbit-daytime-detector"></a>
+                <h3>Daytime Detector</h3>
+
+                <p>Make your microbit into a "daytime detector", and show a sun when it's light, and nothing when it's dark.</p>
+
+                <p>Hints:
+                    <ul>
+                        <li>Use the "light level" variable (in the "Input" section of the editor) to detect light level</li>
+                        <li>You'll need to show the sun when the "light level" is bigger than say 100</li>
+                        <li>You'll need a "forever" block to keep checking the light level</li>
+                        <li>You should be able to test your "daytime detector" by shining a light at it (and the sun should appear) or covering it with your hand (the sun should disappear).</li>
+                    </ul>
+                </p>
+
+                <p>More advanced: change the size of the sun shown, depending on the light level. So show a small sun when it's a bit bright, and a big sun when it's really bright.</p>
+
+                <p>Thanks to <a target="_blank" href="https://www.microbit.org/news/2020-05-03/microbit-at-home-get-up/">micro:bit at home</a>.</p>
+
             </div>
         </div>
 
