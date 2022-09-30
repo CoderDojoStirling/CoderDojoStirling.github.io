@@ -89,7 +89,7 @@
 
     <p>
         Scratch:
-        <a href="#scratch-noisy-zoo">Make a zoo with some noisy animals!</a>
+        <a href="#scratch-beach-clean">Make a game called "Beach Clean"</a>
     </p>
     <p>
         Twine:
@@ -1461,6 +1461,92 @@
                         the animals.
                     </li>
                 </ul>
+                </p>
+
+
+                <a name="scratch-beach-clean"></a>
+                <h3>Beach Clean</h3>
+
+                <p>
+                    Make a game called "Beach Clean", where you clean all bottles from a beach by clicking on them. You win when no bottles are left.
+                    Make the simple game first (instructions below), and then the real game.
+                </p>
+                <p>
+                    For the simple game, show a beach with one bottle at a random location. When you click the bottle, it vanishes,
+                    and a "finished" screen appears. Instructions:
+                    <ul>
+                        <li>
+                            Make a sprite that looks like a bottle, or just pick any sprite from the library (and change it later).
+                        </li>
+                        <li>
+                            When the game starts (the green flag is clicked), set the backdrop to a beach. Also set the bottle to a
+                            random location, and "show" it. To set the location, use the "got to x and y" block, together with the
+                            "pick random" block to set the x and y positions.
+                        </li>
+                        <li>
+                            When the bottle is clicked, "hide" it and broadcast a message called "finished".
+                        </li>
+                        <li>
+                            Listen for the "finished" message, and switch the backdrop to a green screen saying "FINISHED!"
+                        </li>
+                        <li>
+                            Make the game cooler by adding sounds for when the bottle is clicked, and the game finishes. And
+                            make sure the bottle looks like a bottle.
+                        </li>
+                    </ul>
+                </p>
+                    Now for the real game. It's the same as the simple game, but we show lots of bottles, adding one bottle
+                    every second. The game finishes when the player clicks all the bottles. This game is harder to build, as it
+                    uses clones and variables. Instructions:
+                    <ul>
+                        <li>
+                            Make sure the simple game works.
+                        </li>
+                        <li>
+                            We make lots of bottles by "cloning" the bottle sprite. When the game starts, "hide" the bottle sprite
+                            (and dont "show" it). Then add a "forever" block. Inside this block, "create a clone" of the bottle,
+                            and "wait" 1 second. Then..
+                        </li>
+                        <li>
+                            Add a "when I start as a clone" block. In that block, "show" the clone bottle, and set it to
+                            a random location (use the "set x and y" block from the simple game).
+                        </li>
+                        <li>
+                            In your "when this sprite clicked" block (from the simple game), make sure the bottle clone
+                            "hides", and add "delete this clone". AND MAKE SURE YOU REMOVE the "broadcast finished" block - FOR NOW.
+                        </li>
+                        <li>
+                            The game should now show lots of bottles which vanish when clicked, but the game never finishes.
+                            Let's fix this with variables.
+                        </li>
+                        <li>
+                            Add two variables called "bottles" and "running". "bottles" will count how many bottles are
+                            on the beach. "running" will be 1 when the game runs, and 0 when it's not.
+                        </li>
+                        <li>
+                            When the game starts, set "bottles" to 0 and "running" to 1.
+                        </li>
+                        <li>
+                            In the "when I start as a clone" block, change "bottles" by 1. In the "when the sprite is clicked"
+                            block (where you delete the bottle), change "bottles" by -1. So "bottles" now counts bottles on
+                            the beach. "bottles" will be 0 when the player has clicked all bottles. We can use this to finish the game.
+                        </li>
+                        <li>
+                            We will stop the game when "bottles" is 0. In the "when this sprite is clicked" block, use an
+                            "if" block to check if "bottles" is 0, and broadcast "finished" to stop the game (and change to the "FINISHED" backdrop).
+                        </li>
+                        <li>
+                            The last thing we need to do is stop creating new bottles. In your "when I receive 'finished'" block,
+                            set "running" to 0. Now find the code when the game starts where you create a new bottle using
+                            "create a clone" and wait 1 second. Make an "if 'running' > 0" block, and put the "clone" and
+                            "wait" blocks inside - so you only create new bottles when the game is running.
+                        </li>
+                        <li>
+                            You should now have a working Beach Clean game - well done!
+                        </li>
+                    </ul>
+                <p>
+
                 </p>
 
             </div>
