@@ -5,87 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="http://coderdojoscotland.com/wp-content/themes/dojo/assets/img/icons/favicon.ico" rel="shortcut icon">
     <title>CoderDojo Stirling</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="common.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        .jumbotron a:link, a:hover, a:active, a:visited {
-            text-decoration: underline;
-            color: white;
-        }
-    </style>
+    
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
+<nav class="bg-gray-600">
+    <div class="">
+        <!--<div class="navbar-header inline">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">CoderDojo Stirling</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="come-along.html">Come Along</a></li>
-                <li><a href="earn-badges.html">Earn Badges</a></li>
-                <li><a href="do-challenges.html">Do Challenges</a></li>
-                <li><a href="help-out.html">Help Out</a></li>
+            <a class="navbar-brand " href="index.html">CoderDojo Stirling</a>
+        </div>-->
+        <div id="navbar" class="">
+            <ul class="flex flex-row w-3/4 m-auto">
+                <li class="basis-1/5 text-gray-200 text-left py-5 text-xl"><a href="index.html">CoderDojo Stirling</a></li>
+                <li class="basis-1/5 text-white bg-gray-800 text-center py-5 text-xl"><a href="index.html">Home</a></li>
+                <li class="basis-1/5 text-gray-200 text-center py-5 text-xl"><a href="come-along.html">Come Along</a></li>
+                <li class="basis-1/5 text-gray-200 text-center py-5 text-xl"><a href="earn-badges.html">Earn Badges</a></li>
+                <li class="basis-1/5 text-gray-200 text-center py-5 text-xl"><a href="do-challenges.html">Do Challenges</a></li>
+                <li class="basis-1/5 text-gray-200 text-center py-5 text-xl"><a href="help-out.html">Help Out</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 
-<div class="jumbotron">
-	<div class="container">
-        <h1>We are CoderDojo Stirling</h1>
-		<p class="lead">CoderDojo Stirling is a free monthly coding club for kids in Stirling, Scotland.</p>
-		<p>If you're aged between 7 and 17 and want to learn how to code, then come along.</p>
-		<p>If you're a grown-up instead, then come <a href="help-out.html">help out</a>!</p>
+<div class="bg-cyan-500">
+	<div class="w-3/4 m-auto py-16">
+        <h1 class="text-white text-6xl mb-8">We are CoderDojo Stirling</h1>
+		<p class="text-white text-xl mb-2" >CoderDojo Stirling is a free monthly coding club for kids in Stirling, Scotland.</p>
+		<p class="text-white text-xl mb-2" >If you're aged between 7 and 17 and want to learn how to code, then come along.</p>
+		<p class="text-white text-xl mb-2" text-6xl >If you're a grown-up instead, then come <a href="help-out.html">help out</a>!</p>
 	</div>
 </div>
 
-<div class="container">
+<div class="pt-16">
 
-    <div class="row">
+    <div class="flex flex-row w-3/4 m-auto">
 		
-		<div class="col-sm-6 col-md-4">
-				<h2>Come Along Monthly</h2>
-				<p>We run one Saturday a month at Stirling CodeBase. You'll need a ticket.</p>
-				<p><a href="come-along.html" class="btn btn-success">How to attend &raquo;</a></p>
+		<div class="basis-1/3 pr-8">
+				<h2 class="text-3xl mb-2">Come Along Monthly</h2>
+				<p class="mb-2">We run one Saturday a month at Stirling CodeBase. You'll need a ticket.</p>
+				<p><a href="come-along.html" class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-sm">How to attend &raquo;</a></p>
 		</div>
 		
-		<div class="col-sm-6 col-md-4">
-				<h2>Earn Badges</h2>
-				<p>You can earn badges by improving your coding skills. We'll help you.</p>
-				<p><a href="earn-badges.html" class="btn btn-success">Earn a badge &raquo;</a></p>
+		<div class="basis-1/3 px-8">
+				<h2 class="text-3xl mb-2">Earn Badges</h2>
+				<p class="mb-2">You can earn badges by improving your coding skills. We'll help you.</p>
+				<p><a href="earn-badges.html" class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-sm">Earn a badge &raquo;</a></p>
 		</div>
 		
-		<div class="col-sm-6 col-md-4">
-				<h2>Learn To Code</h2>
-				<p>The more badges you earn, the better you'll get at coding. Soon you'll be completing
+		<div class="basis-1/3 pl-8">
+				<h2 class="text-3xl mb-2">Learn To Code</h2>
+				<p class="mb-2">The more badges you earn, the better you'll get at coding. Soon you'll be completing
                     your own projects or doing some of our challenges. We'll help you with that too.</p>
-                <p><a href="do-challenges.html" class="btn btn-success">Do a challenge &raquo;</a></p>
+                <p><a href="do-challenges.html" class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-sm">Do a challenge &raquo;</a></p>
         </div>
 		
     </div>
+    <footer class="w-3/4 mx-auto">
+        <br>
+        <hr>
+        <p>&copy; Copyright 2023 CoderDojo Stirling</p>
+    </footer>
 
-	
-    <hr>
-    <div class="row">
-        <div class="col-xs-12">
-            <footer>
-                <p>&copy; Copyright 2023 CoderDojo Stirling</p>
-            </footer>
-        </div>
-    </div>
 </div>
 
 </body>
