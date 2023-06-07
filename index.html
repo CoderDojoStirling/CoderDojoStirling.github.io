@@ -8,22 +8,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    
+    <script>
+        var isMobileMenuOpen = false;
+
+        function menuToggleMobile(){
+            var menuBlock = document.getElementById("mobileMenu");
+            if(isMobileMenuOpen){
+                menuBlock.className = "flex flex-col w-full m-auto bg-gray-600 overflow-hidden max-h-0 transition-all";
+            }
+            else{
+                menuBlock.className = "flex flex-col w-full m-auto bg-gray-600 overflow-hidden max-h-[350px] transition-all";
+            }
+            isMobileMenuOpen = !isMobileMenuOpen;
+        }
+
+    </script>
 </head>
 <body>
 
 <nav class="bg-gray-600">
     <div class="">
-        <!--<div class="navbar-header inline">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <div class="block md:hidden py-5 mx-8">
+            <button type="button" class="inline-block" onclick="menuToggleMobile()">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <img src="./media/burger-bar.png" class="w-12">
             </button>
-            <a class="navbar-brand " href="index.html">CoderDojo Stirling</a>
-        </div>-->
-        <div id="navbar" class="">
+            <a class="text-gray-200 text-left text-4xl pl-4 relative -top-3" href="index.html">CoderDojo Stirling</a>
+        </div>
+        <div class="block md:hidden absolute w-full">
+            <ul class="flex flex-col w-full m-auto bg-gray-600 overflow-hidden max-h-0 transition-all"  id="mobileMenu">
+                <li class="basis-1/5 text-white bg-gray-800 py-5 text-xl pl-8"><a href="index.html">Home</a></li>
+                <li class="basis-1/5 text-gray-200 py-5 text-xl pl-8"><a href="come-along.html">Come Along</a></li>
+                <li class="basis-1/5 text-gray-200 py-5 text-xl pl-8"><a href="earn-badges.html">Earn Badges</a></li>
+                <li class="basis-1/5 text-gray-200 py-5 text-xl pl-8"><a href="do-challenges.html">Do Challenges</a></li>
+                <li class="basis-1/5 text-gray-200 py-5 text-xl pl-8"><a href="help-out.html">Help Out</a></li>
+            </ul>
+        </div>
+        <div class="hidden md:block">
             <ul class="flex flex-row w-3/4 m-auto">
                 <li class="basis-1/5 text-gray-200 text-left py-5 text-xl"><a href="index.html">CoderDojo Stirling</a></li>
                 <li class="basis-1/5 text-white bg-gray-800 text-center py-5 text-xl"><a href="index.html">Home</a></li>
@@ -38,7 +59,7 @@
 
 
 <div class="bg-cyan-500">
-	<div class="w-3/4 m-auto py-16">
+	<div class="mx-8 md:w-3/4 md:mx-auto py-16">
         <h1 class="text-white text-6xl mb-8">We are CoderDojo Stirling</h1>
 		<p class="text-white text-xl mb-2" >CoderDojo Stirling is a free monthly coding club for kids in Stirling, Scotland.</p>
 		<p class="text-white text-xl mb-2" >If you're aged between 7 and 17 and want to learn how to code, then come along.</p>
@@ -48,21 +69,21 @@
 
 <div class="pt-16">
 
-    <div class="flex flex-row w-3/4 m-auto">
+    <div class="md:flex md:flex-row mx-8 md:w-3/4 md:mx-auto">
 		
-		<div class="basis-1/3 pr-8">
+		<div class="basis-1 md:basis-1/3 md:pr-8 mb-8 md:mb-0">
 				<h2 class="text-3xl mb-2">Come Along Monthly</h2>
 				<p class="mb-2">We run one Saturday a month at Stirling CodeBase. You'll need a ticket.</p>
 				<p><a href="come-along.html" class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-sm">How to attend &raquo;</a></p>
 		</div>
 		
-		<div class="basis-1/3 px-8">
+		<div class="basis-1 md:basis-1/3 md:px-8 mb-8 md:mb-0">
 				<h2 class="text-3xl mb-2">Earn Badges</h2>
 				<p class="mb-2">You can earn badges by improving your coding skills. We'll help you.</p>
 				<p><a href="earn-badges.html" class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-sm">Earn a badge &raquo;</a></p>
 		</div>
 		
-		<div class="basis-1/3 pl-8">
+		<div class="basis-1 md:basis-1/3 md:pl-8 mb-8 md:mb-0">
 				<h2 class="text-3xl mb-2">Learn To Code</h2>
 				<p class="mb-2">The more badges you earn, the better you'll get at coding. Soon you'll be completing
                     your own projects or doing some of our challenges. We'll help you with that too.</p>
@@ -70,7 +91,7 @@
         </div>
 		
     </div>
-    <footer class="w-3/4 mx-auto">
+    <footer class="mx-8 md:w-3/4 md:mx-auto">
         <br>
         <hr>
         <p>&copy; Copyright 2023 CoderDojo Stirling</p>
