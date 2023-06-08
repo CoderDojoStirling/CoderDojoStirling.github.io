@@ -14,10 +14,10 @@
         function menuToggleMobile(){
             var menuBlock = document.getElementById("mobileMenu");
             if(isMobileMenuOpen){
-                menuBlock.className = "flex flex-col w-full m-auto bg-gray-600 overflow-hidden max-h-0 transition-all";
+                menuBlock.className = "flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all";
             }
             else{
-                menuBlock.className = "flex flex-col w-full m-auto bg-gray-600 overflow-hidden max-h-[350px] transition-all";
+                menuBlock.className = "flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-[350px] transition-all";
             }
             isMobileMenuOpen = !isMobileMenuOpen;
         }
@@ -25,7 +25,7 @@
     </script>
 </head>
 <body>
-
+<!-- Saved for possible menu change
 <nav class="bg-gray-600">
     <div class="">
         <div class="block md:hidden py-5 mx-8">
@@ -54,8 +54,36 @@
             </ul>
         </div>
     </div>
+</nav>-->
+<nav class="bg-gray-800">
+    <div class="">
+        <div class="block md:hidden py-5 mx-8">
+            <button type="button" class="inline-block" onclick="menuToggleMobile()">
+                <img src="./media/burger-bar.png" class="w-12">
+            </button>
+            <a class="text-gray-400 text-left text-4xl pl-4 relative -top-3 hover:text-white" href="index.html">CoderDojo Stirling</a>
+        </div>
+        <div class="block md:hidden absolute w-full">
+            <ul class="flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all"  id="mobileMenu">
+                <li class="basis-1/5 text-white bg-black py-5 text-xl pl-8"><a href="index.html">Home</a></li>
+                <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="come-along.html">Come Along</a></li>
+                <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="earn-badges.html">Earn Badges</a></li>
+                <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="do-challenges.html">Do Challenges</a></li>
+                <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="help-out.html">Help Out</a></li>
+            </ul>
+        </div>
+        <div class="hidden md:block">
+            <ul class="flex flex-row w-3/4 m-auto">
+                <li class="basis-1/5 text-gray-400 text-left py-5 text-xl hover:text-white"><a href="index.html">CoderDojo Stirling</a></li>
+                <li class="basis-1/5 text-white bg-black text-center py-5 text-xl"><a href="index.html">Home</a></li>
+                <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="come-along.html">Come Along</a></li>
+                <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="earn-badges.html">Earn Badges</a></li>
+                <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="do-challenges.html">Do Challenges</a></li>
+                <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="help-out.html">Help Out</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
-
 
 <div class="bg-cyan-500">
 	<div class="mx-8 md:w-3/4 md:mx-auto py-16">
