@@ -36,21 +36,21 @@
             </div>
             <div class="block min-[1300px]:hidden absolute w-full">
                 <ul class="flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all"  id="mobileMenu">
-                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="index.html">Home</a></li>
-                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="come-along.html">Come Along</a></li>
-                    <li class="basis-1/5 text-white bg-black py-5 text-xl pl-8"><a href="earn-badges.html">Earn Badges</a></li>
-                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="do-challenges.html">Do Challenges</a></li>
-                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="help-out.html">Help Out</a></li>
+                    <a href="index.html" class="basis-1/5"><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Home</li></a>
+                    <a href="come-along.html"class="basis-1/5" ><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Come Along</li></a>
+                    <a href="earn-badges.html"class="basis-1/5" ><li class="text-white bg-black py-5 text-xl pl-8">Earn Badges</li></a>
+                    <a href="do-challenges.html"class="basis-1/5" ><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Do Challenges</li></a>
+                    <a href="help-out.html"class="basis-1/5" ><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Help Out</li></a>
                 </ul>
             </div>
             <div class="hidden min-[1300px]:block">
                 <ul class="flex flex-row w-3/4 m-auto">
-                    <li class="basis-1/5 text-gray-400 text-left py-5 text-xl hover:text-white"><a href="index.html">CoderDojo Stirling</a></li>
-                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="index.html">Home</a></li>
-                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="come-along.html">Come Along</a></li>
-                    <li class="basis-1/5 text-white bg-black text-center py-5 text-xl"><a href="earn-badges.html">Earn Badges</a></li>
-                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="do-challenges.html">Do Challenges</a></li>
-                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="help-out.html">Help Out</a></li>
+                    <a href="index.html"class="basis-1/5" ><li class="text-gray-400 text-left py-5 text-xl hover:text-white">CoderDojo Stirling</li></a>
+                    <a href="index.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Home</li></a>
+                    <a href="come-along.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Come Along</li></a>
+                    <a href="earn-badges.html"class="basis-1/5" ><li class="text-white bg-black text-center py-5 text-xl">Earn Badges</li></a>
+                    <a href="do-challenges.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Do Challenges</li></a>
+                    <a href="help-out.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Help Out</li></a>
                 </ul>
             </div>
         </div>
@@ -63,7 +63,7 @@
 	</div>
 </div>
 
-<div class="pt-16 md:w-3/4 mx-auto">
+<div class="pt-16 w-[95%] md:w-3/4 mx-auto">
 
     <p>You earn badges by completing tasks. Each badge has you learning - like doing an online course, or coding
         something new.</p>
@@ -82,27 +82,27 @@
     <br/>
 
     <div id="panel-group">
-        <div id="new" class="border-[1px] border-solid border-gray-400 rounded-md my-2">
+        <div id="new" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
             <div class="bg-blue-500 p-8"><h2 class="text-white text-3xl">I'm new to coding</h2></div>
             <div class="p-8">
                 <h3 class="text-3xl">Newbie Badge 1: Complete an Hour of Code</h3>
                 <p>
-                    The <a href="http://code.org/" target="_blank">Code.org</a> website is a good place to start if
+                    The <a href="http://code.org/" target="_blank" class="text-blue-500">Code.org</a> website is a good place to start if
                     you want to learn coding. Get this badge by completing the 'Hour of Code' intro course.
-                <ol>
-                    <li>Complete the <a href="http://studio.code.org/s/hourofcode/reset" target="_blank">Hour of
+                <ol class="list-decimal list-inside ml-4 my-2">
+                    <li>Complete the <a class="text-blue-500" href="http://studio.code.org/s/hourofcode/reset" target="_blank">Hour of
                         Code</a> course.
                     </li>
                     <li>Show a mentor that you completed it!</li>
                 </ol>
                 </p>
-
+                <br>
                 <h3 class="text-3xl">Newbie Badge 2: Make a Flappy Bird Game</h3>
                 <p>
                     Get this badge by creating a 'Flappy Bird' game on the Code.org website. Here's an <a
                         href="http://studio.code.org/c/30482614" target="_blank">example</a> one.
-                <ol>
-                    <li>Start creating the 'Flappy Bird' game at <a href="http://code.org/api/hour/begin/flappy"
+                <ol class="list-decimal list-inside ml-4 my-2">
+                    <li>Start creating the 'Flappy Bird' game at <a class="text-blue-500" href="http://code.org/api/hour/begin/flappy"
                                                                     target="_blank">http://code.org/api/hour/begin/flappy</a>.
                     </li>
                     <li>Finish creating the game, and show it to a mentor.</li>
@@ -112,12 +112,12 @@
                     </li>
                 </ol>
                 Want to share your game with friends and family? It should have its own url (look for it on the Code.org
-                website). It will look like: <a href="http://studio.code.org/c/30482614" target="_blank">http://studio.code.org/c/30482614</a>
+                website). It will look like: <a class="text-blue-500" href="http://studio.code.org/c/30482614" target="_blank">http://studio.code.org/c/30482614</a>
                 </p>
-
+                <br>
                 <h3 class="text-3xl">Newbie: Next steps</h3>
                 <p>So you earned two badges. Nice! What next?
-                <ul>
+                <ul class="list-disc list-inside ml-4 my-2">
                     <li>There are lots more Code.org courses to complete. Have a look at <a
                             href="http://studio.code.org/" target="_blank">all of them</a>.
                     </li>
@@ -127,23 +127,22 @@
             </div>
         </div>
 
-        <div id="scratch" class="panel panel-default">
-            <a name="scratch"></a>
-            <div class="panel-heading"><h2>I want to create stories, games and animations using Scratch</h2></div>
-            <div class="panel-body">
+        <div id="scratch" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <div class="bg-green-400 p-8"><h2 class="text-white text-3xl">I want to create stories, games and animations using Scratch</h2></div>
+            <div class="p-8">
 
-                <h3>Scratch Badge 1: Complete Your First Scratch Project</h3>
+                <h3 class="text-3xl">Scratch Badge 1: Complete Your First Scratch Project</h3>
                 <p>Scratch is a nice programming language for learning how to code. You can create stories, games and
                     animations
                     by 'dragging and dropping' instructions together. Get this badge by creating your first Scratch
                     project.
-                <ol>
-                    <li>Sign up for Scratch at: <a href="https://scratch.mit.edu" target="_blank">https://scratch.mit.edu</a>
+                <ol class="list-decimal list-inside ml-4 my-2">
+                    <li>Sign up for Scratch at: <a class="text-blue-500" href="https://scratch.mit.edu" target="_blank">https://scratch.mit.edu</a>
                         (click on 'Join Scratch' at
                         the top-right).
                         If you don't have an email address, ask a mentor.
                     </li>
-                    <li>Complete the <a href="https://scratch.mit.edu/projects/editor/?tip_bar=getStarted"
+                    <li>Complete the <a class="text-blue-500" href="https://scratch.mit.edu/projects/editor/?tip_bar=getStarted"
                                         target="_blank">'Learn
                         how to make a project in Scratch'</a> course.
                     </li>
@@ -151,12 +150,12 @@
                 </ol>
                 </p>
 
-                <h3>Scratch Badge 2: Remix the 'Dance Party' Starter Project</h3>
+                <h3 class="text-3xl">Scratch Badge 2: Remix the 'Dance Party' Starter Project</h3>
                 <p>Scratch let's you take existing projects, and remix them as you want to create your own project. Get
                     this
                     badge by remixing a project.
-                <ol>
-                    <li>Go to the <a href="https://scratch.mit.edu/projects/10128067/" target="_blank">Dance Party</a>
+                <ol class="list-decimal list-inside ml-4 my-2">
+                    <li>Go to the <a class="text-blue-500" href="https://scratch.mit.edu/projects/10128067/" target="_blank">Dance Party</a>
                         project.
                     </li>
                     <li>Remix the project by following the instructions: Add your own sprites to the dance party! Start
@@ -167,36 +166,36 @@
                 Want to share your Dance Party with friends and family? If you 'share' the project, it has its own url
                 (look for it on the
                 Scratch website). It will look like:
-                <a href="https://scratch.mit.edu/projects/54772686" target="_blank">https://scratch.mit.edu/projects/54772686</a>
+                <a class="text-blue-500" href="https://scratch.mit.edu/projects/54772686" target="_blank">https://scratch.mit.edu/projects/54772686</a>
                 </p>
 
-                <h3>Scratch Badge 3: Remix 5 Starter Projects</h3>
+                <h3 class="text-3xl">Scratch Badge 3: Remix 5 Starter Projects</h3>
                 The Scratch website has some Starter Projects for you to remix and learn from. Get this badge by
                 remixing 5 starter projects.
                 <p>
-                <ol>
-                    <li>Go to the <a href="https://scratch.mit.edu/starter_projects/" target="_blank">Starter
+                <ol class="list-decimal list-inside ml-4 my-2">
+                    <li>Go to the <a class="text-blue-500" href="https://scratch.mit.edu/starter_projects/" target="_blank">Starter
                         Projects</a> page.
                     </li>
                     <li>Pick five projects from the different areas and remix them. Pick from: animation, games,
                         interaction art, music and dance, stories and video sensing.
                     </li>
-                    <li>Need help? There are lots of video tutorials <a href="https://scratch.mit.edu/help/videos/"
+                    <li>Need help? There are lots of video tutorials <a class="text-blue-500" href="https://scratch.mit.edu/help/videos/"
                                                                         target="_blank">here</a>.
                     </li>
                     <li>Show a mentor all your projects!</li>
                 </ol>
                 </p>
-                <h3>Scratch Badge 4: Create a Scratch project from scratch</h3>
+                <h3 class="text-3xl">Scratch Badge 4: Create a Scratch project from scratch</h3>
                 Now it's time to create something completely new. Get this badge by creating a completely new Scratch
                 project.
                 It could be a story or game: whatever you want!
                 <p>
-                <ol>
-                    <li>Open the <a href="https://scratch.mit.edu/projects/editor/" target="_blank">Scratch editor</a>.
+                <ol class="list-decimal list-inside ml-4 my-2">
+                    <li>Open the <a class="text-blue-500" href="https://scratch.mit.edu/projects/editor/" target="_blank">Scratch editor</a>.
                     </li>
                     <li>Create something awesome :-).</li>
-                    <li>Need inspiration? <a href="https://scratch.mit.edu/explore/?date=this_month" target="_blank">Explore
+                    <li>Need inspiration? <a class="text-blue-500" href="https://scratch.mit.edu/explore/?date=this_month" target="_blank">Explore
                         projects</a> others have made. Need help? Remember the <a
                             href="https://scratch.mit.edu/help/videos/" target="_blank">video tutorials</a>.
                     </li>
@@ -204,13 +203,13 @@
                 </ol>
                 </p>
 
-                <h3>Scratch: Next steps</h3>
+                <h3 class="text-3xl">Scratch: Next steps</h3>
                 <p>So you earned four badges. Nice! What next?
-                <ul>
+                <ul class="list-disc list-inside ml-4 my-2">
                     <li>You could create plenty more cool projects in Scratch. Here's <a
                             href="https://scratch.mit.edu/explore/?date=this_month" target="_blank">inspiration</a></a>.
                     </li>
-                    <li>Try some of our <a href="do-challenges.html#scratch">Scratch challenges</a>.</li>
+                    <li>Try some of our <a class="text-blue-500" href="do-challenges.html#scratch">Scratch challenges</a>.</li>
                     <li>Pick one of the other badge areas and go for it!</li>
                 </ul>
                 </p>
@@ -218,37 +217,36 @@
             </div>
         </div>
 
-        <div id="web" class="panel panel-default">
-            <a name="web"></a>
-            <div class="panel-heading"><h2>I want to create websites online that look cool and are interactive</h2>
+        <div id="web" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <div class="bg-yellow-400 p-8"><h2 class="text-white text-3xl">I want to create websites online that look cool and are interactive</h2>
             </div>
-            <div class="panel-body">
+            <div class="p-8">
 
-                <h3>Websites Badge 1: Get your own website on the Internet</h3>
-                <p><a href="https://neocities.org/" target="_blank">Neocities.org</a> lets you create your own free
+                <h3 class="text-3xl">Websites Badge 1: Get your own website on the Internet</h3>
+                <p><a class="text-blue-500" href="https://neocities.org/" target="_blank">Neocities.org</a> lets you create your own free
                     website
                     on the Internet! Get this badge by creating your first website at Neocities.
-                <ol>
-                    <li>Sign up for Neocities at: <a href="https://neocities.org"
+                <ol class="list-decimal list-inside ml-4 my-2">
+                    <li>Sign up for Neocities at: <a class="text-blue-500" href="https://neocities.org"
                                                      target="_blank">https://neocities.org</a>.
                         You will need an email address.
                     </li>
                     <li>Once you're signed up, follow the tutorial with Penelope the cat. She'll help you create your
                         first webpage:
-                        <a href="https://neocities.org/tutorial/html" target="_blank">https://neocities.org/tutorial/html</a>
+                        <a class="text-blue-500" href="https://neocities.org/tutorial/html" target="_blank">https://neocities.org/tutorial/html</a>
                     </li>
                     <li>Show a mentor your website, and get a badge!</li>
                 </ol>
                 </p>
 
-                <h3>Websites Badge 2: Make your website cooler, and learn about HTML and CSS</h3>
+                <h3 class="text-3xl">Websites Badge 2: Make your website cooler, and learn about HTML and CSS</h3>
                 <p>So you've got a website. You need to make it cooler. Maybe make a webpage purple, or have words in
                     crazy sizes. Learn how by
                     taking the online course at Khan Academy called <a
                             href="https://www.khanacademy.org/computing/computer-programming/html-css" target="_blank">'Intro
                         to HTML/CSS: Making webpages'</a>.
-                <ol>
-                    <li>Complete the <a href="https://www.khanacademy.org/computing/computer-programming/html-css"
+                <ol class="list-decimal list-inside ml-4 my-2">
+                    <li>Complete the <a class="text-blue-500" href="https://www.khanacademy.org/computing/computer-programming/html-css"
                                         target="_blank">Intro to HTML/CSS: Making webpages</a> course.
                     </li>
                     <li>Make your website cooler, using the things you learnt from the course.</li>
@@ -258,7 +256,7 @@
                 </ol>
                 </p>
 
-                <h3>Websites Badge 3: Make a website about a Haunted House</h3>
+                <h3 class="text-3xl">Websites Badge 3: Make a website about a Haunted House</h3>
                 <p>So you know a bit about making webpages. Now for a challenge. Make a website game about a haunted
                     house. Each webpage
                     is a room in the house, and describes the spookiness happening in the room. The links on a room’s
@@ -274,12 +272,12 @@
                     fright!
                 <p>
 
-                <h3>Websites: Next steps</h3>
+                <h3 class="text-3xl">Websites: Next steps</h3>
                 <p>So you earned three badges. Nice! What next?
-                <ul>
+                <ul class="list-disc list-inside ml-4 my-2">
                     <li>You could continue improving the website you created, or create another one. It could be about
                         anything you're interested in. Need help?
-                        There are more tutorials on <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">HTML</a>, <a
+                        There are more tutorials on <a class="text-blue-500" href="https://www.w3schools.com/html/html_intro.asp" target="_blank">HTML</a>, <a
                                 href="https://www.w3schools.com/css/css_intro.asp" target="_blank">CSS</a> and <a
                                 href="https://www.w3schools.com/js/js_intro.asp" target="_blank">Javascript</a> at w3schools.com.
                     </li>
@@ -288,90 +286,89 @@
                                 href="https://www.khanacademy.org/computing/computer-programming/html-css-js"
                                 target="_blank">HTML/JS: Making webpages interactive</a>.
                     </li>
-                    <li>Try some of our <a href="do-challenges.html#web">website challenges</a>.</li>
+                    <li>Try some of our <a class="text-blue-500" href="do-challenges.html#web">website challenges</a>.</li>
                     <li>Pick one of the other badge areas and go for it!</li>
                 </ul>
                 </p>
             </div>
         </div>
 
-        <div id="code" class="panel panel-default">
-            <a name="code"></a>
-            <div class="panel-heading"><h2>I want to learn how to code in a real programming language</h2></div>
-            <div class="panel-body">
+        <div id="code" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a class="text-blue-500" name="code"></a>
+            <div class="p-8 bg-red-600"><h2 class="text-white text-3xl">I want to learn how to code in a real programming language</h2></div>
+            <div class="p-8">
 
-                <h3>Javascript Badge 1: Do CodeCombat 'Kithgard Dungeon' campaign</h3>
-                <p>The <a href="http://codecombat.com/" target="_blank">Code Combat</a> website is great for learning
+                <h3 class="text-3xl">Javascript Badge 1: Do CodeCombat 'Kithgard Dungeon' campaign</h3>
+                <p>The <a class="text-blue-500" href="http://codecombat.com/" target="_blank">Code Combat</a> website is great for learning
                     how to code in real programming
                     languages, whilst playing though an adventure! Get this badge by completing the first 'Kithgard
                     Dungeon' campaign in
                     Javascript. You'll learn about syntax, methods, parameters, strings, loops and variables.
-                <ol>
-                    <li>Open Code Combat at <a href="https://codecombat.com/play" target="_blank">https://codecombat.com/play</a>.
+                <ol class="list-decimal list-inside ml-4 my-2">
+                    <li>Open Code Combat at <a class="text-blue-500" href="https://codecombat.com/play" target="_blank">https://codecombat.com/play</a>.
                         Click the "Play" button on the "Kithgard Dungeon" campaign.
                     </li>
                     <li>Click the "Play" button on the first "Dungeons of Kithgard" level. Select 'Javascript' as the programming language.
-                        Play through the first '<a href="http://codecombat.com/play/dungeon" target="_blank">Kithgard Dungeon</a>' campaign (there are lots of levels).
+                        Play through the first '<a class="text-blue-500" href="http://codecombat.com/play/dungeon" target="_blank">Kithgard Dungeon</a>' campaign (there are lots of levels).
                     </li>
                     <li>Show a mentor that you completed it!</li>
                 </ol>
                 </p>
 
-                <h3>Javascript Badge 2: Do CodeCombat 'Backwoods Forest' campaign</h3>
+                <h3 class="text-3xl">Javascript Badge 2: Do CodeCombat 'Backwoods Forest' campaign</h3>
                 <p>Get this badge by completing the second 'Backwoods Forest' Code Combat campaign in Javascript. You'll
                     learn about if/else, relational operators, object properties and input handling.
-                <ol>
+                <ol class="list-decimal list-inside ml-4 my-2">
                     <li>Make sure you're signed in to Code Combat.</li>
-                    <li>Play through the second '<a href="http://codecombat.com/play/forest" target="_blank">Backwoods
+                    <li>Play through the second '<a class="text-blue-500" href="http://codecombat.com/play/forest" target="_blank">Backwoods
                         Forest</a>' Code Combat campaign. And make sure you're using Javascript!
                     </li>
                     <li>Show a mentor that you completed it!</li>
                 </ol>
                 </p>
 
-                <h3>Javascript Badge 3: Do CodeCombat 'Sarven Desert' campaign</h3>
+                <h3 class="text-3xl">Javascript Badge 3: Do CodeCombat 'Sarven Desert' campaign</h3>
                 <p>Get this badge by completing the third 'Sarven Desert' Code Combat campaign in Javascript. You'll
                     learn about arithmetic, counters, while-loops, break, arrays, string comparison and finding min/max.
-                <ol>
+                <ol class="list-decimal list-inside ml-4 my-2">
                     <li>Make sure you're signed in to Code Combat.</li>
-                    <li>Play through the third '<a href="http://codecombat.com/play" target="_blank">Sarven Desert</a>'
+                    <li>Play through the third '<a class="text-blue-500" href="http://codecombat.com/play" target="_blank">Sarven Desert</a>'
                         Code Combat campaign. And make sure you're using Javascript!
                     </li>
                     <li>Show a mentor that you completed it!</li>
                 </ol>
                 </p>
 
-                <h3>Javascript Badge 4: Do CodeCombat 'Cloudrip Mountain' campaign</h3>
+                <h3 class="text-3xl">Javascript Badge 4: Do CodeCombat 'Cloudrip Mountain' campaign</h3>
                 <p>Get this badge by completing the fourth 'Cloudrip Mountain' Code Combat campaign in Javascript.
                     You'll learn about object literals, remote method invocation, for-loops, functions, drawing and
                     modulo.
-                <ol>
+                <ol class="list-decimal list-inside ml-4 my-2">
                     <li>Make sure you're signed in to Code Combat.</li>
-                    <li>Play through the fourth '<a href="http://codecombat.com/play" target="_blank">Cloudrip
+                    <li>Play through the fourth '<a class="text-blue-500" href="http://codecombat.com/play" target="_blank">Cloudrip
                         Mountain</a>' Code Combat campaign. And make sure you're using Javascript!
                     </li>
                     <li>Show a mentor that you completed it!</li>
                 </ol>
                 </p>
 
-                <h3>Coding: Next steps</h3>
+                <h3 class="text-3xl">Coding: Next steps</h3>
                 <p>So you earned four badges. Nice! What next?
-                <ul>
-                    <li>Try some of our <a href="do-challenges.html#code">code challenges</a>.</li>
+                <ul class="list-disc list-inside ml-4 my-2">
+                    <li>Try some of our <a class="text-blue-500" href="do-challenges.html#code">code challenges</a>.</li>
                 </ul>
                 </p>
 
             </div>
         </div>
 
-        <div id="own" class="panel panel-default">
-            <a name="own"></a>
-            <div class="panel-heading"><h2>I want to work on my own project and get help if needed</h2></h2></div>
-            <div class="panel-body">
-                <h3>Own Project Badge 1: Show and Tell</h3>
+        <div id="own" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <div class="p-8 bg-blue-500"><h2 class="text-white text-3xl">I want to work on my own project and get help if needed</h2></h2></div>
+            <div class="p-8">
+                <h3 class="text-3xl">Own Project Badge 1: Show and Tell</h3>
                 <p>So you're working on your own project at home? That's awesome! Show the project off to everyone at
                     the dojo - and we'll give you a badge!
-                <ol>
+                <ol class="list-decimal list-inside ml-4 my-2">
                     <li>Work on your project at home. Bring it to a CoderDojo session, and the mentors will be happy to
                         help with anything you're stuck on.
                     </li>
@@ -387,15 +384,14 @@
         </div>
     </div>
 
-    <div id="more" class="panel panel-default">
-        <a name="more"></a>
-        <div class="panel-heading"><h2>I want to learn more!</h2></h2></div>
-        <div class="panel-body">
+    <div id="more" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+        <div class="p-8 bg-yellow-400"><h2 class="text-white text-3xl">I want to learn more!</h2></h2></div>
+        <div class="p-8">
             <p>So you want to learn more? Well, there's a lot of coding resources on the internet. Try some of these:
-                <ul>
-                  <li><a href="https://pine.fm/LearnToProgram/chap_00.html" target="_blank">Learn to code in the Ruby programming language</a></li>
-                  <li><a href="http://www.appinventor.org" target="_blank">Learn to build Android apps for your phone with AppInventor</a></li>
-                  <li><a href="https://www.codecademy.com/" target="_blank">Do courses on websites, databases and more with Codecademy</a></li>
+                <ul class="list-disc list-inside ml-4 my-2">
+                  <li><a class="text-blue-500" href="https://pine.fm/LearnToProgram/chap_00.html" target="_blank">Learn to code in the Ruby programming language</a></li>
+                  <li><a class="text-blue-500" href="http://www.appinventor.org" target="_blank">Learn to build Android apps for your phone with AppInventor</a></li>
+                  <li><a class="text-blue-500" href="https://www.codecademy.com/" target="_blank">Do courses on websites, databases and more with Codecademy</a></li>
                 </ul>
             </p>
         </div>
