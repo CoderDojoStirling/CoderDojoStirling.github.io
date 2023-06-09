@@ -28,29 +28,29 @@
 
     <nav class="bg-gray-800 fixed w-full top-0">
         <div class="">
-            <div class="block md:hidden py-5 mx-8">
+            <div class="block min-[1300px]:hidden py-5 mx-8">
                 <button type="button" class="inline-block" onclick="menuToggleMobile()">
                     <img src="./media/burger-bar.png" class="w-12">
                 </button>
                 <a class="text-gray-400 text-left text-4xl pl-4 relative -top-3 hover:text-white" href="index.html">CoderDojo Stirling</a>
             </div>
-            <div class="block md:hidden absolute w-full">
+            <div class="block min-[1300px]:hidden absolute w-full">
                 <ul class="flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all"  id="mobileMenu">
-                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="index.html">Home</a></li>
-                    <li class="basis-1/5 text-white bg-black py-5 text-xl pl-8"><a href="come-along.html">Come Along</a></li>
-                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="earn-badges.html">Earn Badges</a></li>
-                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="do-challenges.html">Do Challenges</a></li>
-                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="help-out.html">Help Out</a></li>
+                    <a href="index.html" class="basis-1/5"><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Home</li></a>
+                    <a href="come-along.html"class="basis-1/5" ><li class="text-white bg-black py-5 text-xl pl-8">Come Along</li></a>
+                    <a href="earn-badges.html"class="basis-1/5" ><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Earn Badges</li></a>
+                    <a href="do-challenges.html"class="basis-1/5" ><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Do Challenges</li></a>
+                    <a href="help-out.html"class="basis-1/5" ><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Help Out</li></a>
                 </ul>
             </div>
-            <div class="hidden md:block">
+            <div class="hidden min-[1300px]:block">
                 <ul class="flex flex-row w-3/4 m-auto">
-                    <li class="basis-1/5 text-gray-400 text-left py-5 text-xl hover:text-white"><a href="index.html">CoderDojo Stirling</a></li>
-                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="index.html">Home</a></li>
-                    <li class="basis-1/5 text-white bg-black text-center py-5 text-xl"><a href="come-along.html">Come Along</a></li>
-                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="earn-badges.html">Earn Badges</a></li>
-                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="do-challenges.html">Do Challenges</a></li>
-                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="help-out.html">Help Out</a></li>
+                    <a href="index.html"class="basis-1/5" ><li class="text-gray-400 text-left py-5 text-xl hover:text-white">CoderDojo Stirling</li></a>
+                    <a href="index.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Home</li></a>
+                    <a href="come-along.html"class="basis-1/5" ><li class="text-white bg-black text-center py-5 text-xl">Come Along</li></a>
+                    <a href="earn-badges.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Earn Badges</li></a>
+                    <a href="do-challenges.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Do Challenges</li></a>
+                    <a href="help-out.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Help Out</li></a>
                 </ul>
             </div>
         </div>
