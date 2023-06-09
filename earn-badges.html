@@ -5,106 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://coderdojoscotland.com/wp-content/themes/dojo/assets/img/icons/favicon.ico" rel="shortcut icon">
     <title>CoderDojo Stirling - Earn Badges</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="common.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        body {
-            padding-top: 30px;
-            font-size: 16px;
+    <script>
+        var isMobileMenuOpen = false;
+
+        function menuToggleMobile(){
+            var menuBlock = document.getElementById("mobileMenu");
+            if(isMobileMenuOpen){
+                menuBlock.className = "flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all";
+            }
+            else{
+                menuBlock.className = "flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-[350px] transition-all";
+            }
+            isMobileMenuOpen = !isMobileMenuOpen;
         }
 
-        div#new > .panel-heading {
-            background: #337AB7;
-            color: #FFFFFF;
-        }
-
-        div#scratch > .panel-heading {
-            background: #77DD77;
-            color: #FFFFFF;
-        }
-
-        div#web > .panel-heading {
-            background: #FCC917;
-            color: #FFFFFF;
-        }
-
-        div#code > .panel-heading {
-            background: #CB4154;
-            color: #FFFFFF;
-        }
-
-        div#own > .panel-heading {
-            background: #5D89BA;
-            color: #FFFFFF;
-        }
-
-        div#more > .panel-heading {
-            background: #FCC917;
-            color: #FFFFFF;
-        }
-
-    </style>
+    </script>
 </head>
-<body>
+<body class="mt-[94px] min-[1300px]:mt-[68px]">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">CoderDojo Stirling</a>
+    <nav class="bg-gray-800 fixed w-full top-0">
+        <div class="">
+            <div class="block min-[1300px]:hidden py-5 mx-8">
+                <button type="button" class="inline-block" onclick="menuToggleMobile()">
+                    <img src="./media/burger-bar.png" class="w-12">
+                </button>
+                <a class="text-gray-400 text-left text-4xl pl-4 relative -top-3 hover:text-white" href="index.html">CoderDojo Stirling</a>
+            </div>
+            <div class="block min-[1300px]:hidden absolute w-full">
+                <ul class="flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all"  id="mobileMenu">
+                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="index.html">Home</a></li>
+                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="come-along.html">Come Along</a></li>
+                    <li class="basis-1/5 text-white bg-black py-5 text-xl pl-8"><a href="earn-badges.html">Earn Badges</a></li>
+                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="do-challenges.html">Do Challenges</a></li>
+                    <li class="basis-1/5 text-gray-400 py-5 text-xl pl-8 hover:text-white"><a href="help-out.html">Help Out</a></li>
+                </ul>
+            </div>
+            <div class="hidden min-[1300px]:block">
+                <ul class="flex flex-row w-3/4 m-auto">
+                    <li class="basis-1/5 text-gray-400 text-left py-5 text-xl hover:text-white"><a href="index.html">CoderDojo Stirling</a></li>
+                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="index.html">Home</a></li>
+                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="come-along.html">Come Along</a></li>
+                    <li class="basis-1/5 text-white bg-black text-center py-5 text-xl"><a href="earn-badges.html">Earn Badges</a></li>
+                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="do-challenges.html">Do Challenges</a></li>
+                    <li class="basis-1/5 text-gray-400 text-center py-5 text-xl hover:text-white"><a href="help-out.html">Help Out</a></li>
+                </ul>
+            </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="come-along.html">Come Along</a></li>
-                <li class="active"><a href="earn-badges.html">Earn Badges</a></li>
-                <li><a href="do-challenges.html">Do Challenges</a></li>
-                <li><a href="help-out.html">Help Out</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
 
-<div class="jumbotron">
-    <div class="container">
-        <h1>Earn Badges</h1>
-        <p class="lead">So you want to learn how to code? We've got some badges to help you along.</p>
-    </div>
+<div class="bg-cyan-500">
+	<div class="mx-8 md:w-3/4 md:mx-auto py-16">
+        <h1 class="text-white text-6xl mb-8">Earn Badges</h1>
+		<p class="text-white text-xl mb-2" >So you want to learn how to code? We've got some badges to help you along.</p>
+	</div>
 </div>
 
-
-<div class="container">
+<div class="pt-16 md:w-3/4 mx-auto">
 
     <p>You earn badges by completing tasks. Each badge has you learning - like doing an online course, or coding
         something new.</p>
 
     <p>Start earning badges today:
-    <ol>
-        <li>Pick one of the areas below that interests you. The areas go from simplest to hardest.
-            If you're not sure where to start, begin with the first area: "I'm new to coding".
-        </li>
-        <li>Work through the area's badges in order. They're ordered simplest to hardest.</li>
-        <li>For a given badge, work through the numbered tasks. You earn the badge by completing the tasks, and
-            showing your work to a mentor. They'll then give you a real-life badge!
-        </li>
-    </ol>
+        <ol class="list-decimal list-inside ml-4">
+            <li>Pick one of the areas below that interests you. The areas go from simplest to hardest.
+                If you're not sure where to start, begin with the first area: "I'm new to coding".
+            </li>
+            <li>Work through the area's badges in order. They're ordered simplest to hardest.</li>
+            <li>For a given badge, work through the numbered tasks. You earn the badge by completing the tasks, and
+                showing your work to a mentor. They'll then give you a real-life badge!
+            </li>
+        </ol>
     </p>
     <br/>
 
-    <div class="panel-group">
-        <a name="new"></a>
-        <div id="new" class="panel panel-default">
-            <div class="panel-heading"><h2>I'm new to coding</h2></div>
-            <div class="panel-body">
-                <h3>Newbie Badge 1: Complete an Hour of Code</h3>
+    <div id="panel-group">
+        <div id="new" class="border-[1px] border-solid border-gray-400 rounded-md my-2">
+            <div class="bg-blue-500 p-8"><h2 class="text-white text-3xl">I'm new to coding</h2></div>
+            <div class="p-8">
+                <h3 class="text-3xl">Newbie Badge 1: Complete an Hour of Code</h3>
                 <p>
                     The <a href="http://code.org/" target="_blank">Code.org</a> website is a good place to start if
                     you want to learn coding. Get this badge by completing the 'Hour of Code' intro course.
@@ -116,7 +97,7 @@
                 </ol>
                 </p>
 
-                <h3>Newbie Badge 2: Make a Flappy Bird Game</h3>
+                <h3 class="text-3xl">Newbie Badge 2: Make a Flappy Bird Game</h3>
                 <p>
                     Get this badge by creating a 'Flappy Bird' game on the Code.org website. Here's an <a
                         href="http://studio.code.org/c/30482614" target="_blank">example</a> one.
@@ -134,7 +115,7 @@
                 website). It will look like: <a href="http://studio.code.org/c/30482614" target="_blank">http://studio.code.org/c/30482614</a>
                 </p>
 
-                <h3>Newbie: Next steps</h3>
+                <h3 class="text-3xl">Newbie: Next steps</h3>
                 <p>So you earned two badges. Nice! What next?
                 <ul>
                     <li>There are lots more Code.org courses to complete. Have a look at <a
