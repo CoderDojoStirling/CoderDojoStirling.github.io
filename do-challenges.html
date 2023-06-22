@@ -14,10 +14,10 @@
         function menuToggleMobile(){
             var menuBlock = document.getElementById("mobileMenu");
             if(isMobileMenuOpen){
-                menuBlock.className = "flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all";
+                menuBlock.className = "flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all duration-500";
             }
             else{
-                menuBlock.className = "flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-[350px] transition-all";
+                menuBlock.className = "flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-[350px] transition-all duration-500";
             }
             isMobileMenuOpen = !isMobileMenuOpen;
         }
@@ -35,7 +35,7 @@
                 <a class="text-gray-400 text-left text-4xl pl-4 relative -top-3 hover:text-white" href="index.html">CoderDojo Stirling</a>
             </div>
             <div class="block min-[1300px]:hidden absolute w-full">
-                <ul class="flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all"  id="mobileMenu">
+                <ul class="flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all duration-500"  id="mobileMenu">
                     <a href="index.html" class="basis-1/5"><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Home</li></a>
                     <a href="come-along.html"class="basis-1/5" ><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Come Along</li></a>
                     <a href="earn-badges.html"class="basis-1/5" ><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Earn Badges</li></a>
