@@ -5,68 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="http://coderdojoscotland.com/wp-content/themes/dojo/assets/img/icons/favicon.ico" rel="shortcut icon">
     <title>CoderDojo Stirling - Help Out</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="common.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+        var isMobileMenuOpen = false;
+
+        function menuToggleMobile(){
+            var menuBlock = document.getElementById("mobileMenu");
+            if(isMobileMenuOpen){
+                menuBlock.className = "flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all duration-500";
+            }
+            else{
+                menuBlock.className = "flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-[350px] transition-all duration-500";
+            }
+            isMobileMenuOpen = !isMobileMenuOpen;
+        }
+
+    </script>
 </head>
-<body>
+<body class="mt-[94px] min-[1300px]:mt-[68px]">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">CoderDojo Stirling</a>
+    <nav class="bg-gray-800 fixed w-full top-0">
+        <div class="">
+            <div class="block min-[1300px]:hidden py-5 mx-8">
+                <button type="button" class="inline-block" onclick="menuToggleMobile()">
+                    <img src="./media/burger-bar.png" class="w-12">
+                </button>
+                <a class="text-gray-400 text-left text-2xl pl-4 relative -top-3 hover:text-white" href="index.html">CoderDojo Stirling</a>
+            </div>
+            <div class="block min-[1300px]:hidden absolute w-full">
+                <ul class="flex flex-col w-full m-auto bg-gray-800 overflow-hidden max-h-0 transition-all duration-500"  id="mobileMenu">
+                    <a href="index.html" class="basis-1/5"><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Home</li></a>
+                    <a href="come-along.html"class="basis-1/5" ><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Come Along</li></a>
+                    <a href="earn-badges.html"class="basis-1/5" ><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Earn Badges</li></a>
+                    <a href="do-challenges.html"class="basis-1/5" ><li class="text-gray-400 py-5 text-xl pl-8 hover:text-white">Do Challenges</li></a>
+                    <a href="help-out.html"class="basis-1/5" ><li class="text-white bg-black py-5 text-xl pl-8">Help Out</li></a>
+                </ul>
+            </div>
+            <div class="hidden min-[1300px]:block">
+                <ul class="flex flex-row w-3/4 m-auto">
+                    <a href="index.html"class="basis-1/5" ><li class="text-gray-400 text-left py-5 text-xl hover:text-white">CoderDojo Stirling</li></a>
+                    <a href="index.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Home</li></a>
+                    <a href="come-along.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Come Along</li></a>
+                    <a href="earn-badges.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Earn Badges</li></a>
+                    <a href="do-challenges.html"class="basis-1/5" ><li class="text-gray-400 text-center py-5 text-xl hover:text-white">Do Challenges</li></a>
+                    <a href="help-out.html"class="basis-1/5" ><li class="text-white bg-black text-center py-5 text-xl">Help Out</li></a>
+                </ul>
+            </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="come-along.html">Come Along</a></li>
-                <li><a href="earn-badges.html">Earn Badges</a></li>
-                <li><a href="do-challenges.html">Do Challenges</a></li>
-                <li class="active"><a href="help-out.html">Help Out</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
 
-<div class="jumbotron">
-	<div class="container">
-		<h1>Helping Out</h1>
-		<p class="lead">Are you a grown-up with coding skills? Then become a CoderDojo mentor!</p>
+<div class="bg-cyan-500">
+	<div class="mx-8 md:w-3/4 md:mx-auto py-16">
+        <h1 class="text-white text-6xl mb-8">Helping Out</h1>
+		<p class="text-white text-xl mb-2" >Are you a grown-up with coding skills? Then become a CoderDojo mentor!</p>
 	</div>
 </div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12">
-			<p>CoderDojo Stirling is run by volunteers. Every month we put on a coding club for kids, with grown-up mentors helping out. </p>
+<div class="pt-16 w-[95%] md:w-3/4 mx-auto space-y-3">
+	<p>CoderDojo Stirling is run by volunteers. Every month we put on a coding club for kids, with grown-up mentors helping out. </p>
 
-            <p>If you're interested in helping out as a mentor, then <a href="mailto:stirling@coderdojoscotland.com?Subject=Interested in mentoring">email us</a>.</p>
+    <p>If you're interested in helping out as a mentor, then <a href="mailto:stirling@coderdojoscotland.com?Subject=Interested in mentoring" class="text-blue-500">email us</a>.</p>
 
-			<p>You don't need to have wizard-like programming skills - just enough to help the kids as they learn.</p>
+	<p>You don't need to have wizard-like programming skills - just enough to help the kids as they learn.</p>
 
-			<p>Take a look at our <a href="earn-badges.html" target="_blank">Earn Badges</a> page to see what the kids do at CoderDojo. Being a mentor is fun, and you learn a surprising amount!</p>
+	<p>Take a look at our <a href="earn-badges.html" target="_blank" class="text-blue-500">Earn Badges</a> page to see what the kids do at CoderDojo. Being a mentor is fun, and you learn a surprising amount!</p>
 
-            <p>Go on, <a href="mailto:stirling@coderdojoscotland.com?Subject=Interested in mentoring">email us</a>. You know you want to.</p>
-		</div>
-	</div>
-
-    <hr>
-    <div class="row">
-        <div class="col-xs-12">
-            <footer>
-                <p>&copy; Copyright 2023 CoderDojo Stirling</p>
-            </footer>
-        </div>
-    </div>
+    <p>Go on, <a href="mailto:stirling@coderdojoscotland.com?Subject=Interested in mentoring" class="text-blue-500">email us</a>. You know you want to.</p>
 </div>
+
+<footer class="w-[95%] md:w-3/4 mx-auto mb-3">
+    <br>
+    <hr class="my-5">
+    <p>&copy; Copyright 2023 CoderDojo Stirling</p>
+</footer>
 
 </body>
 </html>                                
