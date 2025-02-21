@@ -93,27 +93,32 @@
 
     <p>
         Scratch:
-        <a href="#scratch-pairs">Make a Pairs memory game</a>
+        <a href="#scratch-pairs">Make a Pairs memory game (YouTube tutorial)</a>
     </p>
 
     <p>
         Scratch:
-        <a href="#scratch-whack-a-mole">Make a Whack-A-Mole game</a>
+        <a href="#scratch-valentines-card">Make a Valentines Card</a>
+    </p>
+
+    <p>
+        Scratch:
+        <a href="#scratch-leap-year-checker">Make a leap year checker</a>
     </p>
 
     <p>
         Twine:
-        <a href="#twine-alien-encounter">Write an interactive story called 'Alien Encounter'</a>
+        <a href="#twine-vault-robbery">Write an interactive story called 'The Vault Robbery'</a>
     </p>
 
     <p>
         Websites:
-        <a  href="#websites-animal-explorer">Make a website about your favorite animals</a>
+        <a  href="#websites-bakers-shop">Make a website for Bob's Bakery</a>
     </p>
 
     <p>
         Coding:
-        <a  href="#coding-word-scramble">Make a word scramble game</a>
+        <a  href="#coding-greedy-shopkeeper">Make a program called Greedy Shopkeeper that works out the coins needed for your change</a>
     </p>
 
     <p>
@@ -1333,6 +1338,56 @@
                     </ul>
                 </p>
 
+                <a name="scratch-valentines-card"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Make a Valentine's card</h3>
+                <p>Valentines Day was on 14th February. Make a Valentines card with Scratch: it could have hearts, or flowers,
+                    or Cupids on it - and say 'Happy Valentines Day' on it. Can you make it fun? The card could play music in
+                    the background, or maybe when you clicked on something. And you could animate it, so a heart might spin,
+                    or a flower change colour.
+                </p>
+
+                <a name="scratch-leap-year-checker"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Make a Leap Year Checker</h3>
+                <p>February has 29 days in a leap year, and 28 days otherwise. Make a leap year checker, where Scratch cat asks you for a year,
+                    and tells you if it's a leap year or not.
+                </p>
+                <p>Getting started:
+                    <ul class="list-disc list-inside ml-4 my-2">
+                        <li>Use the 'Ask' block to get the year (it's in the Sensing area)</li>
+                        <li>Store the 'answer' in a variable called 'year'</li>
+                        <li>You then need to check if 'year' is a leap year, which means it's a multiple of 4 and not a multiple of 100
+                            <ul class="list-disc list-inside ml-4 my-2">
+                                <li>A multiple of 4 means it's in the 4 times table: 4, 8, 12..</li>
+                                <li>A multiple of 100 means it's in the 100 times table: 100, 200, 300.. You actually want 'year' <u>not</u> to be a multiple of 100</li>
+                            </ul>
+                        </li>
+                        <li>You can work out if the 'year' variable is a multiple with the 'mod' block (in the Operators area). Mod gives the remainder of dividing a number, so 9 'mod' 4 is 1, since 9 divided by 4 is 2, with 1 left over.
+                            <ul class="list-disc list-inside ml-4 my-2">
+                                <li>A multiple of 4 would be: 'year' mod 4 is 0</li>
+                                <li>A multiple of 100 would be: 'year' mod 100 is 0. For 'not a multiple of 100', drop the result into a 'not' block (in the sensing area)</li>
+                            </ul>
+                        </li>
+                        <li>Now you know about 'mod', use this with an 'if then else' block (in the Control area) to work out if 'year' is a leap year or not, and say the result with a 'say' block (in the Looks area).</li>
+                    </ul>
+                </p>
+                <p >Examples:
+                    <ul class="list-disc list-inside ml-4 my-2">
+                        <li>1896: leap year</li>
+                        <li>1900: not leap year</li>
+                        <li>2020: leap year</li>
+                        <li>2025: not leap year</li>
+                    </ul>
+                </p>
+                <p>For more advanced, whether a year is a leap year is more tricky than I said:
+                    <ul class="list-disc list-inside ml-4 my-2">
+                        <li>The year is a multiple of 4 and not a multiple of 100 (which you just did).</li>
+                        <li>Or, the year is a multiple of 400</li>
+                    </ul>
+                    So 2000 is a leap year, since it's a multiple of 400. Change your code to handle this.
+                </p>
+
                 <a  name="scratch-3littlepigs"></a>
                 <br/>
                 <h3 class="text-3xl mb-2">3 Little Pigs</h3>
@@ -1927,7 +1982,7 @@
                 </ul>
                 </p>
 
-                <a  name="bakers-shop"></a>
+                <a  name="websites-bakers-shop"></a>
                 <br/>
                 <h3 class="text-3xl mb-2">Challenge: Baker's Shop</h3>
                 <p>
