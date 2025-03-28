@@ -11,6 +11,10 @@
           a {
             @apply text-blue-500;
           }
+
+            a[name] {
+                scroll-margin-top: 60px;
+            }
         }
     </style>
     <script>
@@ -76,7 +80,7 @@
     <p>Start earning badges today:
         <ol class="list-decimal list-inside ml-4">
             <li>Pick one of the areas below that interests you. The areas go from simplest to hardest.
-                If you're not sure where to start, begin with the first area: "I'm new to coding".
+                If you're not sure where to start, begin with the first area: <a href="#new">"I'm new to coding"</a>.
             </li>
             <li>Work through the area's badges in order. They're ordered simplest to hardest.</li>
             <li>For a given badge, work through the numbered tasks. You earn the badge by completing the tasks, and
@@ -84,10 +88,22 @@
             </li>
         </ol>
     </p>
+
+    <p>Here are the different areas:
+    <ol class="list-decimal list-inside ml-4">
+        <li><a href="#new">"I'm new to coding"</a></li>
+        <li><a href="#scratch">"I want to create stories, games and animations using Scratch"</a></li>
+        <li><a href="#stories">"I want to write Choose Your Own Adventure stories, with different paths and endings"</a></li>
+        <li><a href="#web">"I want to create websites online that look cool and are interactive"</a></li>
+        <li><a href="#code">"I want to learn how to code in a real programming language"</a></li>
+    </ol>
+    </p>
+
     <br/>
 
     <div id="panel-group">
-        <div id="new" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="new"></a>
             <div class="bg-blue-500 p-8"><h2 class="text-white text-3xl">I'm new to coding</h2></div>
             <div class="p-8">
                 <h3 class="text-3xl mb-2">Newbie Badge 1: Complete an Hour of Code</h3>
@@ -120,6 +136,7 @@
                 website). It will look like: <a  href="http://studio.code.org/c/30482614" target="_blank">http://studio.code.org/c/30482614</a>
                 </p>
                 <br>
+
                 <h3 class="text-3xl mb-2">Newbie: Next steps</h3>
                 <p>So you earned two badges. Nice! What next?
                 <ul class="list-disc list-inside ml-4 my-2">
@@ -132,7 +149,8 @@
             </div>
         </div>
 
-        <div id="scratch" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="scratch"></a>
             <div class="bg-green-400 p-8"><h2 class="text-white text-3xl">I want to create stories, games and animations using Scratch</h2></div>
             <div class="p-8">
 
@@ -307,10 +325,14 @@ You quietly creep up into the attic, and find the ringing is coming from a big o
                 </ul>
 
                 <p>Show a mentor what you wrote!</p>
+
+                <h3 class="text-3xl mt-1 mb-2">Stories: Next steps</h3>
+                <p>So you earned three badges. Nice! What next? Try our <a href="do-challenges.html#stories">story challenges!</a>
             </div>
         </div>
 
-        <div id="web" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="web"></a>
             <div class="bg-yellow-400 p-8"><h2 class="text-white text-3xl">I want to create websites online that look cool and are interactive</h2>
             </div>
             <div class="p-8">
@@ -386,7 +408,7 @@ You quietly creep up into the attic, and find the ringing is coming from a big o
             </div>
         </div>
 
-        <div id="code" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
             <a  name="code"></a>
             <div class="p-8 bg-red-600"><h2 class="text-white text-3xl">I want to learn how to code in a real programming language</h2></div>
             <div class="p-8">
