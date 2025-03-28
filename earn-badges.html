@@ -11,6 +11,10 @@
           a {
             @apply text-blue-500;
           }
+
+            a[name] {
+                scroll-margin-top: 60px;
+            }
         }
     </style>
     <script>
@@ -76,7 +80,7 @@
     <p>Start earning badges today:
         <ol class="list-decimal list-inside ml-4">
             <li>Pick one of the areas below that interests you. The areas go from simplest to hardest.
-                If you're not sure where to start, begin with the first area: "I'm new to coding".
+                If you're not sure where to start, begin with the first area: <a href="#new">"I'm new to coding"</a>.
             </li>
             <li>Work through the area's badges in order. They're ordered simplest to hardest.</li>
             <li>For a given badge, work through the numbered tasks. You earn the badge by completing the tasks, and
@@ -84,10 +88,22 @@
             </li>
         </ol>
     </p>
+
+    <p>Here are the different areas:
+    <ol class="list-decimal list-inside ml-4">
+        <li><a href="#new">"I'm new to coding"</a></li>
+        <li><a href="#scratch">"I want to create stories, games and animations using Scratch"</a></li>
+        <li><a href="#stories">"I want to write Choose Your Own Adventure stories, with different paths and endings"</a></li>
+        <li><a href="#web">"I want to create websites online that look cool and are interactive"</a></li>
+        <li><a href="#code">"I want to learn how to code in a real programming language"</a></li>
+    </ol>
+    </p>
+
     <br/>
 
     <div id="panel-group">
-        <div id="new" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="new"></a>
             <div class="bg-blue-500 p-8"><h2 class="text-white text-3xl">I'm new to coding</h2></div>
             <div class="p-8">
                 <h3 class="text-3xl mb-2">Newbie Badge 1: Complete an Hour of Code</h3>
@@ -120,6 +136,7 @@
                 website). It will look like: <a  href="http://studio.code.org/c/30482614" target="_blank">http://studio.code.org/c/30482614</a>
                 </p>
                 <br>
+
                 <h3 class="text-3xl mb-2">Newbie: Next steps</h3>
                 <p>So you earned two badges. Nice! What next?
                 <ul class="list-disc list-inside ml-4 my-2">
@@ -132,7 +149,8 @@
             </div>
         </div>
 
-        <div id="scratch" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="scratch"></a>
             <div class="bg-green-400 p-8"><h2 class="text-white text-3xl">I want to create stories, games and animations using Scratch</h2></div>
             <div class="p-8">
 
@@ -222,7 +240,99 @@
             </div>
         </div>
 
-        <div id="web" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="stories"></a>
+            <div class="bg-green-400 p-8"><h2 class="text-white text-3xl">I want to write Choose Your Own Adventure stories, with different paths and endings</h2></div>
+            <div class="p-8">
+                <h3 class="text-3xl mb-2">Story Badge 1: Write Your First Twine Story</h3>
+                <p class="mb-1">
+                    <a href="https://twinery.org/2/#/" target="_blank">Twine</a> is an online tool for writing 'Choose Your Own Adventure' stories. You can write a story with different
+                    paths and endings, and the reader then chooses which path to take through the story.
+                </p>
+                <p class="mb-1">
+                    Twine is easy to use once you know how. You write a page of text (as short as you want), and can add links to other pages. So your story is a few pages with links between them, and the reader chooses their path through the story by the links they click on.
+                </p>
+                <p class="mb-1">We'll now write our first story in Twine:</p>
+                <ol class="list-decimal list-inside ml-4 my-2">
+                    <li>Open <a href="https://twinery.org/2/#/" target="_blank">Twine</a>.</li>
+                    <li>Now watch this short <a href="https://www.youtube.com/watch?v=ZnARX2ToqYc" target="_blank">Intro to Twine</a> video. Here's <a href="files/57North_Twine.html" target="_blank">the story</a> it mentions, if you're interested.</li>
+                    <li>Make this tiny story below - it's called "Lottery Ticket". Just copy the text into 3 different pages in Twine.</li>
+                    <li>Show a mentor you wrote the story!</li>
+                </ol>
+
+                <p class="mb-1">On the "Start" page, copy this:
+                <pre class="whitespace-pre-wrap">
+
+You bought a lottery ticket at the local shop - a chance to win ten million pounds!
+It's 6pm on Saturday night, and the winning lottery number is announced on TV:
+- [[You won! Your number matches|you-win]]
+- [[You lost. Boo|you-lose]]
+                </pre>
+                </p>
+
+                <p class="mb-1">On the "you-win" page, copy this:
+                <pre class="whitespace-pre-wrap">
+
+You live a life of luxury - a fancy house and car, no need to work, anything you want.
+But you sometimes wonder - would you have been happier if you hadn't won?
+The End.
+                </pre>
+                </p>
+
+                <p class="mb-1">On the "you-lose" page, copy this:
+                <pre class="whitespace-pre-wrap">
+
+You live a normal life - a normal house and car, a job, and you never buy another ticket.
+But you sometimes wonder - how would your life have been if you had won?
+The End.
+                </pre>
+                </p>
+                <p>
+                    To play through the story, click the "Start" page, and click 'Test from Here'. Now show a mentor!
+                </p>
+
+                <h3 class="text-3xl mt-2 mb-2">Story Badge 2: Write a Longer Story</h3>
+                <p>So you know how to use <a href="https://twinery.org/2/#/" target="_blank">Twine</a> a bit. Time to write a longer Choose Your Own Adventure story, called
+                    "The Magical Wardrobe". To start you off, this is the first page:
+                </p>
+                <pre class="whitespace-pre-wrap">
+
+You and your Mum and Dad moved into the new house this morning. It's nice. Your first night in your new bedroom. You wake at 3am to a strange noise: a ringing coming from the attic.
+
+You quietly creep up into the attic, and find the ringing is coming from a big old wardrobe in the corner. You:
+* Panic, run down to your bedroom and hide under the covers.
+* Open the wardrobe. Let's get this adventure started.
+* Go wake up your Mum and Dad. They need to know.
+
+</pre>
+                <p>
+                    Each choice is a link to another page, where the story continues. So what happens when you open the wardrobe?
+
+                    Ask a mentor to play your adventure once it's done.
+                </p>
+
+
+                <h3 class="text-3xl mt-2 mb-2">Story Badge 3: Write a Your Own Story</h3>
+                <p>So you've written two stories with <a href="https://twinery.org/2/#/" target="_blank">Twine</a> so far. Now
+                for a challenge: make your own Choose Your Own Adventure story about anything you want. Make it fun and interesting!</p>
+
+                <p class="mt-1">Twine can do much more than text pages and links between them: you can change colours, and add
+                    pictures and music. Here are two guides to help you:</p>
+
+                <ul class="list-decimal list-inside ml-4 my-2">
+                    <li><a href="https://www.adamhammond.com/twineguide/" target="_blank">A Total Beginner's Guide to Twine</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d" target="_blank">Twine Tutorial video playlist</a></li>
+                </ul>
+
+                <p>Show a mentor what you wrote!</p>
+
+                <h3 class="text-3xl mt-1 mb-2">Stories: Next steps</h3>
+                <p>So you earned three badges. Nice! What next? Try our <a href="do-challenges.html#stories">story challenges!</a>
+            </div>
+        </div>
+
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="web"></a>
             <div class="bg-yellow-400 p-8"><h2 class="text-white text-3xl">I want to create websites online that look cool and are interactive</h2>
             </div>
             <div class="p-8">
@@ -298,7 +408,7 @@
             </div>
         </div>
 
-        <div id="code" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
             <a  name="code"></a>
             <div class="p-8 bg-red-600"><h2 class="text-white text-3xl">I want to learn how to code in a real programming language</h2></div>
             <div class="p-8">
