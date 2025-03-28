@@ -11,6 +11,10 @@
           a {
             @apply text-blue-500;
           }
+
+            a[name] {
+                scroll-margin-top: 60px;
+            }
         }
     </style>
     <script>
@@ -78,7 +82,7 @@
     <p>Start completing challenges today:
     <ol class="list-decimal list-inside ml-4 my-2">
         <li>Pick an area below that interests you. There's <a  href="#scratch">Fun with Scratch</a>, <a  href="#web">Making
-            Websites</a>, <a  href="#code">Coding (in Python or Javascript)</a> and <a  href="#microbits">Microbits</a>.
+            Websites</a>, <a href="#stories">Writing Interactive Stories</a>, <a href="#code">Coding (in Python or Javascript)</a> and <a  href="#microbits">Microbits</a>.
         </li>
         <li>Pick a challenge that looks fun.</li>
         <li>Do it!</li>
@@ -127,12 +131,10 @@
     <br/>
 
     <div class="panel-group">
-        <div id="scratch" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
-            <a  name="scratch"></a>
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="scratch"></a>
             <div class="p-8 bg-green-400"><h2 class="text-3xl text-white">Fun with Scratch</h2></div>
             <div class="p-8 space-y-2">
-
-                <br/>
                 <h3 class="text-3xl mb-2">Before you start</h3>
                 <p>Scratch is a nice programming language for learning how to code. If you haven't used Scratch
                     before, you can
@@ -141,7 +143,7 @@
                 </p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: I Wanna Be a Rockstar</h3>
+                <h3 class="text-3xl mb-2">Scratch: I Wanna Be a Rockstar</h3>
                 <p>
                     Make a theatre stage with a band on it: a drummer, a guitarist, a singer, and anyone else you want.
                     When you click on a person (or their instrument), the instrument sound should play. So when you
@@ -157,7 +159,7 @@
                 <p>More advanced: Try clicking your band members at the right time, so it sounds like a proper song!</p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Bear wants Dinner</h3>
+                <h3 class="text-3xl mb-2">Scratch: Bear wants Dinner</h3>
                 <p>Make a story about a bear searching for his dinner. The bear should move around, and tell the
                     following
                     joke to a frog:
@@ -179,7 +181,7 @@
                 </p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Maze of Insults</h3>
+                <h3 class="text-3xl mb-2">Scratch: Maze of Insults</h3>
                 <p>Create a maze game. If you collide with a wall, you get teleported to the start, and told “you
                     clumsy oaf”!</p>
                 <p>
@@ -193,7 +195,7 @@
                 </p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Animate Your Name</h3>
+                <h3 class="text-3xl mb-2">Scratch: Animate Your Name</h3>
                 <p>
                     Make an animation of your name, so each letter does something cool like make a sound, or move around
                     or change colour. I’m called GREG, so the G might spin around, the R might change from red to blue,
@@ -213,7 +215,7 @@
                     around, or make the letters do things when you click on them.</p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Catching Mice</h3>
+                <h3 class="text-3xl mb-2">Scratch: Catching Mice</h3>
                 <p>Create a game where the player gets points when the cat catches a mouse, and loses points when
                     the cat steps in a dog-poo.</p>
                 <p>
@@ -227,7 +229,7 @@
                 <p>More advanced: can you make this game two-player?</p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Aquarium</h3>
+                <h3 class="text-3xl mb-2">Scratch: Aquarium</h3>
                 <p>Build an aquarium with fish swimming around and plants at the bottom. The fish should turn round
                     when they hit the aquarium edge.</p>
                 <p>
@@ -241,7 +243,7 @@
                     fish run away when they bump into the shark.</p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Space Miner</h3>
+                <h3 class="text-3xl mb-2">Scratch: Space Miner</h3>
                 <p>
                     Make a game about a space miner:
                 <ul class="list-disc list-inside ml-4 my-2">
@@ -265,7 +267,7 @@
                 </p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Hide and Seek</h3>
+                <h3 class="text-3xl mb-2">Scratch: Hide and Seek</h3>
                 <p>
                     Make a Hide and Seek game with the Scratch Cat: the Cat will appear somewhere on the screen, then
                     vanish after 2 seconds.
@@ -292,7 +294,7 @@
 
                 <a  name="scratch-halloween-graveyard"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Halloween Challenge: Escape the Graveyard</h3>
+                <h3 class="text-3xl mb-2">Scratch: Escape the Halloween Graveyard</h3>
                 <p>
                     Make a game about escaping a graveyard. You start at one side of the graveyard, and have to escape
                     through a gate on the other side. The graveyard has grave-stones in the ground, and ghosts that move
@@ -312,7 +314,7 @@
 
                 <a  name="parachute-jump"></a>
                 <br/>
-                <h3 class="text-3xl mb-2" name="parachute-jump">Challenge: Parachute Jump</h3>
+                <h3 class="text-3xl mb-2" name="parachute-jump">Scratch: Parachute Jump</h3>
                 <p>
                     Make a game about someone doing a parachute jump, and having to dodge moving clouds. If they hit a
                     cloud, they
@@ -348,7 +350,7 @@
 
                 <a  name="scratch-maths-quiz"></a>
                 <br/>
-                <h3 class="text-3xl mb-2" name="maths-quiz">Challenge: Maths Quiz</h3>
+                <h3 class="text-3xl mb-2" name="maths-quiz">Scratch: Maths Quiz</h3>
                 <p>
                     Make a quiz where the player has to multiply random numbers together. "What's 2 times 7?".
                     "14". "Correct!".
@@ -381,7 +383,7 @@
 
                 <a  name="scratch-wind-whistle"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Whistle for the Wind</h3>
+                <h3 class="text-3xl mb-2">Scratch: Whistle for the Wind</h3>
                 <p>
                     Make a scene with a windmill (or wind turbine) and a cloud. Make the windmill turn and the cloud
                     move across the sky.
@@ -427,7 +429,7 @@
 
                 <a  name="reaction-time-scratch"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Reaction Time</h3>
+                <h3 class="text-3xl mb-2">Scratch: Reaction Time</h3>
                 <p>
                     Make a game that measures your reaction time: how fast you can click when Scratch cat changes
                     from his normal orange colour to blue. At the end of the game, show your reaction time (it will be
@@ -463,7 +465,7 @@
 
                 <a  name="scratch-insult-generator"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Insult Generator</h3>
+                <h3 class="text-3xl mb-2">Scratch: Insult Generator</h3>
                 <p>
                     Make a Scratch program that generates random insults :-) Scratch cat first asks for your name, then
                     insults
@@ -511,7 +513,7 @@
 
                 <a  name="to-the-moon"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: To the Moon</h3>
+                <h3 class="text-3xl mb-2">Scratch: To the Moon</h3>
                 <p>
                     Write a game about flying to the moon. There should be three stages in your
                     game: one set on Earth; one in space and one on the moon.
@@ -566,7 +568,7 @@
 
                 <a  name="balloons"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Balloons</h3>
+                <h3 class="text-3xl mb-2">Scratch: Balloons</h3>
                 <p>
                     Write a small game about popping balloons. In the game the
                     balloons should float from the bottom to the top of the screen. When
@@ -591,7 +593,7 @@
 
                 <a  name="scratch-back-to-school-supplies"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Back to School Supplies</h3>
+                <h3 class="text-3xl mb-2">Scratch: Back to School Supplies</h3>
                 <p>
                     So you're going back to school - you'll need to make sure you've got a pencil, notebook
                     and calculator.
@@ -632,7 +634,7 @@
 
                 <a  name="frogger"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Frogger</h3>
+                <h3 class="text-3xl mb-2">Scratch: Frogger</h3>
                 <p>
                     Make your own version of a classic 1980s game called "<a
                         href="https://en.wikipedia.org/wiki/Frogger" target="_blank">Frogger</a>".
@@ -678,7 +680,7 @@
 
                 <a  name="scratch-halloween-scene"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Halloween Scene</h3>
+                <h3 class="text-3xl mb-2">Scratch: Halloween Scene</h3>
                 <p>
                     Create a Halloween scene: for example a spooky forest or a graveyard. When you click on anything
                     in the scene, something scary should happen. A spider drops from this tree; an owl flies out of that
@@ -698,7 +700,7 @@
 
                 <a  name="santa-present-drop"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Santa Present Drop</h3>
+                <h3 class="text-3xl mb-2">Scratch: Santa Present Drop</h3>
                 <p>
                     Santa needs help dropping presents down chimneys. Make a game where Santa flies across the sky
                     over some houses with chimneys. When the mouse is clicked, Santa drops a present which falls
@@ -748,7 +750,7 @@
 
                 <a  name="avoid-cake"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Avoid Cake</h3>
+                <h3 class="text-3xl mb-2">Scratch: Avoid Cake</h3>
                 <p>
                     Scratch Cat has made a New Year Resolution not to eat cake.
                     Write a game where Scratch Cat has to dodge cakes that fly round the screen.
@@ -785,7 +787,7 @@
 
                 <a  name="scratch-robot-disco"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Robot Disco</h3>
+                <h3 class="text-3xl mb-2">Scratch: Robot Disco</h3>
                 <p>
                     Make a scene of a robot disco! There are two robots dancing, waving their arms and their legs.
                     There should be crazy electronic music playing, and some flashing lights. Make it a cool robot
@@ -825,7 +827,7 @@
 
                 <a  name="scratch-easter-egg-hunt"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Easter Egg Hunt</h3>
+                <h3 class="text-3xl mb-2">Scratch: Easter Egg Hunt</h3>
                 <p>
                     Make an Easter egg hunt game - the player wins by finding 10 Easter eggs hidden behind trees, rocks and animals
                     in a country scene. Eggs should appear in random locations for a few seconds then vanish again. If you
@@ -843,7 +845,7 @@
 
                 <a  name="scratch-april-showers"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">April Showers</h3>
+                <h3 class="text-3xl mb-2">Scratch: April Showers</h3>
                 <p>
                     It rains a lot in April. Make a game where you dodge raindrops. Get hit by 3 raindrops, and the game
                     finishes.
@@ -886,7 +888,7 @@
 
                 <a  name="youtube-tutorial"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">YouTube tutorial: make a zombie survival game</h3>
+                <h3 class="text-3xl mb-2">Scratch: YouTube tutorial: make a zombie survival game</h3>
                 <p>
                     There are some good video tutorials on YouTube that show you how to make cool things with Scratch.
                     Follow along with this 10 minute <a  href="https://www.youtube.com/watch?v=QXru0rSV2ZQ"
@@ -918,7 +920,7 @@
 
                 <a  name="virtual-pet"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Virtual pet: beach holiday</h3>
+                <h3 class="text-3xl mb-2">Scratch: Virtual pet</h3>
                 <p>
                     Scratch Cat has gone on holiday to the beach. He will need regular food, drink and sunscreen to
                     enjoy himself. If he doesn't get
@@ -970,7 +972,7 @@
 
                 <a  name="youtube-rpg-tutorial-2017"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">YouTube tutorial: make a RPG/Adventure Game (2017)</h3>
+                <h3 class="text-3xl mb-2">Scratch: YouTube tutorial: make a RPG/Adventure Game (2017)</h3>
                 <p>
                     Learn how to make an adventure/RPG (role-playing game) game by following along with this 10 minute
                     <a  href="https://www.youtube.com/watch?v=DnwZRtWzCYY" target="_blank">video tutorial</a>.
@@ -987,7 +989,7 @@
 
                 <a  name="spy-name-generator"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Spy Name Generator</h3>
+                <h3 class="text-3xl mb-2">Scratch: Spy Name Generator</h3>
                 <p>
                     Make a Scratch program that generates random spy names :-) Scratch cat first asks for your name,
                     then
@@ -1045,7 +1047,7 @@
 
                 <a  name="going-to-school"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Going to School</h3>
+                <h3 class="text-3xl mb-2">Scratch: Going to School</h3>
                 <p>
                     Make a story about you going to school. There will be 3 screens (each using a different backdrop):
                 <ul class="list-disc list-inside ml-4 my-2">
@@ -1072,7 +1074,7 @@
 
                 <a  name="youtube-shootemup"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">YouTube tutorial: make a shoot ’em up game with planes</h3>
+                <h3 class="text-3xl mb-2">Scratch: YouTube tutorial: make a shoot ’em up game with planes</h3>
                 <p>
                     Learn how to make a shoot’em up game by following along with this <a
                         href="https://www.youtube.com/watch?v=0Ebu48zjXsw" target="_blank">10 minute video tutorial</a>.
@@ -1096,7 +1098,7 @@
 
                 <a  name="rudolph-maze"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Rudolf hunts for his red nose</h3>
+                <h3 class="text-3xl mb-2">Scratch: Rudolf hunts for his red nose</h3>
                 <p>
                     Rudolf woke up on Christmas morning and couldn't find his red nose. Make a reindeer sprite either
                     from a picture or by drawing in Scratch. Draw a complicated maze sprite and hide a sprite of
@@ -1118,7 +1120,7 @@
 
                 <a  name="scratch-flappy-parrot"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Flappy Parrot</h3>
+                <h3 class="text-3xl mb-2">Scratch: Flappy Parrot</h3>
                 <p>
                     Make a "Flappy Parrot" game by
                     <a  href="https://projects.raspberrypi.org/en/projects/flappy-parrot" target="_blank">following along with this tutorial</a>.
@@ -1129,7 +1131,7 @@
 
                 <a  name="melting-snowman"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Melting Snowman VS Supermoon</h3>
+                <h3 class="text-3xl mb-2">Scratch: Melting Snowman vs Supermoon</h3>
                 <p>Ron the snowman is struggling with the warm weather - he's in constant danger of melting.  Can you keep him safe from
                     Supermoon who wants to make the night as hot as your summer holidays.</p>
                 <p>
@@ -1148,7 +1150,7 @@
 
                 <a  name="pattern-art-generator"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Pattern art generator </h3>
+                <h3 class="text-3xl mb-2">Scratch: Pattern art generator </h3>
                 <p> Draw patterns in Scratch to make beautiful art.
                 <p>
                     Getting started:
@@ -1163,13 +1165,13 @@
 
                 <a  name="boat-maze"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Boat Maze</h3>
+                <h3 class="text-3xl mb-2">Scratch: Boat Maze</h3>
                 <p>Follow along with <a  target="_blank" href="https://codeclubprojects.org/en-GB/scratch/boat-race/">this tutorial</a>, when you get to race a boat through a sea maze to a desert island. Don't crash the boat!
 
 
                 <a  name="car-racing-game"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">YouTube tutorial: make a car racing game</h3>
+                <h3 class="text-3xl mb-2">Scratch: YouTube tutorial: make a car racing game</h3>
                 <p>
                     Learn how to make a racing game (<a  href="https://scratch.mit.edu/projects/294587044/" target="_blank">try it out</a>) by
                     following along with this <a  href="https://www.youtube.com/watch?v=mIAzYvOns04" target="_blank">20 minute tutorial</a>.  Then
@@ -1186,7 +1188,7 @@
 
                 <a  name="snake-game"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">YouTube tutorial: make a snake game</h3>
+                <h3 class="text-3xl mb-2">Scratch: YouTube tutorial: make a snake game</h3>
                 <p>
                     Learn how to make the classic game of "snake" by
                     following along with this <a  href="https://www.youtube.com/watch?v=nkDmcsGIIoM" target="_blank">12 minute tutorial</a>.
@@ -1194,7 +1196,7 @@
 
                 <a  name="scrolling-platformer"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">YouTube tutorial: make a scrolling platformer game</h3>
+                <h3 class="text-3xl mb-2">Scratch: YouTube tutorial: make a scrolling platformer game</h3>
                 <p>
                     There are some good video tutorials on YouTube that show you how to make cool things with Scratch.
                     Follow along with this 12 minute <a  href="https://www.youtube.com/watch?v=sebnyhBsXug"
@@ -1217,7 +1219,7 @@
 
                 <a  name="bird-microbit"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Fly a bird in Scratch with a microbit!</h3>
+                <h3 class="text-3xl mb-2">Scratch: Fly a bird in Scratch with a microbit!</h3>
                 <p>You can use a Microbit to control things in Scratch. We're going to fly a bird using a Microbit. Tilt your Microbit
                     to make your bird fly up and down, and use the A and B buttons to speed up or slow down.
                 <p>
@@ -1233,7 +1235,7 @@
 
                 <a name="scratch-xmas-card"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Make a Christmas card</h3>
+                <h3 class="text-3xl mb-2">Scratch: Make a Christmas card</h3>
                 <p>Make a fun Christmas card with Scratch. You can put anything Christmas-ey on it: Christmas trees, santa, reindeer,
                     the nativity, ... Can you make it fun? The card could play music in the background, or maybe when you clicked
                     on something. And you could animate it, so a christmas present might unwrap itself when you clicked on it. And
@@ -1242,7 +1244,7 @@
 
                 <a  name="no-more-doughnuts"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">No More Doughnuts</h3>
+                <h3 class="text-3xl mb-2">Scratch: No More Doughnuts</h3>
                 <p>Scratch Cat has made a New Year’s resolution not to eat any more doughnuts. Make a game where Scratch
                     Cat has to dodge flying doughnuts. If he hits a doughnut, he loses the game.
                 </p>
@@ -1272,7 +1274,7 @@
 
                 <a  name="pancake-flipping"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Pancake flipping game!</h3>
+                <h3 class="text-3xl mb-2">Scratch: Pancake flipping game!</h3>
                 <p>Pancakes are popular this time of year.  They can be sweet or savoury but they all need flipping over!
                     Make a game where you flip a pancake, and have to catch it in a frying pan.</p>
                 Getting started:
@@ -1290,7 +1292,7 @@
 
                 <a  name="scratch-fireworks-display"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Fireworks display</h3>
+                <h3 class="text-3xl mb-2">Scratch: Fireworks display</h3>
                 <p>Make a fireworks display. Ideas:
                 <ul class="list-disc list-inside ml-4 my-2">
                     <li>A rocket flies up and explodes in the sky</li>
@@ -1309,7 +1311,7 @@
 
                 <a  name="scratch-brick-breaker-game"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">YouTube tutorial: make a brick breaker game</h3>
+                <h3 class="text-3xl mb-2">Scratch: YouTube tutorial: make a brick breaker game</h3>
                 <p>
                     Learn how to make a brick breaker game (<a  href="https://scratch.mit.edu/projects/572115838/" target="_blank">try it out</a>) by
                     following along with this <a  href="https://www.youtube.com/watch?v=5sUpqyDgFMo" target="_blank">32 minute tutorial</a>.
@@ -1318,7 +1320,7 @@
 
                 <a  name="scratch-safari"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Safari Park Visit</h3>
+                <h3 class="text-3xl mb-2">Scratch: Safari Park Visit</h3>
                 <p>
                     Make a story about going to the safari park. There should be a car which drives through an animal
                     enclosure full of lions (or elephants, or whatever!). The car can stop, the animals can more around,
@@ -1338,7 +1340,7 @@
 
                 <a name="scratch-valentines-card"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Make a Valentine's card</h3>
+                <h3 class="text-3xl mb-2">Scratch: Make a Valentine's card</h3>
                 <p>Valentines Day was on 14th February. Make a Valentines card with Scratch: it could have hearts, or flowers,
                     or Cupids on it - and say 'Happy Valentines Day' on it. Can you make it fun? The card could play music in
                     the background, or maybe when you clicked on something. And you could animate it, so a heart might spin,
@@ -1347,7 +1349,7 @@
 
                 <a name="scratch-leap-year-checker"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Make a Leap Year Checker</h3>
+                <h3 class="text-3xl mb-2">Scratch: Make a Leap Year Checker</h3>
                 <p>February has 29 days in a leap year, and 28 days otherwise. Make a leap year checker, where Scratch cat asks you for a year,
                     and tells you if it's a leap year or not.
                 </p>
@@ -1388,7 +1390,7 @@
 
                 <a  name="scratch-3littlepigs"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">3 Little Pigs</h3>
+                <h3 class="text-3xl mb-2">Scratch: 3 Little Pigs</h3>
                 <p>Write the story of the "Three Little Pigs" (<a  href="https://www.youtube.com/watch?v=xGFjzp8wl1E" target="_blank">4 minute video of it here</a>).</p>
                 <p>You will need a wolf sprite, a pig sprite, and houses of straw, brick and stone (the stone house has a chimney). You can then move the wolf
                     and pig sprites around to tell the story. You can use "broadcast" blocks in the "Events" section to send messages between sprites, so one
@@ -1421,7 +1423,7 @@
 
                 <a  name="scratch-running-dinosaur"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Youtube tutorial: make a running dinosaur game</h3>
+                <h3 class="text-3xl mb-2">Scratch: Youtube tutorial: make a running dinosaur game</h3>
                 <p>
                     Learn how to make a "endless runner" type game, where a t-rex jumps over cactuses (<a  href="https://scratch.mit.edu/projects/632735776/" target="_blank">try it out</a>) by
                     following along with this <a  href="https://www.youtube.com/watch?v=Pgt_BRqtoPg" target="_blank">17 minute tutorial</a>. The starter project mentioned in the video is
@@ -1431,7 +1433,7 @@
 
                 <a  name="scratch-platformer"></a>
                  <br/>
-                <h3 class="text-3xl mb-2">Youtube tutorial: make a platformer game</h3>
+                <h3 class="text-3xl mb-2">Scratch: Youtube tutorial: make a platformer game</h3>
                 <p>
                     Learn how to make a platformer game, with multiple levels and collision detection (<a  href="https://scratch.mit.edu/projects/521622325/" target="_blank">try it out</a>) by
                     following along with this <a  href="https://www.youtube.com/watch?v=MAjobdDNqKY" target="_blank">27 minute tutorial</a>.
@@ -1439,7 +1441,7 @@
 
                 <a  name="scratch-beach-scene"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Beach Scene</h3>
+                <h3 class="text-3xl mb-2">Scratch: Beach Scene</h3>
                 <p>Make a beach scene with Scratch. You will need a beach and some sea. Place interesting things in the scene
                   like a sand castle, some shells, and a boat.
                 </p>
@@ -1455,7 +1457,7 @@
 
                 <a  name="scratch-jubilee-picnic"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Jubilee Picnic</h3>
+                <h3 class="text-3xl mb-2">Scratch: Jubilee Picnic</h3>
                 <p>
                     There’s a picnic in your street - yum! Your sprite needs to walk back and forth across the screen
                     catching cakes, sandwiches and drinks. Set up a timer so that players have one minute to collect as
@@ -1490,7 +1492,7 @@
 
                 <a  name="scratch-play-macbeth"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Make the threatre play "Macbeth"</h3>
+                <h3 class="text-3xl mb-2">Scratch: Make the threatre play "Macbeth"</h3>
                 <p>Make a (short!) theatre play in Scratch. We'll show you how to make <a  target="_blank" href="https://en.wikipedia.org/wiki/Macbeth">"Macbeth" by William Shakespeare</a>.
                    This is what happens:
                     <ul class="list-disc list-inside ml-4 my-2">
@@ -1531,7 +1533,7 @@
 
                 <a  name="scratch-four-seasons"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Four Seasons</h3>
+                <h3 class="text-3xl mb-2">Scratch: Four Seasons</h3>
                 <p>
                     Make a picture of a wood - with trees, animals, a house, and a sky - then change it 4 times so it's
                     winter, spring, summer and autumn.
@@ -1562,7 +1564,7 @@
 
                 <a  name="scratch-noisy-zoo"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Noisy Zoo</h3>
+                <h3 class="text-3xl mb-2">Scratch: Noisy Zoo</h3>
 
                 <p>
                     Make a zoo with various animals in it: an elephant, some monkeys, a tiger, and anything else you want.
@@ -1594,7 +1596,7 @@
 
                 <a  name="scratch-beach-clean"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Beach Clean</h3>
+                <h3 class="text-3xl mb-2">Scratch: Beach Clean</h3>
 
                 <p>
                     Make a game called "Beach Clean", where you clean all bottles from a beach by clicking on them. You win when no bottles are left.
@@ -1681,12 +1683,12 @@
 
                 <a  name="scratch-santa-game"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Santa Game: Drop Presents Down Chimneys</h3>
+                <h3 class="text-3xl mb-2">Scratch: Santa Game: Drop Presents Down Chimneys</h3>
                 <p>Follow along with <a  target="_blank" href="https://www.youtube.com/watch?v=dphp9_hy96s">this YouTube tutorial</a>, and make a game where Santa drops presents down chimneys for points!
 
                 <a  name="scratch-mix-n-match-bodies"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Mix and Match Body Game</h3>
+                <h3 class="text-3xl mb-2">Scratch: Mix and Match Body Game</h3>
                 <p>
                     Make a game that lets you mix and match body parts:  make the strangest, funniest or coolest person by mixing
                     different heads, body and legs.
@@ -1721,7 +1723,7 @@
 
                 <a  name="scratch-coronation"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Animate the Coronation</h3>
+                <h3 class="text-3xl mb-2">Scratch: Animate the Coronation</h3>
 
                 <p>
                     Animate the Coronation of Prince Charles, where he is crowned King Charles III. We'll do the short version:
@@ -1762,7 +1764,7 @@
 
                 <a name="scratch-youtube-rpg-tutorial-2023"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">YouTube tutorial: make a RPG game</h3>
+                <h3 class="text-3xl mb-2">Scratch: YouTube tutorial: make a RPG game</h3>
                 <p>
                     Learn how to make an RPG (role-playing game) by following along with this
                     <a  href="https://www.youtube.com/playlist?list=PLy4zsTUHwGJJM6OFblu_t-5I5Yw5SxvhT" target="_blank">8 video playlist</a>. Looks cool!
@@ -1770,7 +1772,7 @@
 
                 <a name="scratch-youtube-geometry-dash-tutorial-2023"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">YouTube tutorial: make a Geometry Dash game</h3>
+                <h3 class="text-3xl mb-2">Scratch: YouTube tutorial: make a Geometry Dash game</h3>
                 <p>
                     Learn how to make a Geometry Dash platformer game by following along with this
                     <a  href="https://www.youtube.com/playlist?list=PLy4zsTUHwGJJnoXPSYlKQ15wedqB39W_E" target="_blank">8 video playlist</a>.
@@ -1778,7 +1780,7 @@
 
                 <a name="scratch-pairs"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Make a Pairs memory game (with YouTube tutorial)</h3>
+                <h3 class="text-3xl mb-2">Scratch: Make a Pairs memory game (with YouTube tutorial)</h3>
                 <p>
                     Have you played the memory game called 'Pairs'? You lay out a bunch of cards that are pairs (of animals, or shapes,
                     or colours). The cards are all mixed up and put face down. Each player takes turns to flip over two cards: if they are a
@@ -1789,7 +1791,7 @@
 
                 <a name="scratch-whack-a-mole"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Make a Whack-A-Mole game</h3>
+                <h3 class="text-3xl mb-2">Scratch: Make a Whack-A-Mole game</h3>
                 <p>
                     Your garden has been invaded by moles. Make a game where the player clicks on moles that pop up randomly
                     to earn points. Getting started:
@@ -1813,12 +1815,10 @@
             </div>
         </div>
 
-        <div id="web" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
-            <a  name="web"></a>
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="web"></a>
             <div class="p-8 bg-yellow-400"><h2 class="text-3xl text-white">Making Websites</h2></div>
             <div class="p-8">
-
-                <br/>
                 <h3 class="text-3xl mb-2">Before you start</h3>
                 <p>If you’ve never built a website before, do our badge called <a  href="earn-badges.html#web">Get
                     your own website on the Internet</a>.
@@ -1826,7 +1826,7 @@
                 </p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: The Solar System</h3>
+                <h3 class="text-3xl mb-2">Websites: The Solar System</h3>
                 <p>
                     Create a website about the solar system. It will need a start page describing the solar system,
                     and a page about every planet. You
@@ -1846,7 +1846,7 @@
 
                 <a  name="websites-where-i-live"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Where I Live</h3>
+                <h3 class="text-3xl mb-2">Websites: Where I Live</h3>
                 <p>
                     Create a website about the place where you live. Let’s say you live in Stirling. Where is it?
                     How old is it? What would you show
@@ -1870,7 +1870,7 @@
 
                 <a  name="websites-ideal-home"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Ideal Home</h3>
+                <h3 class="text-3xl mb-2">Websites: Ideal Home</h3>
                 <p>
                     You will definitely will the lottery next week, so it's time to plan your ideal home. Make a website
                     with a page for each room in your ideal home. A page should describe the room and what's in it - add
@@ -1883,7 +1883,7 @@
 
                 <a  name="websites-countries-of-europe"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Countries of Europe</h3>
+                <h3 class="text-3xl mb-2">Websites: Countries of Europe</h3>
                 <p>
                     Make a website about countries of Europe. Have a webpage about each country with lots of facts and
                     pictures about it: the capital city, flag, population size, languages spoken, famous people born
@@ -1893,7 +1893,7 @@
 
                 <a  name="websites-xmas-been-good"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Christmas Challenge: I’ve been good!</h3>
+                <h3 class="text-3xl mb-2">Websites: Christmas - I’ve been good!</h3>
                 <p>
                     What do you want for Christmas? Let Santa (and mum, dad, gran and anyone else) know with your
                     own website.
@@ -1911,7 +1911,7 @@
                 </p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Science!</h3>
+                <h3 class="text-3xl mb-2">Websites: Science!</h3>
                 <p>
                     Chemistry, computing, psychology, microbiology, astronomy…. how many types of science can you
                     think of?
@@ -1925,7 +1925,7 @@
 
                 <a  name="websites-halloween-haunted-house"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Halloween Challenge: Haunted House</h3>
+                <h3 class="text-3xl mb-2">Websites: Halloween Haunted House</h3>
                 <p>
                     Make a website game about a haunted house. Each webpage is a room in the house, and describes
                     the
@@ -1939,7 +1939,7 @@
                 </p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Olympics</h3>
+                <h3 class="text-3xl mb-2">Websites: Olympics</h3>
                 <p>
                     So you watched the Olympics? There were loads of cool sports: swimming, triathlon, fencing, …
                 </p>
@@ -1952,7 +1952,7 @@
                 </p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Animal Noises</h3>
+                <h3 class="text-3xl mb-2">Websites: Animal Noises</h3>
                 <p>
                     Make a webpage with lots of animal pictures. When you click on a picture ("sheep"), an alert box
                     should pop up with the animal noise ("baa").
@@ -1982,7 +1982,7 @@
 
                 <a  name="websites-bakers-shop"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Baker's Shop</h3>
+                <h3 class="text-3xl mb-2">Websites: Baker's Shop</h3>
                 <p>
                     Make a website for Bob's Bakery.
                 </p>
@@ -2007,7 +2007,7 @@
 
                 <a  name="favourite-films"></a>
                 <br/>
-                <h3 class="text-3xl mb-2" name="favourite-films">Challenge: My Favourite Films</h3>
+                <h3 class="text-3xl mb-2" name="favourite-films">Websites: My Favourite Films</h3>
                 <p>
                     I bet you've got a few favourite films. So make a website about them! You will need:
                 <ul class="list-disc list-inside ml-4 my-2">
@@ -2033,7 +2033,7 @@
 
                 <a  name="bob-the-builder"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Bob the Builder</h3>
+                <h3 class="text-3xl mb-2">Websites: Bob the Builder</h3>
                 <p>
                     Make a website for Bob the Builder.
                 </p>
@@ -2057,7 +2057,7 @@
 
                 <a  name="websites-favourite-game"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: my favourite game</h3>
+                <h3 class="text-3xl mb-2">Websites: my favourite game</h3>
                 <p>
                     My favourite game. Write a small website about your favourite game(s). The website
                     should contain:
@@ -2076,7 +2076,7 @@
 
                 <a  name="websites-house-for-sale"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Selling your house</h3>
+                <h3 class="text-3xl mb-2">Websites: Selling your house</h3>
                 <p>Imagine you are selling your house - make a website to promote it. To get an idea of what you need to show,
                     look at this <a href="https://www.rightmove.co.uk/property-for-sale/Stirling.html" target="_blank">real estate agent website</a>, and click on one of the houses for sale.</p>
                 <p>If you don't want to make a website for your real house, then just make a house up. You could pretend
@@ -2092,7 +2092,7 @@
 
                 <a  name="rate-my-teacher"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Rate my teacher</h3>
+                <h3 class="text-3xl mb-2">Websites: Rate my teacher</h3>
                 <p>
                     Write a website about the teachers in your school. Each teacher should have their own page,
                     describing what they teach, how much homework they give, how strict they are, what their classroom
@@ -2103,7 +2103,7 @@
 
                 <a  name="best-memes-ever"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Best Memes Ever</h3>
+                <h3 class="text-3xl mb-2">Websites: Best Memes Ever</h3>
                 <p>
                     Make a website with the <a  href="https://www.google.co.uk/search?q=cat+memes&tbm=isch" target="_blank">best memes
                     ever</a>.
@@ -2113,7 +2113,7 @@
 
                 <a  name="websites-fun-with-fonts"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Fun with Fonts</h3>
+                <h3 class="text-3xl mb-2">Websites: Fun with Fonts</h3>
                 <p>
                     How text appears on a webpage depends on which <a  href="https://en.wikipedia.org/wiki/Font" target="_blank">font</a>
                     is used.
@@ -2139,164 +2139,9 @@
                 </ul>
                 </p>
 
-                <a  name="twine-stories"></a>
-                <br/>
-                <h3 class="text-3xl mb-2">Make Stories With Twine</h3>
-                <p>
-                    <a  target="_blank" href="https://twinery.org/2/#!/welcome">Twine</a> is an online tool for telling
-                    interactive stories.
-                    Here are two examples:
-                <ul class="list-disc list-inside ml-4 my-2">
-                    <li><a  target="_blank" href="http://philome.la/aronsonmax1/who-wants-ice-cream">Who Wants Ice
-                        Cream</a></li>
-                    <li><a  target="_blank" href="http://philome.la/roscoecarrier/no-parents">No Parents</a></li>
-                </ul>
-                Make your own story using Twine. It's easy to use once you get the hang of it. Here are some useful
-                guides:
-                <ul class="list-disc list-inside ml-4 my-2">
-                    <li><a  target="_blank" href="http://www.adamhammond.com/twineguide/">A Beginner's Guide to Twine
-                        2.0</a></li>
-                    <li><a  target="_blank"
-                           href="https://www.youtube.com/playlist?list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d">Twine 2.0
-                        tutorial</a></li>
-                    <li><a  target="_blank" href="https://twinery.org/wiki/twine2:guide">Official Twine 2 Guide</a></li>
-                </ul>
-                </p>
-
-                <a  name="twine-timmy-dog"></a>
-                <br/>
-                <h3 class="text-3xl mb-2">Twine Story: A Day in the Life of Timmy the Dog</h3>
-                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
-                    called
-                    "A Day in the Life of Timmy the Dog".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
-                <p>To start you off, your first page might look like:
-               <pre class="whitespace-pre-wrap">
-                        Timmy the Dog is sniffing the rubbish bin outside his house. Suddenly he hears a rustle behind him, and
-                        sees Sooty the Cat staring. Timmy:
-
-                        * Walks up to Sooty, and tries to make friends.
-                        * Bounces up to Sooty, and starts a fight. That cat needs a lesson.
-                        * Runs awwaaaaay! Sooty is scary.
-                    </pre>
-                Each choice is a link to another page, where the story continues. So what happens when Timmy runs away,
-                or starts a fight?
-                </p>
-
-                <a  name="twine-3-little-pigs"></a>
-                <br/>
-                <h3 class="text-3xl mb-2">Twine Story: The Three Little Pigs, as the Wolf</h3>
-                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
-                    that's the classic story "The Three Little Pigs". (<a  href="https://www.youtube.com/watch?v=xGFjzp8wl1E" target="_blank">4 minute
-                        video of it here</a>). You are the Wolf.</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
-                <p>To start you off, your first page might look like:
-               <pre class="whitespace-pre-wrap">
-                        Dave the Wolf is hungry. He's learnt that 3 little pigs have moved into the area, and have built themselves
-                        houses. Dave likes eating pigs. He heads for the first house, which strangely is made out of straw. Dave:
-
-                        * Walks up to the door and knocks on it. Maybe the pig inside will answer.
-                        * Finds a goat in the field next door, and leads it over to the straw house. Hopefully the goat
-                          can eat through the wall.
-                        * Climbs onto the roof, so he can climb down the chimney and surprise the pig.
-                    </pre>
-                Each choice is a link to another page, where the story continues. So what happens when Dave knocks on the
-                door, or climbs up on the roof?
-                </p>
-
-                <a  name="twine-magical-wardrobe"></a>
-                <br/>
-                <h3 class="text-3xl mb-2">Twine Story: The Magical Wardrobe</h3>
-                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
-                    called "The Magical Wardrobe".
-                </p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
-                <p>To start you off, your first page might look like:
-<pre class="whitespace-pre-wrap">
-
-You and your Mum and Dad moved into the new house this morning. It's nice. Your first night in your new bedroom. You wake at 3am to a strange noise: a ringing coming from the attic.
-
-You quietly creep up into the attic, and find the ringing is coming from a big old wardrobe in the corner. You:
-
-* Panic, run down to your bedroom and hide under the covers.
-* Open the wardrobe. Let's get this adventure started.
-* Go wake up your Mum and Dad. They need to know.
-
-</pre>
-                <p>
-                Each choice is a link to another page, where the story continues. So what happens when you open the wardrobe?
-                </p>
-
-
-
-                <a  name="twine-voice-postbox"></a>
-                <br/>
-                <h3 class="text-3xl mb-2">Twine Story: Voice from the Postbox</h3>
-                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
-                    called "Voice from the Postbox".
-                </p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
-                <p>To start you off, your first page might look like:
-                <pre class="whitespace-pre-wrap">
-
-You're waiting for your Mum outside the Post Office - she's gone in to post a parcel. You lean against a big old red postbox. Suddenly you hear a voice. "Help!" it says. It's coming from inside the postbox. What's going on? You decide to:
-* Peer inside the postbox slot. Maybe there's someone stuck in there
-* Ignore the voice. You're imagining things. No-one could be inside a postbox!
-* Run inside the Post Office to see your Mum. She'll know what to do.
-                </pre>
-                <p>
-                    Each choice is a link to another page, where the story continues. So what happens when you peer inside the postbox?
-                </p>
-
-                <a  name="twine-vault-robbery"></a>
-                <br/>
-                <h3 class="text-3xl mb-2">Twine Story: The Vault Robbery</h3>
-                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
-                    called "The Vault Robbery".
-                </p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
-                <p>To start you off, your first page might look like:
-                <pre class="whitespace-pre-wrap">
-
-You are a master jewel thief. You have tunnelled into a vault full of gold and diamonds underneath a famous jewellery shop in London. It is Saturday night, midnight, all quiet. Time to rob the vault.
-
-You step into the vault for the first time, and see piles of gold bars ahead of you. Suddenly an alarm on the ceiling above starts ringing. You:
-
-* Run away! You must have been discovered.
-* Ignore the alarm. You have a plan, and should stick to it. Maybe it's just a smoke alarm.
-* Try cutting the wires running to the alarm. Maybe that will stop it.
-                
-</pre>
-                <p>
-                    Each choice is a link to another page, where the story continues. So what happens when you ignore the alarm?
-                </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <a  name="css-selectors-game"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">CSS Selectors Game</h3>
+                <h3 class="text-3xl mb-2">Websites: CSS Selectors Game</h3>
                 <p>
                     Complete the <a  href="https://flukeout.github.io/" target="_blank">CSS Selector Game</a>, to learn about CSS
                     selectors. It's got
@@ -2313,7 +2158,7 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="websites-easter-traditions"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Easter Traditions</h3>
+                <h3 class="text-3xl mb-2">Websites: Easter Traditions</h3>
                 <p>
                     Make a website about different Easter traditions around the world - a page for each one. For
                     example,
@@ -2324,7 +2169,7 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="colour-codes"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Colour Codes</h3>
+                <h3 class="text-3xl mb-2">Websites: Colour Codes</h3>
                 <p>
                     CSS lets you write text and backgrounds in <span style="background-color: #42A5F5; color: #FFEE58">different</span>
                     <span style="background-color: #EF9A9A; color: #FFE0B2">colours</span>.
@@ -2337,7 +2182,7 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="websites-welcome-to-paris"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Welcome to Paris</h3>
+                <h3 class="text-3xl mb-2">Websites: Welcome to Paris</h3>
                 <p>It's the summer holidays. Are you going somewhere nice? Paris? Ooh la la!</p>
                 <p>
                     Imagine you're the Paris Tourist Board (or any other holiday destination). Make a website for
@@ -2355,7 +2200,7 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="websites-sports-day"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">School Sports Day</h3>
+                <h3 class="text-3xl mb-2">Websites: School Sports Day</h3>
                 <p>Love it or hate it, your school sports day is just around the corner. Create a webpage guide to the day.</p>
                 <p>
                     Make it serious, with a page to explain each competition and notes about how the long jump, hurdles and
@@ -2368,7 +2213,7 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="scratch-website"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Introduction to Scratch</h3>
+                <h3 class="text-3xl mb-2">Websites: Introduction to Scratch</h3>
                 <p>Make a website telling people about <a  href="https://scratch.mit.edu/" target="_blank">Scratch</a>:
                     what it is, and what you can do with it.</p>
                 <p>You can link to Scratch games and stories you like. If you've made some Scratch games and stories
@@ -2379,7 +2224,7 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="learn-javascript"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Codecademy course: Learn Javascript</h3>
+                <h3 class="text-3xl mb-2">Websites: Codecademy course: Learn Javascript</h3>
                 <p>Javascript is the coding language used to make websites interactive and whizzy.
                     Take a look at the free Codecademy <a
                             href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">"Introduction
@@ -2389,7 +2234,7 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="websites-xmas-wishlist"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Your Christmas present wish list</h3>
+                <h3 class="text-3xl mb-2">Websites: Your Christmas present wish list</h3>
                 <p>Create a website for your Christmas present wish list. Lay all the details out neatly in a table. You
                     could have a column for the presents, another column
                     for where to buy them from and another for options like colour . Give your website a nice big title.
@@ -2397,7 +2242,7 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="cat-meme-generator"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Cat Meme Generator</h3>
+                <h3 class="text-3xl mb-2">Websites: Cat Meme Generator</h3>
                 <p>
                     Make a Cat Meme Generator by
                     <a  href="https://projects.raspberrypi.org/en/projects/cat-meme-generator" target="_blank">following along with this tutorial</a>.
@@ -2407,14 +2252,14 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="warm-weather"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Warm weather website</h3>
+                <h3 class="text-3xl mb-2">Websites: Warm weather website</h3>
                 <p>Create a website about the warm weather we are having. Why is the weather so warm when we had deep snow in February last year? Is it global warming or is it just chance.</p> <p>Add a bright title.</p>
                 <p>Search the internet for information about weather variation to include on your website.  Add some pictures of February weather in Scotland</p>
                 <p> Add some visual effects to enhance the weather theme.</p>
 
                 <a  name="animated-gif"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Make an animated GIF</h3>
+                <h3 class="text-3xl mb-2">Websites: Make an animated GIF</h3>
                 <p>Animated GIFs are fun small videos designed for the internet, like this one</p>
                 <img src="img/animals.gif">
                 <p>You need a few pictures to join together to form the video.</p>
@@ -2427,21 +2272,21 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="learning-layout"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Learning layout</h3>
+                <h3 class="text-3xl mb-2">Websites: Learning layout</h3>
                 <p>Boxes, borders, position and padding: these are all parts of CSS which are used to layout parts of a webpage. Follow along with
                     <a  target="_blank" href="https://www.w3schools.com/html/html_layout.asp">this tutorial</a> to explore how layout works and how webpage elements are controlled with CSS. Have a play with the
                     examples.</p>
 
                 <a  name="learn-html"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Codecademy course: Introduction to HTML</h3>
+                <h3 class="text-3xl mb-2">Websites: Codecademy course: Introduction to HTML</h3>
                 <p>Take a look at the free <a
                         href="https://www.codecademy.com/learn/learn-html" target="_blank">"Introduction to HTML" course</a> at Codecademy.
                 </p>
 
                 <a  name="websites-summer-holiday-stuff"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Summer Holiday Stuff</h3>
+                <h3 class="text-3xl mb-2">Websites: Summer Holiday Stuff</h3>
                 <p>You've just had seven weeks holiday... did you get bored at all?</p>
                 <p>Make a website about all the great stuff you did, to keep others from getting bored next summer. You could include pages about:
                     <ul class="list-disc list-inside ml-4 my-2">
@@ -2456,7 +2301,7 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="webpage-links"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Webpage links</h3>
+                <h3 class="text-3xl mb-2">Websites: Webpage links</h3>
                 <p>Links on webpages are usually blue and underlined, and change to purple once clicked. CSS styles
                     let us change this - we can choose how links are displayed. Let's play around this:
                     <ul class="list-disc list-inside ml-4 my-2">
@@ -2503,7 +2348,7 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="holiday-web-form"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">My Holiday web form </h3>
+                <h3 class="text-3xl mb-2">Websites: My Holiday web form </h3>
                 <p>Web forms allow someone visiting your website to type in some information. Clever websites can do
                     exciting things with this information like calculating how many Dollars you can get in exchange for
                     a Pound.</p>
@@ -2517,98 +2362,31 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="xmas-food"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Christmas food</h3>
+                <h3 class="text-3xl mb-2">Websites: Christmas food</h3>
                 <p>Food. Lots of it. That's what Christmas is all about, right?</p>
                 <p>Make a website to showcase all the scrummy food you look forward to at this time of year. Create a
                     page for each dish, and link them together. You'll need pictures, recipes for how to make it, and a
                     bit of a story about why you love it or when you have it. Make sure you use plenty of Christmassy
                     styling on the pages too.</p>
 
-                <a  name="twine-power-out"></a>
-                <br/>
-                <h3 class="text-3xl mb-2">Twine Story: The Power Went Out</h3>
-                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
-                    called "The Power Went Out".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
-                <p>To start you off, your first page might look like:
-               <pre class="whitespace-pre-wrap">
-                   You are home alone, watching TV. Suddenly you hear a loud bang in the distance, and the power goes
-                   out. The TV goes black, and the streetlights switch off outside. You:
-
-                   * Stay on the sofa eating crisps. Hopefully the power will come back on soon.
-                   * Get your shoes on and head for the door. That loud bang needs investigating.
-                   * Go find candles and matches in the kitchen drawer. The power might be off for a while.
-                </pre>
-                Each choice is a link to another page, where the story continues. So what happens when you go outside?
-                Or if you stayed on the sofa, did the power come back on?
-                </p>
-
-                <a  name="twine-no-door-key"></a>
-                <br/>
-                <h3 class="text-3xl mb-2">Twine Story: No Door Key</h3>
-                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
-                    called "No Door Key".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
-                <p>To start you off, your first page might look like:
-               <pre class="whitespace-pre-wrap">
-                    You're having a bad day. You live on a farm miles from the nearest village. It's January, and it
-                    snowed deep this morning. Coming home from school, the school bus struggles through and drops you
-                    off on the main road. You walk the half-mile to the house. Turns out Mum and Dad have left to handle
-                    an emergency with Gran. Mum says they'll be back tomorrow, so you should let yourself in and make
-                    dinner. Except you forgot the house door key, and it's getting cold and dark. You:
-
-                    * Take a look in the greenhouse. There might be a spare key hidden there.
-                    * Give the back door a kick. Desperate times mean desparate measures. Maybe you can kick the door open
-                    * Walk back to the main road. Maybe you can get some help
-                </pre>
-                Each choice is a link to another page, where the story continues. So what happens when you look in the
-                greenhouse? Or when you walk back the the road in the the cold and dark?
-                </p>
-
                 <a  name="websites-shopping-street"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Shopping Street</h3>
+                <h3 class="text-3xl mb-2">Websites: Shopping Street</h3>
                 <p>Make a website about a street in your town with lots of shops and cafes. For each shop/cafe, add a description, a
                     photo (if you have one), and links to their website, facebook page, etc. To make it interesting,
                     you could lay the webpage out like a map of the street, and lay the shops' details out on the map.</p>
 
                 <a  name="websites-months-of-year"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Months of the Year</h3>
+                <h3 class="text-3xl mb-2">Websites: Months of the Year</h3>
                 <p>Make a website about the months of the year. Have a main page, with links off to other pages: one for
                     each month of the year. On a month page - like "January" - explain where the month name comes from,
                     important events that happen in that month, pictures of scenes from that month, and anything else you
                     think is interesting.</p>
 
-                <a  name="twine-christmas-day"></a>
-                <br/>
-                <h3 class="text-3xl mb-2">Twine Story: Christmas Day</h3>
-                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
-                    called "Christmas Day".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
-                <p>To start you off, your first page might look like:
-               <pre class="whitespace-pre-wrap">
-                    You wake up cozy, under the covers in bed. There's a filled stocking at the end of your bed - Santa's
-                    been! You also hear Mum downstairs, making a cup of tea. You:
-
-                   * Grab the stocking and talk a look. What did Santa bring?
-                   * Put your slippers on and head downstairs to say "Merry Christmas" to Mum.
-                   * Go back to sleep. Sleeping is nice.
-                </pre>
-                Each choice is a link to another page, where the story continues. So what happens when you go downstairs?
-                Or if you grabbed the stocking, what's in it?
-                </p>
-
-
                 <a  name="websites-santa-and-reindeer"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Santa and his Reindeer</h3>
+                <h3 class="text-3xl mb-2">Websites: Santa and his Reindeer</h3>
                 <p>Make a "did you know" website about Santa and his reindeer. Have a main page about Santa and his sleigh,
                     delivering presents on Christmas Eve. How many presents do they deliver? Who do they deliver them to?
                     How fast does the sleigh go? Then link to different sub-pages about just Santa, and each of his reindeer (Rudolph, etc).
@@ -2616,10 +2394,9 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
                     embed a YouTube video with the <a  target="_blank" href="https://www.youtube.com/watch?v=lM6mDRhKAcA">'Rudolph the Red Noise'</a> reindeer song?
                 </p>
 
-
                 <a  name="websites-learning-to-code"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Learning to Code</h3>
+                <h3 class="text-3xl mb-2">Websites: Learning to Code</h3>
                 <p>Make a website about learning to code - you could base it on what you've learnt so far. Have pages about
                     different areas like Scratch, HTML and CSS, real coding languages like Python and Javascript, and
                     hardware like Microbits and Raspberry Pi. Each page could explain what each area is, and the important
@@ -2628,7 +2405,7 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
 
                 <a  name="websites-coronation"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">The Coronation</h3>
+                <h3 class="text-3xl mb-2">Websites: The Coronation</h3>
                 <p>Make a website about the Coronation of King Charles III. You'll need a 'welcome' start page, with links
                     off to different topics. Some topic ideas, each on a different webpage:
                     <ul class="list-disc list-inside ml-4 my-2">
@@ -2638,24 +2415,235 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
                     </ul>
                 </p>
 
+                <a  name="websites-animal-explorer"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Websites: Animal Explorer</h3>
+                <p>Make a website about your favorite animals! Each animal gets its own page with pictures, facts, and
+                    fun details such as:
+                    <ul class="list-disc list-inside ml-4 my-2">
+                        <li>What it eats (herbivore, carnivore, or omnivore).</li>
+                        <li>Where it lives (continent, habitat type).</li>
+                        <li>Cool facts (e.g., "Dolphins sleep with one eye open!").</li>
+                        <li>Bonus: Add links between animals that share habitats or are part of the same food chain!</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="stories"></a>
+            <div class="p-8 bg-orange-400"><h2 class="text-3xl text-white">Writing Interactive Stories</h2></div>
+            <div class="p-8">
+                <h3 class="text-3xl mb-2">Before you start</h3>
+                <p><a  target="_blank" href="https://twinery.org/2/#!/welcome">Twine</a> is an online tool for telling
+                    interactive stories.
+                    Here are two examples:
+                <ul class="list-disc list-inside ml-4 my-2">
+                    <li><a  target="_blank" href="http://philome.la/aronsonmax1/who-wants-ice-cream">Who Wants Ice
+                        Cream</a></li>
+                    <li><a  target="_blank" href="http://philome.la/roscoecarrier/no-parents">No Parents</a></li>
+                </ul>
+                If you've never used Twine before, then get the hang of it with these useful guides:
+                <ul class="list-disc list-inside ml-4 my-2">
+                    <li><a  target="_blank" href="http://www.adamhammond.com/twineguide/">A Beginner's Guide to Twine
+                        2.0</a></li>
+                    <li><a  target="_blank"
+                            href="https://www.youtube.com/playlist?list=PLlXuD3kyVEr5tlic4SRe6ZG-R9OyS1T4d">Twine 2.0
+                        tutorial</a></li>
+                    <li><a  target="_blank" href="https://twinery.org/wiki/twine2:guide">Official Twine 2 Guide</a></li>
+                </ul>
+                Then pick a story challenge below and do it!
+                </p>
+
+                <a  name="twine-timmy-dog"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Twine Story: A Day in the Life of Timmy the Dog</h3>
+                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
+                    called
+                    "A Day in the Life of Timmy the Dog".</p>
+                <p>To start you off, your first page might look like:
+        <pre class="whitespace-pre-wrap">
+
+Timmy the Dog is sniffing the rubbish bin outside his house. Suddenly he hears a rustle behind him, and
+sees Sooty the Cat staring. Timmy:
+
+* Walks up to Sooty, and tries to make friends.
+* Bounces up to Sooty, and starts a fight. That cat needs a lesson.
+* Runs awwaaaaay! Sooty is scary.
+                </pre>
+                Each choice is a link to another page, where the story continues. So what happens when Timmy runs away,
+                or starts a fight?
+                </p>
+
+                <a  name="twine-3-little-pigs"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Twine Story: The Three Little Pigs, as the Wolf</h3>
+                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
+                    that's the classic story "The Three Little Pigs". (<a  href="https://www.youtube.com/watch?v=xGFjzp8wl1E" target="_blank">4 minute
+                        video of it here</a>). You are the Wolf.</p>
+                <p>To start you off, your first page might look like:
+                <pre class="whitespace-pre-wrap">
+
+Dave the Wolf is hungry. He's learnt that 3 little pigs have moved into the area, and have built themselves
+houses. Dave likes eating pigs. He heads for the first house, which strangely is made out of straw. Dave:
+
+* Walks up to the door and knocks on it. Maybe the pig inside will answer.
+* Finds a goat in the field next door, and leads it over to the straw house. Hopefully the goat
+  can eat through the wall.
+* Climbs onto the roof, so he can climb down the chimney and surprise the pig.
+                </pre>
+                Each choice is a link to another page, where the story continues. So what happens when Dave knocks on the
+                door, or climbs up on the roof?
+                </p>
+
+                <a  name="twine-magical-wardrobe"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Twine Story: The Magical Wardrobe</h3>
+                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
+                    called "The Magical Wardrobe".
+                </p>
+                <p>To start you off, your first page might look like:
+                <pre class="whitespace-pre-wrap">
+
+You and your Mum and Dad moved into the new house this morning. It's nice. Your first night in your new bedroom. You wake at 3am to a strange noise: a ringing coming from the attic.
+
+You quietly creep up into the attic, and find the ringing is coming from a big old wardrobe in the corner. You:
+
+* Panic, run down to your bedroom and hide under the covers.
+* Open the wardrobe. Let's get this adventure started.
+* Go wake up your Mum and Dad. They need to know.
+
+</pre>
+                <p>
+                    Each choice is a link to another page, where the story continues. So what happens when you open the wardrobe?
+                </p>
+
+                <a  name="twine-voice-postbox"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Twine Story: Voice from the Postbox</h3>
+                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
+                    called "Voice from the Postbox".
+                </p>
+                <p>To start you off, your first page might look like:
+                <pre class="whitespace-pre-wrap">
+
+You're waiting for your Mum outside the Post Office - she's gone in to post a parcel. You lean against a big old red postbox. Suddenly you hear a voice. "Help!" it says. It's coming from inside the postbox. What's going on? You decide to:
+* Peer inside the postbox slot. Maybe there's someone stuck in there
+* Ignore the voice. You're imagining things. No-one could be inside a postbox!
+* Run inside the Post Office to see your Mum. She'll know what to do.
+                </pre>
+                <p>
+                    Each choice is a link to another page, where the story continues. So what happens when you peer inside the postbox?
+                </p>
+
+                <a  name="twine-vault-robbery"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Twine Story: The Vault Robbery</h3>
+                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
+                    called "The Vault Robbery".
+                </p>
+                <p>To start you off, your first page might look like:
+                <pre class="whitespace-pre-wrap">
+
+You are a master jewel thief. You have tunnelled into a vault full of gold and diamonds underneath a famous jewellery shop in London. It is Saturday night, midnight, all quiet. Time to rob the vault.
+
+You step into the vault for the first time, and see piles of gold bars ahead of you. Suddenly an alarm on the ceiling above starts ringing. You:
+
+* Run away! You must have been discovered.
+* Ignore the alarm. You have a plan, and should stick to it. Maybe it's just a smoke alarm.
+* Try cutting the wires running to the alarm. Maybe that will stop it.
+
+</pre>
+                <p>
+                    Each choice is a link to another page, where the story continues. So what happens when you ignore the alarm?
+                </p>
+
+                <a  name="twine-power-out"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Twine Story: The Power Went Out</h3>
+                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
+                    called "The Power Went Out".</p>
+                <p>To start you off, your first page might look like:
+                <pre class="whitespace-pre-wrap">
+
+You are home alone, watching TV. Suddenly you hear a loud bang in the distance, and the power goes
+out. The TV goes black, and the streetlights switch off outside. You:
+
+* Stay on the sofa eating crisps. Hopefully the power will come back on soon.
+* Get your shoes on and head for the door. That loud bang needs investigating.
+* Go find candles and matches in the kitchen drawer. The power might be off for a while.
+                </pre>
+                Each choice is a link to another page, where the story continues. So what happens when you go outside?
+                Or if you stayed on the sofa, did the power come back on?
+                </p>
+
+                <a  name="twine-no-door-key"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Twine Story: No Door Key</h3>
+                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
+                    called "No Door Key".</p>
+                <p>To start you off, your first page might look like:
+                <pre class="whitespace-pre-wrap">
+
+You're having a bad day. You live on a farm miles from the nearest village. It's January, and it
+snowed deep this morning. Coming home from school, the school bus struggles through and drops you
+off on the main road. You walk the half-mile to the house. Turns out Mum and Dad have left to handle
+an emergency with Gran. Mum says they'll be back tomorrow, so you should let yourself in and make
+dinner. Except you forgot the house door key, and it's getting cold and dark. You:
+
+* Take a look in the greenhouse. There might be a spare key hidden there.
+* Give the back door a kick. Desperate times mean desparate measures. Maybe you can kick the door open
+* Walk back to the main road. Maybe you can get some help
+                </pre>
+                Each choice is a link to another page, where the story continues. So what happens when you look in the
+                greenhouse? Or when you walk back the the road in the the cold and dark?
+                </p>
+
+                <a  name="twine-christmas-day"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Twine Story: Christmas Day</h3>
+                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
+                    called "Christmas Day".</p>
+                <p>To start you off, your first page might look like:
+                <pre class="whitespace-pre-wrap">
+
+You wake up cozy, under the covers in bed. There's a filled stocking at the end of your bed - Santa's
+been! You also hear Mum downstairs, making a cup of tea. You:
+
+* Grab the stocking and talk a look. What did Santa bring?
+* Put your slippers on and head downstairs to say "Merry Christmas" to Mum.
+* Go back to sleep. Sleeping is nice.
+                </pre>
+                Each choice is a link to another page, where the story continues. So what happens when you go downstairs?
+                Or if you grabbed the stocking, what's in it?
+                </p>
+
+
                 <a  name="twine-steal-crown"></a>
                 <br/>
                 <h3 class="text-3xl mb-2">Twine Story: Stealing the Crown Back</h3>
                 <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
                     called "Stealing the Crown Back".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
                 <p>To start you off, this is the first page:
-               <pre class="whitespace-pre-wrap">
-                The King is angry. Darksmoke the Dragon has stolen the King's crown. You have tracked Darksmoke back to
-                his lair in a dark cave under the mountains. You hide behind a boulder, watching Darksmoke sleep on a
-                pile of treasure. The King's crown is next to the dragon's tail. You sneak forward, ready to take back
-                the crown. Darksmoke sneezes in his sleep and moves his tail. You:
+                <pre class="whitespace-pre-wrap">
 
-                * Freeze. Maybe Darksmoke will settle down again and you can move forward
-                * Speed up. Let's get that crown back before Darksmoke wakes up.
-                * Panic and run back to the boulder. You must have woken Darksmoke up!
+The King is angry. Darksmoke the Dragon has stolen the King's crown. You have tracked Darksmoke back to
+his lair in a dark cave under the mountains. You hide behind a boulder, watching Darksmoke sleep on a
+pile of treasure. The King's crown is next to the dragon's tail. You sneak forward, ready to take back
+the crown. Darksmoke sneezes in his sleep and moves his tail. You:
+
+* Freeze. Maybe Darksmoke will settle down again and you can move forward
+* Speed up. Let's get that crown back before Darksmoke wakes up.
+* Panic and run back to the boulder. You must have woken Darksmoke up!
                 </pre>
                 Each choice is a link to another page, where the story continues. So what happens if you panic?
                 Or if you speed up and grab the crown?
@@ -2665,19 +2653,18 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
                 <br/>
                 <h3 class="text-3xl mb-2">Twine Story: Broken Ankle</h3>
                 <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
                     called "Broken Ankle".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
                 <p>To start you off, this is the first page:
-               <pre class="whitespace-pre-wrap">
-                You are walking home from school through the wood. The path is slippy with mud. Suddenly you slip and
-                fall over down a slope off the path. You try to stand up but can't. Your ankle is really sore, and it's
-                at a funny angle. Maybe it's broken. What do you do?
+                <pre class="whitespace-pre-wrap">
 
-                * Get on your knees and crawl up to the path, gritting your teeth through the pain
-                * Stay where you are - if you move, you might hurt your ankle more
-                * Search through your school bag. Did you remember your phone today?
+You are walking home from school through the wood. The path is slippy with mud. Suddenly you slip and
+fall over down a slope off the path. You try to stand up but can't. Your ankle is really sore, and it's
+at a funny angle. Maybe it's broken. What do you do?
+
+* Get on your knees and crawl up to the path, gritting your teeth through the pain
+* Stay where you are - if you move, you might hurt your ankle more
+* Search through your school bag. Did you remember your phone today?
                 </pre>
                 Each choice is a link to another page, where the story continues. So what happens if you stay where you are?
                 Or did you remember your phone?
@@ -2687,20 +2674,19 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
                 <br/>
                 <h3 class="text-3xl mb-2">Twine Story: Hot Sticky Tar</h3>
                 <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
                     called "Hot Sticky Tar".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
                 <p>To start you off, this is the first page:
-               <pre class="whitespace-pre-wrap">
-                You are walking home from gran's house. You're running late for dinner so check your phone - and suddenly you
-                can't move! You just walked straight past a roadworks sign, and into some hot sticky tar! Looks like the
-                pavement was being fixed today.
+                <pre class="whitespace-pre-wrap">
 
-                You try moving your feet, but you're stuck up to your ankles. What do you do?
-                * Look in your school bag. Maybe there's something you can use to help get you free.
-                * Stay where you are. Maybe someone will come along and help.
-                * Yell for help. Surely someone will hear you.
+You are walking home from gran's house. You're running late for dinner so check your phone - and suddenly you
+can't move! You just walked straight past a roadworks sign, and into some hot sticky tar! Looks like the
+pavement was being fixed today.
+
+You try moving your feet, but you're stuck up to your ankles. What do you do?
+* Look in your school bag. Maybe there's something you can use to help get you free.
+* Stay where you are. Maybe someone will come along and help.
+* Yell for help. Surely someone will hear you.
                 </pre>
                 Each choice is a link to another page, where the story continues. So what happens if you stay where you are?
                 Or can you dig out your feet?
@@ -2710,22 +2696,21 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
                 <br/>
                 <h3 class="text-3xl mb-2">Twine Story: An Open Door</h3>
                 <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
                     called "An Open Door".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
                 <p>To start you off, this is the first page:
-               <pre class="whitespace-pre-wrap">
-                Anya slammed the door behind her and ran across the field behind her aunt’s house. She could hear Aunt
-                Molly’s voice yelling after her as she ran, and tears were streaming down her face. When she reached the
-                woods on the far side of the field, Anya stopped and looked around. Among the trees, there was a tiny,
-                half-ruined house. But the door was standing open, and from inside there wafted a strange and delicious
-                smell.
+                <pre class="whitespace-pre-wrap">
 
-                What will Anya do?
-                * Go to the door and step inside.
-                * Call out, “Hello?” and wait to see who answers.
-                * Catch her breath, and trudge back across the field to the house.
+Anya slammed the door behind her and ran across the field behind her aunt’s house. She could hear Aunt
+Molly’s voice yelling after her as she ran, and tears were streaming down her face. When she reached the
+woods on the far side of the field, Anya stopped and looked around. Among the trees, there was a tiny,
+half-ruined house. But the door was standing open, and from inside there wafted a strange and delicious
+smell.
+
+What will Anya do?
+* Go to the door and step inside.
+* Call out, “Hello?” and wait to see who answers.
+* Catch her breath, and trudge back across the field to the house.
                 </pre>
                 Each choice is a link to another page, where the story continues. So what happens if Anya goes in? Or
                 if she goes back and faces her angry Aunt Molly?
@@ -2736,12 +2721,10 @@ You step into the vault for the first time, and see piles of gold bars ahead of 
                 <br/>
                 <h3 class="text-3xl mb-2">Twine Story: Halloween Flat Tyre</h3>
                 <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
                     called "Halloween Flat Tyre".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
                 <p>To start you off, this is the first page:</p>
-<pre class="whitespace-pre">
+                <pre class="whitespace-pre">
 
 Brad and Janet are driving in their car to see their old school teacher Mr Scott on Halloween.
 It's night time and raining hard. Suddenly the car feels bumpy and there's a funny noise.
@@ -2755,27 +2738,26 @@ What will Brad and Janet do?
                 </pre>
 
                 <p>Each choice is a link to another page, where the story continues. So what happens if Brad and Janet
-                go to the castle? Or do they stay in the car and wait until morning?
+                    go to the castle? Or do they stay in the car and wait until morning?
                 </p>
 
                 <a  name="twine-spanish-singer"></a>
                 <br/>
                 <h3 class="text-3xl mb-2">Twine Story: Spanish Singer</h3>
                 <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
                     called "Spanish Singer".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
                 <p>To start you off, your first page might look like:
-               <pre class="whitespace-pre-wrap">
-                    It's too hot to sleep. Your little sister seems to have dozed off at last but even with the doors
-                    wide open to the balcony of your hotel, there is no breeze. The sound of strange insects buzzes and
-                    hums in the Spanish night air. As you toss and turn, you become aware of a voice right outside,
-                    singing a sad song in the darkness. You are alarmed, but curious: there shouldn't be anyone outside
-                    your room. Do you:
-                    * Switch the light on, waking your sister, and yell at the singer?
-                    * Sneak over to the door and watch, to find out who it is and what they are doing here?
-                    * Put on your shoes and slip quietly out onto the balcony?
+                <pre class="whitespace-pre-wrap">
+
+It's too hot to sleep. Your little sister seems to have dozed off at last but even with the doors
+wide open to the balcony of your hotel, there is no breeze. The sound of strange insects buzzes and
+hums in the Spanish night air. As you toss and turn, you become aware of a voice right outside,
+singing a sad song in the darkness. You are alarmed, but curious: there shouldn't be anyone outside
+your room. Do you:
+* Switch the light on, waking your sister, and yell at the singer?
+* Sneak over to the door and watch, to find out who it is and what they are doing here?
+* Put on your shoes and slip quietly out onto the balcony?
                 </pre>
                 Each choice is a link to another page, where the story continues. So what happens if you at the singer?
                 Or do sneak out and find out more?
@@ -2786,19 +2768,17 @@ What will Brad and Janet do?
                 <br/>
                 <h3 class="text-3xl mb-2">Twine Story: Cat Tree Rescue</h3>
                 <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
                     called "Cat Tree Rescue".</p>
-
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
                 <p>To start you off, your first page might look like:
-               <pre class="whitespace-pre-wrap">
-                You are walking home from the shops. It's getting dark. Suddenly you hear a panicked "miaow miaow" from
-                above. There is a young cat struggling to keep its balance high up in a tree. You:
+                <pre class="whitespace-pre-wrap">
 
-                * Keep walking. You want your dinner and the cat will surely be fine
-                * You start climbing the tree. Maybe you can put the cat in your backpack to get it down the tree
-                * You look around for something long to point up the tree. Maybe the cat can grab on and slide down to the ground
+You are walking home from the shops. It's getting dark. Suddenly you hear a panicked "miaow miaow" from
+above. There is a young cat struggling to keep its balance high up in a tree. You:
+
+* Keep walking. You want your dinner and the cat will surely be fine
+* You start climbing the tree. Maybe you can put the cat in your backpack to get it down the tree
+* You look around for something long to point up the tree. Maybe the cat can grab on and slide down to the ground
                 </pre>
                 Each choice is a link to another page, where the story continues. So what happens the cat? Does it get
                 down the tree in one piece?
@@ -2809,24 +2789,23 @@ What will Brad and Janet do?
                 <br/>
                 <h3 class="text-3xl mb-2">Twine Story: The Coronation Crown Heist</h3>
                 <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
-                                                                    href="https://twinery.org/2/#!/welcome">Twine</a>
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
                     called "The Coronation Crown Heist".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
                 <p>To start you off, this is the first page:
-               <pre class="whitespace-pre-wrap">
-                You are Police Inspector Smith of Scotland Yard, in London. You have
-                learned that a gang of thieves are going to steal the Royal Crown from
-                Westminster Cathedral, ahead of the Coronation of King Charles III.
-                You must stop them.
+                <pre class="whitespace-pre-wrap">
 
-                At 7am you climb onto a roof opposite Westminster Cathedral, and use
-                binoculars to watch the crowds below as people start to gather. At 7:20am,
-                you see a familiar face in the crowd: one of the thieves. You:
+You are Police Inspector Smith of Scotland Yard, in London. You have
+learned that a gang of thieves are going to steal the Royal Crown from
+Westminster Cathedral, ahead of the Coronation of King Charles III.
+You must stop them.
 
-                * Run down the stairs and chase after the thief. Only you can stop him.
-                * Stay on the roof and keep watching the crowd. That thief was likely a decoy.
-                * Radio to a police officer at the Cathedral entrance to watch out for the thief.
+At 7am you climb onto a roof opposite Westminster Cathedral, and use
+binoculars to watch the crowds below as people start to gather. At 7:20am,
+you see a familiar face in the crowd: one of the thieves. You:
+
+* Run down the stairs and chase after the thief. Only you can stop him.
+* Stay on the roof and keep watching the crowd. That thief was likely a decoy.
+* Radio to a police officer at the Cathedral entrance to watch out for the thief.
                 </pre>
                 Each choice is a link to another page, where the story continues. So what happens if you chase the thief?
                 Or if you stay on the roof and look for other suspicious characters?
@@ -2838,8 +2817,6 @@ What will Brad and Janet do?
                 <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
                                                                      href="https://twinery.org/2/#!/welcome">Twine</a>
                     called "Santa Rescue".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
                 <p>To start you off, this is the first page:
                 <pre class="whitespace-pre-wrap">
 
@@ -2857,15 +2834,12 @@ What do you do?
                 Or if you wake up your parents?
                 </p>
 
-
                 <br/>
                 <a  name="twine-alien-encounter"></a>
                 <h3 class="text-3xl mb-2">Twine Story: Alien Encounter</h3>
                 <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
                                                                      href="https://twinery.org/2/#!/welcome">Twine</a>
                     called "Alien Encounter".</p>
-                <p>If you don't know how to use Twine to make stories, then do the <a  href="#twine-stories">"Make
-                    Stories with Twine"</a> challenge first.</p>
                 <p>To start you off, this is the first page:
                 <pre class="whitespace-pre-wrap">
 
@@ -2882,29 +2856,13 @@ What do you do?
                 Each choice is a link to another page, where the story continues. So what happens when you meet the
                 alien? Or if you wake up your parents?
                 </p>
-
-
-                <a  name="websites-animal-explorer"></a>
-                <br/>
-                <h3 class="text-3xl mb-2">Animal Explorer</h3>
-                <p>Make a website about your favorite animals! Each animal gets its own page with pictures, facts, and
-                    fun details such as:
-                    <ul class="list-disc list-inside ml-4 my-2">
-                        <li>What it eats (herbivore, carnivore, or omnivore).</li>
-                        <li>Where it lives (continent, habitat type).</li>
-                        <li>Cool facts (e.g., "Dolphins sleep with one eye open!").</li>
-                        <li>Bonus: Add links between animals that share habitats or are part of the same food chain!</li>
-                    </ul>
-                </p>
             </div>
         </div>
 
-        <div id="code" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
-            <a  name="code"></a>
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="code"></a>
             <div class="p-8 bg-red-600"><h2 class="text-3xl text-white">Coding (in Python or Javascript)</h2></div>
             <div class="p-8">
-
-                <br/>
                 <h3 class="text-3xl mb-2">Before you start</h3>
                 <p>If you’ve never coded in Javascript or Python before, do our <a  href="earn-badges.html#code">coding
                     badges</a> to get started.</p>
@@ -2919,13 +2877,13 @@ What do you do?
                 <p></p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Reversing Names</h3>
+                <h3 class="text-3xl mb-2">Coding: Reversing Names</h3>
                 <p>Write a program that asks someone their name, then outputs it in reverse. So “GREG” becomes
                     “GERG”.</p>
 
                 <a  name="coding-capital-cities"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Capital Cities</h3>
+                <h3 class="text-3xl mb-2">Coding: Capital Cities</h3>
                 <p>
                     Write a program that asks for a country name, then outputs the capital city. So “France” returns
                     “Paris”.
@@ -2950,7 +2908,7 @@ What do you do?
 
                 <a  name="coding-rock-paper-scissors"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Rock Paper Scissors</h3>
+                <h3 class="text-3xl mb-2">Coding: Rock Paper Scissors</h3>
                 <p>
                     Write a program that plays ‘rock paper scissors’:
                 <ul class="list-disc list-inside ml-4 my-2">
@@ -2971,7 +2929,7 @@ What do you do?
 
                 <a  name="coding-hangman"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Hangman</h3>
+                <h3 class="text-3xl mb-2">Coding: Hangman</h3>
                 <p>
                     Write a program that plays ‘hangman’. The player guesses letters to complete a secret word.
                     You decide how many turns they get. On each turn:
@@ -2993,7 +2951,7 @@ What do you do?
 
                 <a  name="coding-python-turtle"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Draw 2d shapes in Python with Turtle</h3>
+                <h3 class="text-3xl mb-2">Coding: Draw 2d shapes in Python with Turtle</h3>
                 <p>
                     Turtle is a well known graphics library for drawing in Python: you "drive" an imaginary turtle
                     around to draw 2d shapes programmatically.
@@ -3010,7 +2968,7 @@ What do you do?
 
                 <a  name="coding-sentence-analyser"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Sentence Analyser</h3>
+                <h3 class="text-3xl mb-2">Coding: Sentence Analyser</h3>
                 <p>
                     Write a program that counts the number of words in a sentence. For example, for “i am an example
                     sentence”, the program would print 5 (words).
@@ -3029,7 +2987,7 @@ What do you do?
                 </p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Calculator</h3>
+                <h3 class="text-3xl mb-2">Coding: Calculator</h3>
                 <p>
                     Write a calculator that can add, subtract, multiply or divide two numbers. Make the calculator
                     accept the two numbers
@@ -3045,7 +3003,7 @@ What do you do?
 
                 <br/>
                 <a name="coding-fizz-buzz"></a>
-                <h3 class="text-3xl mb-2">Challenge: Fizz Buzz</h3>
+                <h3 class="text-3xl mb-2">Coding: Fizz Buzz</h3>
                 <p>Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz"
                     instead of the number and
                     for the multiples of five print "Buzz". For numbers which are multiples of both three and five
@@ -3053,7 +3011,7 @@ What do you do?
                     “FizzBuzz".</p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Fibonacci</h3>
+                <h3 class="text-3xl mb-2">Coding: Fibonacci</h3>
                 <p>Write a program that prints out the first 100 numbers in the Fibonacci sequence. In the Fibonacci
                     sequence the first two numbers are zero and one.
                     Every number after that is the sum of the previous 2 numbers. So the first seven numbers are: 0
@@ -3061,7 +3019,7 @@ What do you do?
                     2 3 5 8.</p>
 
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Secret Spy Messages</h3>
+                <h3 class="text-3xl mb-2">Coding: Secret Spy Messages</h3>
                 <p>
                     Write a program that turns a sentence into a secret message by replacing each letter with the
                     next
@@ -3085,7 +3043,7 @@ What do you do?
 
                 <a  name="anagram-detector"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Anagram Detector</h3>
+                <h3 class="text-3xl mb-2">Coding: Anagram Detector</h3>
                 <p>
                     Write a program that outputs whether two phrases are anagrams of one another. For example:
                 <ul class="list-disc list-inside ml-4 my-2">
@@ -3121,7 +3079,7 @@ What do you do?
 
                 <a  name="reverse-factorial"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Reverse Factorial</h3>
+                <h3 class="text-3xl mb-2">Coding: Reverse Factorial</h3>
                 <p>
                     Write a program that outputs whether a given number is a factorial (or not).
                 </p>
@@ -3169,7 +3127,7 @@ What do you do?
 
                 <a  name="todo-list"></a>
                 <br/>
-                <h3 class="text-3xl mb-2" name="todolist">Challenge: To-do list</h3>
+                <h3 class="text-3xl mb-2" name="todolist">Coding: To-do list</h3>
                 <p>
                     Write a program that lets you create and manage a 'to-do list'. You should be able to: add an item,
                     delete an item,
@@ -3203,7 +3161,7 @@ What do you do?
 
                 <a  name="coding-reaction-time"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Reaction Time</h3>
+                <h3 class="text-3xl mb-2">Coding: Reaction Time</h3>
                 <p>
                     Write a game that measures your reaction time: how fast you hit the space-bar when told 'hit it!'.
                     At the end of the game, show
@@ -3237,7 +3195,7 @@ What do you do?
 
                 <a  name="coding-insult-generator"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Challenge: Insult Generator</h3>
+                <h3 class="text-3xl mb-2">Coding: Insult Generator</h3>
                 <p>
                     Make a program that generates random insults :-) The program first asks for your name, then insults
                     you. Here goes..
@@ -3287,7 +3245,7 @@ What do you do?
 
                 <a  name="triangles"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Triangles</h3>
+                <h3 class="text-3xl mb-2">Coding: Triangles</h3>
                 <p>
                     Write a small program that takes in a number and then prints off a triangle
                     of that height. Here is an example:
@@ -3331,7 +3289,7 @@ What do you do?
 
                 <a  name="coding-greedy-shopkeeper"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Greedy shopkeeper</h3>
+                <h3 class="text-3xl mb-2">Coding: Greedy shopkeeper</h3>
                 <p>
                     Write a small program that takes an amount of change, and then
                     works out the minimal coins required to make it. You may only
@@ -3367,7 +3325,7 @@ What do you do?
 
                 <a  name="timetable-manager"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">School timetable manager</h3>
+                <h3 class="text-3xl mb-2">Coding: School timetable manager</h3>
                 <p>
                     So you're going back to school. Write a program that manages your school timetable.
                     It should record which subjects you take during your school day. E.g.:
@@ -3402,7 +3360,7 @@ What do you do?
 
                 <a  name="driving-theory-test"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Driving Theory Test</h3>
+                <h3 class="text-3xl mb-2">Coding: Driving Theory Test</h3>
                 <p>
                     Getting your driving licence requires you to pass a "theory test". Write a program that lets you
                     practice the theory test: the program asks you a set of multiple-choice questions, tells you whether
@@ -3442,7 +3400,7 @@ What do you do?
 
                 <a  name="coding-speaking-clock"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Speaking Clock</h3>
+                <h3 class="text-3xl mb-2">Coding: Speaking Clock</h3>
                 <p>
                     Write a program that takes a time in 24 hour numeric form, and outputs it as words.
                 </p>
@@ -3476,7 +3434,7 @@ What do you do?
 
                 <a  name="coding-12-days-xmas"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Twelve Days of Christmas</h3>
+                <h3 class="text-3xl mb-2">Coding: Twelve Days of Christmas</h3>
                 <p>
                     Write the smallest possible program to print all the lyrics to the
                     "<a  href="https://en.wikipedia.org/wiki/The_Twelve_Days_of_Christmas_(song)#Lyrics" target="_blank">Twelve Days of
@@ -3520,7 +3478,7 @@ What do you do?
 
                 <a  name="how-long-was-the-light-on"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">How Long Was The Light On?</h3>
+                <h3 class="text-3xl mb-2">Coding: How Long Was The Light On?</h3>
                 <p>
                     There is a light that switches on when someone enters the room, and switches off when they leave.
                     If multiple people are in the room, the light stays on until the last person leaves.
@@ -3572,7 +3530,7 @@ What do you do?
 
                 <a  name="coding-leet-speak"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">L33T SPEAK</h3>
+                <h3 class="text-3xl mb-2">Coding: L33T SPEAK</h3>
                 <p>
                     Write a program that translates English into <a  href="https://simple.wikipedia.org/wiki/Leet" target="_blank">Leet
                     Speak</a> (or vice versa).
@@ -3629,7 +3587,7 @@ What do you do?
 
                 <a  name="coding-noughts-and-crosses"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Noughts and Crosses</h3>
+                <h3 class="text-3xl mb-2">Coding: Noughts and Crosses</h3>
                 <p>
                     Code the game of 'Noughts and Crosses':
                 <ul class="list-disc list-inside ml-4 my-2">
@@ -3668,7 +3626,7 @@ What do you do?
 
                 <a  name="seconds-convertor"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Seconds Convertor</h3>
+                <h3 class="text-3xl mb-2">Coding: Seconds Convertor</h3>
                 <p>
                     Write a program that converts a number of seconds into
                     years/months/weeks/days/hours/minutes/seconds. Assume that
@@ -3684,7 +3642,7 @@ What do you do?
 
                 <a  name="battleship"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Battleship</h3>
+                <h3 class="text-3xl mb-2">Coding: Battleship</h3>
                 <p>
                     Write a 1-player version of the game <a  href="https://en.wikipedia.org/wiki/Battleship_(game)"
                                                             target="_blank">'Battleship'</a>.
@@ -3806,7 +3764,7 @@ What do you do?
 
                 <a  name="calendar-app"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Calendar app</h3>
+                <h3 class="text-3xl mb-2">Coding: Calendar app</h3>
                 <p>
                     Make a calendar program. The user can:
                 <ul class="list-disc list-inside ml-4 my-2">
@@ -3862,7 +3820,7 @@ What do you do?
 
                 <a  name="regex"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Regular Expressions</h3>
+                <h3 class="text-3xl mb-2">Coding: Regular Expressions</h3>
                 <p>
                     What if you need to find particular letter sequences in a large piece of text, like all
                     email addresses, or all phone numbers? You'll need something
@@ -3884,7 +3842,7 @@ What do you do?
 
                 <a  name="word-funnel"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Word Funnel</h3>
+                <h3 class="text-3xl mb-2">Coding: Word Funnel</h3>
                 <p>
                     Write a program that takes two words, and says whether the second word can be made from the first by
                     removing one letter.
@@ -3916,7 +3874,7 @@ What do you do?
 
                 <a  name="scoring-a-game"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Scoring a Game</h3>
+                <h3 class="text-3xl mb-2">Coding: Scoring a Game</h3>
                 <p>
                     5 friends (called Alex, Ben, Caitlin, Dean and Erin) are playing a game, and keeping track of
                     scores. When someone scores a point,
@@ -3947,7 +3905,7 @@ What do you do?
 
                 <a  name="currency-conversion"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Convert currency with API data</h3>
+                <h3 class="text-3xl mb-2">Coding: Convert currency with API data</h3>
                 <p>
                     Write a program that converts one currency amount to another. Here is an example of UK pounds (GBP)
                     to US dollars (USD):
@@ -3983,7 +3941,7 @@ What do you do?
 
                 <a  name="santas-list"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Santa's Christmas list</h3>
+                <h3 class="text-3xl mb-2">Coding: Santa's Christmas list</h3>
                 <p>
                     Santa needs to write a list of all the good children and what they want for Christmas. Write a
                     program in any language to ask for a name. Then ask if they have been good this year. If they have
@@ -4015,7 +3973,7 @@ What do you do?
 
                 <a  name="about-me"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">About Me</h3>
+                <h3 class="text-3xl mb-2">Coding: About Me</h3>
                 <p>
                     Make an About Me program (that tells people about yourself) by
                     <a  href="https://projects.raspberrypi.org/en/projects/about-me" target="_blank">following along with this tutorial</a>.
@@ -4025,7 +3983,7 @@ What do you do?
 
                 <a  name="python-spinner"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Create a spinner in Python</h3>
+                <h3 class="text-3xl mb-2">Coding: Create a spinner in Python</h3>
                 <p>
                     Did you know that you can do lots of exciting things with text in Python? In this challenge you will learn how to make a
                     line look like it is spinning on the screen.  There are plenty of hints and alternative methods
@@ -4047,7 +4005,7 @@ What do you do?
 
                 <a  name="fix-those-dates"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Fix those dates</h3>
+                <h3 class="text-3xl mb-2">Coding: Fix those dates</h3>
                 <p>
                     My American pal always writes dates with the month in the wrong place, and dots instead of slashes to split
                     things up: <b>04.27.2019</b>. Write a piece of code to make his dates look the way we write them in the uk: <b>27/04/2019</b>.
@@ -4066,14 +4024,14 @@ What do you do?
 
                 <a  name="web-scraping"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Web scraping</h3>
+                <h3 class="text-3xl mb-2">Coding: Web scraping</h3>
                 <p>Follow along with <a  href="https://hackernoon.com/building-a-web-scraper-from-start-to-finish-bb6b95388184" target="_blank">this Python tutorial</a>, where you get to write a program to 'scrape' useful information from a web page.
                     'Web scraping' is very useful once you know how to do it - Google scrapes millions of web pages to make its search engine
                     work.</p>
 
                 <a  name="palindrome-checker"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Palindrome checker</h3>
+                <h3 class="text-3xl mb-2">Coding: Palindrome checker</h3>
                 <p>Write a program that checks if a word is a <a  href="https://en.wikipedia.org/wiki/Palindrome" target="_blank">palindrome</a>. So “racecar” would return “Is a palindrome”, but
                     “banana” would return “Is not a palindrome”.</p>
                 <p>More advanced:
@@ -4086,7 +4044,7 @@ What do you do?
 
                 <a  name="coding-raspberry-pi-python-course"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Raspberry Pi course: Introduction to Python</h3>
+                <h3 class="text-3xl mb-2">Coding: Raspberry Pi course: Introduction to Python</h3>
                 <p>Python is a very popular coding language.
                     Take a look at the free Raspberry Pi <a
                             href="https://projects.raspberrypi.org/en/pathways/python-intro" target="_blank" >"Introduction to Python" course</a>.
@@ -4094,7 +4052,7 @@ What do you do?
 
                 <a  name="learn-python"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Codecademy course: Learn Python</h3>
+                <h3 class="text-3xl mb-2">Coding: Codecademy course: Learn Python</h3>
                 <p>Python is a very popular coding language.
                     Take a look at the free Codecademy <a
                             href="https://www.codecademy.com/learn/learn-python" target="_blank" >"Learn Python 2" course</a>.
@@ -4102,7 +4060,7 @@ What do you do?
 
                 <a  name="word-balancer"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Word Balancer</h3>
+                <h3 class="text-3xl mb-2">Coding: Word Balancer</h3>
                 <p>
                     Assume a word only contains the letters 'x' and 'y'. Write a program that checks if a word contains
                     the same number of 'x's and 'y'. For example:
@@ -4135,7 +4093,7 @@ What do you do?
 
                 <a  name="dice-roll"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Dice Roll</h3>
+                <h3 class="text-3xl mb-2">Coding: Dice Roll</h3>
                 <p>
                     Follow along with this <a  href="https://www.youtube.com/watch?v=b6U3rw-cH6A" target="_blank">YouTube tutorial</a> to create a dice
                     rolling program in Python. Use your favorite Python editor or the <a  target="_blank" href="https://repl.it/languages/python3">repl.it online Python editor</a>.
@@ -4145,7 +4103,7 @@ What do you do?
 
                 <a  name="webpages-w-code"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Write webpages with code</h3>
+                <h3 class="text-3xl mb-2">Coding: Write webpages with code</h3>
                 <p>
                     You have to do the same thing over and over when you write a website by hand - what if you could
                     write a
@@ -4181,14 +4139,14 @@ What do you do?
 
                 <a  name="xmas-turtle"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">A Christmas turtle</h3>
+                <h3 class="text-3xl mb-2">Coding: A Christmas turtle</h3>
                 <p>Follow along with this <a  href="https://www.canyoucompute.co.uk/christmas-coding.html" target="_blank">Christmas Coding Challenge</a>. You'll learn how to draw in Python with a turtle, and
                     then draw Christmas pictures. Have fun!
                 </p>
 
                 <a  name="birthday-day"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">What day is my birthday?</h3>
+                <h3 class="text-3xl mb-2">Coding: What day is my birthday?</h3>
                 <p>Make a program that says which day of the week your birthday falls on for the next 10 years. Remember to
                     account for leap years! For 25 January, we have:
                     <ul class="list-disc list-inside ml-4 my-2">
@@ -4207,7 +4165,7 @@ What do you do?
 
                 <a  name="learn-about-databases"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Mess about with Databases</h3>
+                <h3 class="text-3xl mb-2">Coding: Mess about with Databases</h3>
                 <p>
                     There are a few online tools that can help you learn about databases.  W3schools have a tool that lets you play with a SQL (Simple Query Language) database - have a go!
                 </p>
@@ -4228,7 +4186,7 @@ What do you do?
 
                 <a  name="coding-summing-letters"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Summing Letters</h3>
+                <h3 class="text-3xl mb-2">Coding: Summing Letters</h3>
                 <p>
                     Assume every letter has a value matching its position in the alphabet. So 'a' is '1' and 'z' is 26.
                     Write a program that takes a word and sums the values of all the word letters. For example:
@@ -4259,7 +4217,7 @@ What do you do?
 
                 <a  name="coding-morse-code"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Morse Code</h3>
+                <h3 class="text-3xl mb-2">Coding: Morse Code</h3>
                 <p>
                     Write a program that converts a word into morse code, where each letter is shown as dots and dashes
                     The codes for 'a' to 'z' are:
@@ -4300,12 +4258,12 @@ What do you do?
 
                 <a  name="coding-unity-tutorial"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Get started with Unity software for making games</h3>
+                <h3 class="text-3xl mb-2">Coding: Get started with Unity software for making games</h3>
                 <p>Follow along with <a  href="https://projects.raspberrypi.org/en/pathways/unity-intro" target="_blank">this tutorial for learning Unity: software that lets you make games.</a></p>
 
                 <a  name="coding-picture-ideas-generator"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Picture ideas generator</h3>
+                <h3 class="text-3xl mb-2">Coding: Picture ideas generator</h3>
                 <p>Sometimes you fancy drawing a picture, but don't know what to draw. What you need is a picture
                     ideas generator!
                 </p>
@@ -4332,7 +4290,7 @@ What do you do?
 
                 <a  name="coding-maths-challenge"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Maths Challenge</h3>
+                <h3 class="text-3xl mb-2">Coding: Maths Challenge</h3>
                 <p>
                     Write a program that generates random maths challenges, like "4 x 3", or "7 - 2", or "12 + 3". The
                     user then enters the answer, and the program marks them right or wrong.
@@ -4356,7 +4314,7 @@ What do you do?
 
                 <a  name="coding-list-stats"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Summarising a list of numbers</h3>
+                <h3 class="text-3xl mb-2">Coding: Summarising a list of numbers</h3>
                 <p>
                     Write a program that gives you summary statistics for a list of 10 numbers. The user enters the numbers, and
                     the program then writes out the minimum and maximum numbers in the list, the average, the mode and the
@@ -4366,7 +4324,7 @@ What do you do?
 
                 <a  name="coding-reign-length"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Calculate how long a King or Queen ruled for</h3>
+                <h3 class="text-3xl mb-2">Coding: Calculate how long a King or Queen ruled for</h3>
                 <p>
                     Write a program that calculates how many days a King or Queen ruled for. The program will ask for
                     the name of the King/Queen, which date they were crowned, and which date they died. The program will then
@@ -4390,7 +4348,7 @@ What do you do?
 
                 <a  name="coding-word-scramble"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Make a word scramble game</h3>
+                <h3 class="text-3xl mb-2">Coding: Make a word scramble game</h3>
                 <p>
                     Write a program that scrambles a word, and the player has to guess it. Getting started:
                     <ul class="list-disc list-inside ml-4 my-2">
@@ -4410,8 +4368,8 @@ What do you do?
             </div>
         </div>
 
-        <div id="microbits" class="border-[1px] border-solid border-gray-200 rounded-md my-2">
-            <a  name="microbits"></a>
+        <div class="border-[1px] border-solid border-gray-200 rounded-md my-2">
+            <a name="microbits"></a>
             <div class="p-8 bg-gray-100"><h2 class="text-3xl text-black">Coding - Microbits</h2></div>
             <div class="p-8">
                 <p>
@@ -4451,7 +4409,7 @@ What do you do?
 
                 <a  name="talk-microbits"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Talk between Microbits</h3>
+                <h3 class="text-3xl mb-2">Microbits: Talk between Microbits</h3>
                 <p>Find a friend and talk between Microbits. Use the radio functions on the microbits to get them to talk to each other.</p>
                 <p>Simple:
                     <ul class="list-disc list-inside ml-4 my-2">
@@ -4468,7 +4426,7 @@ What do you do?
 
                 <a  name="microbit-to-scratch"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Using Microbits with Scratch</h3>
+                <h3 class="text-3xl mb-2">Microbits: Using Microbits with Scratch</h3>
                 <p>
                     You can now connect microbits to scratch, and do stuff like use the microbit as a controller for your
                     scratch game. Have a go by <a  href="https://scratch.mit.edu/microbit" target="_blank">following along with this tutorial</a>.
@@ -4477,7 +4435,7 @@ What do you do?
 
                 <a  name="hold-it-there"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Hold-it-there game</h3>
+                <h3 class="text-3xl mb-2">Microbits: Hold-it-there game</h3>
                 <p>Make a hold-it-there game. The object of this game is to light up all the LEDs on the Microbit and keep them on - but it's
                     not so easy!  When your program detects the Microbit is tilted forward, light up the LEDs one after the other.  Stop lighting
                     the LEDs when the Microbit is held flat.  Every time you light a new LED make the time before you light the next LED shorter.
@@ -4497,7 +4455,7 @@ What do you do?
 
                 <a  name="love-letter"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Send a love letter</h3>
+                <h3 class="text-3xl mb-2">Microbits: Send a love letter</h3>
                 <p>Send a heart sign and message between two microbits.</p>
                 <p>Getting started:
                    <ul class="list-disc list-inside ml-4 my-2">
@@ -4515,7 +4473,7 @@ What do you do?
 
                 <a  name="the-chase"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">The Chase</h3>
+                <h3 class="text-3xl mb-2">Microbits: The Chase</h3>
                 <p>Make a 2-player game where you try to catch your opponent's dot as you chase one another round
                     the screen! Getting started:
                     <ul class="list-disc list-inside ml-4 my-2">
@@ -4529,7 +4487,7 @@ What do you do?
 
                 <a  name="microbits-crashy-bird"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Crashy Bird</h3>
+                <h3 class="text-3xl mb-2">Microbits: Crashy Bird</h3>
                 <p>
                     Make a "Flappy Bird" game on your microbit by
                     <a  href="https://makecode.microbit.org/projects/crashy-bird" target="_blank">following along with this tutorial</a>.
@@ -4537,7 +4495,7 @@ What do you do?
 
                 <a  name="microbit-snap-the-dot"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Snap the Dot</h3>
+                <h3 class="text-3xl mb-2">Microbits: Snap the Dot</h3>
                 <p>
                     Make a game called "Snap the Dot" game on your microbit by
                     <a href="https://makecode.microbit.org/projects/snap-the-dot" target="_blank">following along with this tutorial</a>.
@@ -4546,7 +4504,7 @@ What do you do?
 
                 <a  name="microbit-beating-heart"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Beating Heart</h3>
+                <h3 class="text-3xl mb-2">Microbits: Beating Heart</h3>
                 <p>
                     Make a beating heart animation on your microbit by
                     <a  href="https://microbit.org/projects/make-it-code-it/beating-heart" target="_blank">following along with this tutorial</a>.
@@ -4554,7 +4512,7 @@ What do you do?
 
                 <a  name="microbit-racing-game"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Racing Game</h3>
+                <h3 class="text-3xl mb-2">Microbits: Racing Game</h3>
                 <p>
                     Follow along with <a  href="https://www.101computing.net/microbit-car-racing-game/" target="_blank">this tutorial</a> to make a racing game on your microbit. There's a video on the tutorial
                     page that shows the finished game - looks pretty cool!
@@ -4563,7 +4521,7 @@ What do you do?
                 <a  name="microbit-nightlight"></a>
                 </a>
                 <br/>
-                <h3 class="text-3xl mb-2">Night light</h3>
+                <h3 class="text-3xl mb-2">Microbits: Night light</h3>
                 <p>
                     Follow along with <a  href="https://microbit.org/projects/make-it-code-it/nightlight/" target="_blank">this tutorial</a> to turn your microbit into
                     a nightlight. The microbit changes what it shows depending on the light level.
@@ -4572,7 +4530,7 @@ What do you do?
                 <a  name="microbit-compass"></a>
                 </a>
                 <br/>
-                <h3 class="text-3xl mb-2">Microbit compass</h3>
+                <h3 class="text-3xl mb-2">Microbits: Compass</h3>
                 <p>
                     Follow along with <a href="https://microbit.org/projects/make-it-code-it/compass-north/" target="_blank">this tutorial</a> to turn your microbit into
                     a compass. The microbit changes what it shows depending which direction you face.
@@ -4581,7 +4539,7 @@ What do you do?
 
                 <a  name="microbit-rock-paper-scissors"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">YouTube tutorial: Rock, Paper, Scissors</h3>
+                <h3 class="text-3xl mb-2">Microbits: YouTube tutorial: Rock, Paper, Scissors</h3>
                 <p>
                     Make a "Rock, Paper, Scissors" game on your microbit by
                     <a  href="https://www.youtube.com/watch?v=r1WjBc4CGvE" target="_blank">following along with this 4 minute youtube tutorial</a>.
@@ -4589,7 +4547,7 @@ What do you do?
 
                 <a  name="step-counter"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Step Counter</h3>
+                <h3 class="text-3xl mb-2">Microbits: Step Counter</h3>
                 <p>
                     You’ve made a New Year’s resolution to do more exercise, like walking. Make a step counter with your microbit
                     (that counts how many steps you’ve walked). Getting started:
@@ -4602,7 +4560,7 @@ What do you do?
 
                 <a  name="microbits-consonant-or-vowel"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Consonant or Vowel?</h3>
+                <h3 class="text-3xl mb-2">Microbits: Consonant or Vowel?</h3>
                 <p>In this game the player has one second to press button A when a consonant is displayed on the microbit screen, and button B when a vowel is displayed.</p>
                 <ul class="list-disc list-inside ml-4 my-2">
                     <li>Start this challenge by displaying the letters A or B.  You will need to use the Random function to choose which.
@@ -4619,7 +4577,7 @@ What do you do?
 
                 <a  name="microbits-stopwatch"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Stopwatch</h3>
+                <h3 class="text-3xl mb-2">Microbits: Stopwatch</h3>
                 <p>Make a stopwatch that displays how many seconds have passed since button A was pressed.
                 <ul class="list-disc list-inside ml-4 my-2">
                     <li>Button A starts the stopwatch.</li>
@@ -4632,7 +4590,7 @@ What do you do?
 
                 <a  name="microbit-daytime-detector"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Daytime Detector</h3>
+                <h3 class="text-3xl mb-2">Microbits: Daytime Detector</h3>
 
                 <p>Make your microbit into a "daytime detector", and show a sun when it's light, and nothing when it's dark.</p>
 
@@ -4651,7 +4609,7 @@ What do you do?
 
                 <a  name="microbit-hottest-coldest"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Hottest and Coldest</h3>
+                <h3 class="text-3xl mb-2">Microbits: Hottest and Coldest</h3>
                 <p>
                     Make your microbit show the hottest and coldest temperatures its seen by <a  href="https://microbit.org/projects/make-it-code-it/max-min-thermometer/" target="_blank">following along with this tutorial</a>.
                 </p>
@@ -4659,7 +4617,7 @@ What do you do?
                 <a  name="microbit-xmas-decoration"></a>
                 </a>
                 <br/>
-                <h3 class="text-3xl mb-2">Christmas Decoration</h3>
+                <h3 class="text-3xl mb-2">Microbits: Christmas Decoration</h3>
                 <p>
                     Follow along with <a href="https://microbit.org/projects/make-it-code-it/festive-decoration/" target="_blank">this tutorial</a> to turn your microbit into
                     a Christmas decoration!
