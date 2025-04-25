@@ -99,27 +99,22 @@
 
     <p>
         Scratch:
-        <a href="#scratch-maze-of-insults">Make a Maze of Insults</a>
+        <a href="#scratch-spy-name-generator">Make a Spy Name Generator</a>
     </p>
 
     <p>
         Scratch:
-        <a href="#scratch-easter-egg-hunt">Make an Easter Egg Hunt game</a>
-    </p>
-
-    <p>
-        Scratch:
-        <a href="#scratch-leap-year-checker">Make a leap year checker</a>
+        <a href="#scratch-parachute-jump">Make an Parachute Jump Game</a>
     </p>
 
     <p>
         Twine Story:
-        <a href="#twine-broken-ankle">Write an interactive story called 'Broken Ankle'</a>
+        <a href="#twine-lost-bone">Write an interactive story called 'Lost Bone'</a>
     </p>
 
     <p>
         Websites:
-        <a  href="#websites-easter-traditions">Make a website about Easter Traditions</a>
+        <a  href="#websites-bobs-bakery">Make a website for Bob's Bakery</a>
     </p>
 
     <p>
@@ -317,7 +312,7 @@
                 <p>More advanced: Make the graveyard more spooky. What about making an invisible ghost appear when the
                     player hits a gravestone? Maybe it says “boo!” (record the sound effect)</p>
 
-                <a  name="parachute-jump"></a>
+                <a  name="scratch-parachute-jump"></a>
                 <br/>
                 <h3 class="text-3xl mb-2" name="parachute-jump">Scratch: Parachute Jump</h3>
                 <p>
@@ -330,15 +325,14 @@
                 <ul class="list-disc list-inside ml-4 my-2">
                     <li>Draw your parachutist</li>
                     <li>Draw some clouds - you'll need a few!</li>
-                    <li>To make the game, put the parachutist near the top of the screen (they won't move). Now
+                    <li>To make the game, put the parachutist near the top of the screen (they will only move sideways). Now
                         make each cloud move from the bottom of the screen to the top, and it will look like the
                         parachutist is falling! There is a trick to this, as you want each cloud to start
                         off-screen at the bottom, and move up until it goes off-screen at the top. When the cloud
                         gets to the top, move it to the bottom again!:
                         <ul class="list-disc list-inside ml-4 my-2">
-                            <li>To start the cloud off-screen at the bottom, set y to be less than -180 (try -200)</li>
-                            <li>To check when the cloud has gone off-screen at the top, check if y is more than 180
-                                (try 200)
+                            <li>To start the cloud off-screen at the bottom, set y to be less than -250 (try -251)</li>
+                            <li>To check when the cloud has gone off-screen at the top, check if y is more than 230
                             </li>
                             <li>Scratch doesn't like putting sprites off-screen, but you can trick it: every time
                                 you move the sprite's position (x and y), put "set size to 200%" before, and "set size
@@ -347,7 +341,9 @@
                             </li>
                         </ul>
                     </li>
-                </ul>
+                    <li>To make the game tricky, start each cloud at a random x position. Use the "pick random" block
+                        between -250 and 250.</li>
+            </ul>
                 </p>
                 <p>More advanced: make things harder, with more clouds moving randomly at different speeds. You could
                     also keep score by counting how many clouds the parachutist dodged. Or make things look cooler by
@@ -992,7 +988,7 @@
                     <a  href="https://www.youtube.com/watch?v=IAokntr4TWQ" target="_blank">part 7</a>.
                 </p>
 
-                <a  name="spy-name-generator"></a>
+                <a  name="scratch-spy-name-generator"></a>
                 <br/>
                 <h3 class="text-3xl mb-2">Scratch: Spy Name Generator</h3>
                 <p>
@@ -1985,9 +1981,9 @@
                 </ul>
                 </p>
 
-                <a  name="websites-bakers-shop"></a>
+                <a  name="websites-bobs-bakery"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Websites: Baker's Shop</h3>
+                <h3 class="text-3xl mb-2">Websites: Bob's Bakery</h3>
                 <p>
                     Make a website for Bob's Bakery.
                 </p>
@@ -2641,6 +2637,27 @@ the crown. Darksmoke sneezes in his sleep and moves his tail. You:
                 Each choice is a link to another page, where the story continues. So what happens if you panic?
                 Or if you speed up and grab the crown?
                 </p>
+
+                <br/>
+                <a name="twine-lost-bone"></a>
+                <h3 class="text-3xl mb-2">Twine Story: Lost Bone</h3>
+                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
+                    called
+                    "Lost Bone".</p>
+                <p>To start you off, your first page might look like:
+                <pre class="whitespace-pre-wrap">
+
+You're Patch, the smartest dog on the street. But today, disaster has struck - your favourite bone is missing! Where will you search first?
+
+* Check the garden
+* Sniff under the sofa
+* Ask the cat
+                </pre>
+                Each choice is a link to another page, where the story continues. So what happens when Patch checks the garden,
+                or asks the cat?
+                </p>
+
 
                 <a  name="twine-broken-ankle"></a>
                 <br/>
