@@ -99,7 +99,7 @@
 
     <p>
         Scratch:
-        <a href="#scratch-spring-garden">Make a Spring garden with bees and flowers</a>
+        <a href="#scratch-weather-machine">Make a Weather Machine</a>
     </p>
 
     <p>
@@ -109,7 +109,7 @@
 
     <p>
         Twine Story:
-        <a href="#twine-lost-bone">Write an interactive story called 'Lost Bone'</a>
+        <a href="#twine-mystery-juice">Write an interactive story called 'Mystery Juice'</a>
     </p>
 
     <p>
@@ -119,7 +119,7 @@
 
     <p>
         Coding:
-        <a  href="#coding-secret-messages">Make a program that writes secret spy messages</a>
+        <a  href="#coding-dice-roll">Make a program that rolls a dice</a>
     </p>
 
     <p>
@@ -404,6 +404,44 @@
                 <p>More advanced: make the quiz ask 10 questions, and keep a score of correct answers. And do more fun
                     stuff when the player gives a
                     right answer (yay!) or wrong answer (boo!).</p>
+
+                <a  name="scratch-weather-machine"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Scratch: Weather Machine</h3>
+                <p>
+                    You've invented a weather machine! Make a Scratch scene where you can change the weather by pressing
+                    buttons. What happens when it’s sunny, rainy, snowy or stormy?
+                </p>
+                <p>
+                    Some ideas
+                <ul class="list-disc list-inside ml-4 my-2">
+                    <li>Make a scene with a house and someone outside - maybe a pet too!</li>
+                    <li>Add 4 buttons for Sun, Rain, Snow and Lightning</li>
+                    <li>When you press a button, the whole scene (and sounds) changes. For example:
+                        <ul class="list-disc list-inside ml-4 my-2">
+                            <li>Sun: blue sky, sun in the corner, the person wears sunglasses, birds are tweeting</li>
+                            <li>Rain: grey clouds, raindrops fall, the person has an umbrella, with rain sounds</li>
+                            <li>Snow: snowflakes fall, the house roof gets snow, all is colder</li>
+                            <li>Lightning: the sky goes dark, lightning flashes, thunder rumbles</li>
+                        </ul>
+                    </li>
+                    <li>Use the “broadcast” block to tell all sprites when the weather changes</li>
+                    <li>For falling rain or snow:
+                        <ul class="list-disc list-inside ml-4 my-2">
+                            <li>Draw one raindrop or snowflake sprite</li>
+                            <li>When the game starts, "hide" it</li>
+                            <li>Every half a second, create a clone</li>
+                            <li>In the “when I start as a clone” block:
+                                <ul class="list-disc list-inside ml-4 my-2">
+                                    <li>Set y to 180 and x to a random position from -240 to 240</li>
+                                    <li>Use "show", then make it fall with "change y by -5" in a loop</li>
+                                    <li>At the bottom, use "delete this clone" so it disappears</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
 
                 <a  name="scratch-wind-whistle"></a>
                 <br/>
@@ -2696,6 +2734,32 @@ You're Patch, the smartest dog on the street. But today, disaster has struck - y
                 </p>
 
 
+                <a name="twine-mystery-juice"></a>
+                <br/>
+                <h3 class="text-3xl mb-2">Twine Story: Mystery Juice</h3>
+                <p>Make a "Choose Your Own Adventure" story with <a  target="_blank"
+                                                                     href="https://twinery.org/2/#!/welcome">Twine</a>
+                    called
+                    "The Mystery Juice".</p>
+                <p>To start you off, your first page might look like:
+                <pre class="whitespace-pre-wrap">
+
+Your big brother dared you to drink a weird bottle he found in the back of the fridge. It has the word “ZAP!” on it in big blue letters.
+
+You take one sip... and suddenly everything around you slows down. Even your brother’s shout of “NOOOOOO” is stretching like chewing gum.
+
+Your hands are glowing faintly. You don’t feel normal.
+
+What do you do?
+
+* Run to the mirror - are you changing?
+* Try to speak - does your voice still work?
+* Grab the bottle and take another sip
+                </pre>
+                Each choice is a link to another page, where the story continues. So what do you see in the mirror?
+                </p>
+
+
                 <a  name="twine-broken-ankle"></a>
                 <br/>
                 <h3 class="text-3xl mb-2">Twine Story: Broken Ankle</h3>
@@ -4142,15 +4206,21 @@ What do you do?
                 </p>
 
 
-                <a  name="dice-roll"></a>
+                <a  name="coding-dice-roll"></a>
                 <br/>
-                <h3 class="text-3xl mb-2">Coding: Dice Roll</h3>
+                <h3 class="text-3xl mb-2">Coding: Dice Roll </h3>
                 <p>
-                    Follow along with this <a  href="https://www.youtube.com/watch?v=b6U3rw-cH6A" target="_blank">YouTube tutorial</a> to create a dice
-                    rolling program in Python. Use your favorite Python editor or the <a  target="_blank" href="https://repl.it/languages/python3">repl.it online Python editor</a>.
+                    Write a program that simulates rolling a dice. When you run it, it should give you a random number
+                    from 1 to 6. Try this:
+                    <ul class="list-disc list-inside ml-4 my-2">
+                        <li>Each time the program runs, it should pick a new number.</li>
+                        <li>Print the result like: "You rolled a 4!"</li>
+                        <li>Hint: most coding languages have a function that picks a random number. Google how to pick a
+                            random number between 1 and 6 in your language.
+                        </li>
+                    </ul>
                 </p>
-                <p>More advanced: add a second dice, show both scores and the total.</p>
-
+                <p>More advanced: add a second dice, and show both scores and the total. Or count how many times it takes to roll a 6.</p>
 
                 <a  name="webpages-w-code"></a>
                 <br/>
